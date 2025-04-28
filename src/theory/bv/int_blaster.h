@@ -27,7 +27,7 @@
 #include "smt/env_obj.h"
 #include "theory/arith/nl/iand_utils.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /*
 ** Converts bit-vector formulas to integer formulas.

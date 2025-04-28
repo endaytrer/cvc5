@@ -21,7 +21,7 @@
 #include "theory/strings/theory_strings_utils.h"
 #include "util/string.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace theory;
 using namespace theory::strings;

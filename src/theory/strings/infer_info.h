@@ -26,7 +26,7 @@
 #include "theory/theory_inference.h"
 #include "util/safe_print.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 

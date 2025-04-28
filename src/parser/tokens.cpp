@@ -17,7 +17,7 @@
 
 #include <iostream>
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 std::ostream& operator<<(std::ostream& o, Token t)

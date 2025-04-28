@@ -22,9 +22,9 @@
 #include "theory/datatypes/sygus_datatype_utils.h"
 #include "theory/rewriter.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 
@@ -59,7 +59,7 @@ Node SygusReconstruct::reconstructSolution(Node sol,
   Node k0 = ob0->getSkolem();
 
   if (options().quantifiers.cegqiSingleInvReconstruct
-      == cvc5::internal::options::CegqiSingleInvRconsMode::TRY)
+      == cvc5pp::internal::options::CegqiSingleInvRconsMode::TRY)
   {
     fast(sol, stn, reconstructed);
   }
@@ -98,7 +98,7 @@ void SygusReconstruct::main(Node sol,
                             uint64_t enumLimit)
 {
   bool noLimit = options().quantifiers.cegqiSingleInvReconstruct
-                 == cvc5::internal::options::CegqiSingleInvRconsMode::ALL;
+                 == cvc5pp::internal::options::CegqiSingleInvRconsMode::ALL;
 
   // Skolem of the main obligation
   Node k0 = d_obs[0]->getSkolem();
@@ -259,7 +259,7 @@ void SygusReconstruct::fast(Node sol, TypeNode stn, int8_t& reconstructed)
         args.push_back(cons->getConstructor());
         // populate each constructor argument with a free variable of the
         // corresponding type
-        for (const std::shared_ptr<cvc5::internal::DTypeSelector>& arg : cons->getArgs())
+        for (const std::shared_ptr<cvc5pp::internal::DTypeSelector>& arg : cons->getArgs())
         {
           args.push_back(d_tds->getFreeVarInc(arg->getRangeType(), varCount));
         }

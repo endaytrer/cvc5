@@ -32,7 +32,7 @@
 
 #include <CoCoA/GlobalManager.H>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * The pointer to the singleton CoCoA global manager.

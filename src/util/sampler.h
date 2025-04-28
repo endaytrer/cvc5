@@ -23,7 +23,7 @@
 
 #include "util/floatingpoint.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Sampler
 {

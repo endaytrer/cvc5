@@ -22,7 +22,7 @@
 
 #include "utils.h"
 
-using namespace cvc5;
+using namespace cvc5pp;
 
 int main()
 {

@@ -21,12 +21,12 @@
 #include "preprocessing/assertion_pipeline.h"
 #include "theory/rewriter.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 
 using namespace std;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
 Node NlExtPurify::purifyNlTerms(TNode n,
                                 NodeMap& cache,

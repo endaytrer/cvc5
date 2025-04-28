@@ -28,10 +28,10 @@
 #include "theory/sets/theory_sets_rels.h"
 #include "util/rational.h"
 
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory::datatypes;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory::datatypes;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace sets {
 

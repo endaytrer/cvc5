@@ -23,7 +23,7 @@
 #include "expr/node.h"
 #include "cvc5/cvc5_proof_rule.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofNodeManager;
 class ProofNode;
@@ -143,13 +143,13 @@ class ProofNode
 
 namespace std {
 template <>
-struct hash<cvc5::internal::ProofNode>
+struct hash<cvc5pp::internal::ProofNode>
 {
-  size_t operator()(const cvc5::internal::ProofNode& node) const;
+  size_t operator()(const cvc5pp::internal::ProofNode& node) const;
 };
 }  // namespace std
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 inline size_t ProofNodeHashFunction::operator()(
     std::shared_ptr<ProofNode> pfn) const

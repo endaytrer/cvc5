@@ -26,7 +26,7 @@
 
 #include <cstdint>
 #include <ostream>
-namespace cvc5 {
+namespace cvc5pp {
 #undef ENUM
 #define ENUM(name) class name
 #undef EVALUE
@@ -5867,7 +5867,7 @@ namespace std {
  * @param kind The kind
  * @return The string representation.
  */
-CVC5_EXPORT std::string to_string(cvc5::Kind kind);
+CVC5_EXPORT std::string to_string(cvc5pp::Kind kind);
 }
 #endif
 
@@ -5885,14 +5885,14 @@ namespace std {
  * Hash function for Kinds.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::Kind>
+struct CVC5_EXPORT hash<cvc5pp::Kind>
 {
   /**
    * Hashes a Kind to a size_t.
    * @param kind The kind.
    * @return The hash value.
    */
-  size_t operator()(cvc5::Kind kind) const;
+  size_t operator()(cvc5pp::Kind kind) const;
 };
 
 }  // namespace std
@@ -5908,7 +5908,7 @@ struct CVC5_EXPORT hash<cvc5::Kind>
 #endif
 
 #ifndef CVC5_API_USE_C_ENUMS
-namespace cvc5 {
+namespace cvc5pp {
 #endif
 
 // clang-format off
@@ -6168,7 +6168,7 @@ namespace std {
  * @param k the sort kind
  * @return the string representation of kind k
  */
-CVC5_EXPORT std::string to_string(cvc5::SortKind k);
+CVC5_EXPORT std::string to_string(cvc5pp::SortKind k);
 }
 #endif
 
@@ -6186,14 +6186,14 @@ namespace std {
  * Hash function for SortKinds.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::SortKind>
+struct CVC5_EXPORT hash<cvc5pp::SortKind>
 {
   /**
    * Hashes a SortKind to a size_t.
    * @param kind The kind.
    * @return The hash value.
    */
-  size_t operator()(cvc5::SortKind kind) const;
+  size_t operator()(cvc5pp::SortKind kind) const;
 };
 }  // namespace std
 #endif

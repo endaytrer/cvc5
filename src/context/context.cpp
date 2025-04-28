@@ -20,7 +20,7 @@
 #include "base/check.h"
 #include "context/context.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 
 Context::Context() : d_pCNOpre(NULL), d_pCNOpost(NULL) {
   // Create new memory manager

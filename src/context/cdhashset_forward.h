@@ -27,7 +27,7 @@
 
 #include <functional>
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 template <class V, class HashFcn = std::hash<V> >
 class CDHashSet;
 }  // namespace cvc5::context

@@ -22,7 +22,7 @@
 #include "expr/node.h"
 #include "prop/sat_solver_types.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace decision {
 
 /** A pair indicating a node and its desired value */

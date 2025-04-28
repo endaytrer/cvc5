@@ -20,7 +20,7 @@
 #include "base/output.h"
 #include "util/statistics_registry.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace ff {
 

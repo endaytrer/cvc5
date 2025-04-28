@@ -32,10 +32,10 @@
 
 #include "base/exception.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
-class Interrupted : public cvc5::internal::Exception
+class Interrupted : public cvc5pp::internal::Exception
 {
 }; /* class Interrupted */
 

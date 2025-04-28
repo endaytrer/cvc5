@@ -29,7 +29,7 @@
 /* Size of buffers used */
 #define BUFFER_SIZE 20
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 template <>
 void safe_print(int fd, const std::string& msg) {

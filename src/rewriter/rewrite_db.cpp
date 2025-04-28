@@ -19,9 +19,9 @@
 #include "rewriter/rewrite_db_term_process.h"
 #include "rewriter/rewrites.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace rewriter {
 
 uint32_t IsListTypeClassCallback::getTypeClass(TNode v)

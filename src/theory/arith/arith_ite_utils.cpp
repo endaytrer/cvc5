@@ -33,7 +33,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 
@@ -50,7 +50,7 @@ Node ArithIteUtils::applyReduceVariablesInItes(Node n){
 }
 
 Node ArithIteUtils::reduceVariablesInItes(Node n){
-  using namespace cvc5::internal::kind;
+  using namespace cvc5pp::internal::kind;
   if(d_reduceVar.find(n) != d_reduceVar.end()){
     Node res = d_reduceVar[n];
     return res.isNull() ? n : res;

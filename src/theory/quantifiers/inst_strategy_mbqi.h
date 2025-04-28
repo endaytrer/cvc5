@@ -23,7 +23,7 @@
 
 #include "theory/quantifiers/quant_module.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
     
 class SolverEngine;
 

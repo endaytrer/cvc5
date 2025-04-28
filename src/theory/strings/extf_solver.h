@@ -34,7 +34,7 @@
 #include "theory/strings/strings_rewriter.h"
 #include "theory/strings/theory_strings_preprocess.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 

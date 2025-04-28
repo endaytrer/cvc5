@@ -15,7 +15,7 @@
 
 #include "expr/type_properties.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace kind {
 
 Node mkGroundTerm(TypeConstant tc)

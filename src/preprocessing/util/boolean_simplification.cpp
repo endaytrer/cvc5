@@ -15,7 +15,7 @@
 
 #include "preprocessing/util/boolean_simplification.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 
 bool BooleanSimplification::push_back_associative_commute_recursive(

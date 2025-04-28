@@ -28,7 +28,7 @@
 #include "theory/builtin/proof_checker.h"
 #include "theory/rewriter.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace rewriter {
 
 /**

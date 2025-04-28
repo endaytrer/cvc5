@@ -18,7 +18,7 @@
 #include "printer/printer.h"
 #include "printer/smt2/smt2_printer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 AlfDependentTypeConverter::AlfDependentTypeConverter(

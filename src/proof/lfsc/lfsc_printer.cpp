@@ -26,10 +26,10 @@
 #include "proof/lfsc/lfsc_list_sc_node_converter.h"
 #include "proof/lfsc/lfsc_print_channel.h"
 
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::rewriter;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::rewriter;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 LfscPrinter::LfscPrinter(Env& env,

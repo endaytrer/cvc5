@@ -22,7 +22,7 @@
 #include "theory/arith/nl/ext/monomial.h"
 #include "theory/theory_inference.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 namespace nl {

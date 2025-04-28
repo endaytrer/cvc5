@@ -21,7 +21,7 @@
 #include "expr/node.h"
 #include "theory/theory_id.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * This is an abstract class for computing "term context identifiers". A term

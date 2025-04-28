@@ -27,7 +27,7 @@
 
 #include <cvc5/cvc5_skolem_id.h>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * Converts a skolem identifier to a string. Note: This function is also used in
@@ -38,7 +38,7 @@ namespace cvc5::internal {
  * @param id The proof rule
  * @return The name of the proof rule
  */
-const char* toString(cvc5::SkolemId id);
+const char* toString(cvc5pp::SkolemId id);
 
 }  // namespace cvc5::internal
 

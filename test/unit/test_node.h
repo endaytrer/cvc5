@@ -21,7 +21,7 @@
 #include "smt/solver_engine.h"
 #include "test.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestNode : public TestInternal

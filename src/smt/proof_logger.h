@@ -21,7 +21,7 @@
 #include "proof/proof_node.h"
 #include "smt/env_obj.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * The purpose of this class is to output proofs for all reasoning the solver

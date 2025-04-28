@@ -29,7 +29,7 @@
 #include "theory/arith/delta_rational.h"
 #include "util/rational.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith::linear {
 

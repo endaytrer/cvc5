@@ -27,7 +27,7 @@
 #include "theory/theory_engine_module.h"
 #include "theory/valuation.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace prop {
 class PropEngine;

@@ -45,7 +45,7 @@
 #include <cstring>
 #include <string>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 template <size_t N>
 void CVC5_EXPORT safe_print(int fd, const char (&msg)[N]);

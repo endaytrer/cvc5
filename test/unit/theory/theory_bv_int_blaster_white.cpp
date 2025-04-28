@@ -24,7 +24,7 @@
 #include "theory/bv/theory_bv_utils.h"
 #include "util/bitvector.h"
 #include "util/rational.h"
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace theory;
 

@@ -22,7 +22,7 @@
 #include "prop/minisat/minisat.h"
 #include "prop/prop_proof_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 SatProofManager::SatProofManager(Env& env,

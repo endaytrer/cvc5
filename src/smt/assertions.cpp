@@ -29,10 +29,10 @@
 #include "theory/trust_substitutions.h"
 #include "util/result.h"
 
-using namespace cvc5::internal::theory;
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::theory;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 Assertions::Assertions(Env& env)

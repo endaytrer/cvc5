@@ -29,7 +29,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 Integer::Integer(const char* s, unsigned base)
   : d_value(s, base)

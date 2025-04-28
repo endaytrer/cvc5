@@ -23,7 +23,7 @@
 #include "base/check.h"
 #include "expr/kind.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 // clang-format off
 ${metakind_fwd_decls}
@@ -38,9 +38,9 @@ namespace metakind {
 
 struct NodeValueCompare {
   template <bool pool>
-  static bool compare(const cvc5::internal::expr::NodeValue* nv1,
-                      const cvc5::internal::expr::NodeValue* nv2);
-  static size_t constHash(const cvc5::internal::expr::NodeValue* nv);
+  static bool compare(const cvc5pp::internal::expr::NodeValue* nv1,
+                      const cvc5pp::internal::expr::NodeValue* nv2);
+  static size_t constHash(const cvc5pp::internal::expr::NodeValue* nv);
 };/* struct NodeValueCompare */
 
 /**
@@ -67,7 +67,7 @@ enum MetaKind_t {
  * @param nv the node value representing a constant node
  */
 void nodeValueConstantToStream(std::ostream& out,
-                               const cvc5::internal::expr::NodeValue* nv);
+                               const cvc5pp::internal::expr::NodeValue* nv);
 
 /**
  * Cleanup to be performed when a NodeValue zombie is collected, and
@@ -78,12 +78,12 @@ void nodeValueConstantToStream(std::ostream& out,
  * This doesn't support "non-inlined" NodeValues, which shouldn't need this
  * kind of cleanup.
  */
-void deleteNodeValueConstant(cvc5::internal::expr::NodeValue* nv);
+void deleteNodeValueConstant(cvc5pp::internal::expr::NodeValue* nv);
 
 /** Return the minimum arity of the given kind. */
-uint32_t getMinArityForKind(cvc5::internal::Kind k);
+uint32_t getMinArityForKind(cvc5pp::internal::Kind k);
 /** Return the maximum arity of the given kind. */
-uint32_t getMaxArityForKind(cvc5::internal::Kind k);
+uint32_t getMaxArityForKind(cvc5pp::internal::Kind k);
 
 }  // namespace metakind
 
@@ -101,7 +101,7 @@ MetaKind metaKindOf(Kind k);
  * example, since the kind of functions is just VARIABLE, it should map
  * VARIABLE to APPLY_UF.
  */
-Kind operatorToKind(cvc5::internal::expr::NodeValue* nv);
+Kind operatorToKind(cvc5pp::internal::expr::NodeValue* nv);
 
 }  // namespace kind
 

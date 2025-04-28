@@ -25,7 +25,7 @@
 #include "expr/skolem_manager.h"
 #include "util/hash.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 SygusGrammar::SygusGrammar(const std::vector<Node>& sygusVars,
                            const std::vector<Node>& ntSyms)
@@ -370,33 +370,33 @@ std::string SygusGrammar::toString() const
 }  // namespace cvc5::internal
 
 namespace std {
-size_t hash<cvc5::internal::SygusGrammar>::operator()(
-    const cvc5::internal::SygusGrammar& grammar) const
+size_t hash<cvc5pp::internal::SygusGrammar>::operator()(
+    const cvc5pp::internal::SygusGrammar& grammar) const
 {
-  uint64_t ret = cvc5::internal::fnv1a::offsetBasis;
+  uint64_t ret = cvc5pp::internal::fnv1a::offsetBasis;
   for (const auto& v : grammar.d_sygusVars)
   {
-    ret = cvc5::internal::fnv1a::fnv1a_64(ret,
-                                          std::hash<cvc5::internal::Node>{}(v));
+    ret = cvc5pp::internal::fnv1a::fnv1a_64(ret,
+                                          std::hash<cvc5pp::internal::Node>{}(v));
   }
   for (const auto& nts : grammar.d_ntSyms)
   {
-    ret = cvc5::internal::fnv1a::fnv1a_64(
-        ret, std::hash<cvc5::internal::Node>{}(nts));
+    ret = cvc5pp::internal::fnv1a::fnv1a_64(
+        ret, std::hash<cvc5pp::internal::Node>{}(nts));
   }
   for (const auto& r : grammar.d_rules)
   {
-    uint64_t rhash = cvc5::internal::fnv1a::offsetBasis;
+    uint64_t rhash = cvc5pp::internal::fnv1a::offsetBasis;
     for (const auto& n : r.second)
     {
-      rhash = cvc5::internal::fnv1a::fnv1a_64(
-          rhash, std::hash<cvc5::internal::Node>{}(n));
+      rhash = cvc5pp::internal::fnv1a::fnv1a_64(
+          rhash, std::hash<cvc5pp::internal::Node>{}(n));
     }
-    rhash = cvc5::internal::fnv1a::fnv1a_64(
-        rhash, std::hash<cvc5::internal::Node>{}(r.first));
-    ret = cvc5::internal::fnv1a::fnv1a_64(ret, rhash);
+    rhash = cvc5pp::internal::fnv1a::fnv1a_64(
+        rhash, std::hash<cvc5pp::internal::Node>{}(r.first));
+    ret = cvc5pp::internal::fnv1a::fnv1a_64(ret, rhash);
   }
-  return cvc5::internal::fnv1a::fnv1a_64(
-      ret, std::hash<cvc5::internal::TypeNode>{}(grammar.d_datatype));
+  return cvc5pp::internal::fnv1a::fnv1a_64(
+      ret, std::hash<cvc5pp::internal::TypeNode>{}(grammar.d_datatype));
 }
 }  // namespace std

@@ -29,7 +29,7 @@
 ${rewriter_includes}
 // clang-format on
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 Node Rewriter::getPreRewriteCache(theory::TheoryId theoryId, TNode node)

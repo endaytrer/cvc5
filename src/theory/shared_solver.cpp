@@ -21,7 +21,7 @@
 #include "theory/theory_engine.h"
 #include "theory/theory_inference_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 // Always creates shared terms database. In all cases, shared terms

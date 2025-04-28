@@ -15,7 +15,7 @@
 
 #include "expr/node_trie.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 template <bool ref_count>
 NodeTemplate<ref_count> NodeTemplateTrie<ref_count>::existsTerm(

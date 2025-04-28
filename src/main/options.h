@@ -22,7 +22,7 @@
 #include <string>
 #include <vector>
 
-namespace cvc5::main {
+namespace cvc5pp::main {
 
 /**
  * Print overall command-line option usage message to the given output stream
@@ -44,7 +44,7 @@ void printUsage(const std::string& binary,
  *
  * Preconditions: options and argv must be non-null.
  */
-std::vector<std::string> parse(cvc5::Solver& solver,
+std::vector<std::string> parse(cvc5pp::Solver& solver,
                                int argc,
                                char* argv[],
                                std::string& binaryName);

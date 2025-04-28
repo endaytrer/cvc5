@@ -24,7 +24,7 @@
 #include "util/bitvector.h"
 #include "util/random.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 BitVector Sampler::pickBvUniform(unsigned sz)
 {

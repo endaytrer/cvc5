@@ -27,8 +27,8 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 #include "prop/minisat/mtl/Sort.h"
 #include "prop/minisat/utils/System.h"
 
-using namespace cvc5::internal;
-using namespace cvc5::internal::Minisat;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::internal::Minisat;
 
 //=================================================================================================
 // Options:

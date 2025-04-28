@@ -40,11 +40,11 @@
 #include "util/result.h"
 
 using namespace std;
-using namespace cvc5::internal;
-using namespace cvc5::parser;
-using namespace cvc5::main;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::parser;
+using namespace cvc5pp::main;
 
-namespace cvc5::main {
+namespace cvc5pp::main {
 
 /** Full argv[0] */
 const char* progPath;
@@ -57,7 +57,7 @@ std::unique_ptr<CommandExecutor> pExecutor;
 
 }  // namespace cvc5::main
 
-int runCvc5(int argc, char* argv[], std::unique_ptr<cvc5::Solver>& solver)
+int runCvc5(int argc, char* argv[], std::unique_ptr<cvc5pp::Solver>& solver)
 {
   // Initialize the signal handlers
   signal_handlers::install();
@@ -66,7 +66,7 @@ int runCvc5(int argc, char* argv[], std::unique_ptr<cvc5::Solver>& solver)
 
   // Create the command executor to execute the parsed commands
   pExecutor = std::make_unique<CommandExecutor>(solver);
-  cvc5::DriverOptions dopts = solver->getDriverOptions();
+  cvc5pp::DriverOptions dopts = solver->getDriverOptions();
 
   // Parse the options
   std::vector<string> filenames = parse(*solver, argc, argv, progName);
@@ -121,7 +121,7 @@ int runCvc5(int argc, char* argv[], std::unique_ptr<cvc5::Solver>& solver)
     filenameStr = std::move(filenames[0]);
   }
   const char* filename = filenameStr.c_str();
-  cvc5::modes::InputLanguage ilang;
+  cvc5pp::modes::InputLanguage ilang;
   if (solver->getOption("input-language") == "LANG_AUTO")
   {
     if( inputFromStdin ) {
@@ -145,11 +145,11 @@ int runCvc5(int argc, char* argv[], std::unique_ptr<cvc5::Solver>& solver)
     // option is the authority on whether sygus commands are currently
     // allowed in the API.
     pExecutor->setOptionInternal("sygus", "true");
-    ilang = cvc5::modes::InputLanguage::SYGUS_2_1;
+    ilang = cvc5pp::modes::InputLanguage::SYGUS_2_1;
   }
   else
   {
-    ilang = cvc5::modes::InputLanguage::SMT_LIB_2_6;
+    ilang = cvc5pp::modes::InputLanguage::SMT_LIB_2_6;
   }
 
   if (solver->getOption("output-language") == "LANG_AUTO")
@@ -160,8 +160,8 @@ int runCvc5(int argc, char* argv[], std::unique_ptr<cvc5::Solver>& solver)
 
   // Determine which messages to show based on smtcomp_mode and verbosity
   if(Configuration::isMuzzledBuild()) {
-    TraceChannel.setStream(&cvc5::internal::null_os);
-    WarningChannel.setStream(&cvc5::internal::null_os);
+    TraceChannel.setStream(&cvc5pp::internal::null_os);
+    WarningChannel.setStream(&cvc5pp::internal::null_os);
   }
 
   int returnValue = 0;

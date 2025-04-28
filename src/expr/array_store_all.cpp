@@ -24,7 +24,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 ArrayStoreAll::ArrayStoreAll(const TypeNode& type, const Node& value)
     : d_type(), d_value()

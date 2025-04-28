@@ -24,7 +24,7 @@
 #include "smt/env_obj.h"
 #include "theory/quantifiers/ematching/trigger_trie.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

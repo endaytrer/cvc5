@@ -26,7 +26,7 @@
 #include "prop/minisat/simp/SimpSolver.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 //// DPllMinisatSatSolver
@@ -374,16 +374,16 @@ void MinisatSatSolver::Statistics::deinit()
 }  // namespace prop
 }  // namespace cvc5::internal
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 template <>
-prop::SatLiteral toSatLiteral<cvc5::internal::Minisat::Solver>(Minisat::Solver::TLit lit)
+prop::SatLiteral toSatLiteral<cvc5pp::internal::Minisat::Solver>(Minisat::Solver::TLit lit)
 {
   return prop::MinisatSatSolver::toSatLiteral(lit);
 }
 
 template <>
-void toSatClause<cvc5::internal::Minisat::Solver>(
-    const cvc5::internal::Minisat::Solver::TClause& minisat_cl, prop::SatClause& sat_cl)
+void toSatClause<cvc5pp::internal::Minisat::Solver>(
+    const cvc5pp::internal::Minisat::Solver::TClause& minisat_cl, prop::SatClause& sat_cl)
 {
   prop::MinisatSatSolver::toSatClause(minisat_cl, sat_cl);
 }

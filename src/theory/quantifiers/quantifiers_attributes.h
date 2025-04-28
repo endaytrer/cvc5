@@ -21,7 +21,7 @@
 #include "expr/attribute.h"
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 /** Attribute true for function definition quantifiers */

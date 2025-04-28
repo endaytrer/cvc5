@@ -21,9 +21,9 @@
 #include "util/rational.h"
 #include "util/string.h"
 
-using namespace cvc5::internal::theory::strings;
+using namespace cvc5pp::internal::theory::strings;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestTheoryBlackStringsSkolemCache : public TestSmt

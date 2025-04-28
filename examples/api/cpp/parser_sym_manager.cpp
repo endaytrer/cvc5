@@ -19,8 +19,8 @@
 
 #include <iostream>
 
-using namespace cvc5;
-using namespace cvc5::parser;
+using namespace cvc5pp;
+using namespace cvc5pp::parser;
 
 int main()
 {

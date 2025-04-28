@@ -19,7 +19,7 @@
 
 #include "test_api.h"
 
-namespace cvc5::internal::test {
+namespace cvc5pp::internal::test {
 
 class TestApiBlackTermManager : public TestApi
 {
@@ -1158,7 +1158,7 @@ TEST_F(TestApiBlackTermManager, uFIteration)
 
 TEST_F(TestApiBlackTermManager, getStatistics)
 {
-  ASSERT_NO_THROW(cvc5::Stat());
+  ASSERT_NO_THROW(cvc5pp::Stat());
   // do some array reasoning to make sure we have statistics
   {
     Sort s1 = d_tm.getIntegerSort();
@@ -1169,7 +1169,7 @@ TEST_F(TestApiBlackTermManager, getStatistics)
     d_solver->assertFormula(t3.eqTerm(t1));
     d_solver->checkSat();
   }
-  cvc5::Statistics stats = d_tm.getStatistics();
+  cvc5pp::Statistics stats = d_tm.getStatistics();
   {
     std::stringstream ss;
     ss << stats;

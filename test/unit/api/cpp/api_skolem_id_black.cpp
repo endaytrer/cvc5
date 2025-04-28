@@ -20,7 +20,7 @@
 #include "base/output.h"
 #include "gtest/gtest.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace test {
 
@@ -43,9 +43,9 @@ TEST_F(TestApiBlackSkolemId, skolemIdToString)
 
 TEST_F(TestApiBlackSkolemId, skolemIdHash)
 {
-  ASSERT_EQ(std::hash<cvc5::SkolemId>()(SkolemId::PURIFY),
+  ASSERT_EQ(std::hash<cvc5pp::SkolemId>()(SkolemId::PURIFY),
             static_cast<size_t>(SkolemId::PURIFY));
-  ASSERT_NE(std::hash<cvc5::SkolemId>()(SkolemId::INTERNAL),
+  ASSERT_NE(std::hash<cvc5pp::SkolemId>()(SkolemId::INTERNAL),
             static_cast<size_t>(SkolemId::PURIFY));
 }
 

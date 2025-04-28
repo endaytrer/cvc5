@@ -15,7 +15,7 @@
 
 #include "expr/sort_type_size.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 // compares the type size of i and j
 // returns true iff the size of i is less than that of j

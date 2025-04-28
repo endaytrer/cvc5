@@ -21,9 +21,9 @@
 #include "smt/logic_exception.h"
 #include "theory/theory_engine.h"
 
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 std::string PreRegisterVisitor::toString() const {
   std::stringstream ss;

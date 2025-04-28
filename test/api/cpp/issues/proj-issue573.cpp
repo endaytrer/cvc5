@@ -15,7 +15,7 @@
  */
 #include <cvc5/cvc5.h>
 
-using namespace cvc5;
+using namespace cvc5pp;
 int main(void)
 {
   TermManager tm;
@@ -39,7 +39,7 @@ int main(void)
   d11.addConstructor(dtcd12);
   std::vector<Sort> v13 = tm.mkDatatypeSorts({d11});
   Sort s14 = v13[0];
-  Term t15 = tm.mkRoundingMode(cvc5::RoundingMode::ROUND_TOWARD_ZERO);
+  Term t15 = tm.mkRoundingMode(cvc5pp::RoundingMode::ROUND_TOWARD_ZERO);
   Term t16 = tm.mkVar(s5, "_f3_0");
   Term t17 = tm.mkVar(s8, "_f3_1");
   Term t18 = tm.mkVar(s5, "_f3_2");
@@ -139,7 +139,7 @@ int main(void)
   Term t112 = tm.mkVar(s8, "_f7_2");
   solver.assertFormula(t109);
   solver.checkSat();
-  solver.blockModel(cvc5::modes::BlockModelsMode::LITERALS);
+  solver.blockModel(cvc5pp::modes::BlockModelsMode::LITERALS);
 
   return 0;
 }

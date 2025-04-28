@@ -17,9 +17,9 @@
 
 #include "theory/subs_minimize.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 ModelCoreBuilder::ModelCoreBuilder(Env& env) : EnvObj(env) {}
 

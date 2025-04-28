@@ -24,9 +24,9 @@
 #include "theory/bv/theory_bv_rewrite_rules_simplification.h"
 #include "theory/theory.h"
 
-using namespace cvc5::internal;
-using namespace cvc5::internal::theory;
-using namespace cvc5::internal::theory::bv;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::internal::theory;
+using namespace cvc5pp::internal::theory::bv;
 
 TheoryBVRewriter::TheoryBVRewriter(NodeManager* nm) : TheoryRewriter(nm)
 {

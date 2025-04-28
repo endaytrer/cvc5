@@ -24,9 +24,9 @@
 #include "theory/strings/theory_strings_utils.h"
 #include "util/statistics_value.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 
@@ -45,7 +45,7 @@ RegExpSolver::RegExpSolver(Env& env,
       d_statistics(stats),
       d_regexp_opr(env, tr.getSkolemCache())
 {
-  d_emptyString = nodeManager()->mkConst(cvc5::internal::String(""));
+  d_emptyString = nodeManager()->mkConst(cvc5pp::internal::String(""));
   d_emptyRegexp = nodeManager()->mkNode(Kind::REGEXP_NONE);
   d_true = nodeManager()->mkConst(true);
   d_false = nodeManager()->mkConst(false);
@@ -588,7 +588,7 @@ bool RegExpSolver::checkPDerivative(Node x,
   return true;
 }
 
-cvc5::internal::String RegExpSolver::getHeadConst(Node x)
+cvc5pp::internal::String RegExpSolver::getHeadConst(Node x)
 {
   if (x.isConst())
   {
@@ -612,7 +612,7 @@ bool RegExpSolver::deriveRegExp(Node x,
   Assert(x != d_emptyString);
   Trace("regexp-derive") << "RegExpSolver::deriveRegExp: x=" << x
                          << ", r= " << r << std::endl;
-  cvc5::internal::String s = getHeadConst(x);
+  cvc5pp::internal::String s = getHeadConst(x);
   // only allow RE_DERIVE for concrete constant regular expressions
   if (options().strings.stringRegexpDeriveConflicts && !s.empty()
       && d_regexp_opr.getRegExpConstType(r) == RE_C_CONCRETE_CONSTANT)
@@ -622,7 +622,7 @@ bool RegExpSolver::deriveRegExp(Node x,
     bool flag = true;
     for (unsigned i = 0; i < s.size(); ++i)
     {
-      cvc5::internal::String c = s.substr(i, 1);
+      cvc5pp::internal::String c = s.substr(i, 1);
       Node dc2;
       int rt = d_regexp_opr.derivativeS(dc, c, dc2);
       dc = dc2;

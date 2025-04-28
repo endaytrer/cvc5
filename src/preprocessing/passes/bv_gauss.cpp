@@ -29,11 +29,11 @@
 #include "theory/rewriter.h"
 #include "util/bitvector.h"
 
-using namespace cvc5::internal;
-using namespace cvc5::internal::theory;
-using namespace cvc5::internal::theory::bv;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::internal::theory;
+using namespace cvc5pp::internal::theory::bv;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 
@@ -699,7 +699,7 @@ PreprocessingPassResult BVGauss::applyInternal(
   {
     Node a = assertions.back();
     assertions.pop_back();
-    cvc5::internal::Kind k = a.getKind();
+    cvc5pp::internal::Kind k = a.getKind();
 
     if (k == Kind::AND)
     {

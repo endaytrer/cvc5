@@ -22,7 +22,7 @@
 #include <sstream>
 #include <string>
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 /**

@@ -25,7 +25,7 @@
 #include "expr/type_node.h"
 #include "theory/rep_set.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 // representative domain

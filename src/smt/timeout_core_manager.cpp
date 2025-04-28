@@ -35,7 +35,7 @@
 #include "theory/theory_model.h"
 #include "util/random.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 TimeoutCoreManager::TimeoutCoreManager(Env& env)

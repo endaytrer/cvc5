@@ -20,7 +20,7 @@
 #include "api_utilities.h"
 #include "io_github_cvc5_Statistics.h"
 
-using namespace cvc5;
+using namespace cvc5pp;
 
 /*
  * Class:     io_github_cvc5_Statistics

@@ -24,7 +24,7 @@
 #include "theory/ee_manager.h"
 #include "theory/quantifiers/master_eq_notify.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 namespace eq {

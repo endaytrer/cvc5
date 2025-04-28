@@ -19,7 +19,7 @@
 
 #include "theory/bv/bitblast/bitblaster.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace bv {
 

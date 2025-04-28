@@ -39,7 +39,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 std::ostream& operator<<(std::ostream& os, Theory::Effort level){

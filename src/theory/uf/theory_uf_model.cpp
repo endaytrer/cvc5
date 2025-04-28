@@ -22,9 +22,9 @@
 #include "theory/rewriter.h"
 #include "theory/theory_model.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace uf {
 

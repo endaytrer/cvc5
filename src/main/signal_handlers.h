@@ -16,7 +16,7 @@
 #ifndef CVC5__MAIN__SIGNAL_HANDLERS_H
 #define CVC5__MAIN__SIGNAL_HANDLERS_H
 
-namespace cvc5::main {
+namespace cvc5pp::main {
 namespace signal_handlers {
 
 /**

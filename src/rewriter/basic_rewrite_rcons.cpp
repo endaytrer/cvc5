@@ -38,9 +38,9 @@
 #include "theory/strings/theory_strings_utils.h"
 #include "util/rational.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace rewriter {
 
 std::ostream& operator<<(std::ostream& os, TheoryRewriteMode tm)

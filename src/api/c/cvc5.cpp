@@ -33,7 +33,7 @@ extern "C" {
 
 size_t cvc5_kind_hash(Cvc5Kind kind)
 {
-  return std::hash<cvc5::Kind>{}(static_cast<cvc5::Kind>(kind));
+  return std::hash<cvc5pp::Kind>{}(static_cast<cvc5pp::Kind>(kind));
 }
 
 const char* cvc5_kind_to_string(Cvc5Kind kind)
@@ -41,7 +41,7 @@ const char* cvc5_kind_to_string(Cvc5Kind kind)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_KIND(kind);
-  str = "CVC5_KIND_" + std::to_string(static_cast<cvc5::Kind>(kind));
+  str = "CVC5_KIND_" + std::to_string(static_cast<cvc5pp::Kind>(kind));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -52,7 +52,7 @@ const char* cvc5_kind_to_string(Cvc5Kind kind)
 
 size_t cvc5_sort_kind_hash(Cvc5SortKind kind)
 {
-  return std::hash<cvc5::SortKind>{}(static_cast<cvc5::SortKind>(kind));
+  return std::hash<cvc5pp::SortKind>{}(static_cast<cvc5pp::SortKind>(kind));
 }
 
 const char* cvc5_sort_kind_to_string(Cvc5SortKind kind)
@@ -60,7 +60,7 @@ const char* cvc5_sort_kind_to_string(Cvc5SortKind kind)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_SORT_KIND(kind);
-  str = "CVC5_SORT_KIND_" + std::to_string(static_cast<cvc5::SortKind>(kind));
+  str = "CVC5_SORT_KIND_" + std::to_string(static_cast<cvc5pp::SortKind>(kind));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -74,7 +74,7 @@ const char* cvc5_rm_to_string(Cvc5RoundingMode rm)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_RM(rm);
-  str = std::to_string(static_cast<cvc5::RoundingMode>(rm));
+  str = std::to_string(static_cast<cvc5pp::RoundingMode>(rm));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -88,7 +88,7 @@ const char* cvc5_unknown_explanation_to_string(Cvc5UnknownExplanation exp)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_UNKNOWN_EXPLANATION(exp);
-  str = std::to_string(static_cast<cvc5::UnknownExplanation>(exp));
+  str = std::to_string(static_cast<cvc5pp::UnknownExplanation>(exp));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -102,7 +102,7 @@ const char* cvc5_modes_learned_lit_type_to_string(Cvc5LearnedLitType type)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_LEARNED_LIT_TYPE(type);
-  str = std::to_string(static_cast<cvc5::modes::LearnedLitType>(type));
+  str = std::to_string(static_cast<cvc5pp::modes::LearnedLitType>(type));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -116,7 +116,7 @@ const char* cvc5_modes_block_models_mode_to_string(Cvc5BlockModelsMode mode)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_BLOCK_MODELS_MODE(mode);
-  str = std::to_string(static_cast<cvc5::modes::BlockModelsMode>(mode));
+  str = std::to_string(static_cast<cvc5pp::modes::BlockModelsMode>(mode));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -130,7 +130,7 @@ const char* cvc5_modes_proof_component_to_string(Cvc5ProofComponent pc)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_PROOF_COMPONENT(pc);
-  str = std::to_string(static_cast<cvc5::modes::ProofComponent>(pc));
+  str = std::to_string(static_cast<cvc5pp::modes::ProofComponent>(pc));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -144,7 +144,7 @@ const char* cvc5_modes_proof_format_to_string(Cvc5ProofFormat format)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_PROOF_FORMAT(format);
-  str = std::to_string(static_cast<cvc5::modes::ProofFormat>(format));
+  str = std::to_string(static_cast<cvc5pp::modes::ProofFormat>(format));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -158,14 +158,14 @@ const char* cvc5_proof_rule_to_string(Cvc5ProofRule rule)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_PROOF_RULE(rule);
-  str = std::to_string(static_cast<cvc5::ProofRule>(rule));
+  str = std::to_string(static_cast<cvc5pp::ProofRule>(rule));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
 
 size_t cvc5_proof_rule_hash(Cvc5ProofRule rule)
 {
-  return std::hash<cvc5::ProofRule>{}(static_cast<cvc5::ProofRule>(rule));
+  return std::hash<cvc5pp::ProofRule>{}(static_cast<cvc5pp::ProofRule>(rule));
 }
 
 /* -------------------------------------------------------------------------- */
@@ -177,15 +177,15 @@ const char* cvc5_proof_rewrite_rule_to_string(Cvc5ProofRewriteRule rule)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_PROOF_REWRITE_RULE(rule);
-  str = std::to_string(static_cast<cvc5::ProofRewriteRule>(rule));
+  str = std::to_string(static_cast<cvc5pp::ProofRewriteRule>(rule));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
 
 size_t cvc5_proof_rewrite_rule_hash(Cvc5ProofRewriteRule rule)
 {
-  return std::hash<cvc5::ProofRewriteRule>{}(
-      static_cast<cvc5::ProofRewriteRule>(rule));
+  return std::hash<cvc5pp::ProofRewriteRule>{}(
+      static_cast<cvc5pp::ProofRewriteRule>(rule));
 }
 
 /* -------------------------------------------------------------------------- */
@@ -197,7 +197,7 @@ const char* cvc5_modes_find_synth_target_to_string(Cvc5FindSynthTarget target)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_FIND_SYNTH_TARGET(target);
-  str = std::to_string(static_cast<cvc5::modes::FindSynthTarget>(target));
+  str = std::to_string(static_cast<cvc5pp::modes::FindSynthTarget>(target));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -211,7 +211,7 @@ const char* cvc5_modes_input_language_to_string(Cvc5InputLanguage lang)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_INPUT_LANGUAGE(lang);
-  str = std::to_string(static_cast<cvc5::modes::InputLanguage>(lang));
+  str = std::to_string(static_cast<cvc5pp::modes::InputLanguage>(lang));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -225,7 +225,7 @@ const char* cvc5_skolem_id_to_string(Cvc5SkolemId id)
   static thread_local std::string str;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_SKOLEM_ID(id);
-  str = std::to_string(static_cast<cvc5::SkolemId>(id));
+  str = std::to_string(static_cast<cvc5pp::SkolemId>(id));
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -235,7 +235,7 @@ size_t cvc5_skolem_id_hash(Cvc5SkolemId id)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_SKOLEM_ID(id);
-  res = std::hash<cvc5::SkolemId>{}(static_cast<cvc5::SkolemId>(id));
+  res = std::hash<cvc5pp::SkolemId>{}(static_cast<cvc5pp::SkolemId>(id));
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -698,7 +698,7 @@ Cvc5Sort cvc5_sort_instantiate(Cvc5Sort sort,
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_SORT(sort);
   CVC5_CAPI_CHECK_NOT_NULL(params);
-  std::vector<cvc5::Sort> cparams;
+  std::vector<cvc5pp::Sort> cparams;
   for (uint32_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_SORT_AT_IDX(params, i);
@@ -751,13 +751,13 @@ Cvc5Sort cvc5_sort_substitute_sorts(Cvc5Sort sort,
   CVC5_CAPI_CHECK_SORT(sort);
   CVC5_CAPI_CHECK_NOT_NULL(sorts);
   CVC5_CAPI_CHECK_NOT_NULL(replacements);
-  std::vector<cvc5::Sort> csorts;
+  std::vector<cvc5pp::Sort> csorts;
   for (uint32_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_SORT_AT_IDX(sorts, i);
     csorts.push_back(sorts[i]->d_sort);
   }
-  std::vector<cvc5::Sort> creplacements;
+  std::vector<cvc5pp::Sort> creplacements;
   for (uint32_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_SORT_AT_IDX(replacements, i);
@@ -783,7 +783,7 @@ size_t cvc5_sort_hash(Cvc5Sort sort)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_SORT(sort);
-  res = std::hash<cvc5::Sort>{}(sort->d_sort);
+  res = std::hash<cvc5pp::Sort>{}(sort->d_sort);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -1184,7 +1184,7 @@ size_t cvc5_dt_cons_decl_hash(Cvc5DatatypeConstructorDecl decl)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_DT_CONS_DECL(decl);
-  res = std::hash<cvc5::DatatypeConstructorDecl>{}(decl->d_decl);
+  res = std::hash<cvc5pp::DatatypeConstructorDecl>{}(decl->d_decl);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -1290,7 +1290,7 @@ size_t cvc5_dt_decl_hash(Cvc5DatatypeDecl decl)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_DT_DECL(decl);
-  res = std::hash<cvc5::DatatypeDecl>{}(decl->d_decl);
+  res = std::hash<cvc5pp::DatatypeDecl>{}(decl->d_decl);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -1386,7 +1386,7 @@ size_t cvc5_dt_sel_hash(Cvc5DatatypeSelector sel)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_DT_SEL(sel);
-  res = std::hash<cvc5::DatatypeSelector>{}(sel->d_dt_sel);
+  res = std::hash<cvc5pp::DatatypeSelector>{}(sel->d_dt_sel);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -1518,7 +1518,7 @@ size_t cvc5_dt_cons_hash(Cvc5DatatypeConstructor cons)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_DT_CONS(cons);
-  res = std::hash<cvc5::DatatypeConstructor>{}(cons->d_dt_cons);
+  res = std::hash<cvc5pp::DatatypeConstructor>{}(cons->d_dt_cons);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -1705,7 +1705,7 @@ size_t cvc5_dt_hash(Cvc5Datatype dt)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_DT(dt);
-  res = std::hash<cvc5::Datatype>{}(dt->d_dt);
+  res = std::hash<cvc5pp::Datatype>{}(dt->d_dt);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -1850,13 +1850,13 @@ Cvc5Term cvc5_term_substitute_terms(Cvc5Term term,
   CVC5_CAPI_CHECK_TERM(term);
   CVC5_CAPI_CHECK_NOT_NULL(terms);
   CVC5_CAPI_CHECK_NOT_NULL(replacements);
-  std::vector<cvc5::Term> cterms;
+  std::vector<cvc5pp::Term> cterms;
   for (uint32_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(terms, i);
     cterms.push_back(terms[i]->d_term);
   }
-  std::vector<cvc5::Term> creplacements;
+  std::vector<cvc5pp::Term> creplacements;
   for (uint32_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(replacements, i);
@@ -2331,7 +2331,7 @@ void cvc5_term_get_fp_value(Cvc5Term term,
   CVC5_CAPI_CHECK_NOT_NULL(ew);
   CVC5_CAPI_CHECK_NOT_NULL(sw);
   CVC5_CAPI_CHECK_NOT_NULL(val);
-  cvc5::Term res;
+  cvc5pp::Term res;
   std::tie(*ew, *sw, res) = term->d_term.getFloatingPointValue();
   *val = term->d_tm->export_term(res);
   CVC5_CAPI_TRY_CATCH_END;
@@ -2409,7 +2409,7 @@ void cvc5_term_get_cardinality_constraint(Cvc5Term term,
   CVC5_CAPI_CHECK_TERM(term);
   CVC5_CAPI_CHECK_NOT_NULL(sort);
   CVC5_CAPI_CHECK_NOT_NULL(upper);
-  cvc5::Sort res;
+  cvc5pp::Sort res;
   std::tie(res, *upper) = term->d_term.getCardinalityConstraint();
   *sort = term->d_tm->export_sort(res);
   CVC5_CAPI_TRY_CATCH_END;
@@ -2502,7 +2502,7 @@ size_t cvc5_term_hash(Cvc5Term term)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_TERM(term);
-  res = std::hash<cvc5::Term>{}(term->d_term);
+  res = std::hash<cvc5pp::Term>{}(term->d_term);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -2598,7 +2598,7 @@ size_t cvc5_op_hash(Cvc5Op op)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_OP(op);
-  res = std::hash<cvc5::Op>{}(op->d_op);
+  res = std::hash<cvc5pp::Op>{}(op->d_op);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -2793,7 +2793,7 @@ const Cvc5Sort* cvc5_mk_dt_sorts(Cvc5TermManager* tm,
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_NOT_NULL(decls);
   res.clear();
-  std::vector<cvc5::DatatypeDecl> cdecls;
+  std::vector<cvc5pp::DatatypeDecl> cdecls;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_DT_DECL_AT_IDX(decls, i);
@@ -2817,7 +2817,7 @@ Cvc5Sort cvc5_mk_fun_sort(Cvc5TermManager* tm,
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_NOT_NULL(sorts);
-  std::vector<cvc5::Sort> csorts;
+  std::vector<cvc5pp::Sort> csorts;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_SORT_AT_IDX(sorts, i);
@@ -2847,7 +2847,7 @@ Cvc5Sort cvc5_mk_predicate_sort(Cvc5TermManager* tm,
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_NOT_NULL(sorts);
-  std::vector<cvc5::Sort> csorts;
+  std::vector<cvc5pp::Sort> csorts;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_SORT_AT_IDX(sorts, i);
@@ -2869,7 +2869,7 @@ Cvc5Sort cvc5_mk_record_sort(Cvc5TermManager* tm,
   if (names != NULL)
   {
     CVC5_CAPI_CHECK_NOT_NULL(sorts);
-    std::vector<std::pair<std::string, cvc5::Sort>> cfields;
+    std::vector<std::pair<std::string, cvc5pp::Sort>> cfields;
     for (size_t i = 0; i < size; ++i)
     {
       CVC5_CAPI_CHECK_NOT_NULL_AT_IDX(names, i);
@@ -2925,7 +2925,7 @@ Cvc5Sort cvc5_mk_abstract_sort(Cvc5TermManager* tm, Cvc5SortKind k)
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   res =
-      tm->export_sort(tm->d_tm.mkAbstractSort(static_cast<cvc5::SortKind>(k)));
+      tm->export_sort(tm->d_tm.mkAbstractSort(static_cast<cvc5pp::SortKind>(k)));
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -2988,7 +2988,7 @@ Cvc5Sort cvc5_mk_tuple_sort(Cvc5TermManager* tm,
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_NOT_NULL(sorts);
-  std::vector<cvc5::Sort> csorts;
+  std::vector<cvc5pp::Sort> csorts;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_SORT_AT_IDX(sorts, i);
@@ -3049,7 +3049,7 @@ Cvc5DatatypeDecl cvc5_mk_dt_decl_with_params(Cvc5TermManager* tm,
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_NOT_NULL(name);
-  std::vector<cvc5::Sort> cparams;
+  std::vector<cvc5pp::Sort> cparams;
   if (params)
   {
     for (size_t i = 0; i < size; ++i)
@@ -3076,14 +3076,14 @@ Cvc5Term cvc5_mk_term(Cvc5TermManager* tm,
   CVC5_CAPI_CHECK_KIND(kind);
   CVC5_API_CHECK(children || size == 0)
       << "unexpected NULL argument for 'children'";
-  std::vector<cvc5::Term> cchildren;
+  std::vector<cvc5pp::Term> cchildren;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(children, i);
     cchildren.push_back(children[i]->d_term);
   }
   res = tm->export_term(
-      tm->d_tm.mkTerm(static_cast<cvc5::Kind>(kind), cchildren));
+      tm->d_tm.mkTerm(static_cast<cvc5pp::Kind>(kind), cchildren));
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -3099,7 +3099,7 @@ Cvc5Term cvc5_mk_term_from_op(Cvc5TermManager* tm,
   CVC5_CAPI_CHECK_NOT_NULL(op);
   CVC5_API_CHECK(children || size == 0)
       << "unexpected NULL argument for 'children'";
-  std::vector<cvc5::Term> cchildren;
+  std::vector<cvc5pp::Term> cchildren;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(children, i);
@@ -3116,7 +3116,7 @@ Cvc5Term cvc5_mk_tuple(Cvc5TermManager* tm, size_t size, const Cvc5Term terms[])
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_NOT_NULL(terms);
-  std::vector<cvc5::Term> cterms;
+  std::vector<cvc5pp::Term> cterms;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(terms, i);
@@ -3192,14 +3192,14 @@ Cvc5Term cvc5_mk_nullable_lift(Cvc5TermManager* tm,
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_KIND(kind);
   CVC5_CAPI_CHECK_NOT_NULL(args);
-  std::vector<cvc5::Term> cargs;
+  std::vector<cvc5pp::Term> cargs;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(args, i);
     cargs.push_back(args[i]->d_term);
   }
   res = tm->export_term(
-      tm->d_tm.mkNullableLift(static_cast<cvc5::Kind>(kind), cargs));
+      tm->d_tm.mkNullableLift(static_cast<cvc5pp::Kind>(kind), cargs));
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -3213,7 +3213,7 @@ Cvc5Term cvc5_mk_skolem(Cvc5TermManager* tm,
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_SKOLEM_ID(id);
-  std::vector<cvc5::Term> cindices;
+  std::vector<cvc5pp::Term> cindices;
   if (indices)
   {
     for (size_t i = 0; i < size; ++i)
@@ -3223,7 +3223,7 @@ Cvc5Term cvc5_mk_skolem(Cvc5TermManager* tm,
     }
   }
   res = tm->export_term(
-      tm->d_tm.mkSkolem(static_cast<cvc5::SkolemId>(id), cindices));
+      tm->d_tm.mkSkolem(static_cast<cvc5pp::SkolemId>(id), cindices));
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -3234,7 +3234,7 @@ size_t cvc5_get_num_idxs_for_skolem_id(Cvc5TermManager* tm, Cvc5SkolemId id)
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_SKOLEM_ID(id);
-  res = tm->d_tm.getNumIndicesForSkolemId(static_cast<cvc5::SkolemId>(id));
+  res = tm->d_tm.getNumIndicesForSkolemId(static_cast<cvc5pp::SkolemId>(id));
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -3256,7 +3256,7 @@ Cvc5Op cvc5_mk_op(Cvc5TermManager* tm,
   {
     cidxs.push_back(idxs[i]);
   }
-  res = tm->export_op(tm->d_tm.mkOp(static_cast<cvc5::Kind>(kind), cidxs));
+  res = tm->export_op(tm->d_tm.mkOp(static_cast<cvc5pp::Kind>(kind), cidxs));
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -3268,7 +3268,7 @@ Cvc5Op cvc5_mk_op_from_str(Cvc5TermManager* tm, Cvc5Kind kind, const char* arg)
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   CVC5_CAPI_CHECK_KIND(kind);
   CVC5_CAPI_CHECK_NOT_NULL(arg);
-  res = tm->export_op(tm->d_tm.mkOp(static_cast<cvc5::Kind>(kind), arg));
+  res = tm->export_op(tm->d_tm.mkOp(static_cast<cvc5pp::Kind>(kind), arg));
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -3591,7 +3591,7 @@ Cvc5Term cvc5_mk_rm(Cvc5TermManager* tm, Cvc5RoundingMode rm)
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(tm);
   res = tm->export_term(
-      tm->d_tm.mkRoundingMode(static_cast<cvc5::RoundingMode>(rm)));
+      tm->d_tm.mkRoundingMode(static_cast<cvc5pp::RoundingMode>(rm)));
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -3800,7 +3800,7 @@ size_t cvc5_result_hash(Cvc5Result result)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_RESULT(result);
-  res = std::hash<cvc5::Result>{}(result->d_result);
+  res = std::hash<cvc5pp::Result>{}(result->d_result);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -3916,7 +3916,7 @@ size_t cvc5_synth_result_hash(Cvc5SynthResult result)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_SYNTH_RESULT(result);
-  res = std::hash<cvc5::SynthResult>{}(result->d_result);
+  res = std::hash<cvc5pp::SynthResult>{}(result->d_result);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -4026,7 +4026,7 @@ size_t cvc5_proof_hash(Cvc5Proof proof)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_PROOF(proof);
-  res = std::hash<cvc5::Proof>{}(proof->d_proof);
+  res = std::hash<cvc5pp::Proof>{}(proof->d_proof);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -4072,7 +4072,7 @@ void cvc5_grammar_add_rules(Cvc5Grammar grammar,
   CVC5_CAPI_CHECK_GRAMMAR(grammar);
   CVC5_CAPI_CHECK_TERM(symbol);
   CVC5_CAPI_CHECK_NOT_NULL(rules);
-  std::vector<cvc5::Term> crules;
+  std::vector<cvc5pp::Term> crules;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(rules, i);
@@ -4147,7 +4147,7 @@ size_t cvc5_grammar_hash(Cvc5Grammar grammar)
   size_t res = 0;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_GRAMMAR(grammar);
-  res = std::hash<cvc5::Grammar>{}(grammar->d_grammar);
+  res = std::hash<cvc5pp::Grammar>{}(grammar->d_grammar);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
 }
@@ -4271,7 +4271,7 @@ void cvc5_stat_get_histogram(Cvc5Stat stat,
 {
   static thread_local std::vector<const char*> rkeys;
   static thread_local std::vector<uint64_t> rvalues;
-  static thread_local cvc5::Stat::HistogramData histo;
+  static thread_local cvc5pp::Stat::HistogramData histo;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_STAT(stat);
   CVC5_CAPI_CHECK_NOT_NULL(keys);
@@ -4310,7 +4310,7 @@ void cvc5_stats_iter_init(Cvc5Statistics stat, bool internal, bool dflt)
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_STATS(stat);
   stat->d_iter.reset(
-      new cvc5::Statistics::iterator(stat->d_stat.begin(internal, dflt)));
+      new cvc5pp::Statistics::iterator(stat->d_stat.begin(internal, dflt)));
   CVC5_CAPI_TRY_CATCH_END;
 }
 
@@ -4332,7 +4332,7 @@ Cvc5Stat cvc5_stats_iter_next(Cvc5Statistics stat, const char** name)
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_STATS(stat);
   CVC5_API_CHECK(stat->d_iter != nullptr) << "iterator not initialized";
-  cvc5::Stat rstat;
+  cvc5pp::Stat rstat;
   std::tie(str, rstat) = **stat->d_iter;
   if (name)
   {
@@ -4544,7 +4544,7 @@ Cvc5Sort cvc5_declare_dt(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(symbol);
   CVC5_CAPI_CHECK_NOT_NULL(ctors);
-  std::vector<cvc5::DatatypeConstructorDecl> cctors;
+  std::vector<cvc5pp::DatatypeConstructorDecl> cctors;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_DT_CONS_DECL_AT_IDX(ctors, i);
@@ -4567,7 +4567,7 @@ Cvc5Term cvc5_declare_fun(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(symbol);
   CVC5_CAPI_CHECK_SORT(sort);
-  std::vector<cvc5::Sort> csorts;
+  std::vector<cvc5pp::Sort> csorts;
   if (sorts != nullptr)
   {
     for (size_t i = 0; i < size; ++i)
@@ -4615,7 +4615,7 @@ Cvc5Term cvc5_define_fun(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(symbol);
   CVC5_CAPI_CHECK_SORT(sort);
   CVC5_CAPI_CHECK_TERM(term);
-  std::vector<cvc5::Term> cvars;
+  std::vector<cvc5pp::Term> cvars;
   if (vars != nullptr)
   {
     for (size_t i = 0; i < size; ++i)
@@ -4644,7 +4644,7 @@ Cvc5Term cvc5_define_fun_rec(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(symbol);
   CVC5_CAPI_CHECK_SORT(sort);
   CVC5_CAPI_CHECK_TERM(term);
-  std::vector<cvc5::Term> cvars;
+  std::vector<cvc5pp::Term> cvars;
   if (vars != nullptr)
   {
     for (size_t i = 0; i < size; ++i)
@@ -4671,7 +4671,7 @@ Cvc5Term cvc5_define_fun_rec_from_const(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_TERM(fun);
   CVC5_CAPI_CHECK_TERM(term);
-  std::vector<cvc5::Term> cvars;
+  std::vector<cvc5pp::Term> cvars;
   if (vars != nullptr)
   {
     for (size_t i = 0; i < size; ++i)
@@ -4700,16 +4700,16 @@ void cvc5_define_funs_rec(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(nvars);
   CVC5_CAPI_CHECK_NOT_NULL(vars);
   CVC5_CAPI_CHECK_NOT_NULL(terms);
-  std::vector<cvc5::Term> cfuns;
+  std::vector<cvc5pp::Term> cfuns;
   for (size_t i = 0; i < nfuns; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(funs, i);
     cfuns.push_back(funs[i]->d_term);
   }
-  std::vector<std::vector<cvc5::Term>> cvars;
+  std::vector<std::vector<cvc5pp::Term>> cvars;
   for (size_t i = 0; i < nfuns; ++i)
   {
-    std::vector<cvc5::Term> cv;
+    std::vector<cvc5pp::Term> cv;
     for (size_t j = 0; j < nvars[i]; ++j)
     {
       CVC5_CAPI_CHECK_TERM_AT_IDX(vars[i], j);
@@ -4717,7 +4717,7 @@ void cvc5_define_funs_rec(Cvc5* cvc5,
     }
     cvars.push_back(cv);
   }
-  std::vector<cvc5::Term> cterms;
+  std::vector<cvc5pp::Term> cterms;
   for (size_t i = 0; i < nfuns; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(terms, i);
@@ -4766,7 +4766,7 @@ Cvc5Result cvc5_check_sat_assuming(Cvc5* cvc5,
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(assumptions);
-  std::vector<cvc5::Term> cassumptions;
+  std::vector<cvc5pp::Term> cassumptions;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(assumptions, i);
@@ -4849,7 +4849,7 @@ void cvc5_get_option_info(Cvc5* cvc5, const char* option, Cvc5OptionInfo* info)
   CVC5_CAPI_CHECK_NOT_NULL(option);
   CVC5_CAPI_CHECK_NOT_NULL(info);
 
-  static thread_local cvc5::OptionInfo cpp_info;
+  static thread_local cvc5pp::OptionInfo cpp_info;
   cpp_info = cvc5->d_solver.getOptionInfo(option);
 
   std::memset(info, 0, sizeof(*info));
@@ -4871,21 +4871,21 @@ void cvc5_get_option_info(Cvc5* cvc5, const char* option, Cvc5OptionInfo* info)
 
   std::visit(
       overloaded{
-          [info](const cvc5::OptionInfo::VoidInfo& vi) {
+          [info](const cvc5pp::OptionInfo::VoidInfo& vi) {
             (void)vi;
             info->kind = CVC5_OPTION_INFO_VOID;
           },
-          [info](const cvc5::OptionInfo::ValueInfo<bool>& vi) {
+          [info](const cvc5pp::OptionInfo::ValueInfo<bool>& vi) {
             info->kind = CVC5_OPTION_INFO_BOOL;
             info->info_bool.dflt = vi.defaultValue;
             info->info_bool.cur = vi.currentValue;
           },
-          [info](const cvc5::OptionInfo::ValueInfo<std::string>& vi) {
+          [info](const cvc5pp::OptionInfo::ValueInfo<std::string>& vi) {
             info->kind = CVC5_OPTION_INFO_STR;
             info->info_str.dflt = vi.defaultValue.c_str();
             info->info_str.cur = vi.currentValue.c_str();
           },
-          [info](const cvc5::OptionInfo::NumberInfo<int64_t>& vi) {
+          [info](const cvc5pp::OptionInfo::NumberInfo<int64_t>& vi) {
             info->kind = CVC5_OPTION_INFO_INT64;
             info->info_int.dflt = vi.defaultValue;
             info->info_int.cur = vi.currentValue;
@@ -4900,7 +4900,7 @@ void cvc5_get_option_info(Cvc5* cvc5, const char* option, Cvc5OptionInfo* info)
               info->info_int.has_max = true;
             }
           },
-          [info](const cvc5::OptionInfo::NumberInfo<uint64_t>& vi) {
+          [info](const cvc5pp::OptionInfo::NumberInfo<uint64_t>& vi) {
             info->kind = CVC5_OPTION_INFO_UINT64;
             info->info_uint.dflt = vi.defaultValue;
             info->info_uint.cur = vi.currentValue;
@@ -4915,7 +4915,7 @@ void cvc5_get_option_info(Cvc5* cvc5, const char* option, Cvc5OptionInfo* info)
               info->info_uint.has_max = true;
             }
           },
-          [info](const cvc5::OptionInfo::NumberInfo<double>& vi) {
+          [info](const cvc5pp::OptionInfo::NumberInfo<double>& vi) {
             info->kind = CVC5_OPTION_INFO_DOUBLE;
             info->info_double.dflt = vi.defaultValue;
             info->info_double.cur = vi.currentValue;
@@ -4930,21 +4930,21 @@ void cvc5_get_option_info(Cvc5* cvc5, const char* option, Cvc5OptionInfo* info)
               info->info_double.has_max = true;
             }
           },
-          [info](const cvc5::OptionInfo::ModeInfo& vi) {
+          [info](const cvc5pp::OptionInfo::ModeInfo& vi) {
             info->kind = CVC5_OPTION_INFO_MODES;
             info->info_mode.cur =
-                std::get<cvc5::OptionInfo::ModeInfo>(cpp_info.valueInfo)
+                std::get<cvc5pp::OptionInfo::ModeInfo>(cpp_info.valueInfo)
                     .currentValue.c_str();
             info->info_mode.dflt =
-                std::get<cvc5::OptionInfo::ModeInfo>(cpp_info.valueInfo)
+                std::get<cvc5pp::OptionInfo::ModeInfo>(cpp_info.valueInfo)
                     .defaultValue.c_str();
             info->info_mode.num_modes =
-                std::get<cvc5::OptionInfo::ModeInfo>(cpp_info.valueInfo)
+                std::get<cvc5pp::OptionInfo::ModeInfo>(cpp_info.valueInfo)
                     .modes.size();
             static thread_local std::vector<const char*> c_modes;
             c_modes.clear();
             for (const auto& m :
-                 std::get<cvc5::OptionInfo::ModeInfo>(cpp_info.valueInfo).modes)
+                 std::get<cvc5pp::OptionInfo::ModeInfo>(cpp_info.valueInfo).modes)
             {
               c_modes.push_back(m.c_str());
             }
@@ -4963,7 +4963,7 @@ const char* cvc5_option_info_to_string(const Cvc5OptionInfo* info)
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(info);
   Assert(info->d_cpp_info);
-  str = static_cast<cvc5::OptionInfo*>(info->d_cpp_info)->toString();
+  str = static_cast<cvc5pp::OptionInfo*>(info->d_cpp_info)->toString();
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
 }
@@ -5076,7 +5076,7 @@ const Cvc5Term* cvc5_get_timeout_core_assuming(Cvc5* cvc5,
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(assumptions);
-  std::vector<cvc5::Term> cassumptions;
+  std::vector<cvc5pp::Term> cassumptions;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(assumptions, i);
@@ -5104,7 +5104,7 @@ const Cvc5Proof* cvc5_get_proof(Cvc5* cvc5, Cvc5ProofComponent c, size_t* size)
   CVC5_CAPI_CHECK_NOT_NULL(size);
   res.clear();
   auto proofs =
-      cvc5->d_solver.getProof(static_cast<cvc5::modes::ProofComponent>(c));
+      cvc5->d_solver.getProof(static_cast<cvc5pp::modes::ProofComponent>(c));
   for (const auto& p : proofs)
   {
     res.push_back(cvc5->export_proof(p));
@@ -5124,7 +5124,7 @@ const Cvc5Term* cvc5_get_learned_literals(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(size);
   res.clear();
   auto lits = cvc5->d_solver.getLearnedLiterals(
-      static_cast<cvc5::modes::LearnedLitType>(type));
+      static_cast<cvc5pp::modes::LearnedLitType>(type));
   for (const auto& t : lits)
   {
     res.push_back(cvc5->d_tm->export_term(t));
@@ -5156,7 +5156,7 @@ const Cvc5Term* cvc5_get_values(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(terms);
   CVC5_CAPI_CHECK_NOT_NULL(rsize);
   res.clear();
-  std::vector<cvc5::Term> cterms;
+  std::vector<cvc5pp::Term> cterms;
   for (size_t i = 0; i < size; ++i)
   {
     cterms.push_back(terms[i]->d_term);
@@ -5215,12 +5215,12 @@ const char* cvc5_get_model(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(sorts);
   CVC5_CAPI_CHECK_NOT_NULL(consts);
-  std::vector<cvc5::Sort> csorts;
+  std::vector<cvc5pp::Sort> csorts;
   for (size_t i = 0; i < nsorts; ++i)
   {
     csorts.push_back(sorts[i]->d_sort);
   }
-  std::vector<cvc5::Term> cconsts;
+  std::vector<cvc5pp::Term> cconsts;
   for (size_t i = 0; i < nconsts; ++i)
   {
     cconsts.push_back(consts[i]->d_term);
@@ -5295,7 +5295,7 @@ Cvc5Term cvc5_declare_pool(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(symbol);
   CVC5_CAPI_CHECK_SORT(sort);
-  std::vector<cvc5::Term> cinit_value;
+  std::vector<cvc5pp::Term> cinit_value;
   if (init_value != nullptr)
   {
     for (size_t i = 0; i < size; ++i)
@@ -5311,9 +5311,9 @@ Cvc5Term cvc5_declare_pool(Cvc5* cvc5,
 }
 
 namespace {
-cvc5::Term call_oracle(Cvc5* cvc5,
+cvc5pp::Term call_oracle(Cvc5* cvc5,
                        Cvc5Term (*fun)(size_t, const Cvc5Term*, void*),
-                       const std::vector<cvc5::Term>& terms,
+                       const std::vector<cvc5pp::Term>& terms,
                        void* state)
 {
   std::vector<Cvc5Term> cterms;
@@ -5341,7 +5341,7 @@ Cvc5Term cvc5_declare_oracle_fun(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(symbol);
   CVC5_CAPI_CHECK_SORT(sort);
   CVC5_CAPI_CHECK_NOT_NULL(fun);
-  std::vector<cvc5::Sort> csorts;
+  std::vector<cvc5pp::Sort> csorts;
   if (sorts != nullptr)
   {
     for (size_t i = 0; i < size; ++i)
@@ -5350,9 +5350,9 @@ Cvc5Term cvc5_declare_oracle_fun(Cvc5* cvc5,
       csorts.push_back(sorts[i]->d_sort);
     }
   }
-  std::function<cvc5::Term(const std::vector<cvc5::Term>&)> cfun =
-      [cvc5, state, fun](const std::vector<cvc5::Term>& terms) {
-        cvc5::Term term = call_oracle(cvc5, fun, terms, state);
+  std::function<cvc5pp::Term(const std::vector<cvc5pp::Term>&)> cfun =
+      [cvc5, state, fun](const std::vector<cvc5pp::Term>& terms) {
+        cvc5pp::Term term = call_oracle(cvc5, fun, terms, state);
         return term;
       };
   res = cvc5->d_tm->export_term(
@@ -5377,7 +5377,7 @@ Cvc5Term cvc5_get_interpolant(Cvc5* cvc5, Cvc5Term conj)
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_TERM(conj);
-  cvc5::Term cres = cvc5->d_solver.getInterpolant(conj->d_term);
+  cvc5pp::Term cres = cvc5->d_solver.getInterpolant(conj->d_term);
   res = cres.isNull() ? nullptr : cvc5->d_tm->export_term(cres);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
@@ -5392,7 +5392,7 @@ Cvc5Term cvc5_get_interpolant_with_grammar(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_TERM(conj);
   CVC5_CAPI_CHECK_GRAMMAR(grammar);
-  cvc5::Term cres =
+  cvc5pp::Term cres =
       cvc5->d_solver.getInterpolant(conj->d_term, grammar->d_grammar);
   res = cres.isNull() ? nullptr : cvc5->d_tm->export_term(cres);
   CVC5_CAPI_TRY_CATCH_END;
@@ -5404,7 +5404,7 @@ Cvc5Term cvc5_get_interpolant_next(Cvc5* cvc5)
   Cvc5Term res = nullptr;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
-  cvc5::Term cres = cvc5->d_solver.getInterpolantNext();
+  cvc5pp::Term cres = cvc5->d_solver.getInterpolantNext();
   res = cres.isNull() ? nullptr : cvc5->d_tm->export_term(cres);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
@@ -5416,7 +5416,7 @@ Cvc5Term cvc5_get_abduct(Cvc5* cvc5, Cvc5Term conj)
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_TERM(conj);
-  cvc5::Term cres = cvc5->d_solver.getAbduct(conj->d_term);
+  cvc5pp::Term cres = cvc5->d_solver.getAbduct(conj->d_term);
   res = cres.isNull() ? nullptr : cvc5->d_tm->export_term(cres);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
@@ -5431,7 +5431,7 @@ Cvc5Term cvc5_get_abduct_with_grammar(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_TERM(conj);
   CVC5_CAPI_CHECK_GRAMMAR(grammar);
-  cvc5::Term cres = cvc5->d_solver.getAbduct(conj->d_term, grammar->d_grammar);
+  cvc5pp::Term cres = cvc5->d_solver.getAbduct(conj->d_term, grammar->d_grammar);
   res = cres.isNull() ? nullptr : cvc5->d_tm->export_term(cres);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
@@ -5442,7 +5442,7 @@ Cvc5Term cvc5_get_abduct_next(Cvc5* cvc5)
   Cvc5Term res = nullptr;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
-  cvc5::Term cres = cvc5->d_solver.getAbductNext();
+  cvc5pp::Term cres = cvc5->d_solver.getAbductNext();
   res = cres.isNull() ? nullptr : cvc5->d_tm->export_term(cres);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
@@ -5452,7 +5452,7 @@ void cvc5_block_model(Cvc5* cvc5, Cvc5BlockModelsMode mode)
 {
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
-  cvc5->d_solver.blockModel(static_cast<cvc5::modes::BlockModelsMode>(mode));
+  cvc5->d_solver.blockModel(static_cast<cvc5pp::modes::BlockModelsMode>(mode));
   CVC5_CAPI_TRY_CATCH_END;
 }
 
@@ -5461,7 +5461,7 @@ void cvc5_block_model_values(Cvc5* cvc5, size_t size, const Cvc5Term terms[])
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(terms);
-  std::vector<cvc5::Term> cterms;
+  std::vector<cvc5pp::Term> cterms;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(terms, i);
@@ -5517,7 +5517,7 @@ const char* cvc5_proof_to_string(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_PROOF(proof);
   CVC5_API_CHECK(assertions || names == nullptr) << "unexpected NULL argument";
-  std::map<cvc5::Term, std::string> cassertion_names;
+  std::map<cvc5pp::Term, std::string> cassertion_names;
   if (assertions)
   {
     for (size_t i = 0; i < size; ++i)
@@ -5527,7 +5527,7 @@ const char* cvc5_proof_to_string(Cvc5* cvc5,
   }
   str = proof->d_cvc5->d_solver.proofToString(
       proof->d_proof,
-      static_cast<cvc5::modes::ProofFormat>(format),
+      static_cast<cvc5pp::modes::ProofFormat>(format),
       cassertion_names);
   CVC5_CAPI_TRY_CATCH_END;
   return str.c_str();
@@ -5556,7 +5556,7 @@ Cvc5Grammar cvc5_mk_grammar(Cvc5* cvc5,
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(symbols);
-  std::vector<cvc5::Term> cbound_vars;
+  std::vector<cvc5pp::Term> cbound_vars;
   if (nbound_vars)
   {
     for (size_t i = 0; i < nbound_vars; ++i)
@@ -5564,7 +5564,7 @@ Cvc5Grammar cvc5_mk_grammar(Cvc5* cvc5,
       cbound_vars.push_back(bound_vars[i]->d_term);
     }
   }
-  std::vector<cvc5::Term> csymbols;
+  std::vector<cvc5pp::Term> csymbols;
   for (size_t i = 0; i < nsymbols; ++i)
   {
     csymbols.push_back(symbols[i]->d_term);
@@ -5585,7 +5585,7 @@ Cvc5Term cvc5_synth_fun(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(symbol);
   CVC5_CAPI_CHECK_SORT(sort);
-  std::vector<cvc5::Term> cbound_vars;
+  std::vector<cvc5pp::Term> cbound_vars;
   if (size)
   {
     for (size_t i = 0; i < size; ++i)
@@ -5612,7 +5612,7 @@ Cvc5Term cvc5_synth_fun_with_grammar(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(symbol);
   CVC5_CAPI_CHECK_SORT(sort);
   CVC5_CAPI_CHECK_GRAMMAR(grammar);
-  std::vector<cvc5::Term> cbound_vars;
+  std::vector<cvc5pp::Term> cbound_vars;
   if (size)
   {
     for (size_t i = 0; i < size; ++i)
@@ -5732,7 +5732,7 @@ const Cvc5Term* cvc5_get_synth_solutions(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_NOT_NULL(terms);
   res.clear();
-  std::vector<cvc5::Term> cterms;
+  std::vector<cvc5pp::Term> cterms;
   for (size_t i = 0; i < size; ++i)
   {
     CVC5_CAPI_CHECK_TERM_AT_IDX(terms, i);
@@ -5753,8 +5753,8 @@ Cvc5Term cvc5_find_synth(Cvc5* cvc5, Cvc5FindSynthTarget target)
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_FIND_SYNTH_TARGET(target);
-  cvc5::Term cres = cvc5->d_solver.findSynth(
-      static_cast<cvc5::modes::FindSynthTarget>(target));
+  cvc5pp::Term cres = cvc5->d_solver.findSynth(
+      static_cast<cvc5pp::modes::FindSynthTarget>(target));
   res = cres.isNull() ? nullptr : cvc5->d_tm->export_term(cres);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
@@ -5769,8 +5769,8 @@ Cvc5Term cvc5_find_synth_with_grammar(Cvc5* cvc5,
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
   CVC5_CAPI_CHECK_FIND_SYNTH_TARGET(target);
   CVC5_CAPI_CHECK_GRAMMAR(grammar);
-  cvc5::Term cres = cvc5->d_solver.findSynth(
-      static_cast<cvc5::modes::FindSynthTarget>(target), grammar->d_grammar);
+  cvc5pp::Term cres = cvc5->d_solver.findSynth(
+      static_cast<cvc5pp::modes::FindSynthTarget>(target), grammar->d_grammar);
   res = cres.isNull() ? nullptr : cvc5->d_tm->export_term(cres);
   CVC5_CAPI_TRY_CATCH_END;
   return res;
@@ -5781,7 +5781,7 @@ Cvc5Term cvc5_find_synth_next(Cvc5* cvc5)
   Cvc5Term res = nullptr;
   CVC5_CAPI_TRY_CATCH_BEGIN;
   CVC5_CAPI_CHECK_NOT_NULL(cvc5);
-  cvc5::Term cres = cvc5->d_solver.findSynthNext();
+  cvc5pp::Term cres = cvc5->d_solver.findSynthNext();
   res = cres.isNull() ? nullptr : cvc5->d_tm->export_term(cres);
   CVC5_CAPI_TRY_CATCH_END;
   return res;

@@ -19,7 +19,7 @@
 #include "theory/strings/theory_strings_utils.h"
 #include "util/string.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 

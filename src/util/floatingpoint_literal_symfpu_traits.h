@@ -33,7 +33,7 @@
 
 /* -------------------------------------------------------------------------- */
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace symfpuLiteral {
 
 /**
@@ -45,8 +45,8 @@ class wrappedBitVector;
 
 using Cvc5BitWidth = uint32_t;
 using Cvc5Prop = bool;
-using Cvc5RM = cvc5::internal::RoundingMode;
-using Cvc5FPSize = cvc5::internal::FloatingPointSize;
+using Cvc5RM = cvc5pp::internal::RoundingMode;
+using Cvc5FPSize = cvc5pp::internal::FloatingPointSize;
 using Cvc5UnsignedBitVector = wrappedBitVector<false>;
 using Cvc5SignedBitVector = wrappedBitVector<true>;
 

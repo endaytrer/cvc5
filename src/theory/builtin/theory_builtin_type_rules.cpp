@@ -21,7 +21,7 @@
 #include "util/uninterpreted_sort_value.h"
 #include "expr/sort_to_term.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace builtin {
 

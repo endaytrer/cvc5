@@ -24,7 +24,7 @@
 
 #include "util/integer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * The structure representing the divisibility-by-k predicate.

@@ -19,7 +19,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 SynthResult::SynthResult()
     : d_status(NONE), d_unknownExplanation(UnknownExplanation::UNKNOWN_REASON)

@@ -27,13 +27,13 @@
 #include "theory/rewriter.h"
 #include "util/random.h"
 
-using namespace cvc5::internal;
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory;
-using namespace cvc5::internal::theory::quantifiers;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory;
+using namespace cvc5pp::internal::theory::quantifiers;
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 struct sortConjectureScore {
   std::vector< int > d_scores;

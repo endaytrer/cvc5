@@ -20,9 +20,9 @@
 #include "theory/quantifiers/single_inv_partition.h"
 #include "theory/smt_engine_subsolver.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

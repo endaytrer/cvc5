@@ -28,7 +28,7 @@
 #include "parser/lexer.h"
 #include "parser/tokens.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 /**

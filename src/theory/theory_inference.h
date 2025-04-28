@@ -22,7 +22,7 @@
 #include "theory/inference_id.h"
 #include "theory/output_channel.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 class TheoryInferenceManager;

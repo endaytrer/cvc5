@@ -27,7 +27,7 @@
 
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal::theory::arith::nl::coverings {
+namespace cvc5pp::internal::theory::arith::nl::coverings {
 
 struct LazardEvaluationStats
 {

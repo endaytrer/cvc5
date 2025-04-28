@@ -20,7 +20,7 @@
 
 #include "theory/quantifiers/first_order_model.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 namespace fmcheck {

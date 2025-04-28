@@ -29,7 +29,7 @@
 #include "theory/rewriter.h"
 #include "util/bitvector.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace preprocessing;
 using namespace preprocessing::passes;

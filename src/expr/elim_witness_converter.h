@@ -23,7 +23,7 @@
 #include "expr/node_converter.h"
 #include "smt/env_obj.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * Node converter to eliminate all terms of kind WITNESS. Each term replaced

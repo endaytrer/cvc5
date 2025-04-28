@@ -23,7 +23,7 @@
 #include "parser/smt2/smt2_state.h"
 #include "parser/smt2/smt2_lexer.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 /**

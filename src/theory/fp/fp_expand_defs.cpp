@@ -19,7 +19,7 @@
 #include "expr/sort_to_term.h"
 #include "util/floatingpoint.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace fp {
 

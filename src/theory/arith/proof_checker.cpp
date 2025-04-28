@@ -25,9 +25,9 @@
 #include "theory/arith/operator_elim.h"
 #include "util/bitvector.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 

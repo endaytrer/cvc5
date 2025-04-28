@@ -15,7 +15,7 @@
  */
 #include <cvc5/cvc5.h>
 
-using namespace cvc5;
+using namespace cvc5pp;
 int main(void)
 {
   TermManager tm;
@@ -28,7 +28,7 @@ int main(void)
   {
     solver.setOption("bvand-integer-granularity", "0");
   }
-  catch (cvc5::CVC5ApiOptionException& e)
+  catch (cvc5pp::CVC5ApiOptionException& e)
   {
   }
   return 0;

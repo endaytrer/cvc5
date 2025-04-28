@@ -45,7 +45,7 @@
 #include "context/cdinsert_hashmap_forward.h"
 #include "context/context.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 
 namespace internal {
 template <bool ref_count>

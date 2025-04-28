@@ -22,7 +22,7 @@
 #include "context/cdinsert_hashmap.h"
 #include "context/context.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 
 template <class V, class HashFcn = std::hash<V>>
 class CDHashSet : protected CDInsertHashMap<V, bool, HashFcn>

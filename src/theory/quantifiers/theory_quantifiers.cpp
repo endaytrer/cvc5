@@ -23,10 +23,10 @@
 #include "theory/trust_substitutions.h"
 #include "theory/valuation.h"
 
-using namespace cvc5::internal::kind;
-using namespace cvc5::context;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::context;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

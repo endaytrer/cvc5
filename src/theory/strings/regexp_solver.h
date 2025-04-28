@@ -34,7 +34,7 @@
 #include "theory/strings/term_registry.h"
 #include "util/string.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 
@@ -163,7 +163,7 @@ class RegExpSolver : protected EnvObj
    * explanation is nf_exp.
    */
   bool checkPDerivative(Node x, Node r, Node atom, std::vector<Node>& nf_exp);
-  cvc5::internal::String getHeadConst(Node x);
+  cvc5pp::internal::String getHeadConst(Node x);
   bool deriveRegExp(Node x, Node r, Node atom, std::vector<Node>& ant);
   Node getNormalSymRegExp(Node r, std::vector<Node>& nf_exp);
   /** regular expression operation module */

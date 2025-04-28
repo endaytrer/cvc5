@@ -26,7 +26,7 @@
 
 #include "theory/theory_id.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * A LogicInfo instance describes a collection of theory modules and some

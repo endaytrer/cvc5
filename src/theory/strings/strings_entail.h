@@ -24,7 +24,7 @@
 #include "theory/strings/arith_entail.h"
 #include "theory/strings/rewrites.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 class Rewriter;

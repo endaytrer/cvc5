@@ -22,7 +22,7 @@
 #include "smt/env_obj.h"
 #include "util/statistics_registry.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 template <class Solver>
 prop::SatLiteral toSatLiteral(typename Solver::TLit lit);

@@ -22,7 +22,7 @@
 #include "printer/smt2/smt2_printer.h"
 #include "theory/strings/word.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 AlfListNodeConverter::AlfListNodeConverter(NodeManager* nm,

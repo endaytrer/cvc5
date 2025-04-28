@@ -22,7 +22,7 @@
 #include "base/check.h"
 #include "util/statistics_registry.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 using KissatLit = int32_t;

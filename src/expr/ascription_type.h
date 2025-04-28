@@ -21,7 +21,7 @@
 #include <iosfwd>
 #include <memory>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class TypeNode;
 

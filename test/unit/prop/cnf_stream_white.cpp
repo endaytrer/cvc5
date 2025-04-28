@@ -27,9 +27,9 @@
 #include "theory/theory.h"
 #include "theory/theory_engine.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
-using namespace cvc5::context;
+using namespace cvc5pp::context;
 using namespace prop;
 using namespace smt;
 using namespace theory;

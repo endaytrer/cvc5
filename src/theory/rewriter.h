@@ -22,7 +22,7 @@
 #include "expr/node.h"
 #include "theory/theory_rewriter.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Env;
 class TConvProofGenerator;
@@ -37,7 +37,7 @@ class Evaluator;
  * The main rewriter class.
  */
 class Rewriter {
-  friend class cvc5::internal::Env;  // to set the resource manager
+  friend class cvc5pp::internal::Env;  // to set the resource manager
  public:
   Rewriter(NodeManager* nm);
 

@@ -20,7 +20,7 @@
 #include "options/base_options.h"
 #include "util/statistics_public.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 StatisticsRegistry::StatisticsRegistry(bool internal,
                                        bool all,

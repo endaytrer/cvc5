@@ -30,7 +30,7 @@
 #include "smt/env_obj.h"
 #include "theory/arith/nl/coverings/cdcac_utils.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofGenerator;
 

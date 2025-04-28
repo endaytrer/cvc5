@@ -30,7 +30,7 @@
 #include "theory/quantifiers/ieval/term_evaluator.h"
 #include "theory/quantifiers/index_trie.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

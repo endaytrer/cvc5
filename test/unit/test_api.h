@@ -20,7 +20,7 @@
 
 #include "gtest/gtest.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestApi : public ::testing::Test

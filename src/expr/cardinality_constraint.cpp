@@ -19,7 +19,7 @@
 
 #include "expr/type_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 CardinalityConstraint::CardinalityConstraint(const TypeNode& type,
                                              const Integer& ub)

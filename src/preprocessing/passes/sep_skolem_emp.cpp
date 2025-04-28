@@ -28,12 +28,12 @@
 #include "theory/theory.h"
 #include "theory/theory_engine.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 
 using namespace std;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
 namespace {
 

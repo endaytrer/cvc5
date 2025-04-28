@@ -25,7 +25,7 @@
 #include "theory/quantifiers/sygus/sygus_unif.h"
 #include "util/bool.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

@@ -28,7 +28,7 @@
 
 #include <cstdint>
 #include <ostream>
-namespace cvc5 {
+namespace cvc5pp {
 #undef ENUM
 #define ENUM(name) class name
 #undef EVALUE
@@ -860,21 +860,21 @@ namespace std {
  * Hash function for SkolemIds.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::SkolemId>
+struct CVC5_EXPORT hash<cvc5pp::SkolemId>
 {
   /**
    * Hashes a SkolemId to a size_t.
    * @param id The skolem id.
    * @return The hash value.
    */
-  size_t operator()(cvc5::SkolemId id) const;
+  size_t operator()(cvc5pp::SkolemId id) const;
 };
 /**
  * Get the string representation of a given skolem identifier.
  * @param id The skolem identifier
  * @return The string representation.
  */
-CVC5_EXPORT std::string to_string(cvc5::SkolemId id);
+CVC5_EXPORT std::string to_string(cvc5pp::SkolemId id);
 
 }  // namespace std
 

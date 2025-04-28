@@ -20,7 +20,7 @@
 #include <array>
 #include <cstdint>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 // fixtures
 class AttrHashFixture : public TestInternal

@@ -25,7 +25,7 @@
 
 #include "base/check.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 std::ostream& operator<<(std::ostream& os, const Rational& q){
   return os << q.toString();

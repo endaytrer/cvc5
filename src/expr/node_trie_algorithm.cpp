@@ -15,7 +15,7 @@
 
 #include "expr/node_trie_algorithm.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 void nodeTriePathPairProcess(const TNodeTrie* t,
                              size_t arity,

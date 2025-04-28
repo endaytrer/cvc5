@@ -17,7 +17,7 @@
 
 #include "test_api.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace test {
 
@@ -74,7 +74,7 @@ TEST_F(TestApiBlackProof, nullProof)
 {
   Proof proof;
   ASSERT_EQ(proof.getRule(), ProofRule::UNKNOWN);
-  ASSERT_EQ(std::hash<cvc5::ProofRule>()(ProofRule::UNKNOWN),
+  ASSERT_EQ(std::hash<cvc5pp::ProofRule>()(ProofRule::UNKNOWN),
             static_cast<size_t>(ProofRule::UNKNOWN));
   ASSERT_TRUE(proof.getResult().isNull());
   ASSERT_TRUE(proof.getChildren().empty());

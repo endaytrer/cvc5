@@ -41,7 +41,7 @@
 #include "util/hash.h"
 #include "util/utility.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class TypeNode;
 class NodeManager;
@@ -136,20 +136,20 @@ typedef NodeTemplate<false> TNode;
 namespace std {
 
 template <>
-struct hash<cvc5::internal::Node>
+struct hash<cvc5pp::internal::Node>
 {
-  size_t operator()(const cvc5::internal::Node& node) const;
+  size_t operator()(const cvc5pp::internal::Node& node) const;
 };
 
 template <>
-struct hash<cvc5::internal::TNode>
+struct hash<cvc5pp::internal::TNode>
 {
-  size_t operator()(const cvc5::internal::TNode& node) const;
+  size_t operator()(const cvc5pp::internal::TNode& node) const;
 };
 
 }  // namespace std
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace expr {
 
 class NodeValue;
@@ -203,8 +203,8 @@ class NodeTemplate {
 
   friend class NodeBuilder;
 
-  friend class ::cvc5::internal::expr::attr::AttributeManager;
-  friend struct ::cvc5::internal::expr::attr::SmtAttributes;
+  friend class ::cvc5pp::internal::expr::attr::AttributeManager;
+  friend struct ::cvc5pp::internal::expr::attr::SmtAttributes;
 
   /**
    * Assigns the expression value and does reference counting. No assumptions
@@ -992,7 +992,7 @@ std::ostream& operator<<(
 //#include "expr/attribute.h"
 #include "expr/node_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using TNodePairHashFunction =
     PairHashFunction<TNode, TNode, std::hash<TNode>, std::hash<TNode>>;

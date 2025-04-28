@@ -19,9 +19,9 @@
 #include "proof/proof_node.h"
 #include "proof/proof_node_manager.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 LazyCDProof::LazyCDProof(Env& env,
                          ProofGenerator* dpg,

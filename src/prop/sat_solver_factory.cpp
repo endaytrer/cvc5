@@ -20,7 +20,7 @@
 #include "prop/kissat.h"
 #include "prop/minisat/minisat.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 CDCLTSatSolver* SatSolverFactory::createCDCLTMinisat(

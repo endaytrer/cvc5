@@ -29,7 +29,7 @@
 #include "theory/bv/bv_solver.h"
 #include "theory/bv/proof_checker.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace theory {
 namespace bv {

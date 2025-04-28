@@ -21,7 +21,7 @@
 
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * A class for allocating a list of free variables for provided types.

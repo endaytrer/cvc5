@@ -27,7 +27,7 @@
 #include "util/integer.h"
 #include "util/rational.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class DeltaRational;
 
@@ -47,20 +47,20 @@ class DeltaRationalException : public Exception {
  */
 class DeltaRational {
 private:
- cvc5::internal::Rational c;
- cvc5::internal::Rational k;
+ cvc5pp::internal::Rational c;
+ cvc5pp::internal::Rational k;
 
 public:
   DeltaRational() : c(0,1), k(0,1) {}
-  DeltaRational(const cvc5::internal::Rational& base) : c(base), k(0, 1) {}
-  DeltaRational(const cvc5::internal::Rational& base, const cvc5::internal::Rational& coeff)
+  DeltaRational(const cvc5pp::internal::Rational& base) : c(base), k(0, 1) {}
+  DeltaRational(const cvc5pp::internal::Rational& base, const cvc5pp::internal::Rational& coeff)
       : c(base), k(coeff)
   {
   }
 
-  const cvc5::internal::Rational& getInfinitesimalPart() const { return k; }
+  const cvc5pp::internal::Rational& getInfinitesimalPart() const { return k; }
 
-  const cvc5::internal::Rational& getNoninfinitesimalPart() const { return c; }
+  const cvc5pp::internal::Rational& getNoninfinitesimalPart() const { return c; }
 
   int sgn() const {
     int s = getNoninfinitesimalPart().sgn();
@@ -98,14 +98,14 @@ public:
   }
 
   DeltaRational operator+(const DeltaRational& other) const{
-    cvc5::internal::Rational tmpC = c + other.c;
-    cvc5::internal::Rational tmpK = k + other.k;
+    cvc5pp::internal::Rational tmpC = c + other.c;
+    cvc5pp::internal::Rational tmpK = k + other.k;
     return DeltaRational(tmpC, tmpK);
   }
 
   DeltaRational operator*(const Rational& a) const{
-    cvc5::internal::Rational tmpC = a * c;
-    cvc5::internal::Rational tmpK = a * k;
+    cvc5pp::internal::Rational tmpC = a * c;
+    cvc5pp::internal::Rational tmpK = a * k;
     return DeltaRational(tmpC, tmpK);
   }
 
@@ -128,7 +128,7 @@ public:
 
 
   DeltaRational operator-(const DeltaRational& a) const{
-    cvc5::internal::Rational negOne(cvc5::internal::Integer(-1));
+    cvc5pp::internal::Rational negOne(cvc5pp::internal::Integer(-1));
     return *(this) + (a * negOne);
   }
 
@@ -137,14 +137,14 @@ public:
   }
 
   DeltaRational operator/(const Rational& a) const{
-    cvc5::internal::Rational tmpC = c / a;
-    cvc5::internal::Rational tmpK = k / a;
+    cvc5pp::internal::Rational tmpC = c / a;
+    cvc5pp::internal::Rational tmpK = k / a;
     return DeltaRational(tmpC, tmpK);
   }
 
   DeltaRational operator/(const Integer& a) const{
-    cvc5::internal::Rational tmpC = c / a;
-    cvc5::internal::Rational tmpK = k / a;
+    cvc5pp::internal::Rational tmpC = c / a;
+    cvc5pp::internal::Rational tmpK = k / a;
     return DeltaRational(tmpC, tmpK);
   }
 
@@ -205,7 +205,7 @@ public:
     return *(this);
   }
 
-  DeltaRational& operator*=(const cvc5::internal::Rational& a)
+  DeltaRational& operator*=(const cvc5pp::internal::Rational& a)
   {
     c *=  a;
     k *=  a;

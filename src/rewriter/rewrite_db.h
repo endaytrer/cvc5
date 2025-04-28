@@ -28,7 +28,7 @@
 #include "rewriter/rewrite_proof_rule.h"
 #include "rewriter/rewrites.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace rewriter {
 
 /** Type class callback */

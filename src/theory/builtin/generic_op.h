@@ -23,7 +23,7 @@
 #include "expr/kind.h"
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * The payload for abstract types, which carries a kind specifying the kind

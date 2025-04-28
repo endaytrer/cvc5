@@ -21,7 +21,7 @@
 #include "rewriter/rewrites.h"
 #include "smt/env.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 EagerProofGenerator::EagerProofGenerator(Env& env,
                                          context::Context* c,

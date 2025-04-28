@@ -33,9 +33,9 @@
 #include "util/floatingpoint.h"
 
 using namespace std;
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace fp {
 
@@ -407,7 +407,7 @@ void TheoryFp::wordBlastAndEquateTerm(TNode node)
         << std::endl;
     handleLemma(
         nm->mkNode(
-            Kind::EQUAL, addA, nm->mkConst(cvc5::internal::BitVector(1U, 1U))),
+            Kind::EQUAL, addA, nm->mkConst(cvc5pp::internal::BitVector(1U, 1U))),
         InferenceId::FP_EQUATE_TERM);
     ++oldSize;
   }
@@ -426,7 +426,7 @@ void TheoryFp::wordBlastAndEquateTerm(TNode node)
               node,
               nm->mkNode(Kind::EQUAL,
                          wordBlasted,
-                         nm->mkConst(cvc5::internal::BitVector(1U, 1U)))),
+                         nm->mkConst(cvc5pp::internal::BitVector(1U, 1U)))),
           InferenceId::FP_EQUATE_TERM);
     }
     else

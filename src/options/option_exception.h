@@ -22,16 +22,16 @@
 
 #include "base/exception.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * Class representing an option-parsing exception such as badly-typed
  * or missing arguments, arguments out of bounds, etc.
  */
-class CVC5_EXPORT OptionException : public cvc5::internal::Exception
+class CVC5_EXPORT OptionException : public cvc5pp::internal::Exception
 {
  public:
-  OptionException(const std::string& s) : cvc5::internal::Exception(s_errPrefix + s) {}
+  OptionException(const std::string& s) : cvc5pp::internal::Exception(s_errPrefix + s) {}
 
   /**
    * Get the error message without the prefix that is automatically added for

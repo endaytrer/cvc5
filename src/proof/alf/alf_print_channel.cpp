@@ -23,7 +23,7 @@
 #include "proof/trust_id.h"
 #include "rewriter/rewrite_db.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 AlfPrintChannel::AlfPrintChannel() {}

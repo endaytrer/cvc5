@@ -37,8 +37,8 @@
 #include "smt/proof_post_processor.h"
 #include "smt/smt_solver.h"
 
-using namespace cvc5::internal::rewriter;
-namespace cvc5::internal {
+using namespace cvc5pp::internal::rewriter;
+namespace cvc5pp::internal {
 namespace smt {
 
 PfManager::PfManager(Env& env)

@@ -20,7 +20,7 @@
 #include "base/output.h"
 #include "parser/lexer.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 Smt2Lexer::Smt2Lexer(bool isStrict, bool isSygus)

@@ -18,7 +18,7 @@
 #include "theory/strings/core_solver.h"
 #include "theory/strings/solver_state.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 

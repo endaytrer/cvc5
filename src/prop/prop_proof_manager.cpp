@@ -33,7 +33,7 @@
 #include "util/resource_manager.h"
 #include "util/string.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 PropPfManager::PropPfManager(Env& env,

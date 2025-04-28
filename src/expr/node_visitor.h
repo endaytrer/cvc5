@@ -20,7 +20,7 @@
 #include "cvc5_private.h"
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * Traverses the nodes reverse-topologically (children before parents),

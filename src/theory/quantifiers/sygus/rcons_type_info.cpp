@@ -23,7 +23,7 @@
 #include "theory/quantifiers/sygus_sampler.h"
 #include "util/random.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

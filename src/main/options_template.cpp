@@ -44,9 +44,9 @@ extern int optreset;
 #include <iostream>
 #include <limits>
 
-namespace cvc5::main {
+namespace cvc5pp::main {
 
-using namespace cvc5::internal;
+using namespace cvc5pp::internal;
 
 // clang-format off
 static const std::string commonOptionsDescription =
@@ -132,7 +132,7 @@ std::string suggestCommandLineOptions(const std::string& optionName)
       optionName.substr(0, optionName.find('=')));
 }
 
-void parseInternal(cvc5::Solver& solver,
+void parseInternal(cvc5pp::Solver& solver,
                    int argc,
                    char* argv[],
                    std::vector<std::string>& nonoptions)
@@ -255,7 +255,7 @@ void parseInternal(cvc5::Solver& solver,
  *
  * Throws OptionException on failures.
  */
-std::vector<std::string> parse(cvc5::Solver& solver,
+std::vector<std::string> parse(cvc5pp::Solver& solver,
                                int argc,
                                char* argv[],
                                std::string& binaryName)

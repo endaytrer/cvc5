@@ -41,7 +41,7 @@
 #include "options/theory_options.h"
 #include "util/didyoumean.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace options {
 
 // helper functions
@@ -161,11 +161,11 @@ void OptionsHandler::setInputLanguage(const std::string& flag, Language lang)
 void OptionsHandler::setVerbosity(const std::string& flag, int value)
 {
   if(Configuration::isMuzzledBuild()) {
-    TraceChannel.setStream(&cvc5::internal::null_os);
-    WarningChannel.setStream(&cvc5::internal::null_os);
+    TraceChannel.setStream(&cvc5pp::internal::null_os);
+    WarningChannel.setStream(&cvc5pp::internal::null_os);
   } else {
     if(value < 0) {
-      WarningChannel.setStream(&cvc5::internal::null_os);
+      WarningChannel.setStream(&cvc5pp::internal::null_os);
     } else {
       WarningChannel.setStream(&std::cerr);
     }

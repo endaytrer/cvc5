@@ -21,7 +21,7 @@
 
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * A Sygus Grammar. This class can be used to define a context-free grammar
@@ -143,9 +143,9 @@ class SygusGrammar
 
 namespace std {
 template <>
-struct hash<cvc5::internal::SygusGrammar>
+struct hash<cvc5pp::internal::SygusGrammar>
 {
-  size_t operator()(const cvc5::internal::SygusGrammar& grammar) const;
+  size_t operator()(const cvc5pp::internal::SygusGrammar& grammar) const;
 };
 }  // namespace std
 #endif

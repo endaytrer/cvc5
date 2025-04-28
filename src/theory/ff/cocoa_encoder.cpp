@@ -32,7 +32,7 @@
 #include "theory/ff/cocoa_util.h"
 #include "theory/theory.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace ff {
 

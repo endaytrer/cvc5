@@ -29,7 +29,7 @@
 #include "theory/type_set.h"
 #include "theory/uf/equality_engine.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Env;
 

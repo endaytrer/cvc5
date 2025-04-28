@@ -15,6 +15,6 @@
 
 #include "options/option_exception.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 const std::string OptionException::s_errPrefix = "Error in option parsing: ";
 }  // namespace cvc5::internal

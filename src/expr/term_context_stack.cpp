@@ -17,7 +17,7 @@
 
 #include "expr/term_context.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 TCtxStack::TCtxStack(const TermContext* tctx) : d_tctx(tctx) {}
 

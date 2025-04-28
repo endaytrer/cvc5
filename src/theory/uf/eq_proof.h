@@ -17,7 +17,7 @@
 #include "expr/node.h"
 #include "theory/uf/equality_engine_types.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class CDProof;
 

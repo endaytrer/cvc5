@@ -27,7 +27,7 @@
 
 #include "util/ostream_util.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 // standard helper, see https://en.cppreference.com/w/cpp/utility/variant/visit
 template <class... Ts>

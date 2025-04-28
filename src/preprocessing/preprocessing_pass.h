@@ -37,7 +37,7 @@
 #include "smt/env_obj.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 
 class AssertionPipeline;

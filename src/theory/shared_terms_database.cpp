@@ -20,9 +20,9 @@
 #include "theory/theory_engine.h"
 
 using namespace std;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 SharedTermsDatabase::SharedTermsDatabase(Env& env, TheoryEngine* theoryEngine)
     : EnvObj(env),

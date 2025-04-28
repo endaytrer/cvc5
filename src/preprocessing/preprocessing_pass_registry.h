@@ -24,7 +24,7 @@
 #include <string>
 #include <unordered_map>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 
 class PreprocessingPass;

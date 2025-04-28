@@ -16,7 +16,7 @@
 #include "base/configuration.h"
 #include "test.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestUtilBlackConfiguration : public TestInternal

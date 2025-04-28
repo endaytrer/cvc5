@@ -25,7 +25,7 @@
 #include "theory/term_registration_visitor.h"
 #include "theory/valuation.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class LogicInfo;
 class ProofNodeManager;

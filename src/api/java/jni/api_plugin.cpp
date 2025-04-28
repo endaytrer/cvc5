@@ -16,7 +16,7 @@
 
 #include "api_utilities.h"
 
-using namespace cvc5;
+using namespace cvc5pp;
 
 ApiPlugin::ApiPlugin(TermManager& tm, JNIEnv* env, jobject plugin)
     : Plugin(tm), d_env(env), d_tm(tm), d_plugin(plugin)

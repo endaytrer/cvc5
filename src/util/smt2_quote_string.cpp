@@ -18,7 +18,7 @@
 #include <sstream>
 #include <string>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * SMT-LIB 2 quoting for symbols

@@ -18,7 +18,7 @@
 #include "theory/builtin/theory_builtin_rewriter.h"
 #include "util/uninterpreted_sort_value.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace builtin {
 

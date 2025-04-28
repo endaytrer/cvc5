@@ -28,7 +28,7 @@
 #include "theory/theory_engine.h"
 #include "theory/uf/theory_uf.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace kind;
 using namespace smt;

@@ -23,7 +23,7 @@
 #include "base/check.h"
 #include "lib/ffs.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 TheoryId& operator++(TheoryId& id)

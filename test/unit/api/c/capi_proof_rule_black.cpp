@@ -20,7 +20,7 @@ extern "C" {
 #include "base/output.h"
 #include "gtest/gtest.h"
 
-namespace cvc5::internal::test {
+namespace cvc5pp::internal::test {
 
 class TestCApiBlackProofRule : public ::testing::Test
 {

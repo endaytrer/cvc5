@@ -18,9 +18,9 @@
 #include "proof/proof_node.h"
 #include "util/rational.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 Node ProofRuleChecker::check(ProofRule id,
                              const std::vector<Node>& children,

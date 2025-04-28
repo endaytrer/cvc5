@@ -21,7 +21,7 @@
 #include "expr/cardinality_constraint.h"
 #include "expr/dtype.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace expr {
 
 bool hasSubterm(TNode n, TNode t, bool strict)

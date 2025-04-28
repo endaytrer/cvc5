@@ -16,7 +16,7 @@
 #include "base/configuration.h"
 #include "test_api.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace test {
 

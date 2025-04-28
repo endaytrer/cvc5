@@ -24,7 +24,7 @@
 #include "smt/logic_exception.h"
 #include "smt/smt_solver.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 SmtDriver::SmtDriver(Env& env, SmtSolver& smt, ContextManager* ctx)

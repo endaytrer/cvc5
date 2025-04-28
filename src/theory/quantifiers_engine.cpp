@@ -40,10 +40,10 @@
 #include "theory/theory_engine.h"
 
 using namespace std;
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory::quantifiers;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory::quantifiers;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 QuantifiersEngine::QuantifiersEngine(Env& env,

@@ -22,9 +22,9 @@
 
 #include "base/exception.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
-class LogicException : public cvc5::internal::Exception
+class LogicException : public cvc5pp::internal::Exception
 {
  public:
   LogicException() :

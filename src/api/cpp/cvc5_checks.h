@@ -27,7 +27,7 @@
 #include "base/modal_exception.h"
 #include "options/option_exception.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 
 #define CVC5_API_TRY_CATCH_BEGIN \
   try                            \
@@ -126,7 +126,7 @@ class CVC5ApiUnsupportedExceptionStream
 #define CVC5_API_CHECK(cond) \
   CVC5_PREDICT_TRUE(cond)    \
   ? (void)0                  \
-  : cvc5::internal::OstreamVoider() & cvc5::CVC5ApiExceptionStream().ostream()
+  : cvc5pp::internal::OstreamVoider() & cvc5pp::CVC5ApiExceptionStream().ostream()
 
 /**
  * The base check macro for throwing recoverable exceptions.
@@ -135,8 +135,8 @@ class CVC5ApiUnsupportedExceptionStream
 #define CVC5_API_RECOVERABLE_CHECK(cond) \
   CVC5_PREDICT_TRUE(cond)                \
   ? (void)0                              \
-  : cvc5::internal::OstreamVoider()      \
-          & cvc5::CVC5ApiRecoverableExceptionStream().ostream()
+  : cvc5pp::internal::OstreamVoider()      \
+          & cvc5pp::CVC5ApiRecoverableExceptionStream().ostream()
 
 /**
  * The base check macro for throwing unsupported exceptions.
@@ -145,8 +145,8 @@ class CVC5ApiUnsupportedExceptionStream
 #define CVC5_API_UNSUPPORTED_CHECK(cond) \
   CVC5_PREDICT_TRUE(cond)                \
   ? (void)0                              \
-  : cvc5::internal::OstreamVoider()      \
-          & cvc5::CVC5ApiUnsupportedExceptionStream().ostream()
+  : cvc5pp::internal::OstreamVoider()      \
+          & cvc5pp::CVC5ApiUnsupportedExceptionStream().ostream()
 
 /* -------------------------------------------------------------------------- */
 /* Not null checks.                                                           */
@@ -191,7 +191,7 @@ class CVC5ApiUnsupportedExceptionStream
 #define CVC5_API_KIND_CHECK_EXPECTED(cond, kind) \
   CVC5_PREDICT_TRUE(cond)                        \
   ? (void)0                                      \
-  : cvc5::internal::OstreamVoider()              \
+  : cvc5pp::internal::OstreamVoider()              \
           & CVC5ApiExceptionStream().ostream()   \
                 << "invalid kind '" << std::to_string(kind) << "', expected "
 
@@ -207,7 +207,7 @@ class CVC5ApiUnsupportedExceptionStream
 #define CVC5_API_ARG_CHECK_EXPECTED(cond, arg)                      \
   CVC5_PREDICT_TRUE(cond)                                           \
   ? (void)0                                                         \
-  : cvc5::internal::OstreamVoider()                                 \
+  : cvc5pp::internal::OstreamVoider()                                 \
           & CVC5ApiExceptionStream().ostream()                      \
                 << "invalid argument '" << arg << "' for '" << #arg \
                 << "', expected "
@@ -220,7 +220,7 @@ class CVC5ApiUnsupportedExceptionStream
 #define CVC5_API_RECOVERABLE_ARG_CHECK_EXPECTED(cond, arg)          \
   CVC5_PREDICT_TRUE(cond)                                           \
   ? (void)0                                                         \
-  : cvc5::internal::OstreamVoider()                                 \
+  : cvc5pp::internal::OstreamVoider()                                 \
           & CVC5ApiRecoverableExceptionStream().ostream()           \
                 << "invalid argument '" << arg << "' for '" << #arg \
                 << "', expected "
@@ -235,7 +235,7 @@ class CVC5ApiUnsupportedExceptionStream
 #define CVC5_API_ARG_SIZE_CHECK_EXPECTED(cond, arg) \
   CVC5_PREDICT_TRUE(cond)                           \
   ? (void)0                                         \
-  : cvc5::internal::OstreamVoider()                 \
+  : cvc5pp::internal::OstreamVoider()                 \
           & CVC5ApiExceptionStream().ostream()      \
                 << "invalid size of argument '" << #arg << "', expected "
 
@@ -251,7 +251,7 @@ class CVC5ApiUnsupportedExceptionStream
 #define CVC5_API_ARG_AT_INDEX_CHECK_EXPECTED(cond, what, args, idx)          \
   CVC5_PREDICT_TRUE(cond)                                                    \
   ? (void)0                                                                  \
-  : cvc5::internal::OstreamVoider()                                          \
+  : cvc5pp::internal::OstreamVoider()                                          \
           & CVC5ApiExceptionStream().ostream()                               \
                 << "invalid " << (what) << " in '" << #args << "' at index " \
                 << (idx) << ", expected "
@@ -265,7 +265,7 @@ class CVC5ApiUnsupportedExceptionStream
 #define CVC5_API_CHECK_OP_INDEX(cond, args, index)                            \
   CVC5_PREDICT_TRUE(cond)                                                     \
   ? (void)0                                                                   \
-  : cvc5::internal::OstreamVoider()                                           \
+  : cvc5pp::internal::OstreamVoider()                                           \
           & CVC5ApiExceptionStream().ostream()                                \
                 << "invalid value '" << args[index] << "' at index " << index \
                 << " for operator, expected "
@@ -844,7 +844,7 @@ class CVC5ApiUnsupportedExceptionStream
           d_tm.d_nm == bv.d_tm->d_nm, "bound variable", bound_vars, i)        \
           << "a term associated with the term manager of this solver object"; \
       CVC5_API_ARG_AT_INDEX_CHECK_EXPECTED(                                   \
-          bv.d_node->getKind() == cvc5::internal::Kind::BOUND_VARIABLE,       \
+          bv.d_node->getKind() == cvc5pp::internal::Kind::BOUND_VARIABLE,     \
           "bound variable",                                                   \
           bound_vars,                                                         \
           i)                                                                  \
@@ -876,7 +876,7 @@ class CVC5ApiUnsupportedExceptionStream
           d_tm.d_nm == bv.d_tm->d_nm, "bound variable", bound_vars, i)        \
           << "a term associated with the term manager of this solver object"; \
       CVC5_API_ARG_AT_INDEX_CHECK_EXPECTED(                                   \
-          bv.d_node->getKind() == cvc5::internal::Kind::BOUND_VARIABLE,       \
+          bv.d_node->getKind() == cvc5pp::internal::Kind::BOUND_VARIABLE,       \
           "bound variable",                                                   \
           bound_vars,                                                         \
           i)                                                                  \

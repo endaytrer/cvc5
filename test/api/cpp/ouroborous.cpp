@@ -32,9 +32,9 @@
 #include <iostream>
 #include <string>
 
-using namespace cvc5;
-using namespace cvc5::internal;
-using namespace cvc5::parser;
+using namespace cvc5pp;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::parser;
 
 int runTest();
 
@@ -44,7 +44,7 @@ int main()
   {
     return runTest();
   }
-  catch (cvc5::CVC5ApiException& e)
+  catch (cvc5pp::CVC5ApiException& e)
   {
     std::cerr << e.getMessage() << std::endl;
   }
@@ -71,8 +71,8 @@ std::string parse(std::string instr,
       "(assert (= (f x) x))\n"
       "(declare-fun a () (Array U (Array U U)))\n";
 
-  cvc5::TermManager tm;
-  cvc5::Solver solver(tm);
+  cvc5pp::TermManager tm;
+  cvc5pp::Solver solver(tm);
 
   modes::InputLanguage ilang = modes::InputLanguage::SMT_LIB_2_6;
 
@@ -101,7 +101,7 @@ std::string parse(std::string instr,
   std::stringstream ssi;
   ssi << instr;
   parser.setStreamInput(ilang, ss, "internal-buffer");
-  cvc5::Term e = parser.nextTerm();
+  cvc5pp::Term e = parser.nextTerm();
   std::string s = e.toString();
   assert(parser.nextTerm().isNull());  // next expr should be null
   return s;

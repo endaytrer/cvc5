@@ -23,10 +23,10 @@
 #include "util/rational.h"
 #include "util/statistics_registry.h"
 
-using namespace cvc5::internal::theory;
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::theory;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 

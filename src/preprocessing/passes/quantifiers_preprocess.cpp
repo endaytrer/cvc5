@@ -23,12 +23,12 @@
 #include "theory/quantifiers/quantifiers_preprocess.h"
 #include "theory/rewriter.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 
 using namespace std;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
 QuantifiersPreprocess::QuantifiersPreprocess(PreprocessingPassContext* preprocContext)
     : PreprocessingPass(preprocContext, "quantifiers-preprocess"){};

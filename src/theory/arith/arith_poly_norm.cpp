@@ -19,9 +19,9 @@
 #include "theory/bv/theory_bv_utils.h"
 #include "util/bitvector.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 

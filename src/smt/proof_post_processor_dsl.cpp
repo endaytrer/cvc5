@@ -19,9 +19,9 @@
 #include "options/smt_options.h"
 #include "proof/proof_ensure_closed.h"
 
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 ProofPostprocessDsl::ProofPostprocessDsl(Env& env, rewriter::RewriteDb* rdb)

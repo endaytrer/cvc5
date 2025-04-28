@@ -24,11 +24,11 @@
 #include "theory/quantifiers/quantifiers_state.h"
 
 using namespace std;
-using namespace cvc5::internal;
-using namespace cvc5::internal::kind;
-using namespace cvc5::context;
-using namespace cvc5::internal::theory;
-using namespace cvc5::internal::theory::quantifiers;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::context;
+using namespace cvc5pp::internal::theory;
+using namespace cvc5pp::internal::theory::quantifiers;
 
 QModelBuilder::QModelBuilder(Env& env,
                              QuantifiersState& qs,

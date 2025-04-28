@@ -20,7 +20,7 @@
 #include "prop/zero_level_learner.h"
 #include "smt/env.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 LemmaInprocess::LemmaInprocess(Env& env, CnfStream* cs, ZeroLevelLearner& zll)

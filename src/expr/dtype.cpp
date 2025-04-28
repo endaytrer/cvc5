@@ -23,9 +23,9 @@
 #include "expr/type_matcher.h"
 #include "util/rational.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 DType::DType(std::string name, bool isCo)
     : d_name(name),
@@ -1006,8 +1006,8 @@ void DType::toStream(std::ostream& out) const
 }  // namespace cvc5::internal
 
 namespace std {
-size_t hash<cvc5::internal::DType>::operator()(
-    const cvc5::internal::DType& dt) const
+size_t hash<cvc5pp::internal::DType>::operator()(
+    const cvc5pp::internal::DType& dt) const
 {
   return std::hash<std::string>()(dt.getName());
 }

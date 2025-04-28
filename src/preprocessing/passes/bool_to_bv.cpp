@@ -27,10 +27,10 @@
 #include "theory/rewriter.h"
 #include "theory/theory.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
 BoolToBV::BoolToBV(PreprocessingPassContext* preprocContext)
     : PreprocessingPass(preprocContext, "bool-to-bv"),

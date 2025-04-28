@@ -20,7 +20,7 @@
 #include "proof/alethe/alethe_proof_rule.h"
 #include "proof/proof_node_updater.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace proof {
 

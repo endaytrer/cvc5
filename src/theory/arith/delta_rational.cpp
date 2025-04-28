@@ -22,7 +22,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 std::ostream& operator<<(std::ostream& os, const DeltaRational& dq){
   return os << "(" << dq.getNoninfinitesimalPart()

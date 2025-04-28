@@ -19,7 +19,7 @@
 #include "theory/quantifiers/quantifiers_attributes.h"
 #include "util/rational.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 ElimWitnessNodeConverter::ElimWitnessNodeConverter(Env& env)
     : EnvObj(env), NodeConverter(nodeManager())

@@ -31,7 +31,7 @@
 #include "smt/term_formula_removal.h"
 #include "theory/skolem_lemma.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class LogicInfo;
 class TheoryEngine;

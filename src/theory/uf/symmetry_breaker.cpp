@@ -48,11 +48,11 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace uf {
 
-using namespace cvc5::context;
+using namespace cvc5pp::context;
 
 SymmetryBreaker::Template::Template(NodeManager* nm)
     : d_template(), d_assertions(nm), d_sets(), d_reps()

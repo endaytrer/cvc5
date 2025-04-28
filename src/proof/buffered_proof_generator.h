@@ -22,7 +22,7 @@
 #include "proof/proof_generator.h"
 #include "smt/env_obj.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofNodeManager;
 class ProofStep;

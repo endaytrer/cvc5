@@ -20,9 +20,9 @@
 #include "theory/type_enumerator.h"
 
 using namespace std;
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 RepSetIterator::RepSetIterator(const RepSet* rs, RepBoundExt* rext)

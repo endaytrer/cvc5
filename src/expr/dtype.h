@@ -27,7 +27,7 @@
 #include "expr/type_node.h"
 #include "util/cardinality.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 // ----------------------- datatype attributes
 /**
@@ -651,9 +651,9 @@ namespace std {
  * A hash function for DTypes.
  */
 template <>
-struct hash<cvc5::internal::DType>
+struct hash<cvc5pp::internal::DType>
 {
-  size_t operator()(const cvc5::internal::DType& dt) const;
+  size_t operator()(const cvc5pp::internal::DType& dt) const;
 };
 }  // namespace std
 

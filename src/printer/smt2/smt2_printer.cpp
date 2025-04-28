@@ -63,7 +63,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace printer {
 namespace smt2 {
 
@@ -589,7 +589,7 @@ bool Smt2Printer::toStreamBase(std::ostream& out,
     }
     else
     {
-      out << cvc5::internal::quoteSymbol(dt.getName());
+      out << cvc5pp::internal::quoteSymbol(dt.getName());
     }
     return true;
   }
@@ -618,7 +618,7 @@ bool Smt2Printer::toStreamBase(std::ostream& out,
           {
             // abstract value
             std::string s = n.getName();
-            out << "(as " << cvc5::internal::quoteSymbol(s) << " " << n.getType()
+            out << "(as " << cvc5pp::internal::quoteSymbol(s) << " " << n.getType()
                 << ")";
             printed = true;
           }
@@ -644,7 +644,7 @@ bool Smt2Printer::toStreamBase(std::ostream& out,
         }
         else
         {
-          out << cvc5::internal::quoteSymbol(s);
+          out << cvc5pp::internal::quoteSymbol(s);
         }
       }
       else
@@ -1529,7 +1529,7 @@ void Smt2Printer::toStream(std::ostream& out, const UnsatCore& core) const
     const std::vector<std::string>& cnames = core.getCoreNames();
     for (const std::string& cn : cnames)
     {
-      out << cvc5::internal::quoteSymbol(cn) << std::endl;
+      out << cvc5pp::internal::quoteSymbol(cn) << std::endl;
     }
   }
   else
@@ -1673,7 +1673,7 @@ void Smt2Printer::toStreamCmdUnsupported(std::ostream& out) const
 
 static void errorToStream(std::ostream& out, std::string message)
 {
-  out << "(error " << cvc5::internal::quoteString(message) << ')' << endl;
+  out << "(error " << cvc5pp::internal::quoteString(message) << ')' << endl;
 }
 
 void Smt2Printer::toStreamCmdFailure(std::ostream& out,
@@ -1748,7 +1748,7 @@ void Smt2Printer::toStreamCmdDeclareFunction(
 {
   if (d_variant == Variant::alf_variant)
   {
-    out << "(declare-const " << cvc5::internal::quoteSymbol(id);
+    out << "(declare-const " << cvc5pp::internal::quoteSymbol(id);
     if (!argTypes.empty())
     {
       out << " (->";
@@ -1765,7 +1765,7 @@ void Smt2Printer::toStreamCmdDeclareFunction(
     out << ')';
     return;
   }
-  out << "(declare-fun " << cvc5::internal::quoteSymbol(id) << " ";
+  out << "(declare-fun " << cvc5pp::internal::quoteSymbol(id) << " ";
   toStreamDeclareType(out, argTypes, type);
   out << ')';
 }
@@ -1777,7 +1777,7 @@ void Smt2Printer::toStreamCmdDeclareOracleFun(
     TypeNode type,
     const std::string& binName) const
 {
-  out << "(declare-oracle-fun " << cvc5::internal::quoteSymbol(id) << " ";
+  out << "(declare-oracle-fun " << cvc5pp::internal::quoteSymbol(id) << " ";
   toStreamDeclareType(out, argTypes, type);
   out << " " << binName << ")";
 }
@@ -1788,7 +1788,7 @@ void Smt2Printer::toStreamCmdDeclarePool(
     TypeNode type,
     const std::vector<Node>& initValue) const
 {
-  out << "(declare-pool " << cvc5::internal::quoteSymbol(id) << ' ' << type << " (";
+  out << "(declare-pool " << cvc5pp::internal::quoteSymbol(id) << ' ' << type << " (";
   for (size_t i = 0, n = initValue.size(); i < n; ++i)
   {
     if (i != 0) {
@@ -1807,12 +1807,12 @@ void Smt2Printer::toStreamCmdDefineFunction(std::ostream& out,
 {
   if (d_variant == Variant::alf_variant)
   {
-    out << "(define " << cvc5::internal::quoteSymbol(id) << " ";
+    out << "(define " << cvc5pp::internal::quoteSymbol(id) << " ";
     toStreamSortedVarList(out, formals);
     out << " " << formula << ')';
     return;
   }
-  out << "(define-fun " << cvc5::internal::quoteSymbol(id) << " ";
+  out << "(define-fun " << cvc5pp::internal::quoteSymbol(id) << " ";
   toStreamSortedVarList(out, formals);
   out << " " << range << ' ' << formula << ')';
 }
@@ -1901,7 +1901,7 @@ void Smt2Printer::toStreamCmdDeclareType(std::ostream& out,
 {
   if (d_variant == Variant::alf_variant)
   {
-    out << "(declare-type " << cvc5::internal::quoteSymbol(id) << " (";
+    out << "(declare-type " << cvc5pp::internal::quoteSymbol(id) << " (";
     for (size_t i = 0; i < arity; i++)
     {
       if (i > 0)
@@ -1913,7 +1913,7 @@ void Smt2Printer::toStreamCmdDeclareType(std::ostream& out,
     out << "))";
     return;
   }
-  out << "(declare-sort " << cvc5::internal::quoteSymbol(id) << " " << arity
+  out << "(declare-sort " << cvc5pp::internal::quoteSymbol(id) << " " << arity
       << ")";
 }
 
@@ -1922,7 +1922,7 @@ void Smt2Printer::toStreamCmdDefineType(std::ostream& out,
                                         const std::vector<TypeNode>& params,
                                         TypeNode t) const
 {
-  out << "(define-sort " << cvc5::internal::quoteSymbol(id) << " (";
+  out << "(define-sort " << cvc5pp::internal::quoteSymbol(id) << " (";
   if (params.size() > 0)
   {
     copy(
@@ -2102,7 +2102,7 @@ void Smt2Printer::toStream(std::ostream& out, const DType& dt) const
     {
       out << " ";
     }
-    out << "(" << cvc5::internal::quoteSymbol(cons.getName());
+    out << "(" << cvc5pp::internal::quoteSymbol(cons.getName());
     for (size_t j = 0, nargs = cons.getNumArgs(); j < nargs; j++)
     {
       const DTypeSelector& arg = cons[j];
@@ -2135,7 +2135,7 @@ void Smt2Printer::toStreamCmdDatatypeDeclaration(
   {
     Assert(t.isDatatype());
     const DType& d = t.getDType();
-    out << "(" << cvc5::internal::quoteSymbol(d.getName());
+    out << "(" << cvc5pp::internal::quoteSymbol(d.getName());
     out << " " << d.getNumParameters() << ")";
   }
   out << ") (";
@@ -2217,7 +2217,7 @@ void Smt2Printer::toStreamCmdEmpty(std::ostream& out,
 void Smt2Printer::toStreamCmdEcho(std::ostream& out,
                                   const std::string& output) const
 {
-  out << "(echo " << cvc5::internal::quoteString(output) << ')';
+  out << "(echo " << cvc5pp::internal::quoteString(output) << ')';
 }
 
 /*
@@ -2302,7 +2302,7 @@ void Smt2Printer::toStreamCmdSynthFun(std::ostream& out,
                                       TypeNode rangeType,
                                       TypeNode sygusType) const
 {
-  out << "(synth-fun " << cvc5::internal::quoteSymbol(id) << ' ';
+  out << "(synth-fun " << cvc5pp::internal::quoteSymbol(id) << ' ';
   // print variable list
   toStreamSortedVarList(out, vars);
   // print return type
@@ -2319,7 +2319,7 @@ void Smt2Printer::toStreamCmdDeclareVar(std::ostream& out,
                                         const std::string& id,
                                         TypeNode type) const
 {
-  out << "(declare-var " << cvc5::internal::quoteSymbol(id) << ' ' << type
+  out << "(declare-var " << cvc5pp::internal::quoteSymbol(id) << ' ' << type
       << ')';
 }
 
@@ -2373,7 +2373,7 @@ void Smt2Printer::toStreamCmdGetInterpol(std::ostream& out,
                                          Node conj,
                                          TypeNode sygusType) const
 {
-  out << "(get-interpolant " << cvc5::internal::quoteSymbol(name) << ' ' << conj;
+  out << "(get-interpolant " << cvc5pp::internal::quoteSymbol(name) << ' ' << conj;
   if (!sygusType.isNull())
   {
     out << ' ' << sygusGrammarString(sygusType);

@@ -25,8 +25,8 @@ namespace utils {
  * @param terms the terms for which the synthesis solutions were retrieved
  * @param sols the synthesis solutions of the given terms
  */
-void printSynthSolutions(const std::vector<cvc5::Term>& terms,
-                         const std::vector<cvc5::Term>& sols);
+void printSynthSolutions(const std::vector<cvc5pp::Term>& terms,
+                         const std::vector<cvc5pp::Term>& sols);
 
 }  // namespace utils
 

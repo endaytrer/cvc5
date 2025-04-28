@@ -24,7 +24,7 @@
 #include "theory/quantifiers/lazy_trie.h"
 #include "theory/quantifiers/term_enumeration.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Env;
 

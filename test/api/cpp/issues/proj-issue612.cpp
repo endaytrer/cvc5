@@ -15,7 +15,7 @@
  */
 #include <cvc5/cvc5.h>
 
-using namespace cvc5;
+using namespace cvc5pp;
 int main(void)
 {
   TermManager tm;
@@ -92,7 +92,7 @@ int main(void)
   Term t67 = tm.mkTerm(Kind::REGEXP_INTER, {t8, t8});
   solver.assertFormula(t66);
   solver.checkSat();
-  solver.blockModel(cvc5::modes::BlockModelsMode::LITERALS);
+  solver.blockModel(cvc5pp::modes::BlockModelsMode::LITERALS);
 
   return 0;
 }

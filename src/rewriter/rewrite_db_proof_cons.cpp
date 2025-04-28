@@ -26,9 +26,9 @@
 #include "theory/rewriter.h"
 #include "util/bitvector.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace rewriter {
 
 // fixed point limit set to 1000

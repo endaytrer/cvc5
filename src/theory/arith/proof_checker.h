@@ -24,7 +24,7 @@
 #include "theory/arith/nl/ext/proof_checker.h"
 #include "theory/arith/nl/transcendental/proof_checker.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 

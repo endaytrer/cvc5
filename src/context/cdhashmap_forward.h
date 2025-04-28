@@ -28,7 +28,7 @@
 
 /// \cond internals
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 template <class Key, class Data, class HashFcn = std::hash<Key> >
 class CDHashMap;
 }  // namespace cvc5::context

@@ -36,7 +36,7 @@
 #include "theory/ff/core.h"
 #include "theory/ff/util.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace ff {
 

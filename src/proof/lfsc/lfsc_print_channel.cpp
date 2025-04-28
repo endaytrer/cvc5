@@ -20,9 +20,9 @@
 #include "proof/lfsc/lfsc_util.h"
 #include "rewriter/rewrite_proof_rule.h"
 
-using namespace cvc5::internal::rewriter;
+using namespace cvc5pp::internal::rewriter;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 LfscPrintChannelOut::LfscPrintChannelOut(std::ostream& out) : d_out(out) {}

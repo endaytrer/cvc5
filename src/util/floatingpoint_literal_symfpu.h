@@ -26,7 +26,7 @@
 
 /* -------------------------------------------------------------------------- */
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using SymFPUUnpackedFloatLiteral =
     ::symfpu::unpackedFloat<symfpuLiteral::traits>;

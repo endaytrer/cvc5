@@ -21,20 +21,20 @@
 #include "context/cdo.h"
 #include "parser/symbol_table.h"
 
-using namespace cvc5::context;
-using namespace cvc5::internal::parser;
+using namespace cvc5pp::context;
+using namespace cvc5pp::internal::parser;
 
-namespace cvc5::parser {
+namespace cvc5pp::parser {
 
 // ---------------------------------------------- SymManager::Implementation
 
 class SymManager::Implementation
 {
   using TermStringMap =
-      CDHashMap<cvc5::Term, std::string, std::hash<cvc5::Term>>;
-  using TermSet = CDHashSet<cvc5::Term, std::hash<cvc5::Term>>;
-  using SortList = CDList<cvc5::Sort>;
-  using TermList = CDList<cvc5::Term>;
+      CDHashMap<cvc5pp::Term, std::string, std::hash<cvc5pp::Term>>;
+  using TermSet = CDHashSet<cvc5pp::Term, std::hash<cvc5pp::Term>>;
+  using SortList = CDList<cvc5pp::Sort>;
+  using TermList = CDList<cvc5pp::Term>;
 
  public:
   Implementation()
@@ -55,32 +55,32 @@ class SymManager::Implementation
   SymbolTable& getSymbolTable() { return d_symtabAllocated; }
 
   /** set expression name */
-  NamingResult setExpressionName(cvc5::Term t,
+  NamingResult setExpressionName(cvc5pp::Term t,
                                  const std::string& name,
                                  bool isAssertion = false);
   /** get expression name */
-  bool getExpressionName(cvc5::Term t,
+  bool getExpressionName(cvc5pp::Term t,
                          std::string& name,
                          bool isAssertion = false) const;
   /** get expression names */
-  void getExpressionNames(const std::vector<cvc5::Term>& ts,
+  void getExpressionNames(const std::vector<cvc5pp::Term>& ts,
                           std::vector<std::string>& names,
                           bool areAssertions = false) const;
   /** get expression names */
-  std::map<cvc5::Term, std::string> getExpressionNames(
+  std::map<cvc5pp::Term, std::string> getExpressionNames(
       bool areAssertions) const;
   /** get model declare sorts */
-  std::vector<cvc5::Sort> getDeclaredSorts() const;
+  std::vector<cvc5pp::Sort> getDeclaredSorts() const;
   /** get model declare terms */
-  std::vector<cvc5::Term> getDeclaredTerms() const;
+  std::vector<cvc5pp::Term> getDeclaredTerms() const;
   /** get functions to synthesize */
-  std::vector<cvc5::Term> getFunctionsToSynthesize() const;
+  std::vector<cvc5pp::Term> getFunctionsToSynthesize() const;
   /** Add declared sort to the list of model declarations. */
-  void addModelDeclarationSort(cvc5::Sort s);
+  void addModelDeclarationSort(cvc5pp::Sort s);
   /** Add declared term to the list of model declarations. */
-  void addModelDeclarationTerm(cvc5::Term t);
+  void addModelDeclarationTerm(cvc5pp::Term t);
   /** Add function to the list of functions to synthesize. */
-  void addFunctionToSynthesize(cvc5::Term t);
+  void addFunctionToSynthesize(cvc5pp::Term t);
   /** reset */
   void reset();
   /** reset assertions */
@@ -122,7 +122,7 @@ class SymManager::Implementation
 };
 
 NamingResult SymManager::Implementation::setExpressionName(
-    cvc5::Term t, const std::string& name, bool isAssertion)
+    cvc5pp::Term t, const std::string& name, bool isAssertion)
 {
   Trace("sym-manager") << "SymManager: set expression name: " << t << " -> "
                        << name << ", isAssertion=" << isAssertion << std::endl;
@@ -145,7 +145,7 @@ NamingResult SymManager::Implementation::setExpressionName(
   return NamingResult::SUCCESS;
 }
 
-bool SymManager::Implementation::getExpressionName(cvc5::Term t,
+bool SymManager::Implementation::getExpressionName(cvc5pp::Term t,
                                                    std::string& name,
                                                    bool isAssertion) const
 {
@@ -167,11 +167,11 @@ bool SymManager::Implementation::getExpressionName(cvc5::Term t,
 }
 
 void SymManager::Implementation::getExpressionNames(
-    const std::vector<cvc5::Term>& ts,
+    const std::vector<cvc5pp::Term>& ts,
     std::vector<std::string>& names,
     bool areAssertions) const
 {
-  for (const cvc5::Term& t : ts)
+  for (const cvc5pp::Term& t : ts)
   {
     std::string name;
     if (getExpressionName(t, name, areAssertions))
@@ -181,16 +181,16 @@ void SymManager::Implementation::getExpressionNames(
   }
 }
 
-std::map<cvc5::Term, std::string>
+std::map<cvc5pp::Term, std::string>
 SymManager::Implementation::getExpressionNames(bool areAssertions) const
 {
-  std::map<cvc5::Term, std::string> emap;
+  std::map<cvc5pp::Term, std::string> emap;
   for (TermStringMap::const_iterator it = d_names.begin(),
                                      itend = d_names.end();
        it != itend;
        ++it)
   {
-    cvc5::Term t = (*it).first;
+    cvc5pp::Term t = (*it).first;
     if (areAssertions && d_namedAsserts.find(t) == d_namedAsserts.end())
     {
       continue;
@@ -200,41 +200,41 @@ SymManager::Implementation::getExpressionNames(bool areAssertions) const
   return emap;
 }
 
-std::vector<cvc5::Sort> SymManager::Implementation::getDeclaredSorts() const
+std::vector<cvc5pp::Sort> SymManager::Implementation::getDeclaredSorts() const
 {
-  std::vector<cvc5::Sort> declareSorts(d_declareSorts.begin(),
+  std::vector<cvc5pp::Sort> declareSorts(d_declareSorts.begin(),
                                        d_declareSorts.end());
   return declareSorts;
 }
 
-std::vector<cvc5::Term> SymManager::Implementation::getDeclaredTerms() const
+std::vector<cvc5pp::Term> SymManager::Implementation::getDeclaredTerms() const
 {
-  std::vector<cvc5::Term> declareTerms(d_declareTerms.begin(),
+  std::vector<cvc5pp::Term> declareTerms(d_declareTerms.begin(),
                                        d_declareTerms.end());
   return declareTerms;
 }
 
-std::vector<cvc5::Term> SymManager::Implementation::getFunctionsToSynthesize()
+std::vector<cvc5pp::Term> SymManager::Implementation::getFunctionsToSynthesize()
     const
 {
-  return std::vector<cvc5::Term>(d_funToSynth.begin(), d_funToSynth.end());
+  return std::vector<cvc5pp::Term>(d_funToSynth.begin(), d_funToSynth.end());
 }
 
-void SymManager::Implementation::addModelDeclarationSort(cvc5::Sort s)
+void SymManager::Implementation::addModelDeclarationSort(cvc5pp::Sort s)
 {
   Trace("sym-manager") << "SymManager: addModelDeclarationSort " << s
                        << std::endl;
   d_declareSorts.push_back(s);
 }
 
-void SymManager::Implementation::addModelDeclarationTerm(cvc5::Term t)
+void SymManager::Implementation::addModelDeclarationTerm(cvc5pp::Term t)
 {
   Trace("sym-manager") << "SymManager: addModelDeclarationTerm " << t
                        << std::endl;
   d_declareTerms.push_back(t);
 }
 
-void SymManager::Implementation::addFunctionToSynthesize(cvc5::Term f)
+void SymManager::Implementation::addFunctionToSynthesize(cvc5pp::Term f)
 {
   Trace("sym-manager") << "SymManager: addFunctionToSynthesize " << f
                        << std::endl;
@@ -309,7 +309,7 @@ void SymManager::Implementation::resetAssertions()
 
 // ---------------------------------------------- SymManager
 
-SymManager::SymManager(cvc5::TermManager& tm)
+SymManager::SymManager(cvc5pp::TermManager& tm)
     : d_tm(tm),
       d_implementation(new SymManager::Implementation()),
       d_globalDeclarations(false),
@@ -328,19 +328,19 @@ SymbolTable* SymManager::getSymbolTable()
   return &d_implementation->getSymbolTable();
 }
 
-bool SymManager::bind(const std::string& name, cvc5::Term obj, bool doOverload)
+bool SymManager::bind(const std::string& name, cvc5pp::Term obj, bool doOverload)
 {
   return d_implementation->getSymbolTable().bind(name, obj, doOverload);
 }
 
-bool SymManager::bindType(const std::string& name, cvc5::Sort t, bool isUser)
+bool SymManager::bindType(const std::string& name, cvc5pp::Sort t, bool isUser)
 {
   if (isUser && !d_termSortOverload)
   {
     // if a user sort and d_termSortOverload is false, we bind a dummy constant
     // to the term symbol table.
-    cvc5::Sort dummyType = d_tm.mkUninterpretedSort("Type");
-    cvc5::Term ts = d_tm.mkConst(dummyType, name);
+    cvc5pp::Sort dummyType = d_tm.mkUninterpretedSort("Type");
+    cvc5pp::Term ts = d_tm.mkConst(dummyType, name);
     if (!d_implementation->getSymbolTable().bindDummySortTerm(name, ts))
     {
       return false;
@@ -351,7 +351,7 @@ bool SymManager::bindType(const std::string& name, cvc5::Sort t, bool isUser)
 }
 
 bool SymManager::bindMutualDatatypeTypes(
-    const std::vector<cvc5::Sort>& datatypes, bool bindTesters)
+    const std::vector<cvc5pp::Sort>& datatypes, bool bindTesters)
 {
   for (size_t i = 0, ntypes = datatypes.size(); i < ntypes; ++i)
   {
@@ -421,16 +421,16 @@ bool SymManager::bindMutualDatatypeTypes(
 }
 
 bool SymManager::bindType(const std::string& name,
-                          const std::vector<cvc5::Sort>& params,
-                          cvc5::Sort t,
+                          const std::vector<cvc5pp::Sort>& params,
+                          cvc5pp::Sort t,
                           bool isUser)
 {
   if (isUser && !d_termSortOverload)
   {
     // if a user sort and d_termSortOverload is false, we bind a dummy symbol
     // to the term symbol table.
-    cvc5::Sort dummyType = d_tm.mkUninterpretedSort("Type");
-    cvc5::Term ts = d_tm.mkConst(dummyType, name);
+    cvc5pp::Sort dummyType = d_tm.mkUninterpretedSort("Type");
+    cvc5pp::Term ts = d_tm.mkConst(dummyType, name);
     if (!d_implementation->getSymbolTable().bindDummySortTerm(name, ts))
     {
       return false;
@@ -440,57 +440,57 @@ bool SymManager::bindType(const std::string& name,
   return true;
 }
 
-NamingResult SymManager::setExpressionName(cvc5::Term t,
+NamingResult SymManager::setExpressionName(cvc5pp::Term t,
                                            const std::string& name,
                                            bool isAssertion)
 {
   return d_implementation->setExpressionName(t, name, isAssertion);
 }
 
-bool SymManager::getExpressionName(cvc5::Term t,
+bool SymManager::getExpressionName(cvc5pp::Term t,
                                    std::string& name,
                                    bool isAssertion) const
 {
   return d_implementation->getExpressionName(t, name, isAssertion);
 }
 
-void SymManager::getExpressionNames(const std::vector<cvc5::Term>& ts,
+void SymManager::getExpressionNames(const std::vector<cvc5pp::Term>& ts,
                                     std::vector<std::string>& names,
                                     bool areAssertions) const
 {
   return d_implementation->getExpressionNames(ts, names, areAssertions);
 }
 
-std::map<cvc5::Term, std::string> SymManager::getExpressionNames(
+std::map<cvc5pp::Term, std::string> SymManager::getExpressionNames(
     bool areAssertions) const
 {
   return d_implementation->getExpressionNames(areAssertions);
 }
-std::vector<cvc5::Sort> SymManager::getDeclaredSorts() const
+std::vector<cvc5pp::Sort> SymManager::getDeclaredSorts() const
 {
   return d_implementation->getDeclaredSorts();
 }
-std::vector<cvc5::Term> SymManager::getDeclaredTerms() const
+std::vector<cvc5pp::Term> SymManager::getDeclaredTerms() const
 {
   return d_implementation->getDeclaredTerms();
 }
 
-std::vector<cvc5::Term> SymManager::getFunctionsToSynthesize() const
+std::vector<cvc5pp::Term> SymManager::getFunctionsToSynthesize() const
 {
   return d_implementation->getFunctionsToSynthesize();
 }
 
-void SymManager::addModelDeclarationSort(cvc5::Sort s)
+void SymManager::addModelDeclarationSort(cvc5pp::Sort s)
 {
   d_implementation->addModelDeclarationSort(s);
 }
 
-void SymManager::addModelDeclarationTerm(cvc5::Term t)
+void SymManager::addModelDeclarationTerm(cvc5pp::Term t)
 {
   d_implementation->addModelDeclarationTerm(t);
 }
 
-void SymManager::addFunctionToSynthesize(cvc5::Term f)
+void SymManager::addFunctionToSynthesize(cvc5pp::Term f)
 {
   d_implementation->addFunctionToSynthesize(f);
 }

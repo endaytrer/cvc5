@@ -17,7 +17,7 @@
 
 #include "options/option_exception.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 std::ostream& operator<<(std::ostream& out, Language lang)
 {

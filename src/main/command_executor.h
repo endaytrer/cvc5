@@ -22,7 +22,7 @@
 #include <iosfwd>
 #include <string>
 
-namespace cvc5 {
+namespace cvc5pp {
 
 namespace parser {
 class Command;
@@ -37,7 +37,7 @@ class CommandExecutor
    * The solver object, which is allocated by this class and is used for
    * executing most commands (e.g. check-sat).
    */
-  std::unique_ptr<cvc5::Solver>& d_solver;
+  std::unique_ptr<cvc5pp::Solver>& d_solver;
   /**
    * The symbol manager, which is allocated by this class. This manages
    * all things related to definitions of symbols and their impact on behaviors
@@ -50,13 +50,13 @@ class CommandExecutor
    */
   std::unique_ptr<parser::SymbolManager> d_symman;
 
-  cvc5::Result d_result;
+  cvc5pp::Result d_result;
 
   /** Cache option value of parse-only option. */
   bool d_parseOnly;
 
  public:
-  CommandExecutor(std::unique_ptr<cvc5::Solver>& solver);
+  CommandExecutor(std::unique_ptr<cvc5pp::Solver>& solver);
 
   virtual ~CommandExecutor();
 
@@ -65,20 +65,20 @@ class CommandExecutor
    * sequence.  Eventually uses doCommandSingleton (which can be
    * overridden by a derived class).
    */
-  bool doCommand(cvc5::parser::Command* cmd);
+  bool doCommand(cvc5pp::parser::Command* cmd);
 
-  bool doCommand(std::unique_ptr<cvc5::parser::Command>& cmd)
+  bool doCommand(std::unique_ptr<cvc5pp::parser::Command>& cmd)
   {
     return doCommand(cmd.get());
   }
 
   /** Get a pointer to the solver object owned by this CommandExecutor. */
-  cvc5::Solver* getSolver() { return d_solver.get(); }
+  cvc5pp::Solver* getSolver() { return d_solver.get(); }
 
   /** Get a pointer to the symbol manager owned by this CommandExecutor */
   parser::SymbolManager* getSymbolManager() { return d_symman.get(); }
 
-  cvc5::Result getResult() const { return d_result; }
+  cvc5pp::Result getResult() const { return d_result; }
   void reset();
 
   /** Store the current options as the original options */
@@ -118,7 +118,7 @@ class CommandExecutor
  private:
   CommandExecutor();
 
-  bool solverInvoke(cvc5::Solver* solver,
+  bool solverInvoke(cvc5pp::Solver* solver,
                     parser::SymManager* sm,
                     parser::Cmd* cmd,
                     std::ostream& out);

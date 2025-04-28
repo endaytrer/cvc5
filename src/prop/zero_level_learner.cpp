@@ -24,7 +24,7 @@
 #include "theory/theory_engine.h"
 #include "theory/trust_substitutions.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 ZeroLevelLearner::ZeroLevelLearner(Env& env, TheoryEngine* theoryEngine)

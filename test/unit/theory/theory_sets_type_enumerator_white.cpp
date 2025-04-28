@@ -20,7 +20,7 @@
 #include "test_smt.h"
 #include "theory/sets/theory_sets_type_enumerator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace theory;
 using namespace kind;

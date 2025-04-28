@@ -19,7 +19,7 @@
 #include "options/io_utils.h"
 #include "printer/printer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 InstantiationVec::InstantiationVec(const std::vector<Node>& vec,
                                    theory::InferenceId id,

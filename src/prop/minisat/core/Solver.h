@@ -39,7 +39,7 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 #include "theory/theory.h"
 #include "util/resource_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace prop {
 class PropEngine;
@@ -48,7 +48,7 @@ class PropPfManager;
 }  // namespace prop
 }  // namespace cvc5::internal
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace Minisat {
 
 //=================================================================================================
@@ -57,9 +57,9 @@ namespace Minisat {
 class Solver : protected EnvObj
 {
   /** The only two cvc5 entry points to the private solver data */
-  friend class cvc5::internal::prop::PropEngine;
-  friend class cvc5::internal::prop::TheoryProxy;
-  friend class cvc5::internal::prop::SatProofManager;
+  friend class cvc5pp::internal::prop::PropEngine;
+  friend class cvc5pp::internal::prop::TheoryProxy;
+  friend class cvc5pp::internal::prop::SatProofManager;
 
  public:
   static CRef TCRef_Undef;
@@ -73,7 +73,7 @@ class Solver : protected EnvObj
 
  protected:
   /** The pointer to the proxy that provides interfaces to the SMT engine */
-  cvc5::internal::prop::TheoryProxy* d_proxy;
+  cvc5pp::internal::prop::TheoryProxy* d_proxy;
 
   /** The contexts from the SMT solver */
   context::Context* d_context;
@@ -88,7 +88,7 @@ class Solver : protected EnvObj
   Var varFalse;
 
   /** The resolution proof manager */
-  std::unique_ptr<cvc5::internal::prop::SatProofManager> d_pfManager;
+  std::unique_ptr<cvc5pp::internal::prop::SatProofManager> d_pfManager;
 
  public:
   /** Returns the current user assertion level */
@@ -121,7 +121,7 @@ public:
     // Constructor/Destructor:
     //
  Solver(Env& env,
-        cvc5::internal::prop::TheoryProxy* proxy,
+        cvc5pp::internal::prop::TheoryProxy* proxy,
         context::Context* context,
         context::UserContext* userContext,
         prop::PropPfManager* ppm,
@@ -139,7 +139,7 @@ public:
  Var falseVar() const { return varFalse; }
 
  /** Retrive the SAT proof manager */
- cvc5::internal::prop::SatProofManager* getProofManager();
+ cvc5pp::internal::prop::SatProofManager* getProofManager();
 
  /** Retrive the refutation proof */
  std::shared_ptr<ProofNode> getProof();
@@ -498,7 +498,7 @@ protected:
     CRef     propagateBool    ();                                                      // Perform Boolean propagation. Returns possibly conflicting clause.
     void     propagateTheory  ();                                                      // Perform Theory propagation.
     void theoryCheck(
-        cvc5::internal::theory::Theory::Effort
+        cvc5pp::internal::theory::Theory::Effort
             effort);  // Perform a theory satisfiability check. Adds lemmas.
     CRef     updateLemmas     ();                                                      // Add the lemmas, backtraking if necessary and return a conflict if there is one
     void     cancelUntil      (int level);                                             // Backtrack until a certain level.

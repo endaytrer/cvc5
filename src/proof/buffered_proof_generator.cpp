@@ -18,7 +18,7 @@
 #include "proof/proof.h"
 #include "proof/proof_node_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 BufferedProofGenerator::BufferedProofGenerator(Env& env,
                                                context::Context* c,

@@ -33,7 +33,7 @@
 #include "util/result.h"
 #include "util/synth_result.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 
 class Solver;
 
@@ -88,7 +88,7 @@ class QuantifiersEngine;
 
 class CVC5_EXPORT SolverEngine
 {
-  friend class cvc5::Solver;
+  friend class cvc5pp::Solver;
 
   /* .......................................................................  */
  public:
@@ -898,7 +898,7 @@ class CVC5_EXPORT SolverEngine
   void endCall();
 
   /** Set solver instance that owns this SolverEngine. */
-  void setSolver(cvc5::Solver* solver) { d_solver = solver; }
+  void setSolver(cvc5pp::Solver* solver) { d_solver = solver; }
 
   /** Get a pointer to the (new) PfManager owned by this SolverEngine. */
   smt::PfManager* getPfManager() { return d_pfManager.get(); };
@@ -1064,7 +1064,7 @@ class CVC5_EXPORT SolverEngine
   /* Members -------------------------------------------------------------- */
 
   /** Solver instance that owns this SolverEngine instance. */
-  cvc5::Solver* d_solver = nullptr;
+  cvc5pp::Solver* d_solver = nullptr;
 
   /**
    * The environment object, which contains all utilities that are globally

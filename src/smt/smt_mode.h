@@ -20,7 +20,7 @@
 
 #include <iosfwd>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * The mode of the solver, which is an extension of Figure 4.1 on

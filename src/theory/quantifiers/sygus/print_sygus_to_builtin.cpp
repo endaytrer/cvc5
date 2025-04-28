@@ -20,7 +20,7 @@
 #include "expr/dtype.h"
 #include "theory/datatypes/sygus_datatype_utils.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

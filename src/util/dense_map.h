@@ -36,7 +36,7 @@
 #include "base/check.h"
 #include "util/index.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 template <class T>
 class DenseMap {

@@ -17,7 +17,7 @@
 
 #include <limits>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 static_assert(sizeof(Index) <= sizeof(size_t),
               "Index cannot be larger than size_t");

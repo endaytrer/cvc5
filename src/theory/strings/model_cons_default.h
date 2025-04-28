@@ -21,7 +21,7 @@
 #include "smt/env_obj.h"
 #include "theory/strings/model_cons.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 

@@ -20,7 +20,7 @@
 #ifndef CVC5__UTIL__INDEXED_ROOT_PREDICATE_H
 #define CVC5__UTIL__INDEXED_ROOT_PREDICATE_H
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * The structure representing the index of a root predicate.

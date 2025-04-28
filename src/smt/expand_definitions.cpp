@@ -24,11 +24,11 @@
 #include "theory/theory.h"
 #include "util/resource_manager.h"
 
-using namespace cvc5::internal::preprocessing;
-using namespace cvc5::internal::theory;
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::preprocessing;
+using namespace cvc5pp::internal::theory;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 ExpandDefs::ExpandDefs(Env& env) : EnvObj(env) {}

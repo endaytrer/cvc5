@@ -18,7 +18,7 @@
 
 #include <cassert>
 
-using namespace cvc5;
+using namespace cvc5pp;
 
 int main(void)
 {
@@ -45,7 +45,7 @@ int main(void)
   {
     (void)slv.simplify(t7);
   }
-  catch (cvc5::CVC5ApiException& e)
+  catch (cvc5pp::CVC5ApiException& e)
   {
   }
 }

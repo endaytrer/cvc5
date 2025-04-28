@@ -27,7 +27,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 TypeCheckingExceptionPrivate::TypeCheckingExceptionPrivate(TNode node,
                                                            std::string message)
@@ -170,12 +170,12 @@ template InternalSkolemId NodeTemplate<false>::getInternalSkolemId() const;
 
 namespace std {
 
-size_t hash<cvc5::internal::Node>::operator()(const cvc5::internal::Node& node) const
+size_t hash<cvc5pp::internal::Node>::operator()(const cvc5pp::internal::Node& node) const
 {
   return node.getId();
 }
 
-size_t hash<cvc5::internal::TNode>::operator()(const cvc5::internal::TNode& node) const
+size_t hash<cvc5pp::internal::TNode>::operator()(const cvc5pp::internal::TNode& node) const
 {
   return node.getId();
 }

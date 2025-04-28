@@ -27,7 +27,7 @@
 #include "context/cdhashmap.h"
 #include "context/cdo.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith::linear {
 

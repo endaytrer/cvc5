@@ -21,7 +21,7 @@
 #include "expr/node_converter.h"
 #include "expr/type_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * This converts a node into one that does not involve (arithmetic) subtyping.

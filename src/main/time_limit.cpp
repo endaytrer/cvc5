@@ -58,7 +58,7 @@
 #include "base/exception.h"
 #include "signal_handlers.h"
 
-namespace cvc5::main {
+namespace cvc5pp::main {
 
 #if HAVE_SETITIMER
 TimeLimit::~TimeLimit() {}

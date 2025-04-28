@@ -38,7 +38,7 @@
 #include "theory/theory_engine.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 TheoryProxy::TheoryProxy(Env& env,

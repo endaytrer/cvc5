@@ -35,12 +35,12 @@ struct cvc5_term_t
    * @param term The wrapped C++ term.
    * @param tm   The associated term manager.
    */
-  cvc5_term_t(Cvc5TermManager* tm, const cvc5::Term& term)
+  cvc5_term_t(Cvc5TermManager* tm, const cvc5pp::Term& term)
       : d_term(term), d_tm(tm)
   {
   }
   /** The wrapped C++ term. */
-  cvc5::Term d_term;
+  cvc5pp::Term d_term;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager. */
@@ -55,9 +55,9 @@ struct cvc5_op_t
    * @param op The wrapped C++ operator.
    * @param tm The associated term manager.
    */
-  cvc5_op_t(Cvc5TermManager* tm, const cvc5::Op& op) : d_op(op), d_tm(tm) {}
+  cvc5_op_t(Cvc5TermManager* tm, const cvc5pp::Op& op) : d_op(op), d_tm(tm) {}
   /** The wrapped C++ op. */
-  cvc5::Op d_op;
+  cvc5pp::Op d_op;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager. */
@@ -72,12 +72,12 @@ struct cvc5_sort_t
    * @param sort The wrapped C++ sort.
    * @param tm   The associated term manager.
    */
-  cvc5_sort_t(Cvc5TermManager* tm, const cvc5::Sort& sort)
+  cvc5_sort_t(Cvc5TermManager* tm, const cvc5pp::Sort& sort)
       : d_sort(sort), d_tm(tm)
   {
   }
   /** The wrapped C++ sort. */
-  cvc5::Sort d_sort;
+  cvc5pp::Sort d_sort;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager. */
@@ -92,11 +92,11 @@ struct cvc5_dt_t
    * @param tm The associated term manager.
    * @param dt The wrapped C++ datatype.
    */
-  cvc5_dt_t(Cvc5TermManager* tm, const cvc5::Datatype& dt) : d_dt(dt), d_tm(tm)
+  cvc5_dt_t(Cvc5TermManager* tm, const cvc5pp::Datatype& dt) : d_dt(dt), d_tm(tm)
   {
   }
   /** The wrapped C++ datatype. */
-  cvc5::Datatype d_dt;
+  cvc5pp::Datatype d_dt;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager. */
@@ -111,12 +111,12 @@ struct cvc5_dt_cons_t
    * @param tm The associated term manager.
    * @param dt The wrapped C++ datatype constructor.
    */
-  cvc5_dt_cons_t(Cvc5TermManager* tm, const cvc5::DatatypeConstructor& cons)
+  cvc5_dt_cons_t(Cvc5TermManager* tm, const cvc5pp::DatatypeConstructor& cons)
       : d_dt_cons(cons), d_tm(tm)
   {
   }
   /** The wrapped C++ datatype constructor. */
-  cvc5::DatatypeConstructor d_dt_cons;
+  cvc5pp::DatatypeConstructor d_dt_cons;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager. */
@@ -131,12 +131,12 @@ struct cvc5_dt_sel_t
    * @param tm The associated term manager.
    * @param dt The wrapped C++ datatype selector.
    */
-  cvc5_dt_sel_t(Cvc5TermManager* tm, const cvc5::DatatypeSelector& sel)
+  cvc5_dt_sel_t(Cvc5TermManager* tm, const cvc5pp::DatatypeSelector& sel)
       : d_dt_sel(sel), d_tm(tm)
   {
   }
   /** The wrapped C++ datatype selector. */
-  cvc5::DatatypeSelector d_dt_sel;
+  cvc5pp::DatatypeSelector d_dt_sel;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager. */
@@ -151,12 +151,12 @@ struct cvc5_dt_decl_t
    * @param decl The wrapped C++ datatype declaration.
    * @param tm   The associated term manager.
    */
-  cvc5_dt_decl_t(Cvc5TermManager* tm, const cvc5::DatatypeDecl& decl)
+  cvc5_dt_decl_t(Cvc5TermManager* tm, const cvc5pp::DatatypeDecl& decl)
       : d_decl(decl), d_tm(tm)
   {
   }
   /** The wrapped C++ datatype declaration. */
-  cvc5::DatatypeDecl d_decl;
+  cvc5pp::DatatypeDecl d_decl;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager. */
@@ -172,12 +172,12 @@ struct cvc5_dt_cons_decl_t
    * @param tm   The associated term manager.
    */
   cvc5_dt_cons_decl_t(Cvc5TermManager* tm,
-                      const cvc5::DatatypeConstructorDecl& decl)
+                      const cvc5pp::DatatypeConstructorDecl& decl)
       : d_decl(decl), d_tm(tm)
   {
   }
   /** The wrapped C++ datatype constructor declaration. */
-  cvc5::DatatypeConstructorDecl d_decl;
+  cvc5pp::DatatypeConstructorDecl d_decl;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager. */
@@ -195,55 +195,55 @@ struct CVC5_EXPORT Cvc5TermManager
    * Export C++ sort to C API.
    * @param sort The sort to export.
    */
-  Cvc5Sort export_sort(const cvc5::Sort& sort);
+  Cvc5Sort export_sort(const cvc5pp::Sort& sort);
   /**
    * Export C++ term to C API.
    * @param term The term to export.
    */
-  Cvc5Term export_term(const cvc5::Term& term);
+  Cvc5Term export_term(const cvc5pp::Term& term);
   /**
    * Export C++ operator to C API.
    * @param op The operator to export.
    */
-  Cvc5Op export_op(const cvc5::Op& op);
+  Cvc5Op export_op(const cvc5pp::Op& op);
   /**
    * Export C++ datatype to C API.
    * @param dt The datatype to export.
    */
-  Cvc5Datatype export_dt(const cvc5::Datatype& dt);
+  Cvc5Datatype export_dt(const cvc5pp::Datatype& dt);
   /**
    * Export C++ datatype constructor to C API.
    * @param cons The datatype constructor to export.
    */
-  Cvc5DatatypeConstructor export_dt_cons(const cvc5::DatatypeConstructor& cons);
+  Cvc5DatatypeConstructor export_dt_cons(const cvc5pp::DatatypeConstructor& cons);
   /**
    * Export C++ datatype selector to C API.
    * @param sel The datatype selector to export.
    */
-  Cvc5DatatypeSelector export_dt_sel(const cvc5::DatatypeSelector& sel);
+  Cvc5DatatypeSelector export_dt_sel(const cvc5pp::DatatypeSelector& sel);
   /**
    * Export C++ datatype declaration to C API.
    * @param decl The datatype declaration to export.
    */
-  Cvc5DatatypeDecl export_dt_decl(const cvc5::DatatypeDecl& decl);
+  Cvc5DatatypeDecl export_dt_decl(const cvc5pp::DatatypeDecl& decl);
   /**
    * Export C++ datatype constructor declaration to C API.
    * @param decl The datatype constructor declaration to export.
    */
   Cvc5DatatypeConstructorDecl export_dt_cons_decl(
-      const cvc5::DatatypeConstructorDecl& decl);
+      const cvc5pp::DatatypeConstructorDecl& decl);
 
   /**
    * Export C++ statistic to C API.
    * @param statistic The statistic to export.
    */
-  Cvc5Stat export_stat(const cvc5::Stat& stat);
+  Cvc5Stat export_stat(const cvc5pp::Stat& stat);
 
   /**
    * Export C++ statistics to C API.
    * @param statistics The statistics to export.
    */
-  Cvc5Statistics export_stats(const cvc5::Statistics& stat);
+  Cvc5Statistics export_stats(const cvc5pp::Statistics& stat);
 
   /* Manual memory management for sorts and terms. ------ */
 
@@ -351,26 +351,26 @@ struct CVC5_EXPORT Cvc5TermManager
   /* ---------------------------------------------------- */
 
   /** The associated term manager instance. */
-  cvc5::TermManager d_tm;
+  cvc5pp::TermManager d_tm;
 
  private:
   /** Cache of allocated sorts. */
-  std::unordered_map<cvc5::Sort, cvc5_sort_t> d_alloc_sorts;
+  std::unordered_map<cvc5pp::Sort, cvc5_sort_t> d_alloc_sorts;
   /** Cache of allocated terms. */
-  std::unordered_map<cvc5::Term, cvc5_term_t> d_alloc_terms;
+  std::unordered_map<cvc5pp::Term, cvc5_term_t> d_alloc_terms;
   /** Cache of allocated operators. */
-  std::unordered_map<cvc5::Op, cvc5_op_t> d_alloc_ops;
+  std::unordered_map<cvc5pp::Op, cvc5_op_t> d_alloc_ops;
   /** Cache of allocated datatypes. */
-  std::unordered_map<cvc5::Datatype, cvc5_dt_t> d_alloc_dts;
+  std::unordered_map<cvc5pp::Datatype, cvc5_dt_t> d_alloc_dts;
   /** Cache of allocated datatype constructors. */
-  std::unordered_map<cvc5::DatatypeConstructor, cvc5_dt_cons_t>
+  std::unordered_map<cvc5pp::DatatypeConstructor, cvc5_dt_cons_t>
       d_alloc_dt_conss;
   /** Cache of allocated datatype selectors. */
-  std::unordered_map<cvc5::DatatypeSelector, cvc5_dt_sel_t> d_alloc_dt_sels;
+  std::unordered_map<cvc5pp::DatatypeSelector, cvc5_dt_sel_t> d_alloc_dt_sels;
   /** Cache of allocated datatype declarations. */
-  std::unordered_map<cvc5::DatatypeDecl, cvc5_dt_decl_t> d_alloc_dt_decls;
+  std::unordered_map<cvc5pp::DatatypeDecl, cvc5_dt_decl_t> d_alloc_dt_decls;
   /** Cache of allocated datatype constructor declarations. */
-  std::unordered_map<cvc5::DatatypeConstructorDecl, cvc5_dt_cons_decl_t>
+  std::unordered_map<cvc5pp::DatatypeConstructorDecl, cvc5_dt_cons_decl_t>
       d_alloc_dt_cons_decls;
   /** Cache of allocated statistic objects. */
   std::vector<cvc5_stat_t> d_alloc_stats;
@@ -390,12 +390,12 @@ struct cvc5_result_t
    * @param cvc5   The associated solver instance.
    * @param result The wrapped C++ result.
    */
-  cvc5_result_t(Cvc5* cvc5, const cvc5::Result& result)
+  cvc5_result_t(Cvc5* cvc5, const cvc5pp::Result& result)
       : d_result(result), d_cvc5(cvc5)
   {
   }
   /** The wrapped C++ result. */
-  cvc5::Result d_result;
+  cvc5pp::Result d_result;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated solver instance. */
@@ -410,12 +410,12 @@ struct cvc5_synth_result_t
    * @param cvc5   The associated solver instance.
    * @param result The wrapped C++ synthesis result.
    */
-  cvc5_synth_result_t(Cvc5* cvc5, const cvc5::SynthResult& result)
+  cvc5_synth_result_t(Cvc5* cvc5, const cvc5pp::SynthResult& result)
       : d_result(result), d_cvc5(cvc5)
   {
   }
   /** The wrapped C++ result. */
-  cvc5::SynthResult d_result;
+  cvc5pp::SynthResult d_result;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated solver instance. */
@@ -430,12 +430,12 @@ struct cvc5_proof_t
    * @param cvc5   The associated solver instance.
    * @param proof The wrapped C++ proof.
    */
-  cvc5_proof_t(Cvc5* cvc5, const cvc5::Proof& proof)
+  cvc5_proof_t(Cvc5* cvc5, const cvc5pp::Proof& proof)
       : d_proof(proof), d_cvc5(cvc5)
   {
   }
   /** The wrapped C++ proof. */
-  cvc5::Proof d_proof;
+  cvc5pp::Proof d_proof;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated solver instance. */
@@ -450,12 +450,12 @@ struct cvc5_grammar_t
    * @param cvc5   The associated solver instance.
    * @param grammar The wrapped C++ grammar.
    */
-  cvc5_grammar_t(Cvc5* cvc5, const cvc5::Grammar& grammar)
+  cvc5_grammar_t(Cvc5* cvc5, const cvc5pp::Grammar& grammar)
       : d_grammar(grammar), d_cvc5(cvc5)
   {
   }
   /** The wrapped C++ grammar. */
-  cvc5::Grammar d_grammar;
+  cvc5pp::Grammar d_grammar;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated solver instance. */
@@ -478,7 +478,7 @@ struct Cvc5
    * Export C++ result to C API.
    * @param result The result to export.
    */
-  Cvc5Result export_result(const cvc5::Result& result);
+  Cvc5Result export_result(const cvc5pp::Result& result);
   /**
    * Decrement the external ref count of a result. If the ref count reaches
    * zero, the result is released (freed).
@@ -496,7 +496,7 @@ struct Cvc5
    * Export C++ synthesis result to C API.
    * @param result Thesynthesis  result to export.
    */
-  Cvc5SynthResult export_synth_result(const cvc5::SynthResult& result);
+  Cvc5SynthResult export_synth_result(const cvc5pp::SynthResult& result);
   /**
    * Decrement the external ref count of a synthesis result. If the ref count
    * reaches zero, the result is released (freed).
@@ -514,7 +514,7 @@ struct Cvc5
    * Export C++ proof to C API.
    * @param proof The proof to export.
    */
-  Cvc5Proof export_proof(const cvc5::Proof& proof);
+  Cvc5Proof export_proof(const cvc5pp::Proof& proof);
   /**
    * Decrement the external ref count of a proof. If the ref count reaches
    * zero, the proof is released (freed).
@@ -532,7 +532,7 @@ struct Cvc5
    * Export C++ grammar to C API.
    * @param grammar The grammar to export.
    */
-  Cvc5Grammar export_grammar(const cvc5::Grammar& grammar);
+  Cvc5Grammar export_grammar(const cvc5pp::Grammar& grammar);
   /**
    * Decrement the external ref count of a grammar. If the ref count reaches
    * zero, the grammar is released (freed).
@@ -547,19 +547,19 @@ struct Cvc5
   cvc5_grammar_t* copy(cvc5_grammar_t* grammar);
 
   /** The associated cvc5 instance. */
-  cvc5::Solver d_solver;
+  cvc5pp::Solver d_solver;
   /** The associated term manager. */
   Cvc5TermManager* d_tm = nullptr;
 
   /** Cache of allocated results. */
-  std::unordered_map<cvc5::Result, cvc5_result_t> d_alloc_results;
+  std::unordered_map<cvc5pp::Result, cvc5_result_t> d_alloc_results;
   /** Cache of allocated syntheis results. */
-  std::unordered_map<cvc5::SynthResult, cvc5_synth_result_t>
+  std::unordered_map<cvc5pp::SynthResult, cvc5_synth_result_t>
       d_alloc_synth_results;
   /** Cache of allocated proofs. */
-  std::unordered_map<cvc5::Proof, cvc5_proof_t> d_alloc_proofs;
+  std::unordered_map<cvc5pp::Proof, cvc5_proof_t> d_alloc_proofs;
   /** Cache of allocated grammars. */
-  std::unordered_map<cvc5::Grammar, cvc5_grammar_t> d_alloc_grammars;
+  std::unordered_map<cvc5pp::Grammar, cvc5_grammar_t> d_alloc_grammars;
   /** Out file stream for output tag (configured via `cvc5_get_output()`. */
   std::ofstream d_output_tag_file_stream;
   /**
@@ -576,16 +576,16 @@ struct Cvc5
   std::streambuf* d_output_tag_streambuf = nullptr;
 
   /** The configured plugin. */
-  class PluginCpp : public cvc5::Plugin
+  class PluginCpp : public cvc5pp::Plugin
   {
    public:
-    PluginCpp(cvc5::TermManager& tm, Cvc5* cvc5, Cvc5Plugin* plugin)
+    PluginCpp(cvc5pp::TermManager& tm, Cvc5* cvc5, Cvc5Plugin* plugin)
         : Plugin(tm), d_cvc5(cvc5), d_plugin(plugin)
     {
     }
-    std::vector<cvc5::Term> check() override;
-    void notifySatClause(const cvc5::Term& clause) override;
-    void notifyTheoryLemma(const cvc5::Term& lemma) override;
+    std::vector<cvc5pp::Term> check() override;
+    void notifySatClause(const cvc5pp::Term& clause) override;
+    void notifyTheoryLemma(const cvc5pp::Term& lemma) override;
     std::string getName() override;
 
    private:
@@ -603,7 +603,7 @@ struct cvc5_stat_t
    * @param tm     The associated term manager instance.
    * @param result The wrapped C++ statistic.
    */
-  cvc5_stat_t(Cvc5TermManager* tm, const cvc5::Stat& stat)
+  cvc5_stat_t(Cvc5TermManager* tm, const cvc5pp::Stat& stat)
       : d_stat(stat), d_tm(tm)
   {
   }
@@ -612,12 +612,12 @@ struct cvc5_stat_t
    * @param cvc5   The associated solver instance.
    * @param result The wrapped C++ statistic.
    */
-  cvc5_stat_t(Cvc5* cvc5, const cvc5::Stat& stat)
+  cvc5_stat_t(Cvc5* cvc5, const cvc5pp::Stat& stat)
       : d_stat(stat), d_tm(cvc5->d_tm)
   {
   }
   /** The wrapped C++ statistic. */
-  cvc5::Stat d_stat;
+  cvc5pp::Stat d_stat;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager instance. */
@@ -632,7 +632,7 @@ struct cvc5_stats_t
    * @param tm     The associated term manager instance.
    * @param result The wrapped C++ statistics.
    */
-  cvc5_stats_t(Cvc5TermManager* tm, const cvc5::Statistics& stat)
+  cvc5_stats_t(Cvc5TermManager* tm, const cvc5pp::Statistics& stat)
       : d_stat(stat), d_tm(tm)
   {
   }
@@ -641,18 +641,18 @@ struct cvc5_stats_t
    * @param cvc5   The associated solver instance.
    * @param result The wrapped C++ statistics.
    */
-  cvc5_stats_t(Cvc5* cvc5, const cvc5::Statistics& stat)
+  cvc5_stats_t(Cvc5* cvc5, const cvc5pp::Statistics& stat)
       : d_stat(stat), d_tm(cvc5->d_tm)
   {
   }
   /** The wrapped C++ statistics. */
-  cvc5::Statistics d_stat;
+  cvc5pp::Statistics d_stat;
   /** External refs count. */
   uint32_t d_refs = 1;
   /** The associated term manager instance. */
   Cvc5TermManager* d_tm = nullptr;
   /** The associated iterator. */
-  std::unique_ptr<cvc5::Statistics::iterator> d_iter = nullptr;
+  std::unique_ptr<cvc5pp::Statistics::iterator> d_iter = nullptr;
 };
 
 /* -------------------------------------------------------------------------- */

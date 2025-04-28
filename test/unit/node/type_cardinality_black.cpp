@@ -20,7 +20,7 @@
 #include "test_node.h"
 #include "util/cardinality.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace kind;
 

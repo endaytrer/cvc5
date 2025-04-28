@@ -20,7 +20,7 @@
 #include "base/output.h"
 #include "gtest/gtest.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace test {
 
@@ -46,7 +46,7 @@ TEST_F(TestApiBlackProofRule, proofRuleToString)
 
 TEST_F(TestApiBlackProofRule, ProofRuleHash)
 {
-  ASSERT_EQ(std::hash<cvc5::ProofRule>()(ProofRule::UNKNOWN),
+  ASSERT_EQ(std::hash<cvc5pp::ProofRule>()(ProofRule::UNKNOWN),
             static_cast<size_t>(ProofRule::UNKNOWN));
 }
 
@@ -72,7 +72,7 @@ TEST_F(TestApiProofRewriteRule, ProofRewriteRuleToString)
 
 TEST_F(TestApiProofRewriteRule, ProofRewriteRuleHash)
 {
-  ASSERT_EQ(std::hash<cvc5::ProofRewriteRule>()(ProofRewriteRule::NONE),
+  ASSERT_EQ(std::hash<cvc5pp::ProofRewriteRule>()(ProofRewriteRule::NONE),
             static_cast<size_t>(ProofRewriteRule::NONE));
 }
 

@@ -29,7 +29,7 @@
 #include "theory/logic_info.h"
 #include "util/result.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class SolverEngine;
 class Env;

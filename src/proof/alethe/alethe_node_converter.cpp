@@ -22,7 +22,7 @@
 #include "util/bitvector.h"
 #include "util/rational.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 Node AletheNodeConverter::maybeConvert(Node n, bool isAssumption)

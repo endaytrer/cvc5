@@ -23,7 +23,7 @@
 #include "base/listener.h"
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class SolverEngine;
 

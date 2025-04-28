@@ -15,7 +15,7 @@
 
 #include "rewriter/rewrite_proof_status.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace rewriter {
 
 const char* toString(RewriteProofStatus s)

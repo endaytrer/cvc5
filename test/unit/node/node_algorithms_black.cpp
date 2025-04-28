@@ -18,7 +18,7 @@
 #include "expr/node_manager.h"
 #include "test_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace expr;
 using namespace kind;

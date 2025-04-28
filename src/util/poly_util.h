@@ -29,7 +29,7 @@
 
 #include <poly/polyxx.h>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 /**
  * Utilities for working with libpoly.
  * This namespace contains various basic conversion routines necessary for the

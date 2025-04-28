@@ -34,7 +34,7 @@
 #include "expr/node.h"
 #include "smt/env.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace ff {
 

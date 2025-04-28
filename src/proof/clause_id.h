@@ -21,7 +21,7 @@
 #ifndef CVC5__PROOF__CLAUSE_ID_H
 #define CVC5__PROOF__CLAUSE_ID_H
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * A ClauseId is a shared identifier between the proofs module and the sat

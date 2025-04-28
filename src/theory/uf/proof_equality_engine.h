@@ -29,7 +29,7 @@
 #include "proof/lazy_proof.h"
 #include "smt/env_obj.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Env;
 class ProofNode;

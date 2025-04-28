@@ -38,7 +38,7 @@
 
 #include "util/safe_print.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class StatisticsRegistry;
 

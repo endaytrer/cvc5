@@ -26,7 +26,7 @@
 #include "base/check.h"
 #include "expr/kind.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /** A very simple bitmap for Kinds */
 class KindMap

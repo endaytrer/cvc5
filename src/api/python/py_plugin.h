@@ -21,7 +21,7 @@
 // Created by Cython when providing 'public api' keywords
 #include "cvc5_python_base_api.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 
 class PyPlugin : public Plugin
 {

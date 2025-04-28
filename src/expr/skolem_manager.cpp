@@ -25,9 +25,9 @@
 #include "util/rational.h"
 #include "util/string.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 struct OriginalFormAttributeId
 {
@@ -90,10 +90,10 @@ bool SkolemManager::isCommutativeSkolemId(SkolemId id)
 {
   switch (id)
   {
-    case cvc5::SkolemId::ARRAY_DEQ_DIFF:
-    case cvc5::SkolemId::BAGS_DEQ_DIFF:
-    case cvc5::SkolemId::SETS_DEQ_DIFF:
-    case cvc5::SkolemId::STRINGS_DEQ_DIFF: return true;
+    case cvc5pp::SkolemId::ARRAY_DEQ_DIFF:
+    case cvc5pp::SkolemId::BAGS_DEQ_DIFF:
+    case cvc5pp::SkolemId::SETS_DEQ_DIFF:
+    case cvc5pp::SkolemId::STRINGS_DEQ_DIFF: return true;
     default: break;
   }
   return false;

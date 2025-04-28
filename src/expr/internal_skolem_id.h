@@ -22,7 +22,7 @@
 
 #include "expr/internal_skolem_id.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * Internal skolem function identifier, used for identifying internal skolems

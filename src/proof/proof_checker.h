@@ -25,7 +25,7 @@
 #include "proof/proof_rule_checker.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace rewriter {
 class RewriteDb;

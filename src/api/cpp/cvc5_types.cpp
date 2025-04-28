@@ -22,7 +22,7 @@
 
 #include "base/check.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 std::ostream& operator<<(std::ostream& out, RoundingMode rm)
 {
   switch (rm)
@@ -42,7 +42,7 @@ std::ostream& operator<<(std::ostream& out, RoundingMode rm)
 }  // namespace cvc5
 
 namespace std {
-std::string to_string(cvc5::RoundingMode rm)
+std::string to_string(cvc5pp::RoundingMode rm)
 {
   std::stringstream ss;
   ss << rm;
@@ -50,7 +50,7 @@ std::string to_string(cvc5::RoundingMode rm)
 }
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 std::ostream& operator<<(std::ostream& out, UnknownExplanation e)
 {
   switch (e)
@@ -79,7 +79,7 @@ std::ostream& operator<<(std::ostream& out, UnknownExplanation e)
 }  // namespace cvc5
 
 namespace std {
-std::string to_string(cvc5::UnknownExplanation exp)
+std::string to_string(cvc5pp::UnknownExplanation exp)
 {
   std::stringstream ss;
   ss << exp;
@@ -87,7 +87,7 @@ std::string to_string(cvc5::UnknownExplanation exp)
 }
 }  // namespace std
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 std::ostream& operator<<(std::ostream& out, BlockModelsMode mode)
 {
   switch (mode)
@@ -102,7 +102,7 @@ std::ostream& operator<<(std::ostream& out, BlockModelsMode mode)
 }  // namespace cvc5::modes
 
 namespace std {
-std::string to_string(cvc5::modes::BlockModelsMode mode)
+std::string to_string(cvc5pp::modes::BlockModelsMode mode)
 {
   std::stringstream ss;
   ss << mode;
@@ -110,7 +110,7 @@ std::string to_string(cvc5::modes::BlockModelsMode mode)
 }
 }  // namespace std
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 std::ostream& operator<<(std::ostream& out, LearnedLitType ltype)
 {
   switch (ltype)
@@ -129,7 +129,7 @@ std::ostream& operator<<(std::ostream& out, LearnedLitType ltype)
 }  // namespace cvc5::modes
 
 namespace std {
-std::string to_string(cvc5::modes::LearnedLitType type)
+std::string to_string(cvc5pp::modes::LearnedLitType type)
 {
   std::stringstream ss;
   ss << type;
@@ -137,7 +137,7 @@ std::string to_string(cvc5::modes::LearnedLitType type)
 }
 }  // namespace std
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 std::ostream& operator<<(std::ostream& out, ProofComponent pc)
 {
   switch (pc)
@@ -154,7 +154,7 @@ std::ostream& operator<<(std::ostream& out, ProofComponent pc)
 }  // namespace cvc5::modes
 
 namespace std {
-std::string to_string(cvc5::modes::ProofComponent pc)
+std::string to_string(cvc5pp::modes::ProofComponent pc)
 {
   std::stringstream ss;
   ss << pc;
@@ -162,7 +162,7 @@ std::string to_string(cvc5::modes::ProofComponent pc)
 }
 }  // namespace std
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 std::ostream& operator<<(std::ostream& out, ProofFormat format)
 {
   switch (format)
@@ -180,7 +180,7 @@ std::ostream& operator<<(std::ostream& out, ProofFormat format)
 }  // namespace cvc5::modes
 
 namespace std {
-std::string to_string(cvc5::modes::ProofFormat format)
+std::string to_string(cvc5pp::modes::ProofFormat format)
 {
   std::stringstream ss;
   ss << format;
@@ -188,7 +188,7 @@ std::string to_string(cvc5::modes::ProofFormat format)
 }
 }  // namespace std
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 std::ostream& operator<<(std::ostream& out, FindSynthTarget target)
 {
   switch (target)
@@ -205,7 +205,7 @@ std::ostream& operator<<(std::ostream& out, FindSynthTarget target)
 }  // namespace cvc5::modes
 
 namespace std {
-std::string to_string(cvc5::modes::FindSynthTarget target)
+std::string to_string(cvc5pp::modes::FindSynthTarget target)
 {
   std::stringstream ss;
   ss << target;
@@ -213,7 +213,7 @@ std::string to_string(cvc5::modes::FindSynthTarget target)
 }
 }  // namespace std
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 std::ostream& operator<<(std::ostream& out, InputLanguage lang)
 {
   switch (lang)
@@ -228,7 +228,7 @@ std::ostream& operator<<(std::ostream& out, InputLanguage lang)
 }  // namespace cvc5::modes
 
 namespace std {
-std::string to_string(cvc5::modes::InputLanguage lang)
+std::string to_string(cvc5pp::modes::InputLanguage lang)
 {
   std::stringstream ss;
   ss << lang;

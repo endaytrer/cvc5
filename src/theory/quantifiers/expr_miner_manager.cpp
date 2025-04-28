@@ -21,7 +21,7 @@
 #include "theory/quantifiers/query_generator_sample_sat.h"
 #include "theory/quantifiers/query_generator_unsat.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

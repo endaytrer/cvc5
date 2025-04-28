@@ -29,7 +29,7 @@
 #include <utility>
 #include <vector>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 template <class T, class U>
 std::ostream& operator<<(std::ostream& out, const std::pair<T, U>& p) {
@@ -294,24 +294,24 @@ extern TraceC TraceChannel CVC5_EXPORT;
 #else /* CVC5_MUZZLE */
 
 #define Warning                                                         \
-  (!cvc5::internal::WarningChannel.isOn()) ? cvc5::internal::nullStream \
-                                           : cvc5::internal::WarningChannel
+  (!cvc5pp::internal::WarningChannel.isOn()) ? cvc5pp::internal::nullStream \
+                                           : cvc5pp::internal::WarningChannel
 #define WarningOnce                                                 \
-  (!cvc5::internal::WarningChannel.isOn()                           \
-   || !cvc5::internal::WarningChannel.warnOnce(__FILE__, __LINE__)) \
-      ? cvc5::internal::nullStream                                  \
-      : cvc5::internal::WarningChannel
+  (!cvc5pp::internal::WarningChannel.isOn()                           \
+   || !cvc5pp::internal::WarningChannel.warnOnce(__FILE__, __LINE__)) \
+      ? cvc5pp::internal::nullStream                                  \
+      : cvc5pp::internal::WarningChannel
 #ifdef CVC5_TRACING
-#define TraceIsOn cvc5::internal::TraceChannel.isOn
+#define TraceIsOn cvc5pp::internal::TraceChannel.isOn
 #define Trace(tag)                                                     \
-  !cvc5::internal::TraceChannel.isOn(tag) ? cvc5::internal::nullStream \
-                                          : cvc5::internal::TraceChannel()
+  !cvc5pp::internal::TraceChannel.isOn(tag) ? cvc5pp::internal::nullStream \
+                                          : cvc5pp::internal::TraceChannel()
 #else /* CVC5_TRACING */
 #define TraceIsOn \
-  cvc5::internal::__cvc5_true() ? false : cvc5::internal::TraceChannel.isOn
+  cvc5pp::internal::__cvc5_true() ? false : cvc5pp::internal::TraceChannel.isOn
 #define Trace(tag)                                           \
-  cvc5::internal::__cvc5_true() ? cvc5::internal::nullStream \
-                                : cvc5::internal::TraceChannel()
+  cvc5pp::internal::__cvc5_true() ? cvc5pp::internal::nullStream \
+                                : cvc5pp::internal::TraceChannel()
 #endif /* CVC5_TRACING */
 
 #endif /* CVC5_MUZZLE */

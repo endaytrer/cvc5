@@ -15,7 +15,7 @@
 
 #include "proof/lfsc/lfsc_list_sc_node_converter.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 LfscListScNodeConverter::LfscListScNodeConverter(

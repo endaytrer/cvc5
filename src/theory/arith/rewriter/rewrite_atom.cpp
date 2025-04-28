@@ -18,7 +18,7 @@
 #include "base/check.h"
 #include "theory/arith/rewriter/node_utils.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 namespace rewriter {

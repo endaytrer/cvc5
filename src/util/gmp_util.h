@@ -27,7 +27,7 @@
 #include <type_traits>
 #endif /* CVC5_NEED_INT64_T_OVERLOADS */
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /** Hashes the gmp integer primitive in a word by word fashion. */
 inline size_t gmpz_hash(const mpz_t toHash) {

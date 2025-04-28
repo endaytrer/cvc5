@@ -21,7 +21,7 @@
 /* Cvc5TermManager struct                                                     */
 /* -------------------------------------------------------------------------- */
 
-Cvc5Sort Cvc5TermManager::export_sort(const cvc5::Sort& sort)
+Cvc5Sort Cvc5TermManager::export_sort(const cvc5pp::Sort& sort)
 {
   Assert(!sort.isNull());
   auto [it, inserted] = d_alloc_sorts.try_emplace(sort, this, sort);
@@ -32,7 +32,7 @@ Cvc5Sort Cvc5TermManager::export_sort(const cvc5::Sort& sort)
   return &it->second;
 }
 
-Cvc5Term Cvc5TermManager::export_term(const cvc5::Term& term)
+Cvc5Term Cvc5TermManager::export_term(const cvc5pp::Term& term)
 {
   Assert(!term.isNull());
   auto [it, inserted] = d_alloc_terms.try_emplace(term, this, term);
@@ -43,7 +43,7 @@ Cvc5Term Cvc5TermManager::export_term(const cvc5::Term& term)
   return &it->second;
 }
 
-Cvc5Op Cvc5TermManager::export_op(const cvc5::Op& op)
+Cvc5Op Cvc5TermManager::export_op(const cvc5pp::Op& op)
 {
   Assert(!op.isNull());
   auto [it, inserted] = d_alloc_ops.try_emplace(op, this, op);
@@ -54,7 +54,7 @@ Cvc5Op Cvc5TermManager::export_op(const cvc5::Op& op)
   return &it->second;
 }
 
-Cvc5Datatype Cvc5TermManager::export_dt(const cvc5::Datatype& dt)
+Cvc5Datatype Cvc5TermManager::export_dt(const cvc5pp::Datatype& dt)
 {
   Assert(!dt.isNull());
   auto [it, inserted] = d_alloc_dts.try_emplace(dt, this, dt);
@@ -66,7 +66,7 @@ Cvc5Datatype Cvc5TermManager::export_dt(const cvc5::Datatype& dt)
 }
 
 Cvc5DatatypeConstructor Cvc5TermManager::export_dt_cons(
-    const cvc5::DatatypeConstructor& cons)
+    const cvc5pp::DatatypeConstructor& cons)
 {
   Assert(!cons.isNull());
   auto [it, inserted] = d_alloc_dt_conss.try_emplace(cons, this, cons);
@@ -78,7 +78,7 @@ Cvc5DatatypeConstructor Cvc5TermManager::export_dt_cons(
 }
 
 Cvc5DatatypeSelector Cvc5TermManager::export_dt_sel(
-    const cvc5::DatatypeSelector& sel)
+    const cvc5pp::DatatypeSelector& sel)
 {
   Assert(!sel.isNull());
   auto [it, inserted] = d_alloc_dt_sels.try_emplace(sel, this, sel);
@@ -89,7 +89,7 @@ Cvc5DatatypeSelector Cvc5TermManager::export_dt_sel(
   return &it->second;
 }
 
-Cvc5DatatypeDecl Cvc5TermManager::export_dt_decl(const cvc5::DatatypeDecl& decl)
+Cvc5DatatypeDecl Cvc5TermManager::export_dt_decl(const cvc5pp::DatatypeDecl& decl)
 {
   Assert(!decl.isNull());
   auto [it, inserted] = d_alloc_dt_decls.try_emplace(decl, this, decl);
@@ -101,7 +101,7 @@ Cvc5DatatypeDecl Cvc5TermManager::export_dt_decl(const cvc5::DatatypeDecl& decl)
 }
 
 Cvc5DatatypeConstructorDecl Cvc5TermManager::export_dt_cons_decl(
-    const cvc5::DatatypeConstructorDecl& decl)
+    const cvc5pp::DatatypeConstructorDecl& decl)
 {
   Assert(!decl.isNull());
   auto [it, inserted] = d_alloc_dt_cons_decls.try_emplace(decl, this, decl);
@@ -112,13 +112,13 @@ Cvc5DatatypeConstructorDecl Cvc5TermManager::export_dt_cons_decl(
   return &it->second;
 }
 
-Cvc5Stat Cvc5TermManager::export_stat(const cvc5::Stat& stat)
+Cvc5Stat Cvc5TermManager::export_stat(const cvc5pp::Stat& stat)
 {
   d_alloc_stats.emplace_back(this, stat);
   return &d_alloc_stats.back();
 }
 
-Cvc5Statistics Cvc5TermManager::export_stats(const cvc5::Statistics& stat)
+Cvc5Statistics Cvc5TermManager::export_stats(const cvc5pp::Statistics& stat)
 {
   d_alloc_statistics.emplace_back(this, stat);
   return &d_alloc_statistics.back();
@@ -330,7 +330,7 @@ Cvc5::~Cvc5()
   }
 }
 
-Cvc5Result Cvc5::export_result(const cvc5::Result& result)
+Cvc5Result Cvc5::export_result(const cvc5pp::Result& result)
 {
   Assert(!result.isNull());
   auto [it, inserted] = d_alloc_results.try_emplace(result, this, result);
@@ -357,7 +357,7 @@ cvc5_result_t* Cvc5::copy(cvc5_result_t* result)
   return result;
 }
 
-Cvc5SynthResult Cvc5::export_synth_result(const cvc5::SynthResult& result)
+Cvc5SynthResult Cvc5::export_synth_result(const cvc5pp::SynthResult& result)
 {
   Assert(!result.isNull());
   auto [it, inserted] = d_alloc_synth_results.try_emplace(result, this, result);
@@ -385,7 +385,7 @@ cvc5_synth_result_t* Cvc5::copy(cvc5_synth_result_t* result)
   return result;
 }
 
-Cvc5Proof Cvc5::export_proof(const cvc5::Proof& proof)
+Cvc5Proof Cvc5::export_proof(const cvc5pp::Proof& proof)
 {
   auto [it, inserted] = d_alloc_proofs.try_emplace(proof, this, proof);
   if (!inserted)
@@ -411,7 +411,7 @@ cvc5_proof_t* Cvc5::copy(cvc5_proof_t* proof)
   return proof;
 }
 
-Cvc5Grammar Cvc5::export_grammar(const cvc5::Grammar& grammar)
+Cvc5Grammar Cvc5::export_grammar(const cvc5pp::Grammar& grammar)
 {
   auto [it, inserted] = d_alloc_grammars.try_emplace(grammar, this, grammar);
   if (!inserted)
@@ -437,10 +437,10 @@ cvc5_grammar_t* Cvc5::copy(cvc5_grammar_t* grammar)
   return grammar;
 }
 
-std::vector<cvc5::Term> Cvc5::PluginCpp::check()
+std::vector<cvc5pp::Term> Cvc5::PluginCpp::check()
 {
   Assert(d_plugin);
-  std::vector<cvc5::Term> res;
+  std::vector<cvc5pp::Term> res;
   if (d_plugin->check)
   {
     size_t size;
@@ -453,7 +453,7 @@ std::vector<cvc5::Term> Cvc5::PluginCpp::check()
   return res;
 }
 
-void Cvc5::PluginCpp::notifySatClause(const cvc5::Term& clause)
+void Cvc5::PluginCpp::notifySatClause(const cvc5pp::Term& clause)
 {
   Assert(d_plugin);
   if (d_plugin->notify_sat_clause)
@@ -463,7 +463,7 @@ void Cvc5::PluginCpp::notifySatClause(const cvc5::Term& clause)
   }
 }
 
-void Cvc5::PluginCpp::notifyTheoryLemma(const cvc5::Term& lemma)
+void Cvc5::PluginCpp::notifyTheoryLemma(const cvc5pp::Term& lemma)
 {
   Assert(d_plugin);
   if (d_plugin->notify_theory_lemma)

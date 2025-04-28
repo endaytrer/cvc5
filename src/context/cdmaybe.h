@@ -24,7 +24,7 @@
 #include "context/cdo.h"
 #include "context/context.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 
 class CDRaised {
 private:

@@ -16,7 +16,7 @@
 
 #include "expr/node_algorithm.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 TNode FreeVarCache::getFreeVar(const TypeNode& tn, size_t i)
 {

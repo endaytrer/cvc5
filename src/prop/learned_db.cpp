@@ -17,7 +17,7 @@
 
 #include <sstream>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 LearnedDb::LearnedDb(context::Context* c)

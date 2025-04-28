@@ -24,7 +24,7 @@
 #include "smt/smt_driver.h"
 #include "smt/solver_engine_state.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 ContextManager::ContextManager(Env& env, SolverEngineState& state)

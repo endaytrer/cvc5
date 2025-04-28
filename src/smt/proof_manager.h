@@ -24,7 +24,7 @@
 #include "smt/env_obj.h"
 #include "smt/proof_final_callback.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofChecker;
 class ProofNode;

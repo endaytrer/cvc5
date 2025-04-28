@@ -27,7 +27,7 @@
 #include "theory/quantifiers/sygus_sampler.h"
 #include "theory/smt_engine_subsolver.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Env;
 class SolverEngine;

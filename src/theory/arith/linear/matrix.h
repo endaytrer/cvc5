@@ -28,7 +28,7 @@
 #include "util/dense_map.h"
 #include "util/index.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith::linear {
 

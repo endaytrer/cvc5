@@ -20,9 +20,9 @@
 #include "theory/builtin/proof_checker.h"
 #include "theory/quantifiers/skolemize.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

@@ -32,7 +32,7 @@
 
 #include "theory/arith/nl/coverings/cocoa_converter.h"
 
-namespace cvc5::internal::theory::arith::nl::coverings {
+namespace cvc5pp::internal::theory::arith::nl::coverings {
 
 LazardEvaluationStats::LazardEvaluationStats(StatisticsRegistry& reg)
     : d_directAssignments(
@@ -839,7 +839,7 @@ std::vector<poly::Interval> LazardEvaluation::infeasibleRegions(
 
 #else
 
-namespace cvc5::internal::theory::arith::nl::coverings {
+namespace cvc5pp::internal::theory::arith::nl::coverings {
 
 /**
  * Do a very simple wrapper around the regular poly::infeasible_regions.

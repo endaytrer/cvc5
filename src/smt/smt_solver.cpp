@@ -32,7 +32,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 SmtSolver::SmtSolver(Env& env, SolverEngineStatistics& stats)

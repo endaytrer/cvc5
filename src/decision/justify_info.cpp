@@ -15,7 +15,7 @@
 
 #include "decision/justify_info.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace decision {
 
 JustifyInfo::JustifyInfo(context::Context* c)

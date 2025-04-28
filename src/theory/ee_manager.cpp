@@ -17,7 +17,7 @@
 
 #include "theory/theory_model.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 EqEngineManager::EqEngineManager(Env& env, TheoryEngine& te, SharedSolver& shs)

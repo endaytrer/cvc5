@@ -18,7 +18,7 @@
 #ifndef CVC5__CONTEXT__DEFAULT_CLEAN_UP_H
 #define CVC5__CONTEXT__DEFAULT_CLEAN_UP_H
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 
 template <class T>
 class DefaultCleanUp

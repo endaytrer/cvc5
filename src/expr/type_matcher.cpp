@@ -17,7 +17,7 @@
 
 #include "expr/dtype.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 TypeMatcher::TypeMatcher(TypeNode dt)
 {

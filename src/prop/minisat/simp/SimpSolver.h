@@ -27,14 +27,14 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 #include "prop/minisat/core/Solver.h"
 #include "prop/minisat/mtl/Queue.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
   class TheoryProxy;
   class PropPfManager;
 }
 }  // namespace cvc5::internal
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace Minisat {
 
 //=================================================================================================

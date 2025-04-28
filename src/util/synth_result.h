@@ -23,7 +23,7 @@
 
 #include "util/result.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * A result for a synthesis query. This can be used for synthesis, abduction,

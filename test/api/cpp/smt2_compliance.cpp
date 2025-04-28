@@ -20,14 +20,14 @@
 #include <iostream>
 #include <sstream>
 
-using namespace cvc5;
-using namespace cvc5::internal;
-using namespace cvc5::parser;
+using namespace cvc5pp;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::parser;
 using namespace std;
 
-void testGetInfo(cvc5::Solver* solver, const char* s);
+void testGetInfo(cvc5pp::Solver* solver, const char* s);
 
-void testGetInfo(cvc5::Solver& solver, const char* s)
+void testGetInfo(cvc5pp::Solver& solver, const char* s)
 {
   SymbolManager sm(solver.getTermManager());
   InputParser p(&solver, &sm);
@@ -46,8 +46,8 @@ void testGetInfo(cvc5::Solver& solver, const char* s)
 
 int main()
 {
-  cvc5::TermManager tm;
-  cvc5::Solver solver(tm);
+  cvc5pp::TermManager tm;
+  cvc5pp::Solver solver(tm);
   solver.setOption("input-language", "smtlib2");
   solver.setOption("output-language", "smtlib2");
   testGetInfo(solver, ":error-behavior");

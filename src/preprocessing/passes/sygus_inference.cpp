@@ -27,10 +27,10 @@
 #include "theory/smt_engine_subsolver.h"
 
 using namespace std;
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 

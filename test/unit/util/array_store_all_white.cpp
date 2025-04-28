@@ -18,9 +18,9 @@
 #include "util/rational.h"
 #include "util/uninterpreted_sort_value.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestUtilWhiteArrayStoreAll : public TestSmt

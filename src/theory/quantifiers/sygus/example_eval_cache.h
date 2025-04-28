@@ -21,7 +21,7 @@
 #include "expr/node_trie.h"
 #include "theory/quantifiers/sygus/example_infer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

@@ -191,7 +191,7 @@ class ApiManager
  * @param terms a list of terms
  * @return the result of calling IOracle.compute(terms)
  */
-cvc5::Term applyOracle(JNIEnv* env,
+cvc5pp::Term applyOracle(JNIEnv* env,
                        jobject oracleRef,
                        const std::vector<cvc5::Term>& terms);
 

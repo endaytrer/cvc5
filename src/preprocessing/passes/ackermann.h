@@ -34,7 +34,7 @@
 #include "theory/logic_info.h"
 #include "theory/substitutions.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 

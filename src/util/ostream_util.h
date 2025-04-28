@@ -21,7 +21,7 @@
 #include <ios>
 #include <iosfwd>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 // Saves the formatting of an ostream and restores the previous settings on
 // destruction. Example usage:

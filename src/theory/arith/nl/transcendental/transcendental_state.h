@@ -25,7 +25,7 @@
 #include "theory/arith/nl/nl_lemma_utils.h"
 #include "theory/arith/nl/transcendental/taylor_generator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 class CDProof;
 namespace theory {
 namespace arith {

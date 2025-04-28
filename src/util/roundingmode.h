@@ -21,7 +21,7 @@
 
 #include <iosfwd>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 #define CVC5_NUM_ROUNDING_MODES 5
 

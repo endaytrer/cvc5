@@ -23,12 +23,12 @@
 
 #include "expr/node.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 class Context;
 class UserContext;
 }  // namespace cvc5::context
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Env;
 class LogicInfo;

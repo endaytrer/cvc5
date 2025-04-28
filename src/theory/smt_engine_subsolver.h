@@ -25,7 +25,7 @@
 #include "expr/node.h"
 #include "smt/solver_engine.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 /** Set of information required for setting up a subsolver */

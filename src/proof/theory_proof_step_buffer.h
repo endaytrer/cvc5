@@ -24,7 +24,7 @@
 #include "proof/proof_step_buffer.h"
 #include "theory/builtin/proof_checker.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 /**
  * Class used to speculatively try and buffer a set of proof steps before
  * sending them to a proof object, extended with theory-specfic proof rule

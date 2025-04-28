@@ -39,7 +39,7 @@
 #include "theory/valuation.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofNodeManager;
 class TheoryEngine;
@@ -803,7 +803,7 @@ class Theory : protected EnvObj
 std::ostream& operator<<(std::ostream& os, theory::Theory::Effort level);
 
 inline std::ostream& operator<<(std::ostream& out,
-                                const cvc5::internal::theory::Theory& theory)
+                                const cvc5pp::internal::theory::Theory& theory)
 {
   return out << theory.identify();
 }

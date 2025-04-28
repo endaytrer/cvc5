@@ -29,7 +29,7 @@
 #include "context/cdhashmap.h"
 #include "util/hash.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 class Rewriter;

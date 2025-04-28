@@ -25,7 +25,7 @@
 #include "theory/arith/nl/transcendental/transcendental_state.h"
 #include "theory/theory_state.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 

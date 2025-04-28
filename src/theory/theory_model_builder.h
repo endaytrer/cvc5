@@ -24,7 +24,7 @@
 #include "smt/env_obj.h"
 #include "theory/theory_model.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Env;
 

@@ -27,7 +27,7 @@
 ${includes}$
 // clang-format on
 
-namespace cvc5::internal::options {
+namespace cvc5pp::internal::options {
 
 namespace ${id}$::longName {
 // clang-format off

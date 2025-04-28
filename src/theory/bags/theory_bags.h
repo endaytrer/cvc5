@@ -31,7 +31,7 @@
 #include "theory/theory.h"
 #include "theory/theory_eq_notify.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace bags {
 

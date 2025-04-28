@@ -32,10 +32,10 @@
 #include "util/result.h"
 
 using namespace std;
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory::datatypes;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory::datatypes;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace sets {
 
@@ -1682,7 +1682,7 @@ void TheorySetsPrivate::preRegisterTerm(TNode node)
         throw LogicException(
             "JoinImage cardinality constraint must be a constant");
       }
-      cvc5::internal::Rational r(INT_MAX);
+      cvc5pp::internal::Rational r(INT_MAX);
       if (node[1].getConst<Rational>() > r)
       {
         throw LogicException(

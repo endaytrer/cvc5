@@ -25,7 +25,7 @@
 #include "theory/quantifiers/sygus/sygus_module.h"
 #include "theory/quantifiers/sygus_sampler.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

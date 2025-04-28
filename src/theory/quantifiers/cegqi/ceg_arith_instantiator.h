@@ -23,7 +23,7 @@
 #include "theory/quantifiers/cegqi/instantiator.h"
 #include "theory/quantifiers/cegqi/vts_term_cache.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

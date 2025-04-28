@@ -25,7 +25,7 @@
 #include "theory/inference_id.h"
 #include "util/rational.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofNode;
 

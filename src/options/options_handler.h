@@ -30,7 +30,7 @@
 #include "options/option_exception.h"
 #include "options/quantifiers_options.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Options;
 

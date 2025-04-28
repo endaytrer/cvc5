@@ -24,7 +24,7 @@
 #include "smt/process_assertions.h"
 #include "theory/booleans/circuit_propagator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class TheoryEngine;
 

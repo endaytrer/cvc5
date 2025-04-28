@@ -17,7 +17,7 @@
 
 #include "theory/quantifiers/quantifiers_attributes.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 OracleCaller::OracleCaller(const Node& n)
     : d_oracleNode(getOracleFor(n)),

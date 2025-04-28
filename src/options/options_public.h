@@ -33,7 +33,7 @@
 
 #include "options/options.h"
 
-namespace cvc5::internal::options {
+namespace cvc5pp::internal::options {
 
 /**
  * Get a (sorted) list of all option names that are available.

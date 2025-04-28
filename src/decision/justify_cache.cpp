@@ -17,10 +17,10 @@
 
 #include "expr/node_algorithm.h"
 
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::prop;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::prop;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace decision {
 
 JustifyCache::JustifyCache(context::Context* c,

@@ -26,7 +26,7 @@
 
 #include <vector>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace ff {
 

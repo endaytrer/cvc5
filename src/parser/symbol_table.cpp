@@ -28,7 +28,7 @@
 #include "context/cdhashset.h"
 #include "context/context.h"
 
-namespace cvc5::internal::parser {
+namespace cvc5pp::internal::parser {
 
 using context::CDHashMap;
 using context::CDHashSet;
@@ -677,7 +677,7 @@ bool SymbolTable::bind(const string& name, Term obj, bool doOverload)
   return d_implementation->bind(name, obj, doOverload);
 }
 
-bool SymbolTable::bindDummySortTerm(const std::string& name, cvc5::Term t)
+bool SymbolTable::bindDummySortTerm(const std::string& name, cvc5pp::Term t)
 {
   return d_implementation->bindDummySortTerm(name, t);
 }

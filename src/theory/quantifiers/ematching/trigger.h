@@ -23,7 +23,7 @@
 #include "theory/inference_id.h"
 #include "theory/quantifiers/inst_match.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 class Valuation;

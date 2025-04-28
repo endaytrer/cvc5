@@ -28,7 +28,7 @@
 
 #include <unordered_map>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace expr {
 
 // ATTRIBUTE HASH FUNCTIONS ====================================================

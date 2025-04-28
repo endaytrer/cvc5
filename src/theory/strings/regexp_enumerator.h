@@ -24,7 +24,7 @@
 #include "expr/type_node.h"
 #include "theory/strings/type_enumerator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 

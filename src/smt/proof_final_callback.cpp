@@ -28,10 +28,10 @@
 #include "theory/smt_engine_subsolver.h"
 #include "theory/theory_id.h"
 
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 ProofFinalCallback::ProofFinalCallback(Env& env)

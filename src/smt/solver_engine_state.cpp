@@ -22,7 +22,7 @@
 #include "options/smt_options.h"
 #include "smt/env.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 SolverEngineState::SolverEngineState(Env& env)

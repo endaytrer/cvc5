@@ -20,9 +20,9 @@
 #include "theory/arith/nl/ext/arith_nl_compare_proof_gen.h"
 #include "theory/rewriter.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 namespace nl {

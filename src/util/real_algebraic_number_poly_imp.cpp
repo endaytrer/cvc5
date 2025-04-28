@@ -29,7 +29,7 @@
 #define RAN_UNREACHABLE \
   Unreachable() << "RealAlgebraicNumber is not available without libpoly."
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 RealAlgebraicNumber::RealAlgebraicNumber()
     :
@@ -391,8 +391,8 @@ std::ostream& operator<<(std::ostream& os, const RealAlgebraicNumber& ran)
 }  // namespace cvc5::internal
 
 namespace std {
-size_t hash<cvc5::internal::RealAlgebraicNumber>::operator()(
-    const cvc5::internal::RealAlgebraicNumber& ran) const
+size_t hash<cvc5pp::internal::RealAlgebraicNumber>::operator()(
+    const cvc5pp::internal::RealAlgebraicNumber& ran) const
 {
   return ran.hash();
 }

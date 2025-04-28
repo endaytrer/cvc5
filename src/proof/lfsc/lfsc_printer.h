@@ -32,7 +32,7 @@
 #include "rewriter/rewrite_db.h"
 #include "smt/env_obj.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 class LfscPrintChannel;
