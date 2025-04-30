@@ -1,5 +1,5 @@
 # These are updated when making a release
-set(CVC5_LAST_RELEASE "1.2.1")
+set(CVC5_LAST_RELEASE "1.2.1-pp")
 set(CVC5_IS_RELEASE "true")
 
 # These are used in other places in cmake
@@ -10,4 +10,4 @@ set(CVC5_FULL_VERSION "${CVC5_LAST_RELEASE}")
 set(CVC5_GIT_INFO "")
 
 # Shared library versioning. Increment SOVERSION for every new cvc5 release.
-set(CVC5_SOVERSION 1)
+set(CVC5_SOVERSION 99)
