@@ -254,6 +254,6 @@ void computeExpandedDefinitionForms(Env& env, const TypeNode& tn);
 }  // namespace utils
 }  // namespace datatypes
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

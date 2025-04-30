@@ -1915,4 +1915,4 @@ bool Smt2State::isConstBv(const Term& t)
 }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

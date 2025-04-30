@@ -41,6 +41,6 @@ class AssumptionProofGenerator : public ProofGenerator
   ProofNodeManager* d_pnm;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__ASSUMPTION_PROOF_GENERATOR_H */

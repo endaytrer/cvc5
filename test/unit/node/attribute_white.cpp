@@ -443,4 +443,4 @@ TEST_F(TestNodeWhiteAttribute, attributes)
   ASSERT_FALSE(unnamed.hasAttribute(VarNameAttr()));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -32,4 +32,4 @@ const int Cvc5ostream::s_indentIosIndex = std::ios_base::xalloc();
 WarningC WarningChannel(&std::cerr);
 TraceC TraceChannel(&std::cout);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

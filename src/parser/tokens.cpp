@@ -128,4 +128,4 @@ std::ostream& operator<<(std::ostream& o, Token t)
 }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

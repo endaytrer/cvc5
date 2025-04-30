@@ -77,6 +77,6 @@ class ElimShadowNodeConverter : public NodeConverter
   std::vector<Node> d_vars;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

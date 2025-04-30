@@ -104,6 +104,6 @@ class IntegerEnumerator : public TypeEnumeratorBase<IntegerEnumerator> {
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__ARITH__TYPE_ENUMERATOR_H */

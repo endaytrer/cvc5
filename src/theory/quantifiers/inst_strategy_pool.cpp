@@ -277,4 +277,4 @@ bool InstStrategyPool::processTuple(Node q, Node p, uint64_t& addedLemmas)
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

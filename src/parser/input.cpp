@@ -87,4 +87,4 @@ std::unique_ptr<Input> Input::mkStringInput(const std::string& input)
 bool Input::isInteractive() const { return false; }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

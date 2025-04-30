@@ -130,6 +130,6 @@ class NodeConverter
   bool d_forceIdem;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

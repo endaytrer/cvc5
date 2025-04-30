@@ -694,6 +694,6 @@ class TheoryEngine : protected EnvObj
 
 }; /* class TheoryEngine */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY_ENGINE_H */

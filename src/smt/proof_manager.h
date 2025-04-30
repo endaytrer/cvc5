@@ -205,6 +205,6 @@ class PfManager : protected EnvObj
 }; /* class SolverEngine */
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SMT__PROOF_MANAGER_H */

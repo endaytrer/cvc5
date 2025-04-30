@@ -708,4 +708,4 @@ void DenseVector::print(ostream& out, const DenseMap<Rational>& v){
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

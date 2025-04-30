@@ -94,7 +94,7 @@ CVC5_EXPORT const char* cvc5_unknown_explanation_to_string(
  * @return The output stream
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, UnknownExplanation e);
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 CVC5_EXPORT std::string to_string(cvc5pp::UnknownExplanation exp);
@@ -192,7 +192,7 @@ CVC5_EXPORT const char* cvc5_rm_to_string(Cvc5RoundingMode rm);
  * @return The output stream
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, RoundingMode rm);
-}  // namespace cvc5
+}  // namespace cvc5pp
 namespace std {
 CVC5_EXPORT std::string to_string(cvc5pp::RoundingMode rm);
 }
@@ -666,7 +666,7 @@ CVC5_EXPORT const char* cvc5_modes_input_language_to_string(
  * @return The output stream
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, InputLanguage lang);
-}  // namespace cvc5::modes
+}  // namespace cvc5pp::modes
 
 namespace std {
 CVC5_EXPORT std::string to_string(cvc5pp::modes::InputLanguage lang);

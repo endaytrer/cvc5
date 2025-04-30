@@ -69,4 +69,4 @@ std::string quoteString(const std::string& s)
   return '"' + output + '"';
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

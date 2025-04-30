@@ -26,6 +26,6 @@ struct BoolHashFunction {
   }
 };/* struct BoolHashFunction */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__BOOL_H */

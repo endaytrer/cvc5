@@ -26,4 +26,4 @@ bool NoEffectCCCB::canUseRow(RowIndex ridx) const { return false; }
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

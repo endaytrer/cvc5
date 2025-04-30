@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::InteractiveShell for sygus
+ * Black box testing of cvc5pp::InteractiveShell for sygus
  */
 
 #include <cvc5/cvc5.h>
@@ -96,4 +96,4 @@ TEST_F(TestMainBlackInteractiveShellSygus, test_sygus)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

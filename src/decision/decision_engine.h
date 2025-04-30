@@ -85,6 +85,6 @@ class DecisionEngineEmpty : public DecisionEngine
 };
 
 }  // namespace decision
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__DECISION__DECISION_ENGINE_H */

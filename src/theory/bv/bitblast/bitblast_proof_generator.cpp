@@ -120,4 +120,4 @@ void BitblastProofGenerator::addBitblastStep(TNode t, TNode bbt, TNode eq)
 
 }  // namespace bv
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

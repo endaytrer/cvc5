@@ -8,7 +8,7 @@ cvc5 supports the theory of finite sets using the following sorts, constants,
 functions and predicates.  More details can be found in :cite:`BansalBRT17`.
 
 For the C++ API examples in the table below, we assume that we have created
-a `cvc5::Solver solver` object.
+a `cvc5pp::Solver solver` object.
 
 +----------------------+----------------------------------------------+---------------------------------------------------------------------------+
 |                      | SMTLIB language                              | C++ API                                                                   |
@@ -17,7 +17,7 @@ a `cvc5::Solver solver` object.
 |                      |                                              |                                                                           |
 |                      | ``(set-logic QF_UFLIAFS)``                   | ``solver.setLogic("QF_UFLIAFS");``                                        |
 +----------------------+----------------------------------------------+---------------------------------------------------------------------------+
-| Sort                 | ``(Set <Sort>)``                             | ``solver.mkSetSort(cvc5::Sort elementSort);``                             |
+| Sort                 | ``(Set <Sort>)``                             | ``solver.mkSetSort(cvc5pp::Sort elementSort);``                             |
 +----------------------+----------------------------------------------+---------------------------------------------------------------------------+
 | Constants            | ``(declare-const X (Set Int))``              | ``Sort s = solver.mkSetSort(solver.getIntegerSort());``                   |
 |                      |                                              |                                                                           |
@@ -153,7 +153,7 @@ More details can be found in :cite:`MengRTB17`.
 +----------------------+----------------------------------------------+------------------------------------------------------------------------------------+
 | Logic String         | ``(set-logic QF_ALL)``                       | ``solver.setLogic("QF_ALL");``                                                     |
 +----------------------+----------------------------------------------+------------------------------------------------------------------------------------+
-| Tuple Sort           | ``(Tuple <Sort_1>, ..., <Sort_n>)``          | ``std::vector<cvc5::Sort> sorts = { ... };``                                       |
+| Tuple Sort           | ``(Tuple <Sort_1>, ..., <Sort_n>)``          | ``std::vector<cvc5pp::Sort> sorts = { ... };``                                       |
 |                      |                                              |                                                                                    |
 |                      |                                              | ``Sort s = solver.mkTupleSort(sorts);``                                            |
 +----------------------+----------------------------------------------+------------------------------------------------------------------------------------+
@@ -177,7 +177,7 @@ More details can be found in :cite:`MengRTB17`.
 |                      |                                              |                                                                                    |
 |                      |                                              | ``Term t = solver.mkTerm(Kind::APPLY_SELECTOR, {s, t});``                          |
 +----------------------+----------------------------------------------+------------------------------------------------------------------------------------+
-| Relation Sort        | ``(Relation <Sort_1>, ..., <Sort_n>)``       | ``Sort s = solver.mkSetSort(cvc5::Sort tupleSort);``                               |
+| Relation Sort        | ``(Relation <Sort_1>, ..., <Sort_n>)``       | ``Sort s = solver.mkSetSort(cvc5pp::Sort tupleSort);``                               |
 |                      |                                              |                                                                                    |
 |                      | which is a syntax sugar for                  |                                                                                    |
 |                      |                                              |                                                                                    |

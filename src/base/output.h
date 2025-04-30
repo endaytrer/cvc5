@@ -280,16 +280,16 @@ extern TraceC TraceChannel CVC5_EXPORT;
 #ifdef CVC5_MUZZLE
 
 #define Warning                                              \
-  cvc5::internal::__cvc5_true() ? cvc5::internal::nullStream \
-                                : cvc5::internal::WarningChannel
+  cvc5pp::internal::__cvc5_true() ? cvc5pp::internal::nullStream \
+                                : cvc5pp::internal::WarningChannel
 #define WarningOnce                                          \
-  cvc5::internal::__cvc5_true() ? cvc5::internal::nullStream \
-                                : cvc5::internal::WarningChannel
+  cvc5pp::internal::__cvc5_true() ? cvc5pp::internal::nullStream \
+                                : cvc5pp::internal::WarningChannel
 #define TraceIsOn \
-  cvc5::internal::__cvc5_true() ? false : cvc5::internal::TraceChannel.isOn
+  cvc5pp::internal::__cvc5_true() ? false : cvc5pp::internal::TraceChannel.isOn
 #define Trace(tag)                                           \
-  cvc5::internal::__cvc5_true() ? cvc5::internal::nullStream \
-                                : cvc5::internal::TraceChannel()
+  cvc5pp::internal::__cvc5_true() ? cvc5pp::internal::nullStream \
+                                : cvc5pp::internal::TraceChannel()
 
 #else /* CVC5_MUZZLE */
 
@@ -345,6 +345,6 @@ class IndentedScope
   inline ~IndentedScope() { d_out << pop; }
 }; /* class IndentedScope */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__OUTPUT_H */

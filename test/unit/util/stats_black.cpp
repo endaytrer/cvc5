@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::Stat and associated classes.
+ * Black box testing of cvc5pp::Stat and associated classes.
  */
 
 #include <fcntl.h>
@@ -98,4 +98,4 @@ TEST_F(TestUtilBlackStats, stats)
 #endif
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

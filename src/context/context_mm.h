@@ -262,6 +262,6 @@ inline bool operator!=(const ContextMemoryAllocator<T>& a1,
   return a1.d_mm != a2.d_mm;
 }
 
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context
 
 #endif /* CVC5__CONTEXT__CONTEXT_MM_H */

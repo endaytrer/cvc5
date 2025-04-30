@@ -65,4 +65,4 @@ bool ProjectOp::operator==(const ProjectOp& op) const
   return d_indices == op.d_indices;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

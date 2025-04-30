@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::Node.
+ * White box testing of cvc5pp::Node.
  */
 
 #include <string>
@@ -79,4 +79,4 @@ TEST_F(TestNodeWhiteNode, iterators)
   ASSERT_EQ(v[2], y);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

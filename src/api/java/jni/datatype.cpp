@@ -258,6 +258,6 @@ JNIEXPORT jint JNICALL Java_io_github_cvc5_Datatype_hashCode(JNIEnv* env,
 {
   CVC5_JAVA_API_TRY_CATCH_BEGIN;
   Datatype* result = reinterpret_cast<Datatype*>(pointer);
-  return static_cast<jint>(std::hash<cvc5::Datatype>()(*result));
+  return static_cast<jint>(std::hash<cvc5pp::Datatype>()(*result));
   CVC5_JAVA_API_TRY_CATCH_END_RETURN(env, 0);
 }

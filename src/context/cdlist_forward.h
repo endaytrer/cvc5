@@ -44,6 +44,6 @@ class CDList;
 
 /// \endcond
 
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context
 
 #endif /* CVC5__CONTEXT__CDLIST_FORWARD_H */

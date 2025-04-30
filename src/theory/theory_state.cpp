@@ -215,4 +215,4 @@ Valuation& TheoryState::getValuation() { return d_valuation; }
 void TheoryState::addSharedTerm(TNode node) { d_sharedTerms.push_back(node); }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

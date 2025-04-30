@@ -96,4 +96,4 @@ std::optional<Rational> Rational::fromDouble(double d)
   return std::optional<Rational>();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

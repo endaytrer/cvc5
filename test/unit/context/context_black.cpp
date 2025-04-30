@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::context::Context.
+ * Black box testing of cvc5pp::context::Context.
  */
 
 #include <iostream>
@@ -207,4 +207,4 @@ TEST_F(TestContextBlack, detect_invalid_obj)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -97,6 +97,6 @@ class TheoryQuantifiers : public Theory {
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANTIFIERS__THEORY_QUANTIFIERS_H */

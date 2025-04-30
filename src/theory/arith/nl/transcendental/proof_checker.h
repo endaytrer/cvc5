@@ -77,6 +77,6 @@ class TranscendentalProofRuleChecker : public ProofRuleChecker
 }  // namespace nl
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__STRINGS__PROOF_CHECKER_H */

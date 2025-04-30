@@ -40,6 +40,6 @@ class StringsEagerPp : public PreprocessingPass
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PREPROCESSING__PASSES__STRINGS_EAGER_PP_H */

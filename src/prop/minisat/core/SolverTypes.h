@@ -177,7 +177,7 @@ inline std::ostream& operator <<(std::ostream& out, Minisat::lbool val) {
 }
 
 }  // namespace Minisat
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace cvc5pp::internal {
 namespace Minisat{
@@ -492,6 +492,6 @@ inline void Clause::strengthen(Lit p)
 
 //=================================================================================================
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

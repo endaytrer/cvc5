@@ -560,4 +560,4 @@ TrustNode TheoryProxy::inprocessLemma(TrustNode& trn)
 }
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

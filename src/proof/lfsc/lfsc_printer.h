@@ -213,6 +213,6 @@ class LfscPrinter : protected EnvObj
 };
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

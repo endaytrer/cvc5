@@ -1189,4 +1189,4 @@ TEST_F(TestCApiBlackTerm, term_scoped_to_string)
   ASSERT_EQ(cvc5_term_to_string(x), std::string("x"));
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

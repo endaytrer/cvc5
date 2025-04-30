@@ -83,6 +83,6 @@ mpz_class construct_mpz(T z)
   return result;
 }
 #endif /* CVC5_NEED_INT64_T_OVERLOADS */
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__GMP_UTIL_H */

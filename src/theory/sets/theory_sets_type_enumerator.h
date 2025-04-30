@@ -69,6 +69,6 @@ class SetEnumerator : public TypeEnumeratorBase<SetEnumerator>
 
 }  // namespace sets
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SETS__TYPE_ENUMERATOR_H */

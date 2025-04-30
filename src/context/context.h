@@ -723,6 +723,6 @@ inline void Scope::addToChain(ContextObj* pContextObj)
   d_pContextObjList = pContextObj;
 }
 
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context
 
 #endif /* CVC5__CONTEXT__CONTEXT_H */

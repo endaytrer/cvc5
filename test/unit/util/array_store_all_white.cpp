@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::ArrayStoreAll.
+ * Black box testing of cvc5pp::ArrayStoreAll.
  */
 
 #include "expr/array_store_all.h"
@@ -83,4 +83,4 @@ TEST_F(TestUtilWhiteArrayStoreAll, const_error)
                "array store-all constants can only be created for array types");
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

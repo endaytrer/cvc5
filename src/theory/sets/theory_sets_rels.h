@@ -229,6 +229,6 @@ class TheorySetsRels : protected EnvObj
 
 }  // namespace sets
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* SRC_THEORY_SETS_THEORY_SETS_RELS_H_ */

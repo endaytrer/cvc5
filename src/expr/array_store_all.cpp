@@ -108,4 +108,4 @@ size_t ArrayStoreAllHashFunction::operator()(const ArrayStoreAll& asa) const {
          * std::hash<Node>()(asa.getValue());
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

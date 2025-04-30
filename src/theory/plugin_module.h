@@ -60,6 +60,6 @@ class PluginModule : public TheoryEngineModule
   Plugin* d_plugin;
 };
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__PLUGIN_MODULE_H */

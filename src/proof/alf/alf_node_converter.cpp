@@ -677,4 +677,4 @@ bool AlfNodeConverter::isHandledSkolemId(SkolemId id)
 }
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

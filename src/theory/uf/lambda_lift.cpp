@@ -266,4 +266,4 @@ Node LambdaLift::betaReduce(TNode lam, const std::vector<Node>& args) const
 
 }  // namespace uf
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

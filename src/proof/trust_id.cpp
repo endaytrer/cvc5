@@ -145,4 +145,4 @@ bool getTrustId(TNode n, TrustId& i)
   return true;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

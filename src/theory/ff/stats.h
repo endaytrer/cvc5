@@ -50,6 +50,6 @@ struct FfStatistics
 
 }  // namespace ff
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__FF__STATS_H */

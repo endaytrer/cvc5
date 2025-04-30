@@ -43,7 +43,7 @@ extern std::unique_ptr<CommandExecutor> pExecutor;
  */
 extern bool segvSpin;
 
-}  // namespace cvc5::main
+}  // namespace cvc5pp::main
 
 /** Actual cvc5 driver functions **/
 int runCvc5(int argc, char* argv[], std::unique_ptr<cvc5pp::Solver>&);

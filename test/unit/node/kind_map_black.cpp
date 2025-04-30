@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::KindMap.
+ * Black box testing of cvc5pp::KindMap.
  */
 
 #include <iostream>
@@ -45,4 +45,4 @@ TEST_F(TestNodeBlackKindMap, simple)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -298,7 +298,7 @@ install_jar(cvc5jar
 
 install_jar_exports(
   TARGETS cvc5jar
-  NAMESPACE cvc5::
+  NAMESPACE cvc5pp::
   FILE cvc5JavaTargets.cmake
   DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/cvc5
   COMPONENT java-api

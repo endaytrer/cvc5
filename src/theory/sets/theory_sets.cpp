@@ -280,4 +280,4 @@ void TheorySets::NotifyClass::eqNotifyDisequal(TNode t1, TNode t2, TNode reason)
 
 }  // namespace sets
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -4,11 +4,11 @@
 # src/theory/builtin/kinds.
 #
 
-theory THEORY_STRINGS ::cvc5::internal::theory::strings::TheoryStrings "theory/strings/theory_strings.h"
+theory THEORY_STRINGS ::cvc5pp::internal::theory::strings::TheoryStrings "theory/strings/theory_strings.h"
 
 properties check parametric presolve
 
-rewriter ::cvc5::internal::theory::strings::SequencesRewriter "theory/strings/sequences_rewriter.h"
+rewriter ::cvc5pp::internal::theory::strings::SequencesRewriter "theory/strings/sequences_rewriter.h"
 
 typechecker "theory/strings/theory_strings_type_rules.h"
 
@@ -42,7 +42,7 @@ operator STRING_REV 1 "string reverse"
 sort STRING_TYPE \
     Cardinality::INTEGERS \
     well-founded \
-    "NodeManager::currentNM()->mkConst(::cvc5::internal::String())" \
+    "NodeManager::currentNM()->mkConst(::cvc5pp::internal::String())" \
     "util/string.h" \
     "String type"
 
@@ -54,37 +54,37 @@ sort REGEXP_TYPE \
     "RegExp type"
 
 enumerator STRING_TYPE \
-    "::cvc5::internal::theory::strings::StringEnumerator" \
+    "::cvc5pp::internal::theory::strings::StringEnumerator" \
     "theory/strings/type_enumerator.h"
 
 enumerator REGEXP_TYPE \
-    "::cvc5::internal::theory::strings::RegExpEnumerator" \
+    "::cvc5pp::internal::theory::strings::RegExpEnumerator" \
     "theory/strings/regexp_enumerator.h"
 
 constant CONST_STRING \
   class \
   String \
-  ::cvc5::internal::strings::StringHashFunction \
+  ::cvc5pp::internal::strings::StringHashFunction \
   "util/string.h" \
   "a string of characters"
 
 # the type
 operator SEQUENCE_TYPE 1 "sequence type, takes as parameter the type of the elements"
 cardinality SEQUENCE_TYPE \
-    "::cvc5::internal::theory::strings::SequenceProperties::computeCardinality(%TYPE%)" \
+    "::cvc5pp::internal::theory::strings::SequenceProperties::computeCardinality(%TYPE%)" \
     "theory/strings/theory_strings_type_rules.h"
 well-founded SEQUENCE_TYPE \
-    "::cvc5::internal::theory::strings::SequenceProperties::isWellFounded(%TYPE%)" \
-    "::cvc5::internal::theory::strings::SequenceProperties::mkGroundTerm(%TYPE%)" \
+    "::cvc5pp::internal::theory::strings::SequenceProperties::isWellFounded(%TYPE%)" \
+    "::cvc5pp::internal::theory::strings::SequenceProperties::mkGroundTerm(%TYPE%)" \
     "theory/strings/theory_strings_type_rules.h"
 enumerator SEQUENCE_TYPE \
-    "::cvc5::internal::theory::strings::SequenceEnumerator" \
+    "::cvc5pp::internal::theory::strings::SequenceEnumerator" \
     "theory/strings/type_enumerator.h"
 
 constant CONST_SEQUENCE \
   class \
   Sequence \
-  ::cvc5::internal::SequenceHashFunction \
+  ::cvc5pp::internal::SequenceHashFunction \
   "expr/sequence.h" \
   "a sequence of characters"
 
@@ -110,17 +110,17 @@ operator REGEXP_ALLCHAR 0 "regexp all characters"
 constant REGEXP_REPEAT_OP \
   struct \
   RegExpRepeat \
-  ::cvc5::internal::RegExpRepeatHashFunction \
+  ::cvc5pp::internal::RegExpRepeatHashFunction \
   "util/regexp.h" \
-  "operator for regular expression repeat; payload is an instance of the cvc5::internal::RegExpRepeat class"
+  "operator for regular expression repeat; payload is an instance of the cvc5pp::internal::RegExpRepeat class"
 parameterized REGEXP_REPEAT REGEXP_REPEAT_OP 1 "regular expression repeat; first parameter is a REGEXP_REPEAT_OP, second is a regular expression term"
 
 constant REGEXP_LOOP_OP \
   struct \
   RegExpLoop \
-  ::cvc5::internal::RegExpLoopHashFunction \
+  ::cvc5pp::internal::RegExpLoopHashFunction \
   "util/regexp.h" \
-  "operator for regular expression loop; payload is an instance of the cvc5::internal::RegExpLoop class"
+  "operator for regular expression loop; payload is an instance of the cvc5pp::internal::RegExpLoop class"
 parameterized REGEXP_LOOP REGEXP_LOOP_OP 1 "regular expression loop; first parameter is a REGEXP_LOOP_OP, second is a regular expression term"
 
 #internal
@@ -136,38 +136,38 @@ typerule REGEXP_DIFF "SimpleTypeRuleVar<RRegExp, ARegExp>"
 typerule REGEXP_STAR "SimpleTypeRule<RRegExp, ARegExp>"
 typerule REGEXP_PLUS "SimpleTypeRule<RRegExp, ARegExp>"
 typerule REGEXP_OPT "SimpleTypeRule<RRegExp, ARegExp>"
-typerule REGEXP_RANGE ::cvc5::internal::theory::strings::RegExpRangeTypeRule
+typerule REGEXP_RANGE ::cvc5pp::internal::theory::strings::RegExpRangeTypeRule
 typerule REGEXP_REPEAT_OP "SimpleTypeRule<RBuiltinOperator>"
 typerule REGEXP_REPEAT "SimpleTypeRule<RRegExp, ARegExp>"
 typerule REGEXP_LOOP_OP "SimpleTypeRule<RBuiltinOperator>"
 typerule REGEXP_LOOP "SimpleTypeRule<RRegExp, ARegExp>"
 typerule REGEXP_COMPLEMENT "SimpleTypeRule<RRegExp, ARegExp>"
-typerule STRING_TO_REGEXP ::cvc5::internal::theory::strings::StringToRegExpTypeRule
+typerule STRING_TO_REGEXP ::cvc5pp::internal::theory::strings::StringToRegExpTypeRule
 typerule STRING_IN_REGEXP "SimpleTypeRule<RBool, AString, ARegExp>"
 typerule REGEXP_NONE "SimpleTypeRule<RRegExp>"
 typerule REGEXP_ALL "SimpleTypeRule<RRegExp>"
 typerule REGEXP_ALLCHAR "SimpleTypeRule<RRegExp>"
 
 # we return isConst for some regular expressions, including all that we enumerate
-construle STRING_TO_REGEXP ::cvc5::internal::theory::strings::StringToRegExpTypeRule
+construle STRING_TO_REGEXP ::cvc5pp::internal::theory::strings::StringToRegExpTypeRule
 
 ### operators that apply to both strings and sequences
 
-typerule STRING_CONCAT ::cvc5::internal::theory::strings::StringConcatTypeRule
-typerule STRING_LENGTH ::cvc5::internal::theory::strings::StringStrToIntTypeRule
-typerule STRING_SUBSTR ::cvc5::internal::theory::strings::StringSubstrTypeRule
-typerule STRING_UPDATE ::cvc5::internal::theory::strings::StringUpdateTypeRule
-typerule STRING_CHARAT ::cvc5::internal::theory::strings::StringAtTypeRule
-typerule STRING_CONTAINS ::cvc5::internal::theory::strings::StringRelationTypeRule
-typerule STRING_INDEXOF ::cvc5::internal::theory::strings::StringIndexOfTypeRule
+typerule STRING_CONCAT ::cvc5pp::internal::theory::strings::StringConcatTypeRule
+typerule STRING_LENGTH ::cvc5pp::internal::theory::strings::StringStrToIntTypeRule
+typerule STRING_SUBSTR ::cvc5pp::internal::theory::strings::StringSubstrTypeRule
+typerule STRING_UPDATE ::cvc5pp::internal::theory::strings::StringUpdateTypeRule
+typerule STRING_CHARAT ::cvc5pp::internal::theory::strings::StringAtTypeRule
+typerule STRING_CONTAINS ::cvc5pp::internal::theory::strings::StringRelationTypeRule
+typerule STRING_INDEXOF ::cvc5pp::internal::theory::strings::StringIndexOfTypeRule
 typerule STRING_INDEXOF_RE "SimpleTypeRule<RInteger, AString, ARegExp, AInteger>"
-typerule STRING_REPLACE ::cvc5::internal::theory::strings::StringReplaceTypeRule
-typerule STRING_REPLACE_ALL ::cvc5::internal::theory::strings::StringReplaceTypeRule
+typerule STRING_REPLACE ::cvc5pp::internal::theory::strings::StringReplaceTypeRule
+typerule STRING_REPLACE_ALL ::cvc5pp::internal::theory::strings::StringReplaceTypeRule
 typerule STRING_REPLACE_RE "SimpleTypeRule<RString, AString, ARegExp, AString>"
 typerule STRING_REPLACE_RE_ALL "SimpleTypeRule<RString, AString, ARegExp, AString>"
-typerule STRING_PREFIX ::cvc5::internal::theory::strings::StringStrToBoolTypeRule
-typerule STRING_SUFFIX ::cvc5::internal::theory::strings::StringStrToBoolTypeRule
-typerule STRING_REV ::cvc5::internal::theory::strings::StringStrToStrTypeRule
+typerule STRING_PREFIX ::cvc5pp::internal::theory::strings::StringStrToBoolTypeRule
+typerule STRING_SUFFIX ::cvc5pp::internal::theory::strings::StringStrToBoolTypeRule
+typerule STRING_REV ::cvc5pp::internal::theory::strings::StringStrToStrTypeRule
 
 ### string specific operators
 
@@ -185,13 +185,13 @@ typerule STRING_TO_LOWER "SimpleTypeRule<RString, AString>"
 
 ### sequence specific operators
 
-typerule CONST_SEQUENCE ::cvc5::internal::theory::strings::ConstSequenceTypeRule
-typerule SEQ_UNIT ::cvc5::internal::theory::strings::SeqUnitTypeRule
-typerule SEQ_NTH ::cvc5::internal::theory::strings::SeqNthTypeRule
+typerule CONST_SEQUENCE ::cvc5pp::internal::theory::strings::ConstSequenceTypeRule
+typerule SEQ_UNIT ::cvc5pp::internal::theory::strings::SeqUnitTypeRule
+typerule SEQ_NTH ::cvc5pp::internal::theory::strings::SeqNthTypeRule
 
 # for RARE
 
 operator SEQ_EMPTY_OF_TYPE 1  "the empty sequence whose argument represents its type"
-typerule SEQ_EMPTY_OF_TYPE ::cvc5::internal::theory::strings::SeqEmptyOfTypeTypeRule
+typerule SEQ_EMPTY_OF_TYPE ::cvc5pp::internal::theory::strings::SeqEmptyOfTypeTypeRule
 
 endtheory

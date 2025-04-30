@@ -71,5 +71,5 @@ class BitblastProofGenerator : public ProofGenerator, protected EnvObj
 
 }  // namespace bv
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 #endif

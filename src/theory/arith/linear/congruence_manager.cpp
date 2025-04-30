@@ -682,4 +682,4 @@ bool ArithCongruenceManager::isProofEnabled() const { return d_pnm != nullptr; }
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

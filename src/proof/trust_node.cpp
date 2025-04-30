@@ -157,4 +157,4 @@ std::ostream& operator<<(std::ostream& out, TrustNode n)
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

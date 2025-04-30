@@ -1054,7 +1054,7 @@ class TermManagerTest
     for (Statistics.ConstIterator it = stats.iterator(true, true); it.hasNext();)
     {
       Map.Entry<String, Stat> elem = it.next();
-      if (elem.getKey().equals("cvc5::CONSTANT"))
+      if (elem.getKey().equals("cvc5pp::CONSTANT"))
       {
         assertFalse(elem.getValue().isInternal());
         assertFalse(elem.getValue().isDefault());

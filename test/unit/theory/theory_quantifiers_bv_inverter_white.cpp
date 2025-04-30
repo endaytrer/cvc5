@@ -1611,4 +1611,4 @@ TEST_F(TestTheoryWhiteQuantifiersBvInverter, getIC_bv_sext_sgt_false)
   runTestSext(false, Kind::BITVECTOR_SGT);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

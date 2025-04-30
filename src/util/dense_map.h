@@ -339,4 +339,4 @@ public:
   void pop_back() { d_map.pop_back(); }
 }; /* class DenseMultiset */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

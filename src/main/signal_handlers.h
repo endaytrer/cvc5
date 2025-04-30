@@ -38,6 +38,6 @@ void install();
 void cleanup();
 
 }  // namespace signal_handlers
-}  // namespace cvc5::main
+}  // namespace cvc5pp::main
 
 #endif /* CVC5__MAIN__SIGNAL_HANDLERS_H */

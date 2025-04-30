@@ -1012,4 +1012,4 @@ BagsUtils::splitTableJoinIndices(Node n)
 
 }  // namespace bags
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

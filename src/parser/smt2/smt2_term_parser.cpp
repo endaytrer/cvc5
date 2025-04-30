@@ -1416,4 +1416,4 @@ Term Smt2TermParser::parseMatchCasePattern(Sort headSort,
 }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

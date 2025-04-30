@@ -147,6 +147,6 @@ class PreprocessingPassContext : protected EnvObj
 };  // class PreprocessingPassContext
 
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PREPROCESSING__PREPROCESSING_PASS_CONTEXT_H */

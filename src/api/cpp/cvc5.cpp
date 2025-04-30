@@ -971,7 +971,7 @@ const static std::unordered_map<cvc5pp::internal::RoundingMode, RoundingMode>
 
 namespace {
 
-/** Convert a internal::Kind (internal) to a cvc5::Kind (external).
+/** Convert a internal::Kind (internal) to a cvc5pp::Kind (external).
  */
 cvc5pp::Kind intToExtKind(internal::Kind k)
 {
@@ -982,7 +982,7 @@ cvc5pp::Kind intToExtKind(internal::Kind k)
   }
   return it->second;
 }
-/** Convert a internal::Kind (internal) to a cvc5::Kind (external).
+/** Convert a internal::Kind (internal) to a cvc5pp::Kind (external).
  */
 SortKind intToExtSortKind(internal::Kind k)
 {
@@ -994,7 +994,7 @@ SortKind intToExtSortKind(internal::Kind k)
   return it->second;
 }
 
-/** Convert a cvc5::Kind (external) to a internal::Kind (internal).
+/** Convert a cvc5pp::Kind (external) to a internal::Kind (internal).
  */
 internal::Kind extToIntKind(cvc5pp::Kind k)
 {
@@ -1006,7 +1006,7 @@ internal::Kind extToIntKind(cvc5pp::Kind k)
   return it->second.first;
 }
 
-/** Convert a cvc5::SortKind (external) to a internal::Kind (internal).
+/** Convert a cvc5pp::SortKind (external) to a internal::Kind (internal).
  */
 internal::Kind extToIntSortKind(SortKind k)
 {
@@ -1205,7 +1205,7 @@ std::ostream& operator<<(std::ostream& out, const Result& r)
   return out;
 }
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 
@@ -1266,7 +1266,7 @@ std::ostream& operator<<(std::ostream& out, const SynthResult& sr)
   return out;
 }
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 
@@ -5329,9 +5329,9 @@ void TermManager::increment_vars_consts_stats(const internal::TypeNode& type,
 void TermManager::resetStatistics()
 {
   d_stats.reset(new APIStatistics{
-      d_statsReg->registerHistogram<internal::TypeConstant>("cvc5::CONSTANT"),
-      d_statsReg->registerHistogram<internal::TypeConstant>("cvc5::VARIABLE"),
-      d_statsReg->registerHistogram<Kind>("cvc5::TERM"),
+      d_statsReg->registerHistogram<internal::TypeConstant>("cvc5pp::CONSTANT"),
+      d_statsReg->registerHistogram<internal::TypeConstant>("cvc5pp::VARIABLE"),
+      d_statsReg->registerHistogram<Kind>("cvc5pp::TERM"),
   });
 }
 
@@ -8930,7 +8930,7 @@ std::string Solver::getVersion() const
 
 TermManager& Solver::getTermManager() const { return d_tm; }
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 

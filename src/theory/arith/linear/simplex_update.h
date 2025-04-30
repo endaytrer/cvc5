@@ -357,4 +357,4 @@ std::ostream& operator<<(std::ostream& out, const UpdateInfo& up);
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

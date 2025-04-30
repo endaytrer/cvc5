@@ -146,6 +146,6 @@ JNIEXPORT jint JNICALL Java_io_github_cvc5_DatatypeSelector_hashCode(
 {
   CVC5_JAVA_API_TRY_CATCH_BEGIN;
   DatatypeSelector* result = reinterpret_cast<DatatypeSelector*>(pointer);
-  return static_cast<jint>(std::hash<cvc5::DatatypeSelector>()(*result));
+  return static_cast<jint>(std::hash<cvc5pp::DatatypeSelector>()(*result));
   CVC5_JAVA_API_TRY_CATCH_END_RETURN(env, 0);
 }

@@ -391,6 +391,6 @@ struct IntegerHashFunction
 
 std::ostream& operator<<(std::ostream& os, const Integer& n);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__INTEGER_H */

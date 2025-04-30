@@ -334,6 +334,6 @@ void CocoaEncoder::encodeFact(const Node& f)
 
 }  // namespace ff
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5_USE_COCOA */

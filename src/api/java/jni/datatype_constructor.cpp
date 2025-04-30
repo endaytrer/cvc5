@@ -205,6 +205,6 @@ JNIEXPORT jint JNICALL Java_io_github_cvc5_DatatypeConstructor_hashCode(
 {
   CVC5_JAVA_API_TRY_CATCH_BEGIN;
   DatatypeConstructor* result = reinterpret_cast<DatatypeConstructor*>(pointer);
-  return static_cast<jint>(std::hash<cvc5::DatatypeConstructor>()(*result));
+  return static_cast<jint>(std::hash<cvc5pp::DatatypeConstructor>()(*result));
   CVC5_JAVA_API_TRY_CATCH_END_RETURN(env, 0);
 }

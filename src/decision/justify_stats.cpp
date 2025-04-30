@@ -32,4 +32,4 @@ JustifyStatistics::JustifyStatistics(StatisticsRegistry& sr)
 JustifyStatistics::~JustifyStatistics() {}
 
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

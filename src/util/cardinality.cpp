@@ -260,4 +260,4 @@ std::ostream& operator<<(std::ostream& out, const Cardinality& c) {
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

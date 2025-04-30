@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::NodeBuilder.
+ * Black box testing of cvc5pp::NodeBuilder.
  */
 
 #include <limits.h>
@@ -415,4 +415,4 @@ TEST_F(TestNodeBlackNodeBuilder, leftist_building)
   ASSERT_EQ(nexpected, n);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

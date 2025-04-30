@@ -179,4 +179,4 @@ std::string DiamondsProofGenerator::identify() const
   return "DiamondsProofGenerator";
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

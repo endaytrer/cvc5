@@ -167,4 +167,4 @@ TEST_F(TestCApiBlackResult, copy_release)
   // unless ASAN is enabled
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

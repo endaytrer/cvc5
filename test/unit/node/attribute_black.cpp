@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::Attribute.
+ * Black box testing of cvc5pp::Attribute.
  */
 
 #include <sstream>
@@ -124,4 +124,4 @@ TEST_F(TestNodeBlackAttribute, bools)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

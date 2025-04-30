@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::BooleanSimplification.
+ * Black box testing of cvc5pp::BooleanSimplification.
  */
 
 #include <algorithm>
@@ -246,4 +246,4 @@ TEST_F(TestUtilBlackBooleanSimplification, simplifyConflict)
 #endif
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

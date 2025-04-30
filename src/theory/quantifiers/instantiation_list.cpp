@@ -41,4 +41,4 @@ std::ostream& operator<<(std::ostream& out, const SkolemList& skl)
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

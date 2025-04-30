@@ -349,4 +349,4 @@ TEST_F(TestNodeBlackTypeCardinality, lessThan)
   ASSERT_TRUE(d_nodeManager->mkFiniteFieldType(11).isCardinalityLessThan(13));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

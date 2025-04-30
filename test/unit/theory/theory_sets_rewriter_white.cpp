@@ -90,4 +90,4 @@ TEST_F(TestTheoryWhiteSetsRewriter, map)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

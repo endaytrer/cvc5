@@ -1,21 +1,21 @@
 SynthResult
 ===========
 
-This class represents a :cpp:class:`cvc5::Solver` SyGus synthesis result.
+This class represents a :cpp:class:`cvc5pp::Solver` SyGus synthesis result.
 
 ----
 
-- class :cpp:class:`cvc5::SynthResult`
-- :cpp:func:`std::ostream& cvc5::operator<< (std::ostream& out, const SynthResult& r)`
+- class :cpp:class:`cvc5pp::SynthResult`
+- :cpp:func:`std::ostream& cvc5pp::operator<< (std::ostream& out, const SynthResult& r)`
 
 ----
 
-.. doxygenclass:: cvc5::SynthResult
+.. doxygenclass:: cvc5pp::SynthResult
     :project: cvc5
     :members:
     :undoc-members:
 
 ----
 
-.. doxygenfunction:: cvc5::operator<<(std::ostream& out, const SynthResult& r)
+.. doxygenfunction:: cvc5pp::operator<<(std::ostream& out, const SynthResult& r)
     :project: cvc5

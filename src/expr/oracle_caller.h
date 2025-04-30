@@ -72,6 +72,6 @@ class OracleCaller
   std::map<Node, std::vector<Node>> d_cachedResults;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /*CVC5__UTIL__ORACLE_CALLER_H*/

@@ -325,4 +325,4 @@ void ResourceManager::registerListener(Listener* listener)
   return d_listeners.push_back(listener);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

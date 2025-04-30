@@ -54,6 +54,6 @@ struct EmptyBagHashFunction
   size_t operator()(const EmptyBag& es) const;
 }; /* struct EmptyBagHashFunction */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EMPTY_BAG_H */

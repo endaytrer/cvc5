@@ -56,6 +56,6 @@ class ElimWitnessNodeConverter : protected EnvObj, public NodeConverter
   std::vector<Node> d_exists;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

@@ -668,4 +668,4 @@ std::shared_ptr<context::CDHashSet<Node>> SolverState::getPartElementSkolems(
 
 }  // namespace sets
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

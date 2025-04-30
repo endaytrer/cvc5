@@ -366,6 +366,6 @@ class CnfStream : protected EnvObj
 }; /* class CnfStream */
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROP__CNF_STREAM_H */

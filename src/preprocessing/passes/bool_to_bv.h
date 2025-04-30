@@ -121,6 +121,6 @@ class BoolToBV : public PreprocessingPass
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PREPROCESSING__PASSES__BOOL_TO_BV_H */

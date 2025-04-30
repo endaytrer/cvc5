@@ -278,4 +278,4 @@ TypeNode NodeConverter::preConvertType(TypeNode tn) { return tn; }
 TypeNode NodeConverter::postConvertType(TypeNode tn) { return tn; }
 bool NodeConverter::shouldTraverse(Node n) { return true; }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

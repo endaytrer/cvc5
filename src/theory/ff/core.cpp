@@ -195,6 +195,6 @@ void Tracer::addDep(const std::string& parent,
 
 }  // namespace ff
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5_USE_COCOA */

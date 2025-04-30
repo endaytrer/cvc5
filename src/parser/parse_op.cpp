@@ -52,4 +52,4 @@ std::ostream& operator<<(std::ostream& os, const ParseOp& p)
   return os << out.str();
 }
 
-}  // namespace cvc5
+}  // namespace cvc5pp

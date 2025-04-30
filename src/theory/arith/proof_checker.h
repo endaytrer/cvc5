@@ -54,6 +54,6 @@ class ArithProofRuleChecker : public ProofRuleChecker
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__ARITH__PROOF_CHECKER_H */

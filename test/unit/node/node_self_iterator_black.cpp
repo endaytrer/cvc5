@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::expr::NodeSelfIterator.
+ * Black box testing of cvc5pp::expr::NodeSelfIterator.
  */
 
 #include "expr/node.h"
@@ -53,4 +53,4 @@ TEST_F(TestNodeBlackNodeSelfIterator, iteration)
   ASSERT_EQ(++i, x_and_y.end());
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

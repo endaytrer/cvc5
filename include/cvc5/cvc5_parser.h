@@ -442,6 +442,6 @@ class ParserEndOfFileException : public ParserException
 }; /* class ParserEndOfFileException */
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif

@@ -679,4 +679,4 @@ TEST_F(TestApiBlackSort, substitute)
       arraySort1.substitute({sortVar0, sortVar1}, {intSort, realSort}));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

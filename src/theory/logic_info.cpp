@@ -824,4 +824,4 @@ std::ostream& operator<<(std::ostream& out, const LogicInfo& logic) {
   return out << logic.getLogicString();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

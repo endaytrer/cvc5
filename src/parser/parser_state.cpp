@@ -759,4 +759,4 @@ uint32_t stringToUnsigned(const std::string& str)
 }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

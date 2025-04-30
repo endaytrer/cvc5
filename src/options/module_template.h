@@ -55,6 +55,6 @@ struct Holder${id_cap}$
 #undef DO_SEMANTIC_CHECKS_BY_DEFAULT
 
 
-}  // namespace cvc5::internal::options
+}  // namespace cvc5pp::internal::options
 
 #endif /* CVC5__OPTIONS__${id_cap}$_H */

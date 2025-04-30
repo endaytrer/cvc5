@@ -118,4 +118,4 @@ std::shared_ptr<ProofNode> ProofNodeConverter::processInternal(
   return cpf.getProofFor(newRes);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

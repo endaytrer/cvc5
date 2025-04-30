@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::NodeManager.
+ * White box testing of cvc5pp::NodeManager.
  */
 
 #include <string>
@@ -80,4 +80,4 @@ TEST_F(TestNodeWhiteNodeManager, topological_sort)
   }
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

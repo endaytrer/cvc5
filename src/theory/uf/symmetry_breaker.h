@@ -174,6 +174,6 @@ std::ostream& operator<<(
     std::ostream& out,
     const cvc5pp::internal::theory::uf::SymmetryBreaker::Permutation& p);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__UF__SYMMETRY_BREAKER_H */

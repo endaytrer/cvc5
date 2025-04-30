@@ -141,6 +141,6 @@ class TheoryBV : public Theory
 
 }  // namespace bv
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BV__THEORY_BV_H */

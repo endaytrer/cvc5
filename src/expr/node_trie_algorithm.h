@@ -47,6 +47,6 @@ void nodeTriePathPairProcess(const TNodeTrie* t,
                              size_t n,
                              NodeTriePathPairProcessCallback& ntpc);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__NODE_TRIE_ALGORITHM_H */

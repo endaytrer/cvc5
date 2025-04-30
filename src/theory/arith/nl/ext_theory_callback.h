@@ -73,6 +73,6 @@ class NlExtTheoryCallback : public ExtTheoryCallback
 }  // namespace nl
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__ARITH__NL__EXT_THEORY_CALLBACK_H */

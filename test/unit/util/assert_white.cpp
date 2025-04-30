@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::Configuration.
+ * White box testing of cvc5pp::Configuration.
  */
 
 #include <cstring>
@@ -85,4 +85,4 @@ TEST_F(TestUtilWhite, CheckArgument)
   ASSERT_THROW(CheckArgument(false, "x"), IllegalArgumentException);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

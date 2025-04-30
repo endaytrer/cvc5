@@ -59,6 +59,6 @@ struct CarePair {
 typedef std::set<CarePair> CareGraph;
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__CARE_GRAPH_H */

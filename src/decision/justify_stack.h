@@ -76,6 +76,6 @@ class JustifyStack
 };
 
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__DECISION__JUSTIFY_INFO_H */

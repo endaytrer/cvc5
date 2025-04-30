@@ -199,4 +199,4 @@ FiniteFieldValue FiniteFieldValue::mkOne(const Integer& size)
   return {1, size};
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

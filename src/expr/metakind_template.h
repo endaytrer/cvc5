@@ -87,9 +87,9 @@ uint32_t getMaxArityForKind(cvc5pp::internal::Kind k);
 
 }  // namespace metakind
 
-// import MetaKind into the "cvc5::internal::kind" namespace but keep the
+// import MetaKind into the "cvc5pp::internal::kind" namespace but keep the
 // individual MetaKind constants under kind::metakind::
-typedef cvc5::internal::kind::metakind::MetaKind_t MetaKind;
+typedef cvc5pp::internal::kind::metakind::MetaKind_t MetaKind;
 
 /**
  * Get the metakind for a particular kind.
@@ -111,12 +111,12 @@ namespace expr {
 struct NodeValuePoolEq {
   bool operator()(const NodeValue* nv1, const NodeValue* nv2) const
   {
-    return cvc5::internal::kind::metakind::NodeValueCompare::compare<true>(nv1,
+    return cvc5pp::internal::kind::metakind::NodeValueCompare::compare<true>(nv1,
                                                                            nv2);
   }
 };
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__KIND__METAKIND_H */

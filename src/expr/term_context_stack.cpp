@@ -76,4 +76,4 @@ TCtxNode TCtxStack::getCurrentNode() const
   return TCtxNode(curr.first, curr.second, d_tctx);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

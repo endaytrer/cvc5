@@ -124,6 +124,6 @@ struct QuantifierOracleFormulaGenTypeRule
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANTIFIERS__THEORY_QUANTIFIERS_TYPE_RULES_H */

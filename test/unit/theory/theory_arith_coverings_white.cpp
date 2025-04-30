@@ -40,10 +40,10 @@
 
 namespace cvc5pp::internal::test {
 
-using namespace cvc5::internal;
-using namespace cvc5::internal::theory;
-using namespace cvc5::internal::theory::arith;
-using namespace cvc5::internal::theory::arith::nl;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::internal::theory;
+using namespace cvc5pp::internal::theory::arith;
+using namespace cvc5pp::internal::theory::arith::nl;
 
 NodeManager* nodeManager;
 class TestTheoryWhiteArithCoverings : public TestSmt
@@ -481,6 +481,6 @@ TEST_F(TestTheoryWhiteArithCoverings, test_ran_conversion)
     EXPECT_TRUE(ran == back);
   }
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test
 
 #endif

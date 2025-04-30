@@ -301,7 +301,7 @@ public:
    *
    * @param theory The identifier of the theory to be checked.
    * @param id The ID string associated with the theory for error reporting.
-   * @throws cvc5::internal::Exception if the theory is already registered.
+   * @throws cvc5pp::internal::Exception if the theory is already registered.
    */
   void checkDuplicateTheory(theory::TheoryId theory, const char* id);
 
@@ -309,6 +309,6 @@ public:
 
 std::ostream& operator<<(std::ostream& out, const LogicInfo& logic);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__LOGIC_INFO_H */

@@ -134,4 +134,4 @@ const std::unordered_set<Node>& WitnessFormGenerator::getWitnessFormEqs() const
 }
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

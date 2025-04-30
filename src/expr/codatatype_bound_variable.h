@@ -86,6 +86,6 @@ struct CodatatypeBoundVariableHashFunction
   size_t operator()(const CodatatypeBoundVariable& cbv) const;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__UNINTERPRETED_CONSTANT_H */

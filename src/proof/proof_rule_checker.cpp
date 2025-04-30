@@ -75,4 +75,4 @@ Node ProofRuleChecker::mkKindNode(NodeManager* nm, Kind k)
 
 NodeManager* ProofRuleChecker::nodeManager() const { return d_nm; }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

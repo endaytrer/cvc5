@@ -82,6 +82,6 @@ static inline void append(const vec<T>& from, vec<T>& to){ copy(from, to, true);
 
 //=================================================================================================
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

@@ -37,7 +37,7 @@ class Sequence
  public:
   /** constructors for Sequence
    *
-   * Internally, a cvc5::internal::Sequence is represented by a vector of Nodes (d_seq),
+   * Internally, a cvc5pp::internal::Sequence is represented by a vector of Nodes (d_seq),
    * where each Node in this vector must be a constant.
    */
   Sequence() = default;
@@ -174,6 +174,6 @@ struct SequenceHashFunction
 
 std::ostream& operator<<(std::ostream& os, const Sequence& s);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__SEQUENCE_H */

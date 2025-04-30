@@ -47,6 +47,6 @@ struct Assertion {
 std::ostream& operator<<(std::ostream& out, const Assertion& a);
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__ASSERTION_H */

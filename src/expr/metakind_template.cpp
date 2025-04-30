@@ -74,8 +74,8 @@ namespace metakind {
 template <Kind k, class T, bool pool>
 struct NodeValueConstCompare
 {
-  static bool compare(const cvc5::internal::expr::NodeValue* x,
-                      const cvc5::internal::expr::NodeValue* y)
+  static bool compare(const cvc5pp::internal::expr::NodeValue* x,
+                      const cvc5pp::internal::expr::NodeValue* y)
   {
     if (pool)
     {
@@ -96,7 +96,7 @@ struct NodeValueConstCompare
     return x->getConst<T>() == y->getConst<T>();
   }
 
-  static size_t constHash(const cvc5::internal::expr::NodeValue* nv)
+  static size_t constHash(const cvc5pp::internal::expr::NodeValue* nv)
   {
     return nv->getConst<T>().hash();
   }
@@ -112,13 +112,13 @@ size_t NodeValueCompare::constHash(const cvc5pp::internal::expr::NodeValue* nv)
     ${metakind_constHashes}
 // clang-format on
     default:
-      Unhandled() << cvc5::internal::expr::NodeValue::dKindToKind(nv->d_kind);
+      Unhandled() << cvc5pp::internal::expr::NodeValue::dKindToKind(nv->d_kind);
   }
 }
 
 template <bool pool>
-bool NodeValueCompare::compare(const cvc5::internal::expr::NodeValue* nv1,
-                               const cvc5::internal::expr::NodeValue* nv2)
+bool NodeValueCompare::compare(const cvc5pp::internal::expr::NodeValue* nv1,
+                               const cvc5pp::internal::expr::NodeValue* nv2)
 {
   if(nv1->d_kind != nv2->d_kind) {
     return false;
@@ -132,7 +132,7 @@ bool NodeValueCompare::compare(const cvc5::internal::expr::NodeValue* nv1,
 ${metakind_compares}
 // clang-format on
 default:
-  Unhandled() << cvc5::internal::expr::NodeValue::dKindToKind(nv1->d_kind);
+  Unhandled() << cvc5pp::internal::expr::NodeValue::dKindToKind(nv1->d_kind);
     }
   }
 
@@ -140,7 +140,7 @@ default:
     return false;
   }
 
-  cvc5::internal::expr::NodeValue::const_nv_iterator i = nv1->nv_begin();
+  cvc5pp::internal::expr::NodeValue::const_nv_iterator i = nv1->nv_begin();
   cvc5pp::internal::expr::NodeValue::const_nv_iterator j = nv2->nv_begin();
   cvc5pp::internal::expr::NodeValue::const_nv_iterator i_end = nv1->nv_end();
 
@@ -156,11 +156,11 @@ default:
 }
 
 template bool NodeValueCompare::compare<true>(
-    const cvc5::internal::expr::NodeValue* nv1,
-    const cvc5::internal::expr::NodeValue* nv2);
+    const cvc5pp::internal::expr::NodeValue* nv1,
+    const cvc5pp::internal::expr::NodeValue* nv2);
 template bool NodeValueCompare::compare<false>(
-    const cvc5::internal::expr::NodeValue* nv1,
-    const cvc5::internal::expr::NodeValue* nv2);
+    const cvc5pp::internal::expr::NodeValue* nv1,
+    const cvc5pp::internal::expr::NodeValue* nv2);
 
 void nodeValueConstantToStream(std::ostream& out,
                                const cvc5pp::internal::expr::NodeValue* nv)
@@ -173,7 +173,7 @@ void nodeValueConstantToStream(std::ostream& out,
 ${metakind_constPrinters}
 // clang-format on
 default:
-  Unhandled() << cvc5::internal::expr::NodeValue::dKindToKind(nv->d_kind);
+  Unhandled() << cvc5pp::internal::expr::NodeValue::dKindToKind(nv->d_kind);
   }
 }
 
@@ -204,7 +204,7 @@ void deleteNodeValueConstant(cvc5pp::internal::expr::NodeValue* nv)
 ${metakind_constDeleters}
 // clang-format on
 default:
-  Unhandled() << cvc5::internal::expr::NodeValue::dKindToKind(nv->d_kind);
+  Unhandled() << cvc5pp::internal::expr::NodeValue::dKindToKind(nv->d_kind);
   }
 }
 
@@ -246,7 +246,7 @@ ${metakind_ubchildren}
  * example, since the kind of functions is just VARIABLE, it should map
  * VARIABLE to APPLY_UF.
  */
-Kind operatorToKind(cvc5::internal::expr::NodeValue* nv)
+Kind operatorToKind(cvc5pp::internal::expr::NodeValue* nv)
 {
   if (nv->getKind() == Kind::BUILTIN)
   {
@@ -268,4 +268,4 @@ Kind operatorToKind(cvc5::internal::expr::NodeValue* nv)
 }
 
 }  // namespace kind
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

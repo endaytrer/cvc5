@@ -139,7 +139,7 @@ class SygusGrammar
   TypeNode d_datatype;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 template <>

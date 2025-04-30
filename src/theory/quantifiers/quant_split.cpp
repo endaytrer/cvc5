@@ -327,4 +327,4 @@ Node QuantDSplit::split(NodeManager* nm, const Node& q, size_t index)
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

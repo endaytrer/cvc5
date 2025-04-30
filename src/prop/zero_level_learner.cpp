@@ -451,4 +451,4 @@ bool ZeroLevelLearner::getSolved(const Node& lit, Subs& subs)
 }
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

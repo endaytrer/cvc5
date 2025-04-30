@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::FloatingPoint.
+ * Black box testing of cvc5pp::FloatingPoint.
  */
 
 #include "test.h"
@@ -135,4 +135,4 @@ TEST_F(TestUtilBlackFloatingPoint, makeMaxNormal)
   ASSERT_TRUE(mfp128.isNormal());
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

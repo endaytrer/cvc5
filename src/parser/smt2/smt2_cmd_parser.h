@@ -55,6 +55,6 @@ class Smt2CmdParser
 };
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__SMT2_H */

@@ -333,4 +333,4 @@ BitVector FloatingPointLiteral::convertToUBVTotal(BitVectorSize width,
       d_fp_size, rm, d_symuf, width, undefinedCase);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

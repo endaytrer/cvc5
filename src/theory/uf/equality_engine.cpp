@@ -2629,4 +2629,4 @@ EqualityNodeId EqualityEngine::TriggerTermSet::getTrigger(TheoryId tag) const
 
 } // Namespace uf
 } // Namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

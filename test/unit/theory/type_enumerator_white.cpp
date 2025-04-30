@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::theory::TypeEnumerator.
+ * White box testing of cvc5pp::theory::TypeEnumerator.
  *
  * These tests depend on the ordering that the TypeEnumerators use, so it's a
  * white-box test.
@@ -342,4 +342,4 @@ TEST_F(TestTheoryWhiteTypeEnumerator, bv)
   ASSERT_THROW(*++te, NoMoreValuesException);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

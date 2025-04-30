@@ -97,4 +97,4 @@ const std::map<Node, std::vector<Node>>& OracleCaller::getCachedResults() const
   return d_cachedResults;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

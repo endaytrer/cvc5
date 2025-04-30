@@ -761,4 +761,4 @@ PortfolioStrategy PortfolioDriver::getStrategy(const std::string& logic)
   return s;
 }
 
-}  // namespace cvc5::main
+}  // namespace cvc5pp::main

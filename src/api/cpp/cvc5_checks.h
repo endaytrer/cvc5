@@ -931,5 +931,5 @@ class CVC5ApiUnsupportedExceptionStream
       << "invalid number of indices for operator " << kind << ", expected " \
       << expected << " but got " << nargs << "."
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 #endif

@@ -168,4 +168,4 @@ bool ProofPostprocessDsl::update(Node res,
 }
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

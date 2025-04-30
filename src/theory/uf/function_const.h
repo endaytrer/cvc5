@@ -117,6 +117,6 @@ class FunctionConst
 
 }  // namespace uf
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__UF__FUNCTION_CONST_H */

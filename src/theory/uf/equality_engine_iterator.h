@@ -80,6 +80,6 @@ class EqClassIterator
 
 }  // Namespace eq
 }  // Namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

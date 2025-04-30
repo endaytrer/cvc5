@@ -74,4 +74,4 @@ Node DatatypesInference::processFact(std::vector<Node>& exp,
 
 }  // namespace datatypes
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

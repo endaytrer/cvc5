@@ -263,6 +263,6 @@ class SkolemManager
   TypeNode getTypeFor(SkolemId id, const std::vector<Node>& cacheVals);
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__PROOF_SKOLEM_CACHE_H */

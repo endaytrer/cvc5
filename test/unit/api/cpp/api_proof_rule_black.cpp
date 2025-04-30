@@ -77,4 +77,4 @@ TEST_F(TestApiProofRewriteRule, ProofRewriteRuleHash)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

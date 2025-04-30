@@ -101,6 +101,6 @@ class BoundVarManager
   std::unordered_set<Node> d_cacheVals;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__BOUND_VAR_MANAGER_H */

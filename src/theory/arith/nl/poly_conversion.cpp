@@ -876,6 +876,6 @@ RealAlgebraicNumber PolyConverter::node_to_ran(const Node& n,
       theory::arith::nl::node_to_poly_ran(n, ran_variable));
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

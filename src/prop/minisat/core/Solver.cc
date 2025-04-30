@@ -2210,4 +2210,4 @@ const std::vector<Node> Solver::getMiniSatOrderHeap()
 }
 
 }  // namespace Minisat
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

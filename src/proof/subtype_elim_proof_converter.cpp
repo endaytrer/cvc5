@@ -319,4 +319,4 @@ bool SubtypeElimConverterCallback::prove(const Node& src,
   return true;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

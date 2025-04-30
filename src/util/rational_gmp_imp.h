@@ -327,6 +327,6 @@ struct RationalHashFunction
 
 std::ostream& operator<<(std::ostream& os, const Rational& n);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__RATIONAL_H */

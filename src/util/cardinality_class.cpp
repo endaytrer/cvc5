@@ -71,4 +71,4 @@ bool isCardinalityClassFinite(CardinalityClass c, bool fmfEnabled)
   return false;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

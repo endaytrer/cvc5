@@ -29,4 +29,4 @@ StreamFormatScope::~StreamFormatScope()
   d_out.flags(d_format_flags);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

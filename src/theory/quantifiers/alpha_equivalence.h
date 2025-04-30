@@ -147,6 +147,6 @@ class AlphaEquivalence : protected EnvObj
 
 }
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

@@ -14,7 +14,7 @@
  * about the cvc5 library.
  *
  * Eventually, the configuration methods will all be migrated to the
- * cvc5::internal::configuration namespace below. This is cleaner and avoids a
+ * cvc5pp::internal::configuration namespace below. This is cleaner and avoids a
  * gcc/10.1.0 bug. See https://github.com/cvc5/cvc5/pull/7898 for details.
  */
 
@@ -124,6 +124,6 @@ public:
 
 }; /* class Configuration */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__CONFIGURATION_H */

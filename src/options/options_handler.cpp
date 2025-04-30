@@ -414,4 +414,4 @@ void OptionsHandler::strictParsing(const std::string& flag, bool value)
 }
 
 }  // namespace options
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

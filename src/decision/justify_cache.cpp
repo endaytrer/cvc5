@@ -76,4 +76,4 @@ void JustifyCache::setValue(const Node& n, prop::SatValue value)
 }
 
 }  // namespace decision
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

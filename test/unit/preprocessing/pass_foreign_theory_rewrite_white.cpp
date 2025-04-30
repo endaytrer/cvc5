@@ -48,4 +48,4 @@ TEST_F(TestPPWhiteForeignTheoryRewrite, simplify)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

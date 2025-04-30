@@ -51,4 +51,4 @@ std::unique_ptr<std::fstream> openTmpFile(std::string* pattern)
   return tmpStream;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

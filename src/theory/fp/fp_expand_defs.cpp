@@ -127,4 +127,4 @@ Node FpExpandDefs::expandDefinition(Node node)
 
 }  // namespace fp
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

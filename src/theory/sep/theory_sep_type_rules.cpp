@@ -160,4 +160,4 @@ TypeNode SepNilTypeRule::computeType(NodeManager* nodeManager,
 
 }  // namespace sep
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -106,4 +106,4 @@ const char* toString(cvc5pp::SkolemId id)
   }
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

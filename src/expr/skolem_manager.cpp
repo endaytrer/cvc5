@@ -704,4 +704,4 @@ size_t SkolemManager::getNumIndicesForSkolemId(SkolemId id) const
   }
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

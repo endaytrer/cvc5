@@ -193,7 +193,7 @@ std::ostream& operator<<(std::ostream& os, const RealAlgebraicNumber& ran);
 
 using RealAlgebraicNumberHashFunction = std::hash<RealAlgebraicNumber>;
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 template <>

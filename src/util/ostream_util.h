@@ -43,6 +43,6 @@ class StreamFormatScope
   std::streamsize d_precision;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__UTIL__OSTREAM_UTIL_H */

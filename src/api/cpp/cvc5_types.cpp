@@ -39,7 +39,7 @@ std::ostream& operator<<(std::ostream& out, RoundingMode rm)
   }
   return out;
 }
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 std::string to_string(cvc5pp::RoundingMode rm)
@@ -76,7 +76,7 @@ std::ostream& operator<<(std::ostream& out, UnknownExplanation e)
   }
   return out;
 }
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 std::string to_string(cvc5pp::UnknownExplanation exp)
@@ -99,7 +99,7 @@ std::ostream& operator<<(std::ostream& out, BlockModelsMode mode)
   return out;
 }
 
-}  // namespace cvc5::modes
+}  // namespace cvc5pp::modes
 
 namespace std {
 std::string to_string(cvc5pp::modes::BlockModelsMode mode)
@@ -126,7 +126,7 @@ std::ostream& operator<<(std::ostream& out, LearnedLitType ltype)
   }
   return out;
 }
-}  // namespace cvc5::modes
+}  // namespace cvc5pp::modes
 
 namespace std {
 std::string to_string(cvc5pp::modes::LearnedLitType type)
@@ -151,7 +151,7 @@ std::ostream& operator<<(std::ostream& out, ProofComponent pc)
   }
   return out;
 }
-}  // namespace cvc5::modes
+}  // namespace cvc5pp::modes
 
 namespace std {
 std::string to_string(cvc5pp::modes::ProofComponent pc)
@@ -177,7 +177,7 @@ std::ostream& operator<<(std::ostream& out, ProofFormat format)
   }
   return out;
 }
-}  // namespace cvc5::modes
+}  // namespace cvc5pp::modes
 
 namespace std {
 std::string to_string(cvc5pp::modes::ProofFormat format)
@@ -202,7 +202,7 @@ std::ostream& operator<<(std::ostream& out, FindSynthTarget target)
   }
   return out;
 }
-}  // namespace cvc5::modes
+}  // namespace cvc5pp::modes
 
 namespace std {
 std::string to_string(cvc5pp::modes::FindSynthTarget target)
@@ -225,7 +225,7 @@ std::ostream& operator<<(std::ostream& out, InputLanguage lang)
   }
   return out;
 }
-}  // namespace cvc5::modes
+}  // namespace cvc5pp::modes
 
 namespace std {
 std::string to_string(cvc5pp::modes::InputLanguage lang)

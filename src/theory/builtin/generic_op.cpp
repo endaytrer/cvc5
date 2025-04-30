@@ -420,4 +420,4 @@ Node GenericOp::getConcreteApp(const Node& app)
   return ret;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

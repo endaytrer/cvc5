@@ -323,4 +323,4 @@ bool ProofChecker::isPedanticFailure(ProofRule id, std::ostream* out) const
   return false;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

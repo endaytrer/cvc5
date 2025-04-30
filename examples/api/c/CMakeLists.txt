@@ -54,7 +54,7 @@ macro(cvc5_add_c_example name src_files)
   endif()
   set(test_name c_${name})
   add_executable(${test_name} ${src_files_list})
-  target_link_libraries(${test_name} cvc5::cvc5 cvc5::cvc5parser)
+  target_link_libraries(${test_name} cvc5pp::cvc5 cvc5pp::cvc5parser)
 
   # The test target is prefixed with the path,
   # e.g., for '<output_dir>/myexample.cpp'

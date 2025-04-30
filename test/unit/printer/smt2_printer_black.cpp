@@ -62,4 +62,4 @@ TEST_F(TestPrinterBlackSmt2, regexp_loop)
   checkToString(n, "((_ re.loop 1 3) (str.to_re \"x\"))");
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

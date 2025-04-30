@@ -118,6 +118,6 @@ class BVSolver : protected EnvObj
 
 }  // namespace bv
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BV__BV_SOLVER_H */

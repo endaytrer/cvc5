@@ -2225,4 +2225,4 @@ void TheoryEngine::initializeProofChecker(ProofChecker* pc)
 
 theory::Rewriter* TheoryEngine::getRewriter() { return d_env.getRewriter(); }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -49,6 +49,6 @@ class VariadicTrie
   bool hasSubset(const std::vector<Node>& is) const;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__VARIADIC_TRIE_H */

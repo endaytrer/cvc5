@@ -60,6 +60,6 @@ enum SymbolType
 std::ostream& operator<<(std::ostream& out, SymbolType type);
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__PARSER_UTILS_H */

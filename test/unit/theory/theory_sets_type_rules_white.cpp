@@ -66,4 +66,4 @@ TEST_F(TestTheoryWhiteSetsTypeRuleInternal, singleton_node)
   ASSERT_TRUE(n.isConst());
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

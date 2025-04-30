@@ -32,4 +32,4 @@ static_assert(!std::numeric_limits<Index>::is_signed,
  * (Limited testing suggests a ~1/16 of running time.) Interestingly,
  * uint_fast32_t also has a sizeof == 8 on x86_64.
  */
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

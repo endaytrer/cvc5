@@ -416,4 +416,4 @@ std::optional<Node> disjunctiveBitConstraint(const Node& t)
 }  // namespace parse
 }  // namespace ff
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

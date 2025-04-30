@@ -254,6 +254,6 @@ class NoOpTheoryRewriter : public TheoryRewriter
 };
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__THEORY_REWRITER_H */

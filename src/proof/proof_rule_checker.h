@@ -89,6 +89,6 @@ class ProofRuleChecker
   NodeManager* d_nm;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__PROOF_RULE_CHECKER_H */

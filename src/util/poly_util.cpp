@@ -353,6 +353,6 @@ void getVariableInformation(VariableInformation& vi,
 }
 
 }  // namespace poly_utils
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

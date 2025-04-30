@@ -7,7 +7,7 @@ functionality of cvc5.
 The :doc:`quickstart guide <quickstart>` gives a short introduction, while the
 following class hierarchy of the ``cvc5`` namespace provides more details on
 the individual classes.
-For most applications, the :cpp:class:`Solver <cvc5::Solver>` class is the main
+For most applications, the :cpp:class:`Solver <cvc5pp::Solver>` class is the main
 entry point to cvc5.
 
 
@@ -49,17 +49,17 @@ entry point to cvc5.
 Class hierarchy
 ^^^^^^^^^^^^^^^
 
-``namespace cvc5 {``
-  * class :cpp:class:`CVC5ApiException <cvc5::CVC5ApiException>`
-  * class :cpp:class:`CVC5ApiRecoverableException <cvc5::CVC5ApiRecoverableException>`
+``namespace cvc5pp {``
+  * class :cpp:class:`CVC5ApiException <cvc5pp::CVC5ApiException>`
+  * class :cpp:class:`CVC5ApiRecoverableException <cvc5pp::CVC5ApiRecoverableException>`
 
   * class :doc:`classes/datatype`
 
-    * class :cpp:class:`const_iterator <cvc5::Datatype::const_iterator>`
+    * class :cpp:class:`const_iterator <cvc5pp::Datatype::const_iterator>`
 
   * class :doc:`classes/datatypeconstructor`
 
-    * class :cpp:class:`const_iterator <cvc5::DatatypeConstructor::const_iterator>`
+    * class :cpp:class:`const_iterator <cvc5pp::DatatypeConstructor::const_iterator>`
 
   * class :doc:`classes/datatypeconstructordecl`
   * class :doc:`classes/datatypedecl`
@@ -74,37 +74,37 @@ Class hierarchy
   * class :doc:`classes/termmanager`
   * class :doc:`classes/solver`
   * class :doc:`classes/sort`
-  * class :cpp:class:`Stat <cvc5::Stat>`
+  * class :cpp:class:`Stat <cvc5pp::Stat>`
   * class :doc:`classes/statistics`
   * class :doc:`classes/synthresult`
   * class :doc:`classes/term`
 
-    * class :cpp:class:`const_iterator <cvc5::Term::const_iterator>`
+    * class :cpp:class:`const_iterator <cvc5pp::Term::const_iterator>`
 
   * enum class :doc:`enums/kind`
   * enum class :doc:`enums/sortkind`
   * enum class :doc:`enums/roundingmode`
   * enum class :doc:`enums/unknownexplanation`
-  * enum class :cpp:enum:`ProofRule <cvc5::ProofRule>`
-  * enum class :cpp:enum:`ProofRewriteRule <cvc5::ProofRewriteRule>`
+  * enum class :cpp:enum:`ProofRule <cvc5pp::ProofRule>`
+  * enum class :cpp:enum:`ProofRewriteRule <cvc5pp::ProofRewriteRule>`
 
 ``namespace modes {``
   * enum classes for :doc:`configuration modes <enums/modes>`
 
-    * enum class for :cpp:enum:`cvc5::modes::BlockModelsMode`
-    * enum class for :cpp:enum:`cvc5::modes::LearnedLitType`
-    * enum class for :cpp:enum:`cvc5::modes::ProofComponent`
-    * enum class for :cpp:enum:`cvc5::modes::ProofFormat`
-    * enum class for :cpp:enum:`cvc5::modes::FindSynthTarget`
+    * enum class for :cpp:enum:`cvc5pp::modes::BlockModelsMode`
+    * enum class for :cpp:enum:`cvc5pp::modes::LearnedLitType`
+    * enum class for :cpp:enum:`cvc5pp::modes::ProofComponent`
+    * enum class for :cpp:enum:`cvc5pp::modes::ProofFormat`
+    * enum class for :cpp:enum:`cvc5pp::modes::FindSynthTarget`
 
 ``}``
 
 ``namespace parser {``
-  * class :cpp:class:`ParserException <cvc5::parser::ParserException>`
+  * class :cpp:class:`ParserException <cvc5pp::parser::ParserException>`
 
-  * class :cpp:class:`Command <cvc5::parser::Command>`
+  * class :cpp:class:`Command <cvc5pp::parser::Command>`
   * class :doc:`classes/inputparser`
-  * class :cpp:class:`SymbolManager <cvc5::parser::SymbolManager>`
+  * class :cpp:class:`SymbolManager <cvc5pp::parser::SymbolManager>`
 
 ``}``
 

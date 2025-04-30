@@ -94,6 +94,6 @@ template <class T> void sort(vec<T>& v) {
 
 //=================================================================================================
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

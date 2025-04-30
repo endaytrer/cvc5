@@ -49,6 +49,6 @@ class TypeNodeIdTrie
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANTIFIERS__SYGUS__TYPE_NODE_ID_TRIE_H */

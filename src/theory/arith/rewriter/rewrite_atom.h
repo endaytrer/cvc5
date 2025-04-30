@@ -92,6 +92,6 @@ Node buildRealInequality(Sum&& sum, Kind k);
 }  // namespace rewriter
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

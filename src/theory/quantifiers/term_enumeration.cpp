@@ -75,4 +75,4 @@ bool TermEnumeration::getDomain(TypeNode tn, std::vector<Node>& dom)
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

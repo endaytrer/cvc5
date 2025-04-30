@@ -60,6 +60,6 @@ class FindSynthSolver : protected EnvObj
 };
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SMT__FIND_SYNTH_SOLVER_H */

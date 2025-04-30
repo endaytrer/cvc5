@@ -219,6 +219,6 @@ class EagerProofGenerator : protected EnvObj, public ProofGenerator
   NodeProofNodeMap d_proofs;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__PROOF_GENERATOR_H */

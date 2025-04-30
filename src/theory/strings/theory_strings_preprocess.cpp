@@ -1160,4 +1160,4 @@ Node StringsPreprocess::processAssertion(Node n, std::vector<Node>& asserts)
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

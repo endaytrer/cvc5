@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::context::CDMap<>.
+ * White box testing of cvc5pp::context::CDMap<>.
  */
 
 #include "base/check.h"
@@ -43,4 +43,4 @@ TEST_F(TestContextWhiteCDHashMap, unreachable_save_and_restore)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

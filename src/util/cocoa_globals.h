@@ -44,7 +44,7 @@ extern CoCoA::GlobalManager* s_cocoaGlobalManager;
  */
 void initCocoaGlobalManager();
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__UTIL__COCOA_GLOBALS_H */
 

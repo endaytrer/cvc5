@@ -142,6 +142,6 @@ void safe_print_hex(int fd, uint64_t i);
  */
 void safe_print_right_aligned(int fd, uint64_t i, ssize_t width);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SAFE_PRINT_H */

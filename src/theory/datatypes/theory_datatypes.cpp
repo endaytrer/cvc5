@@ -1894,4 +1894,4 @@ std::pair<bool, Node> TheoryDatatypes::entailmentCheck(TNode lit)
 
 }  // namespace datatypes
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -95,6 +95,6 @@ class PreprocessingPassRegistry {
 };  // class PreprocessingPassRegistry
 
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PREPROCESSING__PREPROCESSING_PASS_REGISTRY_H */

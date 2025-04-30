@@ -47,4 +47,4 @@ class CVC5_EXPORT DidYouMean {
   std::vector<std::string> d_words;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

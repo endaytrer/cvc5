@@ -1349,4 +1349,4 @@ bool BasicRewriteRCons::tryTheoryRewrite(
 }
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

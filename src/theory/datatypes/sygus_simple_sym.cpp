@@ -589,4 +589,4 @@ int SygusSimpleSymBreak::getFirstArgOccurrence(const DTypeConstructor& c,
 
 }  // namespace datatypes
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

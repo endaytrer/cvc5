@@ -84,4 +84,4 @@ TEST_F(TestApiWhiteTerm, getOp)
             Op(&d_solver->getTermManager(), Kind::APPLY_SELECTOR));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

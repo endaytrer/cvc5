@@ -116,6 +116,6 @@ class CVC5_EXPORT CommandRecoverableFailure : public CommandStatus
 }; /* class CommandRecoverableFailure */
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__COMMAND_H */

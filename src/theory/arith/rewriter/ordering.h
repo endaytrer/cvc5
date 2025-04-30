@@ -109,6 +109,6 @@ struct TermComparator
   }
 };
 
-}  // namespace cvc5::internal::theory::arith::rewriter
+}  // namespace cvc5pp::internal::theory::arith::rewriter
 
 #endif

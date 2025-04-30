@@ -120,4 +120,4 @@ size_t FunctionArrayConstHashFunction::operator()(
          * std::hash<Node>()(fc.getArrayValue());
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

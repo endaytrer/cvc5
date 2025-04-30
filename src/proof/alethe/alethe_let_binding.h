@@ -55,6 +55,6 @@ class AletheLetBinding : public LetBinding
 };
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__ALETHE_LET_BINDING_H */

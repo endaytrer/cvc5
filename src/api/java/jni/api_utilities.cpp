@@ -53,9 +53,9 @@ jobject getBooleanObject(JNIEnv* env, bool cValue)
   return ret;
 }
 
-cvc5::Term applyOracle(JNIEnv* env,
+cvc5pp::Term applyOracle(JNIEnv* env,
                        jobject oracleRef,
-                       const std::vector<cvc5::Term>& terms)
+                       const std::vector<cvc5pp::Term>& terms)
 {
   jclass termClass = env->FindClass("Lio/github/cvc5/Term;");
   jmethodID termConstructor = env->GetMethodID(termClass, "<init>", "(J)V");
@@ -64,7 +64,7 @@ cvc5::Term applyOracle(JNIEnv* env,
 
   for (size_t i = 0; i < terms.size(); i++)
   {
-    jlong termPointer = reinterpret_cast<jlong>(new cvc5::Term(terms[i]));
+    jlong termPointer = reinterpret_cast<jlong>(new cvc5pp::Term(terms[i]));
     jobject jTerm = env->NewObject(termClass, termConstructor, termPointer);
     env->SetObjectArrayElement(jTerms, i, jTerm);
   }
@@ -76,7 +76,7 @@ cvc5::Term applyOracle(JNIEnv* env,
   jobject jTerm = env->CallObjectMethod(oracleRef, applyMethod, jTerms);
   jfieldID pointer = env->GetFieldID(termClass, "pointer", "J");
   jlong termPointer = env->GetLongField(jTerm, pointer);
-  cvc5::Term* term = reinterpret_cast<cvc5::Term*>(termPointer);
+  cvc5pp::Term* term = reinterpret_cast<cvc5pp::Term*>(termPointer);
   return *term;
 }
 

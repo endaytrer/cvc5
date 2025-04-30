@@ -16,7 +16,7 @@
  * An exception signaling that a Theory should immediately stop
  * performing processing and relinquish control to its caller (e.g.,
  * in a parallel environment).  A Theory might be interrupted if it
- * calls into its cvc5::internal::theory::OutputChannel, and it should only
+ * calls into its cvc5pp::internal::theory::OutputChannel, and it should only
  * catch this exception to perform emergency repair of any invariants
  * it must re-establish.  Further, if this exception is caught by a
  * Theory, the Theory should rethrow the same exception (via "throw;"
@@ -40,6 +40,6 @@ class Interrupted : public cvc5pp::internal::Exception
 }; /* class Interrupted */
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__INTERRUPTED_H */

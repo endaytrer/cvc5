@@ -164,4 +164,4 @@ std::ostream& operator<<(std::ostream& os, const LazyTreeProofGenerator& ltpg)
   return os;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -296,6 +296,6 @@ class CDProof : protected EnvObj, public ProofGenerator
   void notifyNewProof(Node expected);
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__PROOF_MANAGER_H */

@@ -120,6 +120,6 @@ typedef NodeTemplateTrie<true> NodeTrie;
 /** Non-reference-counted version of the above data structure */
 typedef NodeTemplateTrie<false> TNodeTrie;
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__NODE_TRIE_H */

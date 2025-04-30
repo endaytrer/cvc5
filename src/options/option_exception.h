@@ -47,6 +47,6 @@ class CVC5_EXPORT OptionException : public cvc5pp::internal::Exception
   static const std::string s_errPrefix;
 }; /* class OptionException */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__OPTION_EXCEPTION_H */

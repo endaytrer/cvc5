@@ -353,7 +353,7 @@ class DTypeConstructor
 
 std::ostream& operator<<(std::ostream& os, const DTypeConstructor& ctor);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 /**

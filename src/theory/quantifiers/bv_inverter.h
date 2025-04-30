@@ -138,6 +138,6 @@ class BvInverter
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__BV_INVERTER_H */

@@ -70,4 +70,4 @@ void CommandRecoverableFailure::toStream(std::ostream& out) const
                                                                     d_message);
 }
 
-}  // namespace cvc5::parser
+}  // namespace cvc5pp::parser

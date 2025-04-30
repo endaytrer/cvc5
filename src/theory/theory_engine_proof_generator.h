@@ -74,6 +74,6 @@ class TheoryEngineProofGenerator : protected EnvObj, public ProofGenerator
   Node d_false;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY_ENGINE_PROOF_GENERATOR_H */

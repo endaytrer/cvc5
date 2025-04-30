@@ -168,6 +168,6 @@ class SolverState : public TheoryState
 
 }  // namespace bags
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BAGS__THEORY_SOLVER_STATE_H */

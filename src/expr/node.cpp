@@ -166,7 +166,7 @@ InternalSkolemId NodeTemplate<ref_count>::getInternalSkolemId() const
 template InternalSkolemId NodeTemplate<true>::getInternalSkolemId() const;
 template InternalSkolemId NodeTemplate<false>::getInternalSkolemId() const;
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 

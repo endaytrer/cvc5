@@ -58,4 +58,4 @@ std::ostream& operator<<(std::ostream& os, const RegExpLoop& r)
   return os << "[" << r.d_loopMinOcc << ".." << r.d_loopMaxOcc << "]";
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

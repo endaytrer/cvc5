@@ -89,6 +89,6 @@ class Subs
  */
 std::ostream& operator<<(std::ostream& out, const Subs& s);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__SUBS_H */

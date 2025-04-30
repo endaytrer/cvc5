@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::Kind.
+ * Black box testing of cvc5pp::Kind.
  */
 
 #include <iostream>
@@ -86,4 +86,4 @@ TEST_F(TestNodeBlackKind, output_concat)
   ASSERT_EQ(act.str(), exp.str());
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

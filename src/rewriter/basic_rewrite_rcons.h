@@ -265,6 +265,6 @@ class BasicRewriteRCons : protected EnvObj
 };
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

@@ -95,4 +95,4 @@ void StaticLearning::flattenAnd(TNode node, std::vector<TNode>& children)
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

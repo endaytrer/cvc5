@@ -126,4 +126,4 @@ Node ElimShadowNodeConverter::eliminateShadow(const Node& q)
   return nm->mkNode(q.getKind(), children);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

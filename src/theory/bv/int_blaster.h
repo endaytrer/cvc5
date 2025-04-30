@@ -390,6 +390,6 @@ class IntBlaster : protected EnvObj, public ProofGenerator
   uint32_t d_granularity;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* __CVC5__THEORY__BV__INT_BLASTER_H */

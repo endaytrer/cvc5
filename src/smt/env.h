@@ -31,7 +31,7 @@
 namespace cvc5pp::context {
 class Context;
 class UserContext;
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context
 
 namespace cvc5pp::internal {
 
@@ -171,14 +171,14 @@ class Env
   /**
    * Return the output stream for the given output tag (as a string). If the
    * output tag is enabled, this returns the output stream from the `out`
-   * option. Otherwise, a null stream (`cvc5::internal::null_os`) is returned.
+   * option. Otherwise, a null stream (`cvc5pp::internal::null_os`) is returned.
    */
   std::ostream& output(const std::string& tag) const;
 
   /**
    * Return the output stream for the given output tag. If the output tag is
    * enabled, this returns the output stream from the `out` option. Otherwise,
-   * a null stream (`cvc5::internal::null_os`) is returned. The user of this method needs
+   * a null stream (`cvc5pp::internal::null_os`) is returned. The user of this method needs
    * to make sure that a proper S-expression is printed.
    */
   std::ostream& output(OutputTag tag) const;
@@ -192,7 +192,7 @@ class Env
   /**
    * Return the output stream for the given verbosity level. If the verbosity
    * level is enabled, this returns the output stream from the `err` option.
-   * Otherwise, a null stream (`cvc5::internal::null_os`) is returned.
+   * Otherwise, a null stream (`cvc5pp::internal::null_os`) is returned.
    */
   std::ostream& verbose(int64_t level) const;
 
@@ -421,6 +421,6 @@ class Env
   context::CDHashSet<Node> d_boolTermSkolems;
 }; /* class Env */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SMT__ENV_H */

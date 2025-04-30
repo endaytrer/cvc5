@@ -119,4 +119,4 @@ bool isFfFact(const Node& n, const FfSize& field)
 
 }  // namespace ff
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

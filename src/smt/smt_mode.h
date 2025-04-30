@@ -57,6 +57,6 @@ enum class SmtMode
  */
 std::ostream& operator<<(std::ostream& out, SmtMode m);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

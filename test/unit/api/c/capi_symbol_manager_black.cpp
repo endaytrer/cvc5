@@ -112,4 +112,4 @@ TEST_F(TestCApiBlackSymbolManager, getNamedTerms)
   ASSERT_EQ(size, 1);
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

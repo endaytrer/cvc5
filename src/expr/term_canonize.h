@@ -135,6 +135,6 @@ class TermCanonize
 };
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__TERM_CANONIZE_H */

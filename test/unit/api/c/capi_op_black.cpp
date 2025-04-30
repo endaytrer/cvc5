@@ -349,4 +349,4 @@ TEST_F(TestCApiBlackOp, to_string)
       cvc5_mk_op(d_tm, CVC5_KIND_BITVECTOR_REPEAT, idxs.size(), idxs.data());
   ASSERT_EQ(cvc5_op_to_string(bv_repeat), cvc5_op_to_string(bv_repeat));
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

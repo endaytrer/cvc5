@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::theory::Theory.
+ * Black box testing of cvc5pp::theory::Theory.
  */
 
 #include <memory>
@@ -95,4 +95,4 @@ TEST_F(TestTheoryWhite, outputChannel)
   d_outputChannel->d_callHistory.clear();
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

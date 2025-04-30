@@ -53,4 +53,4 @@ TEST_F(TestCApiSortKind, sort_kind_to_string)
   }
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

@@ -37,4 +37,4 @@ std::ostream& operator<<(std::ostream& out, SmtMode m)
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

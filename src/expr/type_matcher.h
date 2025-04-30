@@ -69,6 +69,6 @@ class TypeMatcher
   void addTypes(const std::vector<TypeNode>& types);
 }; /* class TypeMatcher */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__MATCHER_H */

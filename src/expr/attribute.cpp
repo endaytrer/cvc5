@@ -115,4 +115,4 @@ void AttributeManager::deleteAttributes(const AttrIdVec& atids) {
 
 }  // namespace attr
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

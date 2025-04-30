@@ -133,4 +133,4 @@ bool EqClassIterator::isFinished() const { return d_current == null_id; }
 
 }  // namespace eq
 }  // Namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

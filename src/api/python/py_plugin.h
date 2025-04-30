@@ -42,6 +42,6 @@ class PyPlugin : public Plugin
   void plugin_notifyTheoryLemma(const Term& lem);
 };
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PY_PLUGIN_H */

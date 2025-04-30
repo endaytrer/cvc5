@@ -143,4 +143,4 @@ void SygusUnif::print_val(const char* c, std::vector<Node>& vals, bool pol)
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

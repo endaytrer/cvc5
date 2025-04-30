@@ -95,6 +95,6 @@ class TheoryPreregistrar : protected EnvObj
 };
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROP__PREREGISTER_RLV_H */

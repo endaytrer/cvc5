@@ -49,4 +49,4 @@ void JustifyInfo::set(TNode n, prop::SatValue desiredVal)
 }
 
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

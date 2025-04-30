@@ -416,4 +416,4 @@ void traits::invariant(const traits::prop& p)
   return;
 }
 }  // namespace symfpuLiteral
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

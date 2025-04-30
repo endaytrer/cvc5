@@ -483,4 +483,4 @@ ParserEndOfFileException::ParserEndOfFileException(const std::string& msg,
 }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

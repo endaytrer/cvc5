@@ -358,4 +358,4 @@ bool AlphaEquivalence::isProofEnabled() const { return d_pfAlpha != nullptr; }
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

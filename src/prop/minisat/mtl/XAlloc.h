@@ -42,6 +42,6 @@ static inline void* xrealloc(void *ptr, size_t size)
 
 //=================================================================================================
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

@@ -88,6 +88,6 @@ class ProofLogger : protected EnvObj
   virtual void logSatRefutationProof(std::shared_ptr<ProofNode>& pfn) {}
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__PROOF_LOGGER_H */

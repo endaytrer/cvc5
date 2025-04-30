@@ -1202,4 +1202,4 @@ Node IntBlaster::createBVNotNode(Node n, uint32_t bvsize)
   return d_nm->mkNode(Kind::SUB, maxInt(bvsize), n);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

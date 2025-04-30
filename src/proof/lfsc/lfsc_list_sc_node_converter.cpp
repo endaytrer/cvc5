@@ -124,4 +124,4 @@ Node LfscListScNodeConverter::mkOperatorFor(const std::string& name,
 }
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

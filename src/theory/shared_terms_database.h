@@ -279,4 +279,4 @@ class SharedTermsDatabase : protected EnvObj, public context::ContextNotifyObj
   theory::OutputChannel& d_out;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

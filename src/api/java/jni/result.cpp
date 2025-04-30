@@ -163,6 +163,6 @@ JNIEXPORT jint JNICALL Java_io_github_cvc5_Result_hashCode(JNIEnv* env,
 {
   CVC5_JAVA_API_TRY_CATCH_BEGIN;
   Result* result = reinterpret_cast<Result*>(pointer);
-  return static_cast<jint>(std::hash<cvc5::Result>()(*result));
+  return static_cast<jint>(std::hash<cvc5pp::Result>()(*result));
   CVC5_JAVA_API_TRY_CATCH_END_RETURN(env, 0);
 }

@@ -266,6 +266,6 @@ T inline sLessThanBB(const std::vector<T>&a, const std::vector<T>& b, bool orEqu
 
 }  // namespace bv
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif  // CVC5__THEORY__BV__BITBLAST__BITBLAST_UTILS_H

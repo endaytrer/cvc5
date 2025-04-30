@@ -62,6 +62,6 @@ const char* toString(RewriteProofStatus s);
 std::ostream& operator<<(std::ostream& out, RewriteProofStatus s);
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

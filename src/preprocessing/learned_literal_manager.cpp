@@ -50,4 +50,4 @@ std::vector<Node> LearnedLiteralManager::getLearnedLiterals() const
 }
 
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -153,6 +153,6 @@ class HoElim : public PreprocessingPass
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* __CVC5__PREPROCESSING__PASSES__HO_ELIM_PASS_H */

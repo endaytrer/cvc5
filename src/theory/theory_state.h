@@ -163,6 +163,6 @@ class TheoryState : protected EnvObj
 };
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SOLVER_STATE_H */

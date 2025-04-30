@@ -609,6 +609,6 @@ class CVC5_EXPORT ParserState
 uint32_t stringToUnsigned(const std::string& str);
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__PARSER_STATE_H */

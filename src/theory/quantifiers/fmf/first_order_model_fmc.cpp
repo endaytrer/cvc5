@@ -157,4 +157,4 @@ Node FirstOrderModelFmc::getFunctionValue(Node op, const char* argPrefix)
 }  // namespace fmcheck
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

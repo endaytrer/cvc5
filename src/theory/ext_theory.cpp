@@ -469,4 +469,4 @@ std::shared_ptr<ProofNode> ExtTheory::getProofFor(Node fact)
 std::string ExtTheory::identify() const { return "ExtTheory"; }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

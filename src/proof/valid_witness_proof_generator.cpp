@@ -34,5 +34,5 @@ std::shared_ptr<ProofNode> ValidWitnessProofGenerator::getProofFor(Node fact)
 
 std::string ValidWitnessProofGenerator::identify() const { return "ValidWitnessProofGenerator"; }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 

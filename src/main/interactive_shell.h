@@ -86,6 +86,6 @@ class InteractiveShell
 }; /* class InteractiveShell */
 
 }  // namespace internal
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__INTERACTIVE_SHELL_H */

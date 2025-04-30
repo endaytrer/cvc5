@@ -254,4 +254,4 @@ Node TheoryProofStepBuffer::elimDoubleNegLit(Node n)
   return n;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

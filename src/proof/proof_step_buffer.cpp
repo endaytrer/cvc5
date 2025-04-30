@@ -170,4 +170,4 @@ void ProofStepBuffer::clear()
   d_allSteps.clear();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

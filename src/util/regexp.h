@@ -70,6 +70,6 @@ std::ostream& operator<<(std::ostream& os, const RegExpRepeat& bv);
 
 std::ostream& operator<<(std::ostream& os, const RegExpLoop& bv);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__UTIL__REGEXP_H */

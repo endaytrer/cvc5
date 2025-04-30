@@ -123,4 +123,4 @@ TEST_F(TestTheoryWhiteStringsWord, strings)
   ASSERT_TRUE(Word::roverlap(aaaaa, aa) == 2);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

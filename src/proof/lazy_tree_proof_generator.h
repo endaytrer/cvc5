@@ -218,6 +218,6 @@ class LazyTreeProofGenerator : protected EnvObj, public ProofGenerator
  */
 std::ostream& operator<<(std::ostream& os, const LazyTreeProofGenerator& ltpg);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

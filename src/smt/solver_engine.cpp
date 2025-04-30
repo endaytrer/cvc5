@@ -2239,4 +2239,4 @@ ResourceManager* SolverEngine::getResourceManager() const
   return d_env->getResourceManager();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

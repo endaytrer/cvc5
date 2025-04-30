@@ -406,4 +406,4 @@ void ProofNodeUpdater::setFreeAssumptions(const std::vector<Node>& freeAssumps,
   d_debugFreeAssumps = doDebug;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

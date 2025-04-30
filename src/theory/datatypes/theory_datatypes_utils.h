@@ -136,6 +136,6 @@ bool checkClash(Node n1,
 }  // namespace utils
 }  // namespace datatypes
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

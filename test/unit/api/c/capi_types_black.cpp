@@ -81,4 +81,4 @@ TEST_F(TestCApiBlackTypes, printEnum)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

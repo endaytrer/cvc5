@@ -213,6 +213,6 @@ inline std::ostream& operator << (std::ostream& out, const SubstitutionMap& subs
 
 std::ostream& operator<<(std::ostream& out, const theory::SubstitutionMap::iterator& i);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SUBSTITUTIONS_H */

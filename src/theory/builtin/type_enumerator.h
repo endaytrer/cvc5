@@ -45,6 +45,6 @@ class UninterpretedSortEnumerator : public TypeEnumeratorBase<UninterpretedSortE
 
 }  // namespace builtin
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BUILTIN_TYPE_ENUMERATOR_H */

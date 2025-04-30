@@ -213,4 +213,4 @@ TEST_F(TestApiBlackGrammar, equalHash)
   (void)std::hash<Grammar>{}(Grammar());
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

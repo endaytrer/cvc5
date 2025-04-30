@@ -130,6 +130,6 @@ class TheoryProofStepBuffer : public ProofStepBuffer
   Node elimDoubleNegLit(Node n);
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__THEORY_PROOF_STEP_BUFFER_H */

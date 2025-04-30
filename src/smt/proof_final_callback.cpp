@@ -275,4 +275,4 @@ bool ProofFinalCallback::wasPedanticFailure(std::ostream& out) const
 }
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

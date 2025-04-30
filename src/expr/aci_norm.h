@@ -67,6 +67,6 @@ Node getACINormalForm(Node a);
 bool isACINorm(Node a, Node b);
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__NARY_TERM_UTIL__H */

@@ -5114,4 +5114,4 @@ ArithCongruenceManager* TheoryArithPrivate::getCongruenceManager()
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -1680,4 +1680,4 @@ bool RegExpOpr::regExpIncludes(Node r1, Node r2)
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

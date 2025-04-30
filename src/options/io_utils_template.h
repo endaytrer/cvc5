@@ -65,6 +65,6 @@ class CVC5_EXPORT Scope
 ${ioscope_members}$
 // clang-format on
 };
-}  // namespace cvc5::internal::options::ioutils
+}  // namespace cvc5pp::internal::options::ioutils
 
 #endif /* CVC5__OPTIONS__IO_UTILS_H */

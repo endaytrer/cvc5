@@ -167,4 +167,4 @@ void SolvedForm::pop_back(Node pv, Node n, TermProperties& pv_prop)
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

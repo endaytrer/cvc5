@@ -65,4 +65,4 @@ TEST_F(TestCApiBlackParametricDatatype, proj_issue387)
                "arity mismatch");
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

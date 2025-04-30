@@ -73,6 +73,6 @@ class ConversionsSolver : protected EnvObj
 
 }  // namespace uf
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__UF__CONVERSIONS_SOLVER_H */

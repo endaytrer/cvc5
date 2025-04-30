@@ -344,4 +344,4 @@ void cleanup() noexcept
 }
 
 }  // namespace signal_handlers
-}  // namespace cvc5::main
+}  // namespace cvc5pp::main

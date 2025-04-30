@@ -292,6 +292,6 @@ class CVC5_EXPORT SymManager
 };
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__SYM_MANAGER_H */

@@ -129,6 +129,6 @@ class SygusDatatype
   DType d_dt;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

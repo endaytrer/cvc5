@@ -58,4 +58,4 @@ std::ostream& operator<<(std::ostream& out, Rewrite r)
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

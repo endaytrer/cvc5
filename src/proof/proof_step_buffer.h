@@ -135,6 +135,6 @@ class ProofStepBuffer
   std::unordered_set<Node> d_allSteps;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__PROOF_STEP_BUFFER_H */

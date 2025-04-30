@@ -6,7 +6,7 @@ SMT-LIB v2 inputs (e.g., named assertions, declared functions, etc.).
 
 ----
 
-.. doxygenclass:: cvc5::parser::SymbolManager
+.. doxygenclass:: cvc5pp::parser::SymbolManager
     :project: cvc5
     :members:
     :undoc-members:

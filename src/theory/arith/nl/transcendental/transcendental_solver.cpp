@@ -511,4 +511,4 @@ void TranscendentalSolver::postProcessModel(std::map<Node, Node>& arithModel,
 }  // namespace nl
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

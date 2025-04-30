@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::context::Context.
+ * White box testing of cvc5pp::context::Context.
  */
 
 #include "base/check.h"
@@ -179,4 +179,4 @@ TEST_F(TestContextWhite, simple)
   ASSERT_EQ(c.d_ppContextObjPrev, &s->d_pContextObjList);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -354,4 +354,4 @@ Node StringsRewriter::rewriteStringUnit(Node n)
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

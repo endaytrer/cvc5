@@ -1230,14 +1230,14 @@ def test_get_statistics(tm, solver):
     solver.assertFormula(f1)
     solver.checkSat()
     stats = tm.getStatistics()
-    assert stats['cvc5::TERM'] == {
+    assert stats['cvc5pp::TERM'] == {
             'default': False,
             'internal': False,
             'value': {'GEQ': 3, 'OR': 1}}
     assert stats.get(True, False) != {}
 
     for s in stats:
-        if s[0] == 'cvc5::CONTANT':
+        if s[0] == 'cvc5pp::CONTANT':
             assert not s[1]['internal']
             assert not s[1]['default']
             assert s[1]['value'] == {'integer type': 1}

@@ -224,6 +224,6 @@ std::ostream& operator<<(std::ostream& out, CardinalityBeth b);
 /** Print a cardinality in a human-readable fashion. */
 std::ostream& operator<<(std::ostream& out, const Cardinality& c);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__CARDINALITY_H */

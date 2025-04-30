@@ -56,4 +56,4 @@ std::ostream& operator<<(std::ostream& out, AscriptionType at)
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

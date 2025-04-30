@@ -305,6 +305,6 @@ class SolverState : public TheoryState
 
 }  // namespace sets
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SETS__THEORY_SOLVER_STATE_H */

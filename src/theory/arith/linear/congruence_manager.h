@@ -253,4 +253,4 @@ class ArithCongruenceManager : protected EnvObj
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

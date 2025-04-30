@@ -69,5 +69,5 @@ Node getICBvSext(bool pol, Kind litk, unsigned idx, Node x, Node sv_t, Node t);
 }  // namespace utils
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 #endif

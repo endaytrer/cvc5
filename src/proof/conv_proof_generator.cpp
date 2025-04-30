@@ -631,4 +631,4 @@ std::string TConvProofGenerator::toStringDebug() const
   return ss.str();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

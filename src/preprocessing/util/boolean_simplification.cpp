@@ -83,4 +83,4 @@ bool BooleanSimplification::push_back_associative_commute_recursive(
 } /* BooleanSimplification::push_back_associative_commute_recursive() */
 
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

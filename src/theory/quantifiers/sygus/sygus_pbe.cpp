@@ -271,4 +271,4 @@ bool SygusPbe::constructCandidates(const std::vector<Node>& enums,
 
 }
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

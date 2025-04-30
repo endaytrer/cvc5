@@ -61,6 +61,6 @@ struct SortToTermHashFunction
   size_t operator()(const SortToTerm& stt) const;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__SORT_TO_TERM_H */

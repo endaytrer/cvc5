@@ -81,6 +81,6 @@ class BufferedProofGenerator : protected EnvObj, public ProofGenerator
   NodeProofNodeMap d_assumptionsToPfNodes;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__BUFFERED_PROOF_GENERATOR_H */

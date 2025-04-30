@@ -31,6 +31,6 @@
 namespace cvc5pp::context {
 template <class Key, class Data, class HashFcn = std::hash<Key> >
 class CDInsertHashMap;
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context
 
 #endif /* CVC5__CONTEXT__CDINSERT_HASHMAP_FORWARD_H */

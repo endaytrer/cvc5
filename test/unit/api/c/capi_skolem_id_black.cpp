@@ -46,4 +46,4 @@ TEST_F(TestCApiBlackSkolemId, hash)
   ASSERT_NE(cvc5_skolem_id_hash(CVC5_SKOLEM_ID_INTERNAL),
             cvc5_skolem_id_hash(CVC5_SKOLEM_ID_PURIFY));
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

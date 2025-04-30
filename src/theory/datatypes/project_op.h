@@ -53,6 +53,6 @@ struct ProjectOpHashFunction
   size_t operator()(const ProjectOp& op) const;
 }; /* struct ProjectOpHashFunction */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROJECT_OP_H */

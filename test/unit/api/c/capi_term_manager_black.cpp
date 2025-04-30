@@ -1602,7 +1602,7 @@ TEST_F(TestCApiBlackTermManager, get_statistics)
     const char* name;
     Cvc5Stat stat = cvc5_stats_iter_next(stats, &name);
     (void)cvc5_stat_to_string(stat);
-    if (name == std::string("cvc5::CONSTANT"))
+    if (name == std::string("cvc5pp::CONSTANT"))
     {
       ASSERT_FALSE(cvc5_stat_is_internal(stat));
       ASSERT_FALSE(cvc5_stat_is_default(stat));
@@ -1625,10 +1625,10 @@ TEST_F(TestCApiBlackTermManager, print_statistics_safe)
   testing::internal::CaptureStdout();
   cvc5_term_manager_print_stats_safe(d_tm, STDOUT_FILENO);
   std::stringstream expected;
-  expected << "cvc5::CONSTANT = { integer type: 1, UNKNOWN_TYPE_CONSTANT: 1 }"
+  expected << "cvc5pp::CONSTANT = { integer type: 1, UNKNOWN_TYPE_CONSTANT: 1 }"
            << std::endl
-           << "cvc5::TERM = { <unsupported>: 1 }" << std::endl;
+           << "cvc5pp::TERM = { <unsupported>: 1 }" << std::endl;
   testing::internal::GetCapturedStdout();
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

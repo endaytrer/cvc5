@@ -54,6 +54,6 @@ class Oracle
   std::function<std::vector<Node>(const std::vector<Node>&)> d_fn;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /*CVC5__EXPR__ORACLE_H*/

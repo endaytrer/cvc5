@@ -102,6 +102,6 @@ class InterpolationSolver : protected EnvObj
 };
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SMT__INTERPOLATION_SOLVER_H */

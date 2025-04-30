@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Unit testing for cvc5::LogicInfo class.
+ * Unit testing for cvc5pp::LogicInfo class.
  */
 
 #include "base/configuration.h"
@@ -1344,4 +1344,4 @@ TEST_F(TestTheoryWhiteLogicInfo, comparison)
   gt(ufHo, "QF_UF");
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

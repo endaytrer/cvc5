@@ -2702,4 +2702,4 @@ TEST_F(TestApiBlackSolver, basicFiniteFieldBase)
 #endif  // CVC5_USE_COCOA
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

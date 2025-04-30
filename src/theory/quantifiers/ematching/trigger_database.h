@@ -112,6 +112,6 @@ class TriggerDatabase : protected EnvObj
 }  // namespace inst
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANTIFIERS__TRIGGER_DATABASE_H */

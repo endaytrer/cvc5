@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::Integer.
+ * Black box testing of cvc5pp::Integer.
  */
 
 #include <limits>
@@ -614,4 +614,4 @@ TEST_F(TestUtilBlackInteger, modInverse)
   }
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

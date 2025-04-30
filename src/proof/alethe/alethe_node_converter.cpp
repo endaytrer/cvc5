@@ -522,4 +522,4 @@ const std::map<Node, Node>& AletheNodeConverter::getSkolemDefinitions()
 }
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

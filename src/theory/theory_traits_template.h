@@ -52,7 +52,7 @@ ${theory_constructors}
       default: Unhandled() << id;
     }
   }
-}; /* struct cvc5::internal::theory::TheoryConstructor */
+}; /* struct cvc5pp::internal::theory::TheoryConstructor */
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

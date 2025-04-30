@@ -96,4 +96,4 @@ std::ostream& operator<<(std::ostream& out, LemmaProperty p)
 }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

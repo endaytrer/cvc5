@@ -327,4 +327,4 @@ TrustNode SharedTermsDatabase::explain(TNode literal) const
   return TrustNode::mkTrustPropExp(literal, exp, nullptr);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

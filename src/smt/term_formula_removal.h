@@ -236,4 +236,4 @@ class RemoveTermFormulas : protected EnvObj
   bool isProofEnabled() const;
 }; /* class RemoveTTE */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

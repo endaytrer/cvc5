@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::parser::Command.
+ * Black box testing of cvc5pp::parser::Command.
  */
 
 #include <cvc5/cvc5.h>
@@ -88,4 +88,4 @@ TEST_F(TestApiBlackCommand, getCommandName)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

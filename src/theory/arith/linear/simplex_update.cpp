@@ -27,7 +27,7 @@ namespace arith::linear {
  * Generates a string representation of std::optional and inserts it into a
  * stream.
  *
- * Note: We define this function here in the cvc5::internal::theory::arith namespace,
+ * Note: We define this function here in the cvc5pp::internal::theory::arith namespace,
  * because it would otherwise not be found for std::optional<int>. This is due
  * to the argument-dependent lookup rules.
  *
@@ -204,4 +204,4 @@ std::ostream& operator<<(std::ostream& out,  WitnessImprovement w){
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

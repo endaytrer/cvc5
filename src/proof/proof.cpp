@@ -529,4 +529,4 @@ Node CDProof::getSymmFact(TNode f)
 
 std::string CDProof::identify() const { return d_name; }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

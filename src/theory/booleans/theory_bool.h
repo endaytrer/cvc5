@@ -49,6 +49,6 @@ class TheoryBool : public Theory {
 
 }  // namespace booleans
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BOOLEANS__THEORY_BOOL_H */

@@ -197,4 +197,4 @@ void MatchTrie::clear()
 }
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

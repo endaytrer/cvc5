@@ -382,4 +382,4 @@ TEST_F(TestCApiBlackInputParser, get_declared_terms_and_sorts)
 
   cvc5_parser_delete(parser);
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

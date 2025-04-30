@@ -67,6 +67,6 @@ class TheorySepRewriter : public TheoryRewriter
 
 }  // namespace sep
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SEP__THEORY_SEP_REWRITER_H */

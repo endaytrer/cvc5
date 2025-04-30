@@ -111,8 +111,8 @@ class HistogramStat
  * `ReferenceStat` the current value of the referenced object is copied into
  * the `StatisticsRegistry`.
  *
- * To convert to the API representation in `cvc5::Stat`, `T` can only be one
- * of the types accepted by the `cvc5::Stat` constructors (or be implicitly
+ * To convert to the API representation in `cvc5pp::Stat`, `T` can only be one
+ * of the types accepted by the `cvc5pp::Stat` constructors (or be implicitly
  * converted to one of them).
  */
 template <typename T>
@@ -272,8 +272,8 @@ class CodeTimer
  * Stores a simple value that can be set manually using regular assignment
  * or the `set` method.
  *
- * To convert to the API representation in `cvc5::Stat`, `T` can only be one
- * of the types accepted by the `cvc5::Stat` constructors (or be implicitly
+ * To convert to the API representation in `cvc5pp::Stat`, `T` can only be one
+ * of the types accepted by the `cvc5pp::Stat` constructors (or be implicitly
  * converted to one of them).
  */
 template <typename T>
@@ -349,6 +349,6 @@ class IntStat : public ValueStat<int64_t>
   IntStat(stat_type* data) : ValueStat(data) {}
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

@@ -1228,6 +1228,6 @@ class CVC5_EXPORT QuitCommand : public Cmd
 }; /* class QuitCommand */
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__COMMAND_H */

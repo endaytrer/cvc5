@@ -46,7 +46,7 @@ class PropEngine;
 class TheoryProxy;
 class PropPfManager;
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace cvc5pp::internal {
 namespace Minisat {
@@ -723,6 +723,6 @@ inline void     Solver::toDimacs     (const char* file, Lit p, Lit q, Lit r){ ve
 
 //=================================================================================================
 }  // namespace Minisat
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

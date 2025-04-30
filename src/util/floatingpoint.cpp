@@ -520,4 +520,4 @@ std::ostream& operator<<(std::ostream& os, const FloatingPointConvertSort& fpcs)
   return os << "(_ to_fp " << fpcs.getSize().exponentWidth() << " "
             << fpcs.getSize().significandWidth() << ")";
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

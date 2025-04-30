@@ -148,6 +148,6 @@ class ManagedOut : public ManagedStream<std::ostream>
   bool specialCases(const std::string& value) override final;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__OPTIONS__MANAGED_STREAMS_H */

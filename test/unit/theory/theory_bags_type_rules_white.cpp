@@ -119,4 +119,4 @@ TEST_F(TestTheoryWhiteBagsTypeRule, map_operator)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

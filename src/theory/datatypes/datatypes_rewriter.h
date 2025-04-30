@@ -249,6 +249,6 @@ class DatatypesRewriter : public TheoryRewriter
 
 }  // namespace datatypes
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__DATATYPES__DATATYPES_REWRITER_H */

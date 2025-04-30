@@ -1475,7 +1475,7 @@ std::string Smt2Printer::smtKindStringOf(const Node& n)
   Kind k = n.getKind();
   if (n.getNumChildren() > 0 && n[0].getType().isSequence())
   {
-    // this method parallels cvc5::Term::getKind
+    // this method parallels cvc5pp::Term::getKind
     switch (k)
     {
       case Kind::STRING_CONCAT: return "seq.++";
@@ -2423,4 +2423,4 @@ void Smt2Printer::toStreamCmdGetQuantifierElimination(std::ostream& out,
 
 }  // namespace smt2
 }  // namespace printer
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

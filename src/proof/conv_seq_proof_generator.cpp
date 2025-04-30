@@ -168,4 +168,4 @@ TrustNode TConvSeqProofGenerator::mkTrustRewriteSequence(
 
 std::string TConvSeqProofGenerator::identify() const { return d_name; }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

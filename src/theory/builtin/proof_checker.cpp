@@ -504,4 +504,4 @@ Node BuiltinProofRuleChecker::mkTheoryIdNode(NodeManager* nm, TheoryId tid)
 
 }  // namespace builtin
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

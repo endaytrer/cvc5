@@ -526,6 +526,6 @@ std::ostream& operator<<(std::ostream& os, const FloatingPointSize& fps);
 std::ostream& operator<<(std::ostream& os,
                          const FloatingPointConvertSort& fpcs);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__FLOATINGPOINT_H */

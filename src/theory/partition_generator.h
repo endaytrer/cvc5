@@ -241,6 +241,6 @@ std::set<Node> d_lemmaLiterals;
 std::set<Node> d_usedLemmaLiterals;
 };
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PARTITION__GENERATOR_H */

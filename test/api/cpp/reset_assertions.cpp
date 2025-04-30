@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * A simple test for cvc5::Solver::resetAssertions()
+ * A simple test for cvc5pp::Solver::resetAssertions()
  *
  * This indirectly also tests some corner cases w.r.t. context-dependent
  * datastructures: resetAssertions() pops the contexts to zero but some

@@ -91,6 +91,6 @@ CardinalityClass maxCardinalityClass(CardinalityClass c1, CardinalityClass c2);
  */
 bool isCardinalityClassFinite(CardinalityClass c, bool fmfEnabled);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

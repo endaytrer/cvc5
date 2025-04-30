@@ -264,6 +264,6 @@ class SygusSolver : protected EnvObj
 };
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SMT__SYGUS_SOLVER_H */

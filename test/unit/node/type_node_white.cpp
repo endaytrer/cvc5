@@ -58,4 +58,4 @@ TEST_F(TestNodeWhiteTypeNode, sub_types)
   d_slvEngine->defineFunction(lambda, formals, xPos);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

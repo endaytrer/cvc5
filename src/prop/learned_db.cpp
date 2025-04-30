@@ -110,4 +110,4 @@ std::string LearnedDb::toStringDebugType(modes::LearnedLitType ltype) const
 }
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

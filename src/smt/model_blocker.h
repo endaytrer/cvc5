@@ -73,6 +73,6 @@ class ModelBlocker : protected EnvObj
       const std::vector<Node>& exprToBlock = std::vector<Node>());
 }; /* class TheoryModelCoreBuilder */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* __CVC5__THEORY__MODEL_BLOCKER_H */

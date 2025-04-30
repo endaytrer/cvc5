@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::theory::Theory.
+ * White box testing of cvc5pp::theory::Theory.
  *
  * This test creates "fake" theory interfaces and injects them into
  * TheoryEngine, so we can test TheoryEngine's behavior without relying on
@@ -183,4 +183,4 @@ TEST_F(TestTheoryWhiteEngine, rewrite_rules)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -97,6 +97,6 @@ class SubstitutionMinimize : protected EnvObj
 };
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SUBS_MINIMIZE_H */

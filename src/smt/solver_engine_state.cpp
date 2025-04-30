@@ -194,4 +194,4 @@ bool SolverEngineState::isQueryMade() const { return d_queryMade; }
 SmtMode SolverEngineState::getMode() const { return d_smtMode; }
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

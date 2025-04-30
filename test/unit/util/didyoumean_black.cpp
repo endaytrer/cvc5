@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::Stat and associated classes.
+ * Black box testing of cvc5pp::Stat and associated classes.
  */
 
 #include "test.h"
@@ -72,4 +72,4 @@ Did you mean any of these?
     }
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

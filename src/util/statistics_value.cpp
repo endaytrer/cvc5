@@ -110,4 +110,4 @@ uint64_t StatisticTimerValue::get() const
   return static_cast<int64_t>(data / std::chrono::milliseconds(1));
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

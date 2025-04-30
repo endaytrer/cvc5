@@ -711,7 +711,7 @@ cdef extern from "<cvc5/cvc5.h>" namespace "cvc5":
         size_t operator()(const Proof&) except +
 
 
-cdef extern from "<cvc5/cvc5_parser.h>" namespace "cvc5::parser":
+cdef extern from "<cvc5/cvc5_parser.h>" namespace "cvc5pp::parser":
     cdef cppclass SymbolManager:
         SymbolManager(TermManager& tm) except +
         bint isLogicSet() except +

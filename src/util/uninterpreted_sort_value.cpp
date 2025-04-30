@@ -70,4 +70,4 @@ bool UninterpretedSortValue::operator<=(const UninterpretedSortValue& val) const
          || (getType() == val.getType() && d_index <= val.d_index);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

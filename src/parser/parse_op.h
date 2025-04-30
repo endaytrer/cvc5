@@ -64,7 +64,7 @@ struct ParseOp
   /** The expression associated with the parsed operator, if it exists */
   cvc5pp::Term d_expr;
   /**
-   * The indices if the operator is indexed, but cvc5::Op is the null operator.
+   * The indices if the operator is indexed, but cvc5pp::Op is the null operator.
    * This is the case for operator symbols that cannot be resolved to a kind
    * without parsing the arguments. This is currently only the case for
    * `to_fp`.
@@ -81,6 +81,6 @@ struct ParseOp
 
 std::ostream& operator<<(std::ostream& os, const ParseOp& p);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__PARSE_OP_H */

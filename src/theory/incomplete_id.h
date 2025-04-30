@@ -112,6 +112,6 @@ const char* toString(IncompleteId i);
 std::ostream& operator<<(std::ostream& out, IncompleteId i);
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__INCOMPLETE_ID_H */

@@ -2036,4 +2036,4 @@ TEST_F(TestTheoryWhiteSequencesRewriter, rewrite_regexp_concat)
   }
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

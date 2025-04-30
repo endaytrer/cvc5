@@ -52,4 +52,4 @@ bool EmptyBag::operator==(const EmptyBag& es) const
   return getType() == es.getType();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

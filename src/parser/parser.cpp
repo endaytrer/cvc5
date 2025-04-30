@@ -146,4 +146,4 @@ std::unique_ptr<Parser> Parser::mkParser(modes::InputLanguage lang,
 }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

@@ -2,25 +2,25 @@ Proof
 =====
 
 This class encapsulates a cvc5 proof object, which can be retrieved via
-function :cpp:func:`cvc5::Solver::getProof()` after a
-:cpp:func:`cvc5::Solver::checkSat()` query returns an `unsat` result.
+function :cpp:func:`cvc5pp::Solver::getProof()` after a
+:cpp:func:`cvc5pp::Solver::checkSat()` query returns an `unsat` result.
 
 ----
 
-- class :cpp:class:`cvc5::Proof`
-- :cpp:func:`cvc5::Solver::proofToString()`
-- :cpp:struct:`std::hash\<cvc5::Term>`
+- class :cpp:class:`cvc5pp::Proof`
+- :cpp:func:`cvc5pp::Solver::proofToString()`
+- :cpp:struct:`std::hash\<cvc5pp::Term>`
 
 ----
 
-.. doxygenclass:: cvc5::Proof
+.. doxygenclass:: cvc5pp::Proof
     :project: cvc5
     :members:
     :undoc-members:
 
 ----
 
-.. doxygenstruct:: std::hash< cvc5::Proof >
+.. doxygenstruct:: std::hash< cvc5pp::Proof >
     :project: std
     :members:
     :undoc-members:

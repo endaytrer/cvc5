@@ -155,4 +155,4 @@ std::string DidYouMean::getMatchAsString(const std::string& input)
   return oss.str();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

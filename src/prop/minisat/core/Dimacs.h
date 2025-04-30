@@ -86,6 +86,6 @@ static void parse_DIMACS(gzFile input_stream, Solver& S) {
 
 //=================================================================================================
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

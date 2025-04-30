@@ -60,8 +60,8 @@ public:
   AttrTableId getTableId() const{ return d_tableId; }
   uint64_t getWithinTypeId() const{ return d_withinTypeId; }
 
-}; /* cvc5::internal::expr::attr::AttributeUniqueId */
+}; /* cvc5pp::internal::expr::attr::AttributeUniqueId */
 
 }  // namespace attr
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

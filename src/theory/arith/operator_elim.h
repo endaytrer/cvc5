@@ -138,4 +138,4 @@ class OperatorElim : protected EnvObj, public ProofGenerator
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

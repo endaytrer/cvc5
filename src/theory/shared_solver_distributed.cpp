@@ -93,4 +93,4 @@ void SharedSolverDistributed::assertShared(TNode n, bool polarity, TNode reason)
 }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -131,4 +131,4 @@ std::string TheoryEngineProofGenerator::identify() const
   return "TheoryEngineProofGenerator";
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

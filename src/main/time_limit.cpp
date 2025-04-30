@@ -131,4 +131,4 @@ TimeLimit install_time_limit(uint64_t ms)
   return TimeLimit();
 }
 
-}  // namespace cvc5::main
+}  // namespace cvc5pp::main

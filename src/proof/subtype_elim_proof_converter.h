@@ -92,6 +92,6 @@ class SubtypeElimConverterCallback : public ProofNodeConverterCallback,
   ProofChecker* d_pc;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

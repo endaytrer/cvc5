@@ -521,4 +521,4 @@ PreprocessingPassResult ProcessAssertions::applyPass(const std::string& pname,
 }
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

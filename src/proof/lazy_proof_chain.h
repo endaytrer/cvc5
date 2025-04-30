@@ -161,6 +161,6 @@ class LazyCDProofChain : public CDProof
   std::string d_name;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__LAZY_PROOF_CHAIN_H */

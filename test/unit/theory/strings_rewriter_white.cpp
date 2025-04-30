@@ -61,4 +61,4 @@ TEST_F(TestTheoryWhiteStringsRewriter, rewrite_leq)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

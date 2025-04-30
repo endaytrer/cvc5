@@ -137,6 +137,6 @@ std::string toSExpr(Iterator begin, Iterator end)
   return ss.str();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SEXPR_H */

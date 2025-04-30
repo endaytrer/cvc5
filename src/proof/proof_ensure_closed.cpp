@@ -188,4 +188,4 @@ void pfnEnsureClosedWrt(const Options& opts,
       opts, Node::null(), nullptr, pn, assumps, c, ctx, false);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

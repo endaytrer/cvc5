@@ -157,4 +157,4 @@ NodeDfsIterator NodeDfsIterable::end() const
   return NodeDfsIterator(d_order);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

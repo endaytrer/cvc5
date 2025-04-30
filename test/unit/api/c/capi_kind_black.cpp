@@ -49,4 +49,4 @@ TEST_F(TestCApiKind, kind_to_string)
     }
   }
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

@@ -217,4 +217,4 @@ std::shared_ptr<ProofNode> ProofRewriteDbNodeConverter::convert(const Node& n)
 }
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

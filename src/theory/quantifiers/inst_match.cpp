@@ -156,4 +156,4 @@ const std::vector<Node>& InstMatch::get() const { return d_vals; }
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

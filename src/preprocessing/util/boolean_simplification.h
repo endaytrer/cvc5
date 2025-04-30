@@ -234,6 +234,6 @@ class BooleanSimplification
 }; /* class BooleanSimplification */
 
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__BOOLEAN_SIMPLIFICATION_H */

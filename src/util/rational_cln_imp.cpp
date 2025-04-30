@@ -155,4 +155,4 @@ std::optional<Rational> Rational::fromDouble(double d)
   }
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

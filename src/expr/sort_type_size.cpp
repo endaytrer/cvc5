@@ -51,4 +51,4 @@ size_t SortTypeSize::getTypeSize(const TypeNode& tn)
   return sum;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

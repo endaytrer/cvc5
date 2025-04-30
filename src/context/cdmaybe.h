@@ -72,4 +72,4 @@ public:
   }
 };/* class CDMaybe<T> */
 
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context

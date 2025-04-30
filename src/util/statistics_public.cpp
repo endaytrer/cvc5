@@ -26,9 +26,9 @@ namespace cvc5pp::internal {
 
 void registerPublicStatistics(StatisticsRegistry& reg)
 {
-  reg.registerHistogram<TypeConstant>("cvc5::CONSTANT", false);
-  reg.registerHistogram<TypeConstant>("cvc5::VARIABLE", false);
-  reg.registerHistogram<cvc5pp::Kind>("cvc5::TERM", false);
+  reg.registerHistogram<TypeConstant>("cvc5pp::CONSTANT", false);
+  reg.registerHistogram<TypeConstant>("cvc5pp::VARIABLE", false);
+  reg.registerHistogram<cvc5pp::Kind>("cvc5pp::TERM", false);
 
   reg.registerValue<std::string>("driver::filename", false);
   reg.registerTimer("global::totalTime", false);
@@ -46,4 +46,4 @@ void registerPublicStatistics(StatisticsRegistry& reg)
   }
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

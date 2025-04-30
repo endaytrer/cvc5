@@ -769,7 +769,7 @@ TypeNode TypeNode::getRangeType() const
   return (*this)[getNumChildren() - 1];
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 

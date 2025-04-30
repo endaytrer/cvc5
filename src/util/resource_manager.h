@@ -222,6 +222,6 @@ class ResourceManager
   std::unique_ptr<Statistics> d_statistics;
 }; /* class ResourceManager */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__RESOURCE_MANAGER_H */

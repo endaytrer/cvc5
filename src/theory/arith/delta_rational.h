@@ -300,4 +300,4 @@ public:
 
 std::ostream& operator<<(std::ostream& os, const DeltaRational& n);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

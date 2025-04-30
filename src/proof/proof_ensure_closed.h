@@ -75,6 +75,6 @@ void pfnEnsureClosedWrt(const Options& opts,
                         const std::vector<Node>& assumps,
                         const char* c,
                         const char* ctx);
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__PROOF_ENSURE_CLOSED_H */

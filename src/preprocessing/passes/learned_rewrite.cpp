@@ -460,4 +460,4 @@ Node LearnedRewrite::returnRewriteLearned(Node n, Node nr, LearnedRewriteId id)
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

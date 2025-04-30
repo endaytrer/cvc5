@@ -43,6 +43,6 @@ class ArraysProofRuleChecker : public ProofRuleChecker
 
 }  // namespace arrays
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__ARRAYS__PROOF_CHECKER_H */

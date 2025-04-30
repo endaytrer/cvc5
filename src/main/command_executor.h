@@ -126,6 +126,6 @@ class CommandExecutor
 
 
 }  // namespace main
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__MAIN__COMMAND_EXECUTOR_H */

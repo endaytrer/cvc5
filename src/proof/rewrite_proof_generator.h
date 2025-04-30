@@ -59,6 +59,6 @@ class RewriteProofGenerator : protected EnvObj, public ProofGenerator
   std::vector<Node> d_pargs;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__REWRITE_PROOF_GENERATOR_H */

@@ -188,6 +188,6 @@ public:
 
 }  // namespace arrays
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__ARRAYS__ARRAY_INFO_H */

@@ -51,4 +51,4 @@ void TheoryEngineModule::notifyCandidateModel(TheoryModel* m) {}
 TheoryId TheoryEngineModule::getId() const { return d_out.getId(); }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

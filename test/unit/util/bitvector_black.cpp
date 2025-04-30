@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::BitVector.
+ * Black box testing of cvc5pp::BitVector.
  */
 
 #include <sstream>
@@ -207,4 +207,4 @@ TEST_F(TestUtilBlackBitVector, static_helpers)
   ASSERT_EQ(BitVector::mkMaxSigned(4).toSignedInteger(), Integer(7));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

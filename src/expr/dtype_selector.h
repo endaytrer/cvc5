@@ -98,7 +98,7 @@ class DTypeSelector
 
 std::ostream& operator<<(std::ostream& os, const DTypeSelector& arg);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 /**

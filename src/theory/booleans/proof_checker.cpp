@@ -962,4 +962,4 @@ Node BoolProofRuleChecker::checkInternal(ProofRule id,
 
 }  // namespace booleans
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

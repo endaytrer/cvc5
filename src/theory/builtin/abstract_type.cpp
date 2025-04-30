@@ -40,4 +40,4 @@ bool AbstractType::operator==(const AbstractType& op) const
   return getKind() == op.getKind();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

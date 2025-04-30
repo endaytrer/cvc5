@@ -275,6 +275,6 @@ class StatisticsRegistry
 /** Calls `sr.print(os)`. */
 std::ostream& operator<<(std::ostream& os, const StatisticsRegistry& sr);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__STATISTICS_REGISTRY_H */

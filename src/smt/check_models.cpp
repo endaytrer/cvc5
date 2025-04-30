@@ -224,4 +224,4 @@ void CheckModels::checkModel(TheoryModel* m,
 }
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

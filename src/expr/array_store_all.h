@@ -67,6 +67,6 @@ struct ArrayStoreAllHashFunction
   size_t operator()(const ArrayStoreAll& asa) const;
 }; /* struct ArrayStoreAllHashFunction */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__ARRAY_STORE_ALL_H */

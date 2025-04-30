@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::Node.
+ * Black box testing of cvc5pp::Node.
  */
 
 #include <cvc5/cvc5.h>
@@ -818,4 +818,4 @@ TEST_F(TestNodeBlackNode, node_tnode_usage)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

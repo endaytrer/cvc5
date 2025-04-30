@@ -292,4 +292,4 @@ void SharedTermsVisitor::clear() {
   d_visited.clear();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

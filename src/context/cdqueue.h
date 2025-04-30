@@ -154,6 +154,6 @@ public:
 
 };/* class CDQueue<> */
 
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context
 
 #endif /* CVC5__CONTEXT__CDQUEUE_H */

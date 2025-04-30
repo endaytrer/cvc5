@@ -68,6 +68,6 @@ bool isLemmaPropertyLocal(LemmaProperty p);
 std::ostream& operator<<(std::ostream& out, LemmaProperty p);
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__LEMMA_PROPERTY_H */

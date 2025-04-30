@@ -45,6 +45,6 @@ class NlStats
 }  // namespace nl
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__ARITH__NL__STATS_H */

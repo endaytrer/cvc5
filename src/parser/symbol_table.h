@@ -30,7 +30,7 @@ namespace cvc5pp {
 class Solver;
 class Sort;
 class Term;
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace cvc5pp::internal::parser {
 
@@ -216,6 +216,6 @@ class CVC5_EXPORT SymbolTable
   std::unique_ptr<Implementation> d_implementation;
 }; /* class SymbolTable */
 
-}  // namespace cvc5::internal::parser
+}  // namespace cvc5pp::internal::parser
 
 #endif /* CVC5__SYMBOL_TABLE_H */

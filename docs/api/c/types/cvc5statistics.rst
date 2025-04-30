@@ -3,7 +3,7 @@ Cvc5Statistics
 
 See :doc:`/statistics` for general information on statistics in cvc5.
 
-Struct :cpp:struct:`cvc5::Statistics` represents a mapping from statistic names
+Struct :cpp:struct:`cvc5pp::Statistics` represents a mapping from statistic names
 to statistic values, which are represented by struct :cpp:type:`Cvc5Stat`. A
 :cpp:type:`Cvc5Stat` may hold values of different
 types (``bool``, ``int64_t``, ``uint64_t``, ``double``, ``const char*`` and

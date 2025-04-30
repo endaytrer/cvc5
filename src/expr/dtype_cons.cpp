@@ -730,7 +730,7 @@ std::ostream& operator<<(std::ostream& os, const DTypeConstructor& ctor)
   return os;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 size_t hash<cvc5pp::internal::DTypeConstructor>::operator()(

@@ -186,6 +186,6 @@ class AstPrinter : public cvc5pp::internal::Printer
 
 }  // namespace ast
 }  // namespace printer
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PRINTER__AST_PRINTER_H */

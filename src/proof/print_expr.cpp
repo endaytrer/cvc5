@@ -55,4 +55,4 @@ PExprStream& PExprStream::operator<<(PExpr p)
 }
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

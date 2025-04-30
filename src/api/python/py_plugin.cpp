@@ -107,4 +107,4 @@ std::string PyPlugin::getName()
   }
 }
 
-}  // namespace cvc5
+}  // namespace cvc5pp

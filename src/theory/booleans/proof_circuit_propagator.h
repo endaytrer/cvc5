@@ -215,6 +215,6 @@ class ProofCircuitPropagatorForward : public ProofCircuitPropagator
 
 }  // namespace booleans
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

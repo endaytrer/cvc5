@@ -102,6 +102,6 @@ std::ostream& operator<<(std::ostream& out, const std::optional<T>& m)
  */
 std::unique_ptr<std::fstream> openTmpFile(std::string* pattern);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__UTILITY_H */

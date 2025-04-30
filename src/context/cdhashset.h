@@ -150,6 +150,6 @@ public:
 
 }; /* class CDHashSet */
 
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context
 
 #endif /* CVC5__CONTEXT__CDHASHSET_H */

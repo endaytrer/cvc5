@@ -99,4 +99,4 @@ const DType& SygusDatatype::getDatatype() const
 
 bool SygusDatatype::isInitialized() const { return d_dt.isSygus(); }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

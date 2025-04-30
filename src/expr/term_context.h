@@ -212,6 +212,6 @@ class WithinKindTermContext : public TermContext
   /** The kind */
   Kind d_kind;
 };
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__TERM_CONVERSION_PROOF_GENERATOR_H */

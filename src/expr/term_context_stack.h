@@ -69,6 +69,6 @@ class TCtxStack
   const TermContext* d_tctx;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__TERM_CONTEXT_STACK_H */

@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::DType.
+ * Black box testing of cvc5pp::DType.
  */
 
 #include <sstream>
@@ -466,4 +466,4 @@ TEST_F(TestUtilBlackDatatype, parametric_DType)
   ASSERT_NE(pairIntReal, pairRealInt);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

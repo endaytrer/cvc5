@@ -380,4 +380,4 @@ size_t SequenceHashFunction::operator()(const Sequence& s) const
   return static_cast<size_t>(ret);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

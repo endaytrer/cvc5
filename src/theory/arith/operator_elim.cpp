@@ -543,4 +543,4 @@ std::string OperatorElim::identify() const { return "arith::OperatorElim"; }
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

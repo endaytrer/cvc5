@@ -32,7 +32,7 @@ namespace prop {
   class TheoryProxy;
   class PropPfManager;
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace cvc5pp::internal {
 namespace Minisat {
@@ -271,6 +271,6 @@ inline lbool SimpSolver::solve        (Lit p, Lit q, Lit r, bool do_simp, bool t
 
  //=================================================================================================
  }  // namespace Minisat
- }  // namespace cvc5::internal
+ }  // namespace cvc5pp::internal
 
 #endif

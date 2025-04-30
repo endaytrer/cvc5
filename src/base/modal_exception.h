@@ -56,6 +56,6 @@ class RecoverableModalException : public cvc5pp::internal::ModalException
   RecoverableModalException(const char* msg) : ModalException(msg) {}
 }; /* class RecoverableModalException */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SMT__MODAL_EXCEPTION_H */

@@ -193,4 +193,4 @@ void Tableau::printBasicRow(ArithVar basic, std::ostream& out){
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

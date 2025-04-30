@@ -54,4 +54,4 @@ Node SimpleTheoryInternalFact::processFact(std::vector<Node>& exp,
 }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

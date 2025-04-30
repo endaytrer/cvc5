@@ -715,4 +715,4 @@ Node TermRegistry::mkNConcat(const std::vector<Node>& c, TypeNode tn) const
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

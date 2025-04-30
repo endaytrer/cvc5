@@ -634,4 +634,4 @@ Node PolyNorm::getPolyNorm(Node a)
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

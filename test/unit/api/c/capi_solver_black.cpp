@@ -4044,4 +4044,4 @@ TEST_F(TestCApiBlackSolver, output4)
   ASSERT_EQ(out.str(), expected.str());
   std::remove(filename);
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

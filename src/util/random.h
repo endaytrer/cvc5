@@ -68,5 +68,5 @@ class Random
   uint64_t d_state;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 #endif

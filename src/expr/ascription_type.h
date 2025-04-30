@@ -59,6 +59,6 @@ struct AscriptionTypeHashFunction
 /** An output routine for AscriptionTypes */
 std::ostream& operator<<(std::ostream& out, AscriptionType at);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__ASCRIPTION_TYPE_H */

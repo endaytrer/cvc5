@@ -55,7 +55,7 @@ std::string progName;
 /** A pointer to the CommandExecutor (the signal handlers need it) */
 std::unique_ptr<CommandExecutor> pExecutor;
 
-}  // namespace cvc5::main
+}  // namespace cvc5pp::main
 
 int runCvc5(int argc, char* argv[], std::unique_ptr<cvc5pp::Solver>& solver)
 {

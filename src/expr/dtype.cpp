@@ -1003,7 +1003,7 @@ void DType::toStream(std::ostream& out) const
   out << " END;" << std::endl;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 size_t hash<cvc5pp::internal::DType>::operator()(

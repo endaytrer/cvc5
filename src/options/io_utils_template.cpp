@@ -64,4 +64,4 @@ ${ioscope_restore}$
 // clang-format on
 }
 
-}  // namespace cvc5::internal::options::ioutils
+}  // namespace cvc5pp::internal::options::ioutils

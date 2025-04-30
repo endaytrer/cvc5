@@ -40,4 +40,4 @@ bool IMGenerator::sendInstantiation(std::vector<Node>& terms, InferenceId id)
 }  // namespace inst
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

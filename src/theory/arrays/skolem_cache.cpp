@@ -59,4 +59,4 @@ Node SkolemCache::getEqRangeVar(NodeManager* nm, TNode eqr)
 
 }  // namespace arrays
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

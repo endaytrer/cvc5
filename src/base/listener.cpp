@@ -20,4 +20,4 @@ namespace cvc5pp::internal {
 Listener::Listener(){}
 Listener::~Listener(){}
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

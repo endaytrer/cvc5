@@ -1145,6 +1145,6 @@ class CVC5_EXPORT SolverEngine
 /* -------------------------------------------------------------------------- */
 
 }  // namespace internal
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__SMT_ENGINE_H */

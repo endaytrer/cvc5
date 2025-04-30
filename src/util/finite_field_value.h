@@ -231,6 +231,6 @@ FiniteFieldValue operator/(const FiniteFieldValue& x,
 std::ostream& operator<<(std::ostream& os, const FiniteFieldValue& ff);
 std::ostream& operator<<(std::ostream& os, const FfSize& ff);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__FINITE_FIELDVALUE_H */

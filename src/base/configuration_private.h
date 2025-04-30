@@ -164,6 +164,6 @@ namespace cvc5pp::internal {
 #endif /* __has_feature(thread_sanitizer) */
 #endif /* defined(__has_feature) */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__CONFIGURATION_PRIVATE_H */

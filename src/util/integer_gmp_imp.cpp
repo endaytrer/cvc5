@@ -525,4 +525,4 @@ const Integer& Integer::max(const Integer& a, const Integer& b)
   return (a >= b) ? a : b;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

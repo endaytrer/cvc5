@@ -112,6 +112,6 @@ cvc5pp::internal::theory::TheoryId typeConstantToTheoryId(
     cvc5pp::internal::TypeConstant typeConstant);
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__KIND_H */

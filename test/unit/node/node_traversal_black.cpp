@@ -292,4 +292,4 @@ TEST_F(TestNodeBlackNodeTraversalPreorder, skip_if)
   ASSERT_EQ(actual, expected);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

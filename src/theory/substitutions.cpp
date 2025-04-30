@@ -318,4 +318,4 @@ std::ostream& operator<<(std::ostream& out, const theory::SubstitutionMap::itera
   return out << "[CDMap-iterator]";
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

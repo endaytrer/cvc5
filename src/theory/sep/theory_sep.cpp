@@ -1941,4 +1941,4 @@ Node TheorySep::HeapInfo::getValue(NodeManager* nm, TypeNode tn)
 
 }  // namespace sep
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

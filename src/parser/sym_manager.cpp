@@ -575,4 +575,4 @@ bool SymManager::isLogicSet() const { return d_logicIsSet; }
 
 const std::string& SymManager::getLogic() const { return d_logic; }
 
-}  // namespace cvc5::parser
+}  // namespace cvc5pp::parser

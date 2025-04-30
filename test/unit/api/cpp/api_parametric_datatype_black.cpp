@@ -38,4 +38,4 @@ TEST_F(TestApiBlackParametricDatatype, proj_issue387)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

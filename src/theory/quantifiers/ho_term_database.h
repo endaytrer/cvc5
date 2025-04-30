@@ -101,6 +101,6 @@ class HoTermDb : public TermDb
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANTIFIERS__HO_TERM_DATABASE_H */

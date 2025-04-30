@@ -77,9 +77,9 @@ namespace cvc5pp {
  * theory, including the theory of equality.
  *
  * The "core rules" include two distinguished rules which have special status:
- * (1) :cpp:enumerator:`ASSUME <cvc5::ProofRule::ASSUME>`, which represents an
+ * (1) :cpp:enumerator:`ASSUME <cvc5pp::ProofRule::ASSUME>`, which represents an
  * open leaf in a proof; and
- * (2) :cpp:enumerator:`SCOPE <cvc5::ProofRule::SCOPE>`, which encloses a scope
+ * (2) :cpp:enumerator:`SCOPE <cvc5pp::ProofRule::SCOPE>`, which encloses a scope
  * (a subproof) with a set of scoped assumptions.
  * The core rules additionally correspond to generic operations that are done
  * internally on nodes, e.g., calling `Rewriter::rewrite()`.
@@ -103,7 +103,7 @@ enum ENUM(ProofRule)
    * open leaf in a proof that is not (yet) justified. An assume leaf is
    * analogous to a free variable in a term, where we say "F is a free
    * assumption in proof P" if it contains an application of F that is not
-   * bound by :cpp:enumerator:`SCOPE <cvc5::ProofRule::SCOPE>` (see below).
+   * bound by :cpp:enumerator:`SCOPE <cvc5pp::ProofRule::SCOPE>` (see below).
    * \endverbatim
    */
   EVALUE(ASSUME),
@@ -118,7 +118,7 @@ enum ENUM(ProofRule)
    *   \dots F_n}{\neg (F_1 \land \dots \land F_n)}{if $F=\bot$}
    *
    * This rule has a dual purpose with
-   * :cpp:enumerator:`ASSUME <cvc5::ProofRule::ASSUME>`. It is a way to close
+   * :cpp:enumerator:`ASSUME <cvc5pp::ProofRule::ASSUME>`. It is a way to close
    * assumptions in a proof. We require that :math:`F_1 \dots F_n` are free
    * assumptions in P and say that :math:`F_1 \dots F_n` are not free in
    * ``(SCOPE P)``. In other words, they are bound by this application. For
@@ -252,7 +252,7 @@ enum ENUM(ProofRule)
    * where :math:`ids` and :math:`idr` are method identifiers.
    *
    * We rewrite only on the Skolem form of :math:`F`, similar to
-   * :cpp:enumerator:`MACRO_SR_EQ_INTRO <cvc5::ProofRule::MACRO_SR_EQ_INTRO>`.
+   * :cpp:enumerator:`MACRO_SR_EQ_INTRO <cvc5pp::ProofRule::MACRO_SR_EQ_INTRO>`.
    * \endverbatim
    */
   EVALUE(MACRO_SR_PRED_ELIM),
@@ -272,7 +272,7 @@ enum ENUM(ProofRule)
    * :math:`\texttt{Rewriter::rewrite}(\texttt{toOriginal}(F')) = \texttt{Rewriter::rewrite}(\texttt{toOriginal}(G'))`
    * where :math:`F'` and :math:`G'` are the result of each side of the equation
    * above. Here, original forms are used in a similar manner to
-   * :cpp:enumerator:`MACRO_SR_PRED_INTRO <cvc5::ProofRule::MACRO_SR_PRED_INTRO>`
+   * :cpp:enumerator:`MACRO_SR_PRED_INTRO <cvc5pp::ProofRule::MACRO_SR_PRED_INTRO>`
    * above. \endverbatim
    */
   EVALUE(MACRO_SR_PRED_TRANSFORM),
@@ -293,7 +293,7 @@ enum ENUM(ProofRule)
    * no-op in external proof formats.
    *
    * Note this rule can be treated as a
-   * :cpp:enumerator:`REFL <cvc5::ProofRule::REFL>` when appropriate in
+   * :cpp:enumerator:`REFL <cvc5pp::ProofRule::REFL>` when appropriate in
    * external proof formats.
    * \endverbatim
    */
@@ -503,11 +503,11 @@ enum ENUM(ProofRule)
    * where
    *
    * - let :math:`C_1 \dots C_n` be nodes viewed as clauses, as defined in
-   *   :cpp:enumerator:`RESOLUTION <cvc5::ProofRule::RESOLUTION>`
+   *   :cpp:enumerator:`RESOLUTION <cvc5pp::ProofRule::RESOLUTION>`
    * - let :math:`C_1 \diamond_{L,\mathit{pol}} C_2` represent the resolution of
    *   :math:`C_1` with :math:`C_2` with pivot :math:`L` and polarity
    *   :math:`pol`, as defined in
-   *   :cpp:enumerator:`RESOLUTION <cvc5::ProofRule::RESOLUTION>`
+   *   :cpp:enumerator:`RESOLUTION <cvc5pp::ProofRule::RESOLUTION>`
    * - let :math:`C_1'` be equal, in its set representation, to :math:`C_1`,
    * - for each :math:`i > 1`, let :math:`C_i'` be equal, in its set
    *   representation, to :math:`C_{i-1} \diamond_{L_{i-1},\mathit{pol}_{i-1}}
@@ -523,7 +523,7 @@ enum ENUM(ProofRule)
    * **Boolean -- N-ary Resolution + Factoring + Reordering unchecked**
    *
    * Same as
-   * :cpp:enumerator:`MACRO_RESOLUTION <cvc5::ProofRule::MACRO_RESOLUTION>`, but
+   * :cpp:enumerator:`MACRO_RESOLUTION <cvc5pp::ProofRule::MACRO_RESOLUTION>`, but
    * not checked by the internal proof checker.
    * \endverbatim
    */
@@ -547,8 +547,8 @@ enum ENUM(ProofRule)
    *   \inferrule{F_1, (F_1 = F_2) \mid -}{F_2}
    *
    * Note this can optionally be seen as a macro for
-   * :cpp:enumerator:`EQUIV_ELIM1 <cvc5::ProofRule::EQUIV_ELIM1>` +
-   * :cpp:enumerator:`RESOLUTION <cvc5::ProofRule::RESOLUTION>`.
+   * :cpp:enumerator:`EQUIV_ELIM1 <cvc5pp::ProofRule::EQUIV_ELIM1>` +
+   * :cpp:enumerator:`RESOLUTION <cvc5pp::ProofRule::RESOLUTION>`.
    * \endverbatim
    */
   EVALUE(EQ_RESOLVE),
@@ -560,8 +560,8 @@ enum ENUM(ProofRule)
    *   \inferrule{F_1, (F_1 \rightarrow F_2) \mid -}{F_2}
    *
    * Note this can optionally be seen as a macro for
-   * :cpp:enumerator:`IMPLIES_ELIM <cvc5::ProofRule::IMPLIES_ELIM>` +
-   * :cpp:enumerator:`RESOLUTION <cvc5::ProofRule::RESOLUTION>`.
+   * :cpp:enumerator:`IMPLIES_ELIM <cvc5pp::ProofRule::IMPLIES_ELIM>` +
+   * :cpp:enumerator:`RESOLUTION <cvc5pp::ProofRule::RESOLUTION>`.
    * \endverbatim
    */
   EVALUE(MODUS_PONENS),
@@ -1046,17 +1046,17 @@ enum ENUM(ProofRule)
    *   \inferrule{t_1=s_1,\dots,t_n=s_n\mid f(t_1,\dots, t_n)}{f(t_1,\dots, t_n) = f(s_1,\dots, s_n)}
    *
    * This rule is used when the kind of :math:`f(t_1,\dots, t_n)` has a fixed
-   * arity. This includes kinds such as ``cvc5::Kind::ITE``,
-   * ``cvc5::Kind::EQUAL``, as well as indexed functions such as
-   * ``cvc5::Kind::BITVECTOR_EXTRACT``.
+   * arity. This includes kinds such as ``cvc5pp::Kind::ITE``,
+   * ``cvc5pp::Kind::EQUAL``, as well as indexed functions such as
+   * ``cvc5pp::Kind::BITVECTOR_EXTRACT``.
    *
-   * It is also used for ``cvc5::Kind::APPLY_UF``, where :math:`f` is an
+   * It is also used for ``cvc5pp::Kind::APPLY_UF``, where :math:`f` is an
    * uninterpreted function.
    *
    * It is not used for kinds with variadic arity, or for kind
-   * ``cvc5::Kind::HO_APPLY``, which respectively use the rules
-   * :cpp:enumerator:`NARY_CONG <cvc5::ProofRule::NARY_CONG>` and
-   * :cpp:enumerator:`HO_CONG <cvc5::ProofRule::HO_CONG>` below.
+   * ``cvc5pp::Kind::HO_APPLY``, which respectively use the rules
+   * :cpp:enumerator:`NARY_CONG <cvc5pp::ProofRule::NARY_CONG>` and
+   * :cpp:enumerator:`HO_CONG <cvc5pp::ProofRule::HO_CONG>` below.
    * \endverbatim
    */
   EVALUE(CONG),
@@ -1069,8 +1069,8 @@ enum ENUM(ProofRule)
    *   \inferrule{t_1=s_1,\dots,t_n=s_n\mid f(t_1,\dots, t_n)}{f(t_1,\dots, t_n) = f(s_1,\dots, s_n)}
    *
    * This rule is used for terms :math:`f(t_1,\dots, t_n)` whose kinds
-   * :math:`k` have variadic arity, such as ``cvc5::Kind::AND``,
-   * ``cvc5::Kind::PLUS`` and so on.
+   * :math:`k` have variadic arity, such as ``cvc5pp::Kind::AND``,
+   * ``cvc5pp::Kind::PLUS`` and so on.
    * \endverbatim
    */
   EVALUE(NARY_CONG),
@@ -1130,7 +1130,7 @@ enum ENUM(ProofRule)
    * :math:`@` is the ``HO_APPLY`` kind.
    *
    * Note this rule can be treated as a
-   * :cpp:enumerator:`REFL <cvc5::ProofRule::REFL>` when appropriate in
+   * :cpp:enumerator:`REFL <cvc5pp::ProofRule::REFL>` when appropriate in
    * external proof formats.
    *  \endverbatim
    */
@@ -1145,7 +1145,7 @@ enum ENUM(ProofRule)
    *   k(g, s_1,\dots, s_n)}
    *
    * Notice that this rule is only used when the application kind :math:`k` is
-   * either `cvc5::Kind::APPLY_UF` or `cvc5::Kind::HO_APPLY`.
+   * either `cvc5pp::Kind::APPLY_UF` or `cvc5pp::Kind::HO_APPLY`.
    * \endverbatim
    */
   EVALUE(HO_CONG),
@@ -1292,7 +1292,7 @@ enum ENUM(ProofRule)
    *
    * where :math:`\sigma` maps :math:`x_1,\dots,x_n` to their representative
    * skolems, which are skolems :math:`k_1,\dots,k_n`. For each :math:`k_i`,
-   * its skolem identifier is :cpp:enumerator:`QUANTIFIERS_SKOLEMIZE <cvc5::SkolemId::QUANTIFIERS_SKOLEMIZE>`,
+   * its skolem identifier is :cpp:enumerator:`QUANTIFIERS_SKOLEMIZE <cvc5pp::SkolemId::QUANTIFIERS_SKOLEMIZE>`,
    * and its indices are :math:`(\forall x_1\dots x_n.\> F)` and :math:`x_i`.
    * \endverbatim
    */
@@ -2142,9 +2142,9 @@ enum ENUM(ProofRule)
    * that is :math:`x` shifted into :math:`-\pi \dots \pi` and :math:`s` is a
    * new integer skolem that is the number of phases :math:`y` is shifted.
    * In particular, :math:`y` is the
-   * :cpp:enumerator:`TRANSCENDENTAL_PURIFY_ARG <cvc5::SkolemId::TRANSCENDENTAL_PURIFY_ARG>`
+   * :cpp:enumerator:`TRANSCENDENTAL_PURIFY_ARG <cvc5pp::SkolemId::TRANSCENDENTAL_PURIFY_ARG>`
    * skolem for :math:`\sin(x)` and :math:`s` is the
-   * :cpp:enumerator:`TRANSCENDENTAL_SINE_PHASE_SHIFT <cvc5::SkolemId::TRANSCENDENTAL_SINE_PHASE_SHIFT>`
+   * :cpp:enumerator:`TRANSCENDENTAL_SINE_PHASE_SHIFT <cvc5pp::SkolemId::TRANSCENDENTAL_SINE_PHASE_SHIFT>`
    * skolem for :math:`x`.
    * \endverbatim
    */
@@ -2318,8 +2318,8 @@ enum ENUM(ProofRule)
  * This enumeration represents the rewrite rules used in a rewrite proof. Some
  * of the rules are internal ad-hoc rewrites, while others are rewrites
  * specified by the RARE DSL. This enumeration is used as the first argument to
- * the :cpp:enumerator:`DSL_REWRITE <cvc5::ProofRule::DSL_REWRITE>` proof rule
- * and the :cpp:enumerator:`THEORY_REWRITE <cvc5::ProofRule::THEORY_REWRITE>`
+ * the :cpp:enumerator:`DSL_REWRITE <cvc5pp::ProofRule::DSL_REWRITE>` proof rule
+ * and the :cpp:enumerator:`THEORY_REWRITE <cvc5pp::ProofRule::THEORY_REWRITE>`
  * proof rule.
  * \endverbatim
  */
@@ -2408,10 +2408,10 @@ enum ENUM(ProofRewriteRule)
    *   (>= s t) = c
    *
    * where :math:`c` is a Boolean constant.
-   * This macro is elaborated by applications of :cpp:enumerator:`EVALUATE <cvc5::ProofRule::EVALUATE>`,
-   * :cpp:enumerator:`ARITH_POLY_NORM <cvc5::ProofRule::ARITH_POLY_NORM>`,
-   * :cpp:enumerator:`ARITH_STRING_PRED_ENTAIL <cvc5::ProofRewriteRule::ARITH_STRING_PRED_ENTAIL>`,
-   * :cpp:enumerator:`ARITH_STRING_PRED_SAFE_APPROX <cvc5::ProofRewriteRule::ARITH_STRING_PRED_SAFE_APPROX>`,
+   * This macro is elaborated by applications of :cpp:enumerator:`EVALUATE <cvc5pp::ProofRule::EVALUATE>`,
+   * :cpp:enumerator:`ARITH_POLY_NORM <cvc5pp::ProofRule::ARITH_POLY_NORM>`,
+   * :cpp:enumerator:`ARITH_STRING_PRED_ENTAIL <cvc5pp::ProofRewriteRule::ARITH_STRING_PRED_ENTAIL>`,
+   * :cpp:enumerator:`ARITH_STRING_PRED_SAFE_APPROX <cvc5pp::ProofRewriteRule::ARITH_STRING_PRED_SAFE_APPROX>`,
    * as well as other rewrites for normalizing arithmetic predicates.
    *
    * \endverbatim
@@ -2475,8 +2475,8 @@ enum ENUM(ProofRewriteRule)
    *   ((\lambda x_1 \ldots x_n.\> t) \ t_1) = (\lambda x_2 \ldots x_n.\> t)\{x_1 \mapsto t_1\}
    *
    * In the former case, the left hand side may either be a term of kind
-   * `cvc5::Kind::APPLY_UF` or `cvc5::Kind::HO_APPLY`. The latter case is used
-   * only if the term has kind `cvc5::Kind::HO_APPLY`.
+   * `cvc5pp::Kind::APPLY_UF` or `cvc5pp::Kind::HO_APPLY`. The latter case is used
+   * only if the term has kind `cvc5pp::Kind::HO_APPLY`.
    *
    * In either case, the right hand side of the equality in the conclusion is
    * computed using standard substitution via ``Node::substitute``.
@@ -2502,7 +2502,7 @@ enum ENUM(ProofRewriteRule)
    *   ((\lambda x_1 \ldots x_n.\> t) \ t_1 \ldots t_n) = ((\lambda y_1 \ldots y_n.\> t') \ t_1 \ldots t_n)
    *
    * The terms may either be of kind
-   * `cvc5::Kind::APPLY_UF` or `cvc5::Kind::HO_APPLY`.
+   * `cvc5pp::Kind::APPLY_UF` or `cvc5pp::Kind::HO_APPLY`.
    * This rule ensures that the free variables of :math:`y_1, \ldots, y_n, t_1 \ldots t_n`
    * do not occur in binders within :math:`t'`, and
    * :math:`(\lambda x_1 \ldots x_n.\> t)` is alpha-equivalent to
@@ -4256,7 +4256,7 @@ CVC5_EXPORT const char* toString(ProofRewriteRule rule);
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, ProofRewriteRule rule);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 

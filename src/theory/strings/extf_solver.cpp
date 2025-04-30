@@ -875,4 +875,4 @@ void ExtfSolver::markReduced(const Node& n) { d_reduced.insert(n); }
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -331,4 +331,4 @@ void Scope::enqueueToGarbageCollect(ContextObj* obj) {
   d_garbage.push_back(obj);
 }
 
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context

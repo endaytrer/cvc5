@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::Rational.
+ * Black box testing of cvc5pp::Rational.
  */
 
 #include <sstream>
@@ -43,4 +43,4 @@ TEST_F(TestUtilBlackRational, fromDecimal)
   ASSERT_THROW(Rational::fromDecimal("Hello, world!");, std::invalid_argument);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

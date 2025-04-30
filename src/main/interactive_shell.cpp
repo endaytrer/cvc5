@@ -468,4 +468,4 @@ char* commandGenerator(const char* text, int state) {
 
 #endif /* HAVE_LIBEDITLINE */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

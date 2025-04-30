@@ -367,7 +367,7 @@ std::string SygusGrammar::toString() const
       SygusGrammar(*this).resolve());
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 size_t hash<cvc5pp::internal::SygusGrammar>::operator()(

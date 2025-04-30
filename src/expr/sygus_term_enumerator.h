@@ -130,6 +130,6 @@ class SygusTermEnumerator
   Node d_enum;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__SYGUS_TERM_ENUMERATOR_H */

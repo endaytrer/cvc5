@@ -13,8 +13,8 @@
  * A node value.
  *
  * The actual node implementation.
- * Instances of this class are generally referenced through cvc5::internal::Node
- * rather than by pointer. Note that cvc5::internal::Node maintains the
+ * Instances of this class are generally referenced through cvc5pp::internal::Node
+ * rather than by pointer. Note that cvc5pp::internal::Node maintains the
  * reference count on NodeValue instances.
  */
 
@@ -476,6 +476,6 @@ inline NodeValue* NodeValue::getChild(int i) const {
 }
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__NODE_VALUE_H */

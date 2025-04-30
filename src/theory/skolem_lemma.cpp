@@ -29,4 +29,4 @@ SkolemLemma::SkolemLemma(TrustNode lem, Node k) : d_lemma(lem), d_skolem(k)
 Node SkolemLemma::getProven() const { return d_lemma.getProven(); }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -908,4 +908,4 @@ bool SortInference::isHandledApplyUf(Kind k) const
 }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

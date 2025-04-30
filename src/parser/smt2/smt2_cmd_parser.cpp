@@ -945,4 +945,4 @@ std::unique_ptr<Cmd> Smt2CmdParser::parseNextCommand()
 }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

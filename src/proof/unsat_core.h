@@ -75,6 +75,6 @@ class CVC5_EXPORT UnsatCore
 /** Print the unsat core to stream out */
 std::ostream& operator<<(std::ostream& out, const UnsatCore& core);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__UNSAT_CORE_H */

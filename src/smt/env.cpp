@@ -392,4 +392,4 @@ Node Env::getSharableFormula(const Node& n) const
   return on;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

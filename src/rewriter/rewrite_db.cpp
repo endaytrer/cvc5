@@ -204,4 +204,4 @@ const std::map<ProofRewriteRule, RewriteProofRule>& RewriteDb::getAllRules()
 }
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

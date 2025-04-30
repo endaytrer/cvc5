@@ -49,6 +49,6 @@ class GlobalNegate : public PreprocessingPass
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PREPROCESSING_PASSES__GLOBAL_NEGATE_H */

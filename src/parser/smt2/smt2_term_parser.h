@@ -158,6 +158,6 @@ class Smt2TermParser
 };
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__SMT2_TERM_PARSER_H */

@@ -70,4 +70,4 @@ void checkForExperimentalFloatingPointType(const Node& n)
 }  // namespace utils
 }  // namespace fp
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

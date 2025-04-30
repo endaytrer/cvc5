@@ -120,6 +120,6 @@ class OptionsHandler
 }; /* class OptionHandler */
 
 }  // namespace options
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /*  CVC5__OPTIONS__OPTIONS_HANDLER_H */

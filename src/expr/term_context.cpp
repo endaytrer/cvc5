@@ -178,4 +178,4 @@ uint32_t WithinKindTermContext::computeValue(TNode t,
   return 1;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

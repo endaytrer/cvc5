@@ -130,4 +130,4 @@ bool RewriteVerifier::checkEquivalent(Node bv, Node bvr, std::ostream* out)
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

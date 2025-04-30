@@ -458,4 +458,4 @@ ProofGenerator* RemoveTermFormulas::getTConvProofGenerator()
 
 bool RemoveTermFormulas::isProofEnabled() const { return d_tpg != nullptr; }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

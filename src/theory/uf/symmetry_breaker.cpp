@@ -851,4 +851,4 @@ std::ostream& operator<<(std::ostream& out, const theory::uf::SymmetryBreaker::P
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

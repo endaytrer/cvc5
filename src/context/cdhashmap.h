@@ -406,6 +406,6 @@ class CDHashMap : public ContextObj
 
 }; /* class CDHashMap<> */
 
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context
 
 #endif /* CVC5__CONTEXT__CDHASHMAP_H */

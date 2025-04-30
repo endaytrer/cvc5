@@ -174,6 +174,6 @@ JNIEXPORT jint JNICALL Java_io_github_cvc5_Grammar_hashCode(JNIEnv* env,
 {
   CVC5_JAVA_API_TRY_CATCH_BEGIN;
   Grammar* grammar = reinterpret_cast<Grammar*>(pointer);
-  return static_cast<jint>(std::hash<cvc5::Grammar>()(*grammar));
+  return static_cast<jint>(std::hash<cvc5pp::Grammar>()(*grammar));
   CVC5_JAVA_API_TRY_CATCH_END_RETURN(env, 0);
 }

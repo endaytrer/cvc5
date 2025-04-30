@@ -40,4 +40,4 @@ std::string TrustProofGenerator::identify() const
   return "TrustProofGenerator";
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

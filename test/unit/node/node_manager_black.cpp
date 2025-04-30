@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::NodeManager.
+ * Black box testing of cvc5pp::NodeManager.
  */
 
 #include <string>
@@ -313,4 +313,4 @@ TEST_F(TestNodeBlackNodeManager, mkNode_too_many_children)
 #endif
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

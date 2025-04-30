@@ -162,4 +162,4 @@ TEST_F(TestApiDeprecated, solver)
   (void)parser::SymbolManager(&slv);
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

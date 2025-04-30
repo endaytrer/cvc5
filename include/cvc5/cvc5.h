@@ -288,7 +288,7 @@ class CVC5_EXPORT Result
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, const Result& r);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -393,7 +393,7 @@ class CVC5_EXPORT SynthResult
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, const SynthResult& r);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -993,7 +993,7 @@ class CVC5_EXPORT Sort
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, const Sort& s);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 
@@ -1163,7 +1163,7 @@ class CVC5_EXPORT Op
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, const Op& op);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -2044,7 +2044,7 @@ template <typename V>
 CVC5_EXPORT std::ostream& operator<<(
     std::ostream& out, const std::unordered_map<Term, V>& unordered_map);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -2163,7 +2163,7 @@ class CVC5_EXPORT DatatypeConstructorDecl
   std::shared_ptr<internal::DTypeConstructor> d_ctor;
 };
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -2307,7 +2307,7 @@ class CVC5_EXPORT DatatypeDecl
   std::shared_ptr<internal::DType> d_dtype;
 };
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -2423,7 +2423,7 @@ class CVC5_EXPORT DatatypeSelector
   std::shared_ptr<internal::DTypeSelector> d_stor;
 };
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -2727,7 +2727,7 @@ class CVC5_EXPORT DatatypeConstructor
   std::shared_ptr<internal::DTypeConstructor> d_ctor;
 };
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -3080,7 +3080,7 @@ std::ostream& operator<<(std::ostream& out, const DatatypeConstructor& ctor);
 CVC5_EXPORT
 std::ostream& operator<<(std::ostream& out, const DatatypeSelector& stor);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -3208,7 +3208,7 @@ class CVC5_EXPORT Grammar
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, const Grammar& grammar);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -3231,8 +3231,8 @@ namespace cvc5pp {
  * \verbatim embed:rst:leading-asterisk
  * This class provides type-safe access to a few options that frontends are
  * likely to use, but can not be not be communicated appropriately via the
- * regular :cpp:func:`Solver::getOption() <cvc5::Solver::getOption()>` or
- * :cpp:func:`Solver::getOptionInfo() <cvc5::Solver::getOptionInfo()>`
+ * regular :cpp:func:`Solver::getOption() <cvc5pp::Solver::getOption()>` or
+ * :cpp:func:`Solver::getOptionInfo() <cvc5pp::Solver::getOptionInfo()>`
  * functions. This includes, e.g., the input and output streams that can be
  * configured via :ref:`err <lbl-option-err>`, :ref:`in <lbl-option-in>` and
  * :ref:`out <lbl-option-out>`. This class does not store the options itself,
@@ -3261,39 +3261,39 @@ class CVC5_EXPORT DriverOptions
  * Holds information about a specific option, including its name, its
  * aliases, whether the option was explicitly set by the user, and information
  * concerning its value. It can be obtained via
- * :cpp:func:`Solver::getOptionInfo() <cvc5::Solver::getOptionInfo()>` and
+ * :cpp:func:`Solver::getOptionInfo() <cvc5pp::Solver::getOptionInfo()>` and
  * allows for a more detailed inspection of options than
- * :cpp:func:`Solver::getOption() <cvc5::Solver::getOption()>`. The
- * :cpp:member:`valueInfo <cvc5::OptionInfo::valueInfo>` member holds any of the
+ * :cpp:func:`Solver::getOption() <cvc5pp::Solver::getOption()>`. The
+ * :cpp:member:`valueInfo <cvc5pp::OptionInfo::valueInfo>` member holds any of the
  * following alternatives:
  *
- * - :cpp:class:`VoidInfo <cvc5::OptionInfo::VoidInfo>` if the option holds no
+ * - :cpp:class:`VoidInfo <cvc5pp::OptionInfo::VoidInfo>` if the option holds no
  *   value (or the value has no native type)
- * - :cpp:class:`ValueInfo <cvc5::OptionInfo::ValueInfo>` if the option is of
+ * - :cpp:class:`ValueInfo <cvc5pp::OptionInfo::ValueInfo>` if the option is of
  *   type ``bool`` or ``std::string``, holds the current value and the default
  *   value.
- * - :cpp:class:`NumberInfo <cvc5::OptionInfo::NumberInfo>` if the option is of
+ * - :cpp:class:`NumberInfo <cvc5pp::OptionInfo::NumberInfo>` if the option is of
  *   type ``int64_t``, ``uint64_t`` or ``double``, holds the current and default
  *   value, as well as the minimum and maximum.
- * - :cpp:class:`ModeInfo <cvc5::OptionInfo::ModeInfo>` if the option is a mode
+ * - :cpp:class:`ModeInfo <cvc5pp::OptionInfo::ModeInfo>` if the option is a mode
  *   option, holds the current and default values, as well as a list of valid
  *   modes.
  *
  * Additionally, this class provides convenience functions to obtain the
  * current value of an option in a type-safe manner using :cpp:func:`boolValue()
- * <cvc5::OptionInfo::boolValue()>`, :cpp:func:`stringValue()
- * <cvc5::OptionInfo::stringValue()>`, :cpp:func:`intValue()
- * <cvc5::OptionInfo::intValue()>`, :cpp:func:`uintValue()
- * <cvc5::OptionInfo::uintValue()>` and :cpp:func:`doubleValue()
- * <cvc5::OptionInfo::doubleValue()>`. They assert that the option has the
+ * <cvc5pp::OptionInfo::boolValue()>`, :cpp:func:`stringValue()
+ * <cvc5pp::OptionInfo::stringValue()>`, :cpp:func:`intValue()
+ * <cvc5pp::OptionInfo::intValue()>`, :cpp:func:`uintValue()
+ * <cvc5pp::OptionInfo::uintValue()>` and :cpp:func:`doubleValue()
+ * <cvc5pp::OptionInfo::doubleValue()>`. They assert that the option has the
  * respective type and return the current value.
  *
  * If the option has a special type that is not covered by the above
- * alternatives, the :cpp:member:`valueInfo <cvc5::OptionInfo::valueInfo>` holds
- * a :cpp:class:`VoidInfo <cvc5::OptionInfo::VoidInfo>`. Some options, that are
+ * alternatives, the :cpp:member:`valueInfo <cvc5pp::OptionInfo::valueInfo>` holds
+ * a :cpp:class:`VoidInfo <cvc5pp::OptionInfo::VoidInfo>`. Some options, that are
  * expected to be used by frontends (e.g., input and output streams) can also
  * be accessed using :cpp:func:`Solver::getDriverOptions()
- * <cvc5::Solver::getDriverOptions()>`. \endverbatim
+ * <cvc5pp::Solver::getDriverOptions()>`. \endverbatim
  */
 struct CVC5_EXPORT OptionInfo
 {
@@ -3415,8 +3415,8 @@ CVC5_EXPORT std::ostream& operator<<(std::ostream& os, const OptionInfo& oi);
  * The value type can be queried (using ``isInt()``, ``isDouble()``, etc.) and
  * the stored value can be accessed (using ``getInt()``, ``getDouble()``, etc.).
  * It is possible to query whether this statistic is an internal statistic by
- * :cpp:func:`isInternal() <cvc5::Stat::isInternal()>` and whether its value is
- * the default value by :cpp:func:`isDefault() <cvc5::Stat::isDefault()>`.
+ * :cpp:func:`isInternal() <cvc5pp::Stat::isInternal()>` and whether its value is
+ * the default value by :cpp:func:`isDefault() <cvc5pp::Stat::isDefault()>`.
  * \endverbatim
  */
 class CVC5_EXPORT Stat
@@ -3519,20 +3519,20 @@ CVC5_EXPORT std::ostream& operator<<(std::ostream& os, const Stat& stat);
  * how statistics can be used.
  *
  * Statistics can be queried from the Solver via
- * :cpp:func:`Solver::getStatistics() <cvc5::Solver::getStatistics()>`, and
+ * :cpp:func:`Solver::getStatistics() <cvc5pp::Solver::getStatistics()>`, and
  * from the TermManager via :cpp:func:`TermManager::getStatistics()
- * <cvc5::TermManager::getStatistics()>`. An statistics instance obtained from
- * either call is independent of the :cpp:class:`Solver <cvc5::Solver>` (and
- * its associated :cpp:class:`TermManager <cvc5::TermManager>`object: it will
+ * <cvc5pp::TermManager::getStatistics()>`. An statistics instance obtained from
+ * either call is independent of the :cpp:class:`Solver <cvc5pp::Solver>` (and
+ * its associated :cpp:class:`TermManager <cvc5pp::TermManager>`object: it will
  * not change when new terms are created or the solver's internal statistics
  * do. It will also not be invalidated if the solver/term manageris destroyed.
  *
  * Iterating over this class (via :cpp:func:`begin()
- * <cvc5::Statistics::begin()>` and :cpp:func:`end() <cvc5::Statistics::end()>`)
+ * <cvc5pp::Statistics::begin()>` and :cpp:func:`end() <cvc5pp::Statistics::end()>`)
  * shows only public statistics that have been changed. By passing appropriate
- * flags to :cpp:func:`begin() <cvc5::Statistics::begin()>`, statistics that are
+ * flags to :cpp:func:`begin() <cvc5pp::Statistics::begin()>`, statistics that are
  * internal, defaulted, or both, can be included as well. A single statistic
- * value is represented as :cpp:class:`Stat <cvc5::Stat>`. \endverbatim
+ * value is represented as :cpp:class:`Stat <cvc5pp::Stat>`. \endverbatim
  */
 class CVC5_EXPORT Statistics
 {
@@ -3734,7 +3734,7 @@ class CVC5_EXPORT Proof
   TermManager* d_tm;
 };
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -4022,11 +4022,11 @@ class CVC5_EXPORT TermManager
    *   - #INT_TO_BITVECTOR
    *   - #TUPLE_PROJECT
    *
-   * See cvc5::Kind for a description of the parameters.
+   * See cvc5pp::Kind for a description of the parameters.
    * @param kind The kind of the operator.
    * @param args The arguments (indices) of the operator.
    *
-   * @note If ``args`` is empty, the Op simply wraps the cvc5::Kind.  The
+   * @note If ``args`` is empty, the Op simply wraps the cvc5pp::Kind.  The
    * Kind can be used in Solver::mkTerm directly without creating an Op
    * first.
    */
@@ -4039,7 +4039,7 @@ class CVC5_EXPORT TermManager
   /**
    * Create operator of kind:
    *   - #DIVISIBLE (to support arbitrary precision integers)
-   * See cvc5::Kind for a description of the parameters.
+   * See cvc5pp::Kind for a description of the parameters.
    * @param kind The kind of the operator.
    * @param arg The string argument to this operator.
    */
@@ -5080,11 +5080,11 @@ class CVC5_EXPORT Solver
    *   - #INT_TO_BITVECTOR
    *   - #TUPLE_PROJECT
    *
-   * See cvc5::Kind for a description of the parameters.
+   * See cvc5pp::Kind for a description of the parameters.
    * @param kind The kind of the operator.
    * @param args The arguments (indices) of the operator.
    *
-   * @note If ``args`` is empty, the Op simply wraps the cvc5::Kind.  The
+   * @note If ``args`` is empty, the Op simply wraps the cvc5pp::Kind.  The
    * Kind can be used in Solver::mkTerm directly without creating an Op
    * first.
    * @warning This function is deprecated and replaced by `TermManager::mkOp()`.
@@ -5103,7 +5103,7 @@ class CVC5_EXPORT Solver
   /**
    * Create operator of kind:
    *   - #DIVISIBLE (to support arbitrary precision integers)
-   * See cvc5::Kind for a description of the parameters.
+   * See cvc5pp::Kind for a description of the parameters.
    * @param kind The kind of the operator.
    * @param arg The string argument to this operator.
    * @warning This function is deprecated and replaced by `TermManager::mkOp()`.
@@ -7079,6 +7079,6 @@ class CVC5_EXPORT Solver
   TermManager& d_tm;
 };
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif

@@ -64,6 +64,6 @@ class TheoryBuiltinRewriter : public TheoryRewriter
 
 }  // namespace builtin
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BUILTIN__THEORY_BUILTIN_REWRITER_H */

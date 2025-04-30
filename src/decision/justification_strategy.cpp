@@ -590,4 +590,4 @@ bool JustificationStrategy::isTheoryLiteral(TNode n)
 }
 
 }  // namespace decision
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

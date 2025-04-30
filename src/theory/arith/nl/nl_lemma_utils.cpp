@@ -79,4 +79,4 @@ Node ArgTrie::add(Node d, const std::vector<Node>& args)
 }  // namespace nl
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

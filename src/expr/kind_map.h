@@ -52,6 +52,6 @@ class KindMap
   std::bitset<static_cast<size_t>(Kind::LAST_KIND)> d_bits;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__KIND_MAP_H */

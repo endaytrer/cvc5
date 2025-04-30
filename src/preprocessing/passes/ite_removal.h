@@ -35,6 +35,6 @@ class IteRemoval : public PreprocessingPass
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif  // CVC5__PREPROCESSING__PASSES__ITE_REMOVAL_H

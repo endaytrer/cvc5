@@ -64,4 +64,4 @@ const std::vector<Node>& ElimWitnessNodeConverter::getExistentials() const
   return d_exists;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -174,4 +174,4 @@ TEST_F(TestTheoryBlackBv, reg8361)
   ASSERT_TRUE(slv.checkSat().isUnsat());
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -2322,4 +2322,4 @@ unsigned ConjectureGenerator::optFullCheckFrequency() { return 1; }
 
 bool ConjectureGenerator::optStatsOnly() { return false; }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

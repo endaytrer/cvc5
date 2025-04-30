@@ -376,6 +376,6 @@ class RewriteDbProofCons : protected EnvObj
 };
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__REWRITE_DB_PROOF_CONS__H */

@@ -130,4 +130,4 @@ ${type_constant_to_theory_id}
 }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

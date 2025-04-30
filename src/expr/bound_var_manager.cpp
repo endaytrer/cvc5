@@ -60,4 +60,4 @@ Node BoundVarManager::getCacheValue(TNode cv, size_t i)
   return getCacheValue(cv, getCacheValue(i));
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

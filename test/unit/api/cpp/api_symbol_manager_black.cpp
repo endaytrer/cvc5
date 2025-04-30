@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::parser::SymbolManager.
+ * Black box testing of cvc5pp::parser::SymbolManager.
  */
 
 #include <cvc5/cvc5.h>
@@ -84,4 +84,4 @@ TEST_F(TestApiBlackSymbolManager, getNamedTerms)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

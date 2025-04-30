@@ -60,4 +60,4 @@ std::string RewriteProofGenerator::identify() const
   return "RewriteProofGenerator";
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -4,25 +4,25 @@
 # src/theory/builtin/kinds.
 #
 
-theory THEORY_ARRAYS ::cvc5::internal::theory::arrays::TheoryArrays "theory/arrays/theory_arrays.h"
+theory THEORY_ARRAYS ::cvc5pp::internal::theory::arrays::TheoryArrays "theory/arrays/theory_arrays.h"
 typechecker "theory/arrays/theory_arrays_type_rules.h"
 
 properties polite stable-infinite parametric
 properties check presolve
 
-rewriter ::cvc5::internal::theory::arrays::TheoryArraysRewriter "theory/arrays/theory_arrays_rewriter.h"
+rewriter ::cvc5pp::internal::theory::arrays::TheoryArraysRewriter "theory/arrays/theory_arrays_rewriter.h"
 
 operator ARRAY_TYPE 2 "array type"
 cardinality ARRAY_TYPE \
-    "::cvc5::internal::theory::arrays::ArraysProperties::computeCardinality(%TYPE%)" \
+    "::cvc5pp::internal::theory::arrays::ArraysProperties::computeCardinality(%TYPE%)" \
     "theory/arrays/theory_arrays_type_rules.h"
 well-founded ARRAY_TYPE \
-    "::cvc5::internal::theory::arrays::ArraysProperties::isWellFounded(%TYPE%)" \
-    "::cvc5::internal::theory::arrays::ArraysProperties::mkGroundTerm(%TYPE%)" \
+    "::cvc5pp::internal::theory::arrays::ArraysProperties::isWellFounded(%TYPE%)" \
+    "::cvc5pp::internal::theory::arrays::ArraysProperties::mkGroundTerm(%TYPE%)" \
     "theory/arrays/theory_arrays_type_rules.h"
 
 enumerator ARRAY_TYPE \
-    "::cvc5::internal::theory::arrays::ArrayEnumerator" \
+    "::cvc5pp::internal::theory::arrays::ArrayEnumerator" \
     "theory/arrays/type_enumerator.h"
 
 # select a i  is  a[i]
@@ -38,9 +38,9 @@ operator EQ_RANGE 4 "equality of two arrays over an index range lower/upper"
 constant STORE_ALL \
     class \
     ArrayStoreAll \
-    ::cvc5::internal::ArrayStoreAllHashFunction \
+    ::cvc5pp::internal::ArrayStoreAllHashFunction \
     "expr/array_store_all.h" \
-    "array store-all; payload is an instance of the cvc5::internal::ArrayStoreAll class (this is not supported by arrays decision procedure yet, but it is used for returned array models)"
+    "array store-all; payload is an instance of the cvc5pp::internal::ArrayStoreAll class (this is not supported by arrays decision procedure yet, but it is used for returned array models)"
 
 # used internally for substitutions in models (e.g. the Boolean terms converter)
 # The (single) argument is a lambda(x:T):U.  Type of the array lambda is
@@ -49,13 +49,13 @@ constant STORE_ALL \
 # as a shifted over one.
 operator ARRAY_LAMBDA 1 "array lambda (internal-only symbol)"
 
-typerule SELECT ::cvc5::internal::theory::arrays::ArraySelectTypeRule
-typerule STORE ::cvc5::internal::theory::arrays::ArrayStoreTypeRule
-typerule STORE_ALL ::cvc5::internal::theory::arrays::ArrayStoreTypeRule
-typerule ARRAY_LAMBDA ::cvc5::internal::theory::arrays::ArrayLambdaTypeRule
-typerule EQ_RANGE ::cvc5::internal::theory::arrays::ArrayEqRangeTypeRule
+typerule SELECT ::cvc5pp::internal::theory::arrays::ArraySelectTypeRule
+typerule STORE ::cvc5pp::internal::theory::arrays::ArrayStoreTypeRule
+typerule STORE_ALL ::cvc5pp::internal::theory::arrays::ArrayStoreTypeRule
+typerule ARRAY_LAMBDA ::cvc5pp::internal::theory::arrays::ArrayLambdaTypeRule
+typerule EQ_RANGE ::cvc5pp::internal::theory::arrays::ArrayEqRangeTypeRule
 
 # store operations that are ordered (by index) over a store-all are constant
-construle STORE ::cvc5::internal::theory::arrays::ArrayStoreTypeRule
+construle STORE ::cvc5pp::internal::theory::arrays::ArrayStoreTypeRule
 
 endtheory

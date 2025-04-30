@@ -262,6 +262,6 @@ class PropPfManager : protected EnvObj
 }; /* class PropPfManager */
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROP__PROOF_MANAGER_H */

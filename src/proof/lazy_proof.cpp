@@ -259,4 +259,4 @@ bool LazyCDProof::hasGenerator(Node fact) const
   return it != d_gens.end();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

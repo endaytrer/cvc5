@@ -346,4 +346,4 @@ Node ModelBlocker::getModelBlocker(const std::vector<Node>& assertions,
   return blocker;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -53,6 +53,6 @@ struct AbstractTypeHashFunction
   size_t operator()(const AbstractType& op) const;
 }; /* struct AbstractTypeHashFunction */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BUILTIN__APPLY_ABSTRACT_OP_H */

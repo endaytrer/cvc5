@@ -4000,4 +4000,4 @@ Node SequencesRewriter::postProcessRewrite(Node node, Node ret)
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

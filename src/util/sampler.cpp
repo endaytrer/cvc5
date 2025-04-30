@@ -173,4 +173,4 @@ FloatingPoint Sampler::pickFpBiased(unsigned e, unsigned s)
   return FloatingPoint(e, s, bv);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

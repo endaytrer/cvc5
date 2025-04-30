@@ -189,4 +189,4 @@ void IllegalArgumentException::construct(const char* header, const char* extra,
   delete [] buf;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

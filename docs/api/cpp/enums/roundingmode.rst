@@ -5,19 +5,19 @@ This enum class represents a floating-point rounding mode.
 
 ----
 
-- enum class :cpp:enum:`cvc5::RoundingMode`
-- :cpp:func:`std::ostream& cvc5::operator<< (std::ostream& out, RoundingMode rm)`
-- :cpp:func:`std::string std::to_string(cvc5::RoundingMode rm)`
+- enum class :cpp:enum:`cvc5pp::RoundingMode`
+- :cpp:func:`std::ostream& cvc5pp::operator<< (std::ostream& out, RoundingMode rm)`
+- :cpp:func:`std::string std::to_string(cvc5pp::RoundingMode rm)`
 
 ----
 
-.. doxygenenum:: cvc5::RoundingMode
+.. doxygenenum:: cvc5pp::RoundingMode
     :project: cvc5
 
 ----
 
-.. doxygenfunction:: cvc5::operator<<(std::ostream& out, RoundingMode rm)
+.. doxygenfunction:: cvc5pp::operator<<(std::ostream& out, RoundingMode rm)
     :project: cvc5
 
-.. doxygenfunction:: std::to_string(cvc5::RoundingMode rm)
+.. doxygenfunction:: std::to_string(cvc5pp::RoundingMode rm)
     :project: cvc5

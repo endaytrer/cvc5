@@ -131,6 +131,6 @@ bool containsSubproof(ProofNode* pn,
 ProofRule getCongRule(const Node& n, std::vector<Node>& args);
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__PROOF_NODE_ALGORITHM_H */

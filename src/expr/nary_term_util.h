@@ -68,6 +68,6 @@ Node narySubstitute(Node src,
                     std::unordered_map<TNode, Node>& visited);
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__NARY_TERM_UTIL__H */

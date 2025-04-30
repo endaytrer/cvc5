@@ -25,14 +25,14 @@ class TestCApiBlackUncovered : public ::testing::Test
  protected:
   void SetUp() override
   {
-    d_solver.reset(new cvc5::Solver(d_tm));
+    d_solver.reset(new cvc5pp::Solver(d_tm));
     d_bool = d_tm.getBooleanSort();
     d_int = d_tm.getIntegerSort();
   }
-  cvc5::TermManager d_tm;
-  std::unique_ptr<cvc5::Solver> d_solver;
-  cvc5::Sort d_bool;
-  cvc5::Sort d_int;
+  cvc5pp::TermManager d_tm;
+  std::unique_ptr<cvc5pp::Solver> d_solver;
+  cvc5pp::Sort d_bool;
+  cvc5pp::Sort d_int;
 };
 
 TEST_F(TestCApiBlackUncovered, deprecated)
@@ -424,4 +424,4 @@ TEST_F(TestCApiBlackUncovered, driver_options)
   dopts.out();
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

@@ -187,4 +187,4 @@ void Result::toStreamSmt2(ostream& out) const {
   toStreamDefault(out);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

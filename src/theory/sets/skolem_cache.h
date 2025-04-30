@@ -86,6 +86,6 @@ class SkolemCache
 
 }  // namespace sets
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__STRINGS__SKOLEM_CACHE_H */

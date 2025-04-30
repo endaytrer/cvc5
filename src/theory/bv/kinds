@@ -4,38 +4,38 @@
 # src/theory/builtin/kinds.
 #
 
-theory THEORY_BV ::cvc5::internal::theory::bv::TheoryBV "theory/bv/theory_bv.h"
+theory THEORY_BV ::cvc5pp::internal::theory::bv::TheoryBV "theory/bv/theory_bv.h"
 typechecker "theory/bv/theory_bv_type_rules.h"
 
 properties finite
 properties check propagate presolve ppStaticLearn
 
-rewriter ::cvc5::internal::theory::bv::TheoryBVRewriter "theory/bv/theory_bv_rewriter.h"
+rewriter ::cvc5pp::internal::theory::bv::TheoryBVRewriter "theory/bv/theory_bv_rewriter.h"
 
 constant BITVECTOR_TYPE \
   struct \
   BitVectorSize \
-  "::cvc5::internal::UnsignedHashFunction< ::cvc5::internal::BitVectorSize >" \
+  "::cvc5pp::internal::UnsignedHashFunction< ::cvc5pp::internal::BitVectorSize >" \
   "util/bitvector.h" \
   "bit-vector type"
 cardinality BITVECTOR_TYPE \
-	"::cvc5::internal::theory::bv::CardinalityComputer::computeCardinality(%TYPE%)" \
+	"::cvc5pp::internal::theory::bv::CardinalityComputer::computeCardinality(%TYPE%)" \
 	"theory/bv/theory_bv_type_rules.h"
 
 constant CONST_BITVECTOR \
   class \
   BitVector \
-  ::cvc5::internal::BitVectorHashFunction \
+  ::cvc5pp::internal::BitVectorHashFunction \
   "util/bitvector.h" \
-  "a fixed-width bit-vector constant; payload is an instance of the cvc5::internal::BitVector class"
+  "a fixed-width bit-vector constant; payload is an instance of the cvc5pp::internal::BitVector class"
 
 enumerator BITVECTOR_TYPE \
-    "::cvc5::internal::theory::bv::BitVectorEnumerator" \
+    "::cvc5pp::internal::theory::bv::BitVectorEnumerator" \
     "theory/bv/type_enumerator.h"
 
 well-founded BITVECTOR_TYPE \
     true \
-    "(*cvc5::internal::theory::TypeEnumerator(%TYPE%))" \
+    "(*cvc5pp::internal::theory::TypeEnumerator(%TYPE%))" \
     "theory/type_enumerator.h"
 
 ### non-parameterized operator kinds ------------------------------------------
@@ -118,152 +118,152 @@ operator BITVECTOR_EAGER_ATOM 1 "formula to be treated as a bv atom via eager bi
 constant BITVECTOR_BIT_OP \
   struct \
   BitVectorBit \
-  ::cvc5::internal::BitVectorBitHashFunction \
+  ::cvc5pp::internal::BitVectorBitHashFunction \
   "util/bitvector.h" \
-  "operator for the bit-vector boolean bit extract; payload is an instance of the cvc5::internal::BitVectorBit class"
+  "operator for the bit-vector boolean bit extract; payload is an instance of the cvc5pp::internal::BitVectorBit class"
 parameterized BITVECTOR_BIT BITVECTOR_BIT_OP 1 "bit-vector boolean bit extract; first parameter is a BITVECTOR_BIT_OP, second is a bit-vector term"
 
 constant BITVECTOR_EXTRACT_OP \
   struct \
   BitVectorExtract \
-  ::cvc5::internal::BitVectorExtractHashFunction \
+  ::cvc5pp::internal::BitVectorExtractHashFunction \
   "util/bitvector.h" \
-  "operator for the bit-vector extract; payload is an instance of the cvc5::internal::BitVectorExtract class"
+  "operator for the bit-vector extract; payload is an instance of the cvc5pp::internal::BitVectorExtract class"
 parameterized BITVECTOR_EXTRACT BITVECTOR_EXTRACT_OP 1 "bit-vector extract; first parameter is a BITVECTOR_EXTRACT_OP, second is a bit-vector term"
 
 constant BITVECTOR_REPEAT_OP \
   struct \
   BitVectorRepeat \
-  "::cvc5::internal::UnsignedHashFunction< ::cvc5::internal::BitVectorRepeat >" \
+  "::cvc5pp::internal::UnsignedHashFunction< ::cvc5pp::internal::BitVectorRepeat >" \
   "util/bitvector.h" \
-  "operator for the bit-vector repeat; payload is an instance of the cvc5::internal::BitVectorRepeat class"
+  "operator for the bit-vector repeat; payload is an instance of the cvc5pp::internal::BitVectorRepeat class"
 parameterized BITVECTOR_REPEAT BITVECTOR_REPEAT_OP 1 "bit-vector repeat; first parameter is a BITVECTOR_REPEAT_OP, second is a bit-vector term"
 
 constant BITVECTOR_ROTATE_LEFT_OP \
   struct \
   BitVectorRotateLeft \
-  "::cvc5::internal::UnsignedHashFunction< ::cvc5::internal::BitVectorRotateLeft >" \
+  "::cvc5pp::internal::UnsignedHashFunction< ::cvc5pp::internal::BitVectorRotateLeft >" \
   "util/bitvector.h" \
-  "operator for the bit-vector rotate left; payload is an instance of the cvc5::internal::BitVectorRotateLeft class"
+  "operator for the bit-vector rotate left; payload is an instance of the cvc5pp::internal::BitVectorRotateLeft class"
 parameterized BITVECTOR_ROTATE_LEFT BITVECTOR_ROTATE_LEFT_OP 1 "bit-vector rotate left; first parameter is a BITVECTOR_ROTATE_LEFT_OP, second is a bit-vector term"
 
 constant BITVECTOR_ROTATE_RIGHT_OP \
   struct \
   BitVectorRotateRight \
-  "::cvc5::internal::UnsignedHashFunction< ::cvc5::internal::BitVectorRotateRight >" \
+  "::cvc5pp::internal::UnsignedHashFunction< ::cvc5pp::internal::BitVectorRotateRight >" \
   "util/bitvector.h" \
-  "operator for the bit-vector rotate right; payload is an instance of the cvc5::internal::BitVectorRotateRight class"
+  "operator for the bit-vector rotate right; payload is an instance of the cvc5pp::internal::BitVectorRotateRight class"
 parameterized BITVECTOR_ROTATE_RIGHT BITVECTOR_ROTATE_RIGHT_OP 1 "bit-vector rotate right; first parameter is a BITVECTOR_ROTATE_RIGHT_OP, second is a bit-vector term"
 
 constant BITVECTOR_SIGN_EXTEND_OP \
   struct \
   BitVectorSignExtend \
-  "::cvc5::internal::UnsignedHashFunction< ::cvc5::internal::BitVectorSignExtend >" \
+  "::cvc5pp::internal::UnsignedHashFunction< ::cvc5pp::internal::BitVectorSignExtend >" \
   "util/bitvector.h" \
-  "operator for the bit-vector sign-extend; payload is an instance of the cvc5::internal::BitVectorSignExtend class"
+  "operator for the bit-vector sign-extend; payload is an instance of the cvc5pp::internal::BitVectorSignExtend class"
 parameterized BITVECTOR_SIGN_EXTEND BITVECTOR_SIGN_EXTEND_OP 1 "bit-vector sign-extend; first parameter is a BITVECTOR_SIGN_EXTEND_OP, second is a bit-vector term"
 
 constant BITVECTOR_ZERO_EXTEND_OP \
   struct \
   BitVectorZeroExtend \
-  "::cvc5::internal::UnsignedHashFunction< ::cvc5::internal::BitVectorZeroExtend >" \
+  "::cvc5pp::internal::UnsignedHashFunction< ::cvc5pp::internal::BitVectorZeroExtend >" \
   "util/bitvector.h" \
-  "operator for the bit-vector zero-extend; payload is an instance of the cvc5::internal::BitVectorZeroExtend class"
+  "operator for the bit-vector zero-extend; payload is an instance of the cvc5pp::internal::BitVectorZeroExtend class"
 parameterized BITVECTOR_ZERO_EXTEND BITVECTOR_ZERO_EXTEND_OP 1 "bit-vector zero-extend; first parameter is a BITVECTOR_ZERO_EXTEND_OP, second is a bit-vector term"
 
 ### type rules for non-parameterized operator kinds ---------------------------
 
 ## size
-typerule BITVECTOR_SIZE ::cvc5::internal::theory::bv::BitVectorSizeTypeRule
+typerule BITVECTOR_SIZE ::cvc5pp::internal::theory::bv::BitVectorSizeTypeRule
 
 ## size
-typerule CONST_BITVECTOR_SYMBOLIC ::cvc5::internal::theory::bv::BitVectorConstantSymbolicTypeRule
+typerule CONST_BITVECTOR_SYMBOLIC ::cvc5pp::internal::theory::bv::BitVectorConstantSymbolicTypeRule
 
 # const
-typerule CONST_BITVECTOR ::cvc5::internal::theory::bv::BitVectorConstantTypeRule
+typerule CONST_BITVECTOR ::cvc5pp::internal::theory::bv::BitVectorConstantTypeRule
 
 ## conversion to bit-vector from vector of Booleans kind
-typerule BITVECTOR_FROM_BOOLS ::cvc5::internal::theory::bv::BitVectorToBVTypeRule
+typerule BITVECTOR_FROM_BOOLS ::cvc5pp::internal::theory::bv::BitVectorToBVTypeRule
 
 ## concatenation kind
-typerule BITVECTOR_CONCAT ::cvc5::internal::theory::bv::BitVectorConcatTypeRule
+typerule BITVECTOR_CONCAT ::cvc5pp::internal::theory::bv::BitVectorConcatTypeRule
 
 ## bit-wise kinds
-typerule BITVECTOR_AND ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_COMP ::cvc5::internal::theory::bv::BitVectorBVPredTypeRule
-typerule BITVECTOR_NAND ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_NOR ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_NOT ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_OR ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_XNOR ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_XOR ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_AND ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_COMP ::cvc5pp::internal::theory::bv::BitVectorBVPredTypeRule
+typerule BITVECTOR_NAND ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_NOR ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_NOT ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_OR ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_XNOR ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_XOR ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
 
 ## arithmetic kinds
-typerule BITVECTOR_MULT ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_NEG ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_ADD ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_SUB ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_UDIV ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_UREM ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_SDIV ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_SMOD ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_SREM ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_MULT ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_NEG ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_ADD ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_SUB ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_UDIV ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_UREM ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_SDIV ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_SMOD ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_SREM ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
 
 ## shift kinds
-typerule BITVECTOR_ASHR ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_LSHR ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
-typerule BITVECTOR_SHL ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_ASHR ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_LSHR ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_SHL ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
 
 ## inequality kinds
-typerule BITVECTOR_ULE ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_ULT ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_UGE ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_UGT ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_SLE ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_SLT ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_SGE ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_SGT ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_ULE ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_ULT ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_UGE ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_UGT ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_SLE ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_SLT ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_SGE ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_SGT ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
 # inequalities with return type bit-vector of size 1
-typerule BITVECTOR_ULTBV ::cvc5::internal::theory::bv::BitVectorBVPredTypeRule
-typerule BITVECTOR_SLTBV ::cvc5::internal::theory::bv::BitVectorBVPredTypeRule
+typerule BITVECTOR_ULTBV ::cvc5pp::internal::theory::bv::BitVectorBVPredTypeRule
+typerule BITVECTOR_SLTBV ::cvc5pp::internal::theory::bv::BitVectorBVPredTypeRule
 
 ## if-then-else kind
-typerule BITVECTOR_ITE ::cvc5::internal::theory::bv::BitVectorITETypeRule
+typerule BITVECTOR_ITE ::cvc5pp::internal::theory::bv::BitVectorITETypeRule
 
 ## reduction kinds
-typerule BITVECTOR_REDAND ::cvc5::internal::theory::bv::BitVectorRedTypeRule
-typerule BITVECTOR_REDOR ::cvc5::internal::theory::bv::BitVectorRedTypeRule
+typerule BITVECTOR_REDAND ::cvc5pp::internal::theory::bv::BitVectorRedTypeRule
+typerule BITVECTOR_REDOR ::cvc5pp::internal::theory::bv::BitVectorRedTypeRule
 
 ## overflow kinds
-typerule BITVECTOR_NEGO ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_UADDO ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_SADDO ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_UMULO ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_SMULO ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_USUBO ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_SSUBO ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
-typerule BITVECTOR_SDIVO ::cvc5::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_NEGO ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_UADDO ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_SADDO ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_UMULO ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_SMULO ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_USUBO ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_SSUBO ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
+typerule BITVECTOR_SDIVO ::cvc5pp::internal::theory::bv::BitVectorPredicateTypeRule
 
 ## internal kinds
-typerule BITVECTOR_ACKERMANNIZE_UDIV ::cvc5::internal::theory::bv::BitVectorAckermanizationUdivTypeRule
-typerule BITVECTOR_ACKERMANNIZE_UREM ::cvc5::internal::theory::bv::BitVectorAckermanizationUremTypeRule
-typerule BITVECTOR_EAGER_ATOM ::cvc5::internal::theory::bv::BitVectorEagerAtomTypeRule
+typerule BITVECTOR_ACKERMANNIZE_UDIV ::cvc5pp::internal::theory::bv::BitVectorAckermanizationUdivTypeRule
+typerule BITVECTOR_ACKERMANNIZE_UREM ::cvc5pp::internal::theory::bv::BitVectorAckermanizationUremTypeRule
+typerule BITVECTOR_EAGER_ATOM ::cvc5pp::internal::theory::bv::BitVectorEagerAtomTypeRule
 
 ### type rules for parameterized operator kinds -------------------------------
 
 typerule BITVECTOR_BIT_OP "SimpleTypeRule<RBuiltinOperator>"
-typerule BITVECTOR_BIT ::cvc5::internal::theory::bv::BitVectorBitTypeRule
+typerule BITVECTOR_BIT ::cvc5pp::internal::theory::bv::BitVectorBitTypeRule
 typerule BITVECTOR_EXTRACT_OP "SimpleTypeRule<RBuiltinOperator>"
-typerule BITVECTOR_EXTRACT ::cvc5::internal::theory::bv::BitVectorExtractTypeRule
+typerule BITVECTOR_EXTRACT ::cvc5pp::internal::theory::bv::BitVectorExtractTypeRule
 typerule BITVECTOR_REPEAT_OP "SimpleTypeRule<RBuiltinOperator>"
-typerule BITVECTOR_REPEAT ::cvc5::internal::theory::bv::BitVectorRepeatTypeRule
+typerule BITVECTOR_REPEAT ::cvc5pp::internal::theory::bv::BitVectorRepeatTypeRule
 typerule BITVECTOR_ROTATE_LEFT_OP "SimpleTypeRule<RBuiltinOperator>"
-typerule BITVECTOR_ROTATE_LEFT ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_ROTATE_LEFT ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
 typerule BITVECTOR_ROTATE_RIGHT_OP "SimpleTypeRule<RBuiltinOperator>"
-typerule BITVECTOR_ROTATE_RIGHT ::cvc5::internal::theory::bv::BitVectorFixedWidthTypeRule
+typerule BITVECTOR_ROTATE_RIGHT ::cvc5pp::internal::theory::bv::BitVectorFixedWidthTypeRule
 typerule BITVECTOR_SIGN_EXTEND_OP "SimpleTypeRule<RBuiltinOperator>"
-typerule BITVECTOR_SIGN_EXTEND ::cvc5::internal::theory::bv::BitVectorExtendTypeRule
+typerule BITVECTOR_SIGN_EXTEND ::cvc5pp::internal::theory::bv::BitVectorExtendTypeRule
 typerule BITVECTOR_ZERO_EXTEND_OP "SimpleTypeRule<RBuiltinOperator>"
-typerule BITVECTOR_ZERO_EXTEND ::cvc5::internal::theory::bv::BitVectorExtendTypeRule
+typerule BITVECTOR_ZERO_EXTEND ::cvc5pp::internal::theory::bv::BitVectorExtendTypeRule
 
 endtheory

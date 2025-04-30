@@ -257,6 +257,6 @@ class TConvProofGenerator : protected EnvObj, public ProofGenerator
   std::string toStringDebug() const;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__CONV_PROOF_GENERATOR_H */

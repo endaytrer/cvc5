@@ -1252,4 +1252,4 @@ TEST_F(TestApiBlackTerm, toString)
   ss << std::unordered_set<Term>{x, x};
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

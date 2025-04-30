@@ -835,7 +835,7 @@ std::vector<poly::Interval> LazardEvaluation::infeasibleRegions(
   return combined;
 }
 
-}  // namespace cvc5::internal::theory::arith::nl::coverings
+}  // namespace cvc5pp::internal::theory::arith::nl::coverings
 
 #else
 
@@ -889,7 +889,7 @@ std::vector<poly::Interval> LazardEvaluation::infeasibleRegions(
   return poly::infeasible_regions(q, d_state->d_assignment, sc);
 }
 
-}  // namespace cvc5::internal::theory::arith::nl::coverings
+}  // namespace cvc5pp::internal::theory::arith::nl::coverings
 
 #endif
 #endif

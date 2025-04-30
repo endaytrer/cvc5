@@ -144,4 +144,4 @@ bool QuantInfo::isTraverseTerm(TNode n) { return !n.isClosure(); }
 }  // namespace ieval
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

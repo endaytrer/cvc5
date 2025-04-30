@@ -138,4 +138,4 @@ bool BufferedProofGenerator::hasProofFor(Node f)
   return true;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

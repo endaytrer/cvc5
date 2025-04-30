@@ -49,4 +49,4 @@ bool SortToTerm::operator==(const SortToTerm& stt) const
   return getType() == stt.getType();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::prop::CnfStream.
+ * White box testing of cvc5pp::prop::CnfStream.
  */
 
 #include "base/check.h"
@@ -254,4 +254,4 @@ TEST_F(TestPropWhiteCnfStream, ensure_literal)
   ASSERT_TRUE(d_cnfStream->hasLiteral(a_and_b));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

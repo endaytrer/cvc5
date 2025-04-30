@@ -28,4 +28,4 @@ namespace cvc5pp::internal::options {
 ${modes_impl}$
 // clang-format on
 
-}  // namespace cvc5::internal::options
+}  // namespace cvc5pp::internal::options

@@ -105,6 +105,6 @@ class ProofNodeConverter : protected EnvObj
       const std::vector<std::shared_ptr<ProofNode>>& pchildren);
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

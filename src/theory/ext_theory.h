@@ -324,6 +324,6 @@ class ExtTheory : protected EnvObj, public ProofGenerator
 };
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__EXT_THEORY_H */

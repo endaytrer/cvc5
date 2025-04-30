@@ -49,6 +49,6 @@ class FunctionEnumerator : public TypeEnumeratorBase<FunctionEnumerator>
 
 }  // namespace uf
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__UF__TYPE_ENUMERATOR_H */

@@ -651,6 +651,6 @@ class SatProofManager : protected EnvObj
 }; /* class SatProofManager */
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SAT_PROOF_MANAGER_H */

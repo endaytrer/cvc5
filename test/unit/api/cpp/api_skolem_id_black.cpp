@@ -50,4 +50,4 @@ TEST_F(TestApiBlackSkolemId, skolemIdHash)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

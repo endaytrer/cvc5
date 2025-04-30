@@ -212,6 +212,6 @@ inline std::ostream& operator <<(std::ostream& out, prop::SatValue val) {
 }
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROP__SAT_MODULE_H */

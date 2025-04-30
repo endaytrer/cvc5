@@ -82,6 +82,6 @@ class RelsUtils
 };
 }  // namespace sets
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

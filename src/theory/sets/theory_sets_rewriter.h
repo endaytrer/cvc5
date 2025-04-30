@@ -183,6 +183,6 @@ class TheorySetsRewriter : public TheoryRewriter
 
 }  // namespace sets
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SETS__THEORY_SETS_REWRITER_H */

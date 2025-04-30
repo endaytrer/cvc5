@@ -32,4 +32,4 @@ FloatingPointSize::FloatingPointSize(const FloatingPointSize& old)
   Assert(validSignificandSize(d_sig_size));
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

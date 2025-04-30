@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::Exception.
+ * Black box testing of cvc5pp::Exception.
  */
 
 #include <iostream>
@@ -26,7 +26,7 @@ class TestUtilBlackException : public TestInternal
 {
 };
 
-// cvc5::Exception is a simple class, just test it all at once.
+// cvc5pp::Exception is a simple class, just test it all at once.
 TEST_F(TestUtilBlackException, exceptions)
 {
   Exception e1;
@@ -51,4 +51,4 @@ TEST_F(TestUtilBlackException, exceptions)
   ASSERT_EQ(s3.str(), std::string("three of 'em!"));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -142,4 +142,4 @@ Node BvIntroPow2::pow2Rewrite(Node node, std::unordered_map<Node, Node>& cache)
 }  // namespace passes
 }  // namespace preprocessing
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

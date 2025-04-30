@@ -107,4 +107,4 @@ size_t CodatatypeBoundVariableHashFunction::operator()(
          * IntegerHashFunction()(cbv.getIndex());
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

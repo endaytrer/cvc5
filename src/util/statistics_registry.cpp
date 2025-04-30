@@ -155,4 +155,4 @@ std::ostream& operator<<(std::ostream& os, const StatisticsRegistry& sr)
   return os;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

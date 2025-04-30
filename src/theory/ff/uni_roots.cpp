@@ -224,6 +224,6 @@ std::vector<CoCoA::RingElem> roots(CoCoA::RingElem f)
 
 }  // namespace ff
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5_USE_COCOA */

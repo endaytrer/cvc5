@@ -102,6 +102,6 @@ Node mkGroundTerm(TypeConstant tc);
 Node mkGroundTerm(TypeNode typeNode);
 
 }  // namespace kind
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__TYPE_PROPERTIES_H */

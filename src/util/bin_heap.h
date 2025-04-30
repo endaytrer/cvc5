@@ -383,6 +383,6 @@ private:
 template <class Elem, class CmpFcn>
 const size_t BinaryHeap<Elem,CmpFcn>::MAX_SIZE = (std::numeric_limits<size_t>::max()-2)/2;
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__BIN_HEAP_H */

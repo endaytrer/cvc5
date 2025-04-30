@@ -59,4 +59,4 @@ Language toLanguage(const std::string& language)
 }
 
 }  // namespace language
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

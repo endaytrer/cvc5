@@ -193,6 +193,6 @@ class ApiManager
  */
 cvc5pp::Term applyOracle(JNIEnv* env,
                        jobject oracleRef,
-                       const std::vector<cvc5::Term>& terms);
+                       const std::vector<cvc5pp::Term>& terms);
 
 #endif  // CVC5__API_UTILITIES_H

@@ -387,4 +387,4 @@ std::shared_ptr<ProofNode> LazyCDProofChain::getProofForInternal(Node fact,
 
 std::string LazyCDProofChain::identify() const { return d_name; }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

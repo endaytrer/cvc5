@@ -78,6 +78,6 @@ struct GenericOpHashFunction
   size_t operator()(const GenericOp& op) const;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BUILTIN__GENERIC_OP_H */

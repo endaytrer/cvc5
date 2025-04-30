@@ -259,6 +259,6 @@ class CircuitPropagator : protected EnvObj
 
 }  // namespace booleans
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BOOLEANS__CIRCUIT_PROPAGATOR_H */

@@ -150,4 +150,4 @@ void OutputChannel::trustedLemma(TrustNode plem,
 TheoryId OutputChannel::getId() const { return d_theory; }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

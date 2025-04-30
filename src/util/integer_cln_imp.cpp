@@ -601,4 +601,4 @@ std::ostream& operator<<(std::ostream& os, const Integer& n)
 {
   return os << n.toString();
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

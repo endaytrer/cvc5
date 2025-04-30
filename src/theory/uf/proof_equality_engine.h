@@ -303,6 +303,6 @@ class ProofEqEngine : public EagerProofGenerator
 
 }  // namespace eq
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__STRINGS__PROOF_MANAGER_H */

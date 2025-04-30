@@ -80,6 +80,6 @@ struct FunctionArrayConstHashFunction
   size_t operator()(const FunctionArrayConst& fc) const;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__FUNCTION_ARRAY_CONST_H */

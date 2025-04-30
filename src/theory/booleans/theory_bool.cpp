@@ -97,4 +97,4 @@ std::string TheoryBool::identify() const { return std::string("TheoryBool"); }
 
 }  // namespace booleans
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

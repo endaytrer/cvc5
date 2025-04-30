@@ -53,6 +53,6 @@ class Sampler
   static constexpr double probSpecial = 0.2;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__UTIL_FLOATINGPOINT_SAMPLER_H */

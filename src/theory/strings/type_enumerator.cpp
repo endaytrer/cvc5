@@ -311,4 +311,4 @@ bool SequenceEnumerator::isFinished() { return d_wenum.isFinished(); }
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

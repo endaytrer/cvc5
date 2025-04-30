@@ -87,4 +87,4 @@ JustifyInfo* JustifyStack::getOrAllocJustifyInfo(size_t i)
 }
 
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

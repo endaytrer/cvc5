@@ -2661,4 +2661,4 @@ void DatatypeDeclarationCommand::toStream(std::ostream& out) const
       out, sortVectorToTypeNodes(d_datatypes));
 }
 
-}  // namespace cvc5::parser
+}  // namespace cvc5pp::parser

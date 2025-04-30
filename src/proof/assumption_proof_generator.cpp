@@ -33,4 +33,4 @@ std::string AssumptionProofGenerator::identify() const
   return "AssumptionProofGenerator";
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

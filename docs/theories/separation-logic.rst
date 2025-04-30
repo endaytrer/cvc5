@@ -69,7 +69,7 @@ This command must be executed when the solver is in its Start mode (see page 52 
 
 The syntax for the operators of separation logic is summarized in the following
 table. For the C++ API examples in this table, we assume that we have created
-a :cpp:class:`cvc5::Solver` object.
+a :cpp:class:`cvc5pp::Solver` object.
 
 +----------------------+----------------------------------------------+--------------------------------------------------------------------+
 |                      | SMTLIB language                              | C++ API                                                            |
@@ -86,7 +86,7 @@ a :cpp:class:`cvc5::Solver` object.
 +----------------------+----------------------------------------------+--------------------------------------------------------------------+
 | Magic Wand           | ``(wand c1 c1)``                             | ``solver.mkTerm(Kind::SEP_WAND, {c1, c2});``                       |
 +----------------------+----------------------------------------------+--------------------------------------------------------------------+
-| Nil Element          | ``(as sep.nil <Sort>)``                      | ``solver.mkSepNil(cvc5::Sort sort);``                              |
+| Nil Element          | ``(as sep.nil <Sort>)``                      | ``solver.mkSepNil(cvc5pp::Sort sort);``                              |
 +----------------------+----------------------------------------------+--------------------------------------------------------------------+
 
 

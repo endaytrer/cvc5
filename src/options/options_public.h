@@ -129,6 +129,6 @@ struct CVC5_EXPORT OptionInfo
  */
 OptionInfo getInfo(const Options& opts, const std::string& name) CVC5_EXPORT;
 
-}  // namespace cvc5::internal::options
+}  // namespace cvc5pp::internal::options
 
 #endif

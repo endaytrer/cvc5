@@ -108,6 +108,6 @@ class ProofGenerator
   virtual std::string identify() const = 0;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__PROOF_GENERATOR_H */

@@ -129,4 +129,4 @@ TEST_F(TestTheoryWhiteArith, int_normal_form)
   ASSERT_EQ(rr->rewrite(rr->rewrite(t)), rr->rewrite(t));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

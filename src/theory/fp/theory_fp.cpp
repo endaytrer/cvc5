@@ -946,4 +946,4 @@ bool TheoryFp::collectModelValues(TheoryModel* m,
 
 }  // namespace fp
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

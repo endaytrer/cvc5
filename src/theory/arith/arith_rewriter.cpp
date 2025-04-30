@@ -1417,4 +1417,4 @@ Node ArithRewriter::expandPowConst(NodeManager* nm, const Node& t)
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

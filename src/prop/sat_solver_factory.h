@@ -54,6 +54,6 @@ class SatSolverFactory
 }; /* class SatSolverFactory */
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif  // CVC5__PROP__SAT_SOLVER_FACTORY_H

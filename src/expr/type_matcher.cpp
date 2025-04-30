@@ -134,4 +134,4 @@ void TypeMatcher::getMatches(std::vector<TypeNode>& types) const
   }
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

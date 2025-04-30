@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::InteractiveShell.
+ * Black box testing of cvc5pp::InteractiveShell.
  */
 
 #include <cvc5/cvc5.h>
@@ -135,4 +135,4 @@ TEST_F(TestMainBlackInteractiveShell, repeated_empty_lines)
   countCommands(shell, 0, 3);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

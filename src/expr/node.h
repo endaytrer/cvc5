@@ -131,7 +131,7 @@ typedef NodeTemplate<true> Node;
  */
 typedef NodeTemplate<false> TNode;
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 
@@ -987,7 +987,7 @@ std::ostream& operator<<(
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 //#include "expr/attribute.h"
 #include "expr/node_manager.h"
@@ -1464,6 +1464,6 @@ Node NodeTemplate<ref_count>::substitute(
   }
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__NODE_H */

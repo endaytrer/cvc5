@@ -172,4 +172,4 @@ Node LemmaInprocess::processInternal(const Node& lem)
 }
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

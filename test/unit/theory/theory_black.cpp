@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::theory.
+ * Black box testing of cvc5pp::theory.
  */
 
 #include <sstream>
@@ -130,4 +130,4 @@ TEST_F(TestTheoryBlack, array_const)
   ASSERT_TRUE(arr2.isConst());
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

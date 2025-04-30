@@ -124,4 +124,4 @@ void ProofPostprocess::process(std::shared_ptr<ProofNode> pf)
 }
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

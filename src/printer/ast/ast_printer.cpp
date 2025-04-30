@@ -187,13 +187,13 @@ void AstPrinter::toStreamCmdRecoverableFailure(std::ostream& out,
 void AstPrinter::toStreamCmdEmpty(std::ostream& out,
                                   const std::string& name) const
 {
-  out << "Emptycvc5::Command(" << name << ')' << std::endl;
+  out << "Emptycvc5pp::Command(" << name << ')' << std::endl;
 }
 
 void AstPrinter::toStreamCmdEcho(std::ostream& out,
                                  const std::string& output) const
 {
-  out << "Echocvc5::Command(" << output << ')' << std::endl;
+  out << "Echocvc5pp::Command(" << output << ')' << std::endl;
 }
 
 void AstPrinter::toStreamCmdAssert(std::ostream& out, Node n) const
@@ -367,7 +367,7 @@ void AstPrinter::toStreamCmdGetOption(std::ostream& out,
 void AstPrinter::toStreamCmdDatatypeDeclaration(
     std::ostream& out, const std::vector<TypeNode>& datatypes) const
 {
-  out << "DatatypeDeclarationcvc5::Command([";
+  out << "DatatypeDeclarationcvc5pp::Command([";
   for (const TypeNode& t : datatypes)
   {
     out << t << ";" << endl;
@@ -421,4 +421,4 @@ void AstPrinter::toStreamWithLetify(std::ostream& out,
 
 }  // namespace ast
 }  // namespace printer
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

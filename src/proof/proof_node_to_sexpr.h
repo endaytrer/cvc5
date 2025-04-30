@@ -130,6 +130,6 @@ class ProofNodeToSExpr
   Node getOrMkNodeVariable(TNode n);
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__PROOF_NODE_TO_SEXPR_H */

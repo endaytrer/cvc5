@@ -177,6 +177,6 @@ class SetDefaults : protected EnvObj
 };
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SMT__SET_DEFAULTS_H */

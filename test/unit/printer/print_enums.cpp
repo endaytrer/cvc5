@@ -67,4 +67,4 @@ TEST_F(TestPrintEnums, print_enums)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

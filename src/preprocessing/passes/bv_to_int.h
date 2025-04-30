@@ -51,6 +51,6 @@ class BVToInt : public PreprocessingPass
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* __CVC5__PREPROCESSING__PASSES__BV_TO_INT_H */

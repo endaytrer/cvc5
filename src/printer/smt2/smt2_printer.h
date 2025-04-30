@@ -385,6 +385,6 @@ class Smt2Printer : public cvc5pp::internal::Printer
 
 }  // namespace smt2
 }  // namespace printer
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PRINTER__SMT2_PRINTER_H */

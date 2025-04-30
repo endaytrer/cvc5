@@ -836,4 +836,4 @@ Node TheoryArraysRewriter::mkEqNode(const Node& a, const Node& b) const
   
 }  // namespace arrays
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

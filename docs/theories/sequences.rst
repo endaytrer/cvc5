@@ -97,7 +97,7 @@ Syntax
 ^^^^^^
 
 For the C++ API examples in the table below, we assume that we have created
-a :cpp:class:`Solver <cvc5::Solver>` object ``solver``.
+a :cpp:class:`Solver <cvc5pp::Solver>` object ``solver``.
 
 +----------------------+----------------------------------------------+--------------------------------------------------------------------+
 |                      | SMT-LIB language                             | C++ API                                                            |

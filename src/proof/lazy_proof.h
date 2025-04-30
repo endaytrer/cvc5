@@ -122,6 +122,6 @@ class LazyCDProof : public CDProof
   ProofNodeSet d_allVisited;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__LAZY_PROOF_H */

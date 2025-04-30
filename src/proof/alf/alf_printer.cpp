@@ -1178,4 +1178,4 @@ size_t AlfPrinter::allocateProofId(const ProofNode* pn, bool& wasAlloc)
 }
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

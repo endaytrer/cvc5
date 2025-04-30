@@ -252,4 +252,4 @@ void CommandExecutor::flushOutputStreams() {
   d_solver->getDriverOptions().err() << std::flush;
 }
 
-}  // namespace cvc5::main
+}  // namespace cvc5pp::main

@@ -49,6 +49,6 @@ std::vector<std::string> parse(cvc5pp::Solver& solver,
                                char* argv[],
                                std::string& binaryName);
 
-}  // namespace cvc5::main
+}  // namespace cvc5pp::main
 
 #endif

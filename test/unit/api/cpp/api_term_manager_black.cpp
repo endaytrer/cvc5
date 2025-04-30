@@ -1195,7 +1195,7 @@ TEST_F(TestApiBlackTermManager, getStatistics)
     // check some basic utility methods
     ASSERT_TRUE(!(it == stats.end()));
     ASSERT_EQ(s.first, it->first);
-    if (s.first == "cvc5::CONSTANT")
+    if (s.first == "cvc5pp::CONSTANT")
     {
       ASSERT_FALSE(s.second.isInternal());
       ASSERT_FALSE(s.second.isDefault());
@@ -1231,10 +1231,10 @@ TEST_F(TestApiBlackTermManager, printStatisticsSafe)
   d_tm.printStatisticsSafe(STDOUT_FILENO);
   std::string out = testing::internal::GetCapturedStdout();
   std::stringstream expected;
-  expected << "cvc5::CONSTANT = { integer type: 1, UNKNOWN_TYPE_CONSTANT: 1 }"
+  expected << "cvc5pp::CONSTANT = { integer type: 1, UNKNOWN_TYPE_CONSTANT: 1 }"
            << std::endl
-           << "cvc5::TERM = { <unsupported>: 1 }" << std::endl;
+           << "cvc5pp::TERM = { <unsupported>: 1 }" << std::endl;
   ASSERT_EQ(out, expected.str());
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

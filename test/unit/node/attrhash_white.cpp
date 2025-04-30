@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::internal::expr::attr::AttrHash<>
+ * White box testing of cvc5pp::internal::expr::attr::AttrHash<>
  */
 
 #include "test_node.h"
@@ -247,4 +247,4 @@ TEST_F(AttrHashFixture, repeated_inserts)
 }
 
 } // namespace test
-} // namespace cvc5::internal
+} // namespace cvc5pp::internal

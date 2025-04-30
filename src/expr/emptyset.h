@@ -53,6 +53,6 @@ struct EmptySetHashFunction
   size_t operator()(const EmptySet& es) const;
 }; /* struct EmptySetHashFunction */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EMPTY_SET_H */

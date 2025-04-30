@@ -200,4 +200,4 @@ TEST_F(TestNodeBlackNodeAlgorithm, match)
   ASSERT_EQ(subs[x], a);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -482,4 +482,4 @@ bool TimeoutCoreManager::hasCurrentSharedSymbol(size_t i) const
 }
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

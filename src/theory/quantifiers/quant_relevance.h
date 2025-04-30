@@ -64,6 +64,6 @@ class QuantRelevance : public QuantifiersUtil
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANT_RELEVANCE_H */

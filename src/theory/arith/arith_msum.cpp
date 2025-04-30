@@ -332,4 +332,4 @@ void ArithMSum::debugPrintMonomialSum(std::map<Node, Node>& msum, const char* c)
 }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

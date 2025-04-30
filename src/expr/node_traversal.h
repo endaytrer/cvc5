@@ -145,6 +145,6 @@ class NodeDfsIterable
   std::function<bool(TNode)> d_skipIf;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif  // CVC5__EXPR__NODE_TRAVERSAL_H

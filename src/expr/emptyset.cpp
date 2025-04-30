@@ -48,4 +48,4 @@ bool EmptySet::operator==(const EmptySet& es) const
 {
   return getType() == es.getType();
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

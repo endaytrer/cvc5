@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::Rational.
+ * White box testing of cvc5pp::Rational.
  */
 
 #include <sstream>
@@ -415,4 +415,4 @@ TEST_F(TestUtilWhiteRational, constructrion)
   ASSERT_EQ(Rational(u), Rational(u));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

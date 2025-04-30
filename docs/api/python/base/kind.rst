@@ -14,7 +14,7 @@ an equality over terms of any sort has kind
 quantified formula has kind :py:obj:`FORALL <cvc5.Kind.FORALL>`.
 
 The kinds below directly correspond to the enum values of the C++
-:cpp:enum:`Kind <cvc5::Kind>` enum.
+:cpp:enum:`Kind <cvc5pp::Kind>` enum.
 
 ----
 

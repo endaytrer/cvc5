@@ -3133,7 +3133,7 @@ void ApproxGLPK::tryCut(int nid, CutInfo& cut)
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 /* End GPLK implementation. */
 #endif /*#ifdef CVC5_USE_GLPK */
 
@@ -3189,5 +3189,5 @@ std::ostream& operator<<(std::ostream& out, MipResult res)
 
 }  // namespace arith::linear
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 /* End GPLK/NOGLPK Glue code. */

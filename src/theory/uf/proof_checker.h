@@ -45,6 +45,6 @@ class UfProofRuleChecker : public ProofRuleChecker
 
 }  // namespace uf
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__UF__PROOF_CHECKER_H */

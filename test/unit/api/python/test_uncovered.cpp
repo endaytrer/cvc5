@@ -540,4 +540,4 @@ TEST_F(TestApiBlackUncovered, Parser)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

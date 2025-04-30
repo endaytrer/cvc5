@@ -99,6 +99,6 @@ class SygusSimpleSymBreak
 
 }  // namespace datatypes
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__DATATYPES__SIMPLE_SYM_BREAK_H */

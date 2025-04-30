@@ -92,6 +92,6 @@ const MapMappedTypeT<M>& FindOrDie(const M& map, const MapKeyTypeT<M>& key)
   return (*it).second;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__BASE__MAP_UTIL_H */

@@ -70,6 +70,6 @@ class CDProofSet
   std::string d_namePrefix;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__LAZY_PROOF_SET_H */

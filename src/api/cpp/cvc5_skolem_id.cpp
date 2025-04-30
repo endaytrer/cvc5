@@ -34,7 +34,7 @@ std::ostream& operator<<(std::ostream& out, SkolemId id)
   out << std::to_string(id);
   return out;
 }
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 

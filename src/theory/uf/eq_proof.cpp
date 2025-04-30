@@ -1515,4 +1515,4 @@ Node EqProof::addToProof(CDProof* p,
 
 }  // namespace eq
 }  // Namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

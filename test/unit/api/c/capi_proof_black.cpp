@@ -225,4 +225,4 @@ TEST_F(TestCApiBlackProof, copy_release)
   // we cannot reliably check that querying on the (now freed) proof fails
   // unless ASAN is enabled
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

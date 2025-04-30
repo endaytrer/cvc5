@@ -332,7 +332,7 @@ std::ostream& operator<<(std::ostream& out, ProofRewriteRule rule)
   return out;
 }
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 

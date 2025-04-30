@@ -46,4 +46,4 @@ std::ostream& operator<<(std::ostream& out, InternalSkolemId id)
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

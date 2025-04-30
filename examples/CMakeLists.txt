@@ -50,7 +50,7 @@ macro(cvc5_add_example name src_files output_dir)
   endif()
 
   add_executable(${name} ${src_files_list})
-  target_link_libraries(${name} cvc5::cvc5 cvc5::cvc5parser)
+  target_link_libraries(${name} cvc5pp::cvc5 cvc5pp::cvc5parser)
 
   # The test target is prefixed with the path,
   # e.g., for '<output_dir>/myexample.cpp'
@@ -73,17 +73,17 @@ cvc5_add_example(simple_vc_quant_cxx "" "")
 add_subdirectory(api/cpp)
 add_subdirectory(api/c)
 
-if(TARGET cvc5::cvc5jar)
+if(TARGET cvc5pp::cvc5jar)
   find_package(Java REQUIRED)
   include(UseJava)
 
   # get directory build/install/lib where libcvc5jni.so is installed
-  get_target_property(CVC5_LIB_FILE cvc5::cvc5 LOCATION)
+  get_target_property(CVC5_LIB_FILE cvc5pp::cvc5 LOCATION)
   get_filename_component(CVC5_JNI_PATH ${CVC5_LIB_FILE} DIRECTORY)
   message(STATUS "CVC5_JNI_PATH: ${CVC5_JNI_PATH}")
 
 
-  get_target_property(CVC5_JAR cvc5::cvc5jar JAR_FILE)
+  get_target_property(CVC5_JAR cvc5pp::cvc5jar JAR_FILE)
   message(STATUS "cvc5jar: ${CVC5_JAR}")
 
   if(WIN32)

@@ -517,4 +517,4 @@ Node mkCodeRange(Node t, uint32_t alphaCard)
 }  // namespace utils
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

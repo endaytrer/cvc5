@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Public-box testing of cvc5::Cardinality.
+ * Public-box testing of cvc5pp::Cardinality.
  */
 
 #include <sstream>
@@ -269,4 +269,4 @@ TEST_F(TestUtilBlackCardinality, cardinalities)
   ASSERT_EQ((z ^ z).getBethNumber(), 3);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

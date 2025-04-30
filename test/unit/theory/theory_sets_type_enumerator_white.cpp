@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::theory::sets::SetsTypeEnumerator
+ * White box testing of cvc5pp::theory::sets::SetsTypeEnumerator
  *
  * These tests depend on the ordering that the SetsTypeEnumerator use, so
  * it's a white-box test.
@@ -152,4 +152,4 @@ TEST_F(TestTheoryWhiteSetsTypeEnumerator, bv)
   ASSERT_TRUE(setEnumerator.isFinished());
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

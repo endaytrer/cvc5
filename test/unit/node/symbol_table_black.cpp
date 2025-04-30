@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::SymbolTable.
+ * Black box testing of cvc5pp::SymbolTable.
  */
 
 #include <sstream>
@@ -146,4 +146,4 @@ TEST_F(TestNodeBlackSymbolTable, bad_pop)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

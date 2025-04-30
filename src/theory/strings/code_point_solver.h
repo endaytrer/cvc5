@@ -72,6 +72,6 @@ class CodePointSolver : protected EnvObj
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__STRINGS__CODE_POINT_SOLVER_H */

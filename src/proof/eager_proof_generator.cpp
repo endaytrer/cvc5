@@ -181,4 +181,4 @@ TrustNode EagerProofGenerator::mkTrustNodeSplit(Node f)
 
 std::string EagerProofGenerator::identify() const { return d_name; }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

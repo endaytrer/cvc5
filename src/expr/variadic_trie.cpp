@@ -52,4 +52,4 @@ bool VariadicTrie::hasSubset(const std::vector<Node>& is) const
   return false;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::parser::InputParser for SMT-LIbv2 inputs.
+ * Black box testing of cvc5pp::parser::InputParser for SMT-LIbv2 inputs.
  */
 
 #include <cvc5/cvc5.h>
@@ -297,4 +297,4 @@ TEST_F(TestParserBlackSmt2InputParser, bad_exprs)
 #endif
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

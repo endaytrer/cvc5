@@ -874,6 +874,6 @@ const uint64_t Attribute<T, bool>::s_id =
     Attribute<T, bool>::registerAttribute();
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__ATTRIBUTE_INTERNALS_H */

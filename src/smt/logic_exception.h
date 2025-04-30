@@ -41,6 +41,6 @@ class LogicException : public cvc5pp::internal::Exception
   }
 }; /* class LogicException */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__SMT__LOGIC_EXCEPTION_H */

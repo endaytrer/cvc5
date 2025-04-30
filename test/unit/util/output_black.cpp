@@ -143,4 +143,4 @@ TEST_F(TestUtilBlackOutput, simple_print)
 #endif /* CVC5_MUZZLE */
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

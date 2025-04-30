@@ -202,6 +202,6 @@ class RewriteProofRule
 };
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__REWRITER__REWRITE_PROOF_RULE__H */

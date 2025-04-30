@@ -65,4 +65,4 @@ bool Random::pickWithProb(double probability)
   return r < p;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

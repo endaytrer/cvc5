@@ -683,4 +683,4 @@ TEST_F(TestApiBlackDatatype, datatypeSpecializedCons)
   ASSERT_THROW(nilc.getInstantiatedTerm(isort), CVC5ApiException);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

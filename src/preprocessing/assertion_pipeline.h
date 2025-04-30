@@ -249,6 +249,6 @@ class AssertionPipeline : protected EnvObj
 }; /* class AssertionPipeline */
 
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PREPROCESSING__ASSERTION_PIPELINE_H */

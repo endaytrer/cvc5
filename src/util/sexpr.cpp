@@ -55,4 +55,4 @@ void toSExpr(std::ostream& out, const std::unique_ptr<StatisticBaseValue>& sbv)
   out << *sbv;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

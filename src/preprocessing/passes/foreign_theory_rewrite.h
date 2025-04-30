@@ -68,6 +68,6 @@ class ForeignTheoryRewrite : public PreprocessingPass
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PREPROCESSING__PASSES__FOREIGN_THEORY_REWRITE_H */

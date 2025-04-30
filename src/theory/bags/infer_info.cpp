@@ -91,4 +91,4 @@ std::ostream& operator<<(std::ostream& out, const InferInfo& ii)
 
 }  // namespace bags
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

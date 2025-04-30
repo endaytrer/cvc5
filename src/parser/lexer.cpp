@@ -146,4 +146,4 @@ bool Lexer::eatTokenChoice(Token t, Token f)
 }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

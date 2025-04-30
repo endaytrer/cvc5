@@ -51,6 +51,6 @@ class CarePairArgumentCallback : public NodeTriePathPairProcessCallback
 };
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__CARE_ARGUMENT_CALLBACK_H */

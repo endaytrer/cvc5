@@ -64,4 +64,4 @@ TEST_F(TestCApiProofRewriteRule, hash)
   ASSERT_EQ(cvc5_proof_rewrite_rule_hash(CVC5_PROOF_REWRITE_RULE_NONE),
             static_cast<size_t>(CVC5_PROOF_REWRITE_RULE_NONE));
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

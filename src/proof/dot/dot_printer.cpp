@@ -537,4 +537,4 @@ void DotPrinter::ruleArguments(std::ostringstream& currentArguments,
 }
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

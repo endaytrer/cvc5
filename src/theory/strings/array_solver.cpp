@@ -448,4 +448,4 @@ const std::map<Node, Node>& ArraySolver::getConnectedSequences()
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

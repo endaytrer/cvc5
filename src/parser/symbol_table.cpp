@@ -726,4 +726,4 @@ size_t SymbolTable::getLevel() const { return d_implementation->getLevel(); }
 void SymbolTable::reset() { d_implementation->reset(); }
 void SymbolTable::resetAssertions() { d_implementation->resetAssertions(); }
 
-}  // namespace cvc5::internal::parser
+}  // namespace cvc5pp::internal::parser

@@ -71,4 +71,4 @@ using DatatypeIndexAttr = Attribute<attr::DatatypeIndexTag, uint64_t>;
 using OracleIndexAttr = expr::Attribute<expr::attr::OracleIndexTag, uint64_t>;
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

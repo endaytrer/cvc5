@@ -145,6 +145,6 @@ class SharedSolver : protected EnvObj
 };
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SHARED_SOLVER__H */

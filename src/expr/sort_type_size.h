@@ -44,6 +44,6 @@ struct SortTypeSize
   size_t getTypeSize(const TypeNode& tn);
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__SORT_TYPE_SIZE_H */

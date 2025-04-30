@@ -120,6 +120,6 @@ class SygusRedundantCons : protected EnvObj
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANTIFIERS__SYGUS_GRAMMAR_RED_H */

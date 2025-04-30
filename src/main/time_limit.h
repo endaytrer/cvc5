@@ -44,6 +44,6 @@ struct TimeLimit
  */
 TimeLimit install_time_limit(uint64_t ms);
 
-}  // namespace cvc5::main
+}  // namespace cvc5pp::main
 
 #endif /* CVC5__MAIN__TIME_LIMIT_H */

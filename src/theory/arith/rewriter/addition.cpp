@@ -292,4 +292,4 @@ Node distributeMultiplication(const std::vector<TNode>& factors)
 }  // namespace rewriter
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

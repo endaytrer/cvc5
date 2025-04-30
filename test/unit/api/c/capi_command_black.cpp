@@ -104,4 +104,4 @@ TEST_F(TestCApiBlackCommand, get_name)
   ASSERT_EQ(cvc5_cmd_get_name(cmd), std::string("get-model"));
   ASSERT_DEATH(cvc5_cmd_get_name(nullptr), "invalid command");
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

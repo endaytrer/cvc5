@@ -93,7 +93,7 @@ class KissatSolver : public SatSolver
 };
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif  // CVC5_USE_KISSAT
 #endif  // CVC5__PROP__KISSAT_H

@@ -182,7 +182,7 @@ cdef class SymbolManager:
 
         The symbol manager's interface is otherwise not publicly available.
 
-        Wrapper class for the C++ class :cpp:class:`cvc5::parser::SymbolManager`.
+        Wrapper class for the C++ class :cpp:class:`cvc5pp::parser::SymbolManager`.
     """
     cdef c_SymbolManager* csm
     cdef TermManager tm
@@ -270,7 +270,7 @@ cdef class Command:
         Commands are constructed by the input parser and can be invoked on
         the solver and symbol manager.
 
-        Wrapper class for the C++ class :cpp:class:`cvc5::parser::Command`.
+        Wrapper class for the C++ class :cpp:class:`cvc5pp::parser::Command`.
     """
     cdef c_Command cc
 
@@ -342,7 +342,7 @@ cdef class InputParser:
         manager) has its logic set, then the symbol manager (resp. solver) is set to
         use that logic, if its logic is not already set.
 
-        Wrapper class for the C++ class :cpp:class:`cvc5::parser::InputParser`.
+        Wrapper class for the C++ class :cpp:class:`cvc5pp::parser::InputParser`.
     """
     cdef c_InputParser* cip
     cdef Solver solver
@@ -444,7 +444,7 @@ cdef class Datatype:
     """
         A cvc5 datatype.
 
-        Wrapper class for the C++ class :cpp:class:`cvc5::Datatype`.
+        Wrapper class for the C++ class :cpp:class:`cvc5pp::Datatype`.
     """
     cdef c_Datatype cdt
     cdef TermManager tm
@@ -572,7 +572,7 @@ cdef class DatatypeConstructor:
     """
         A cvc5 datatype constructor.
 
-        Wrapper class for :cpp:class:`cvc5::DatatypeConstructor`.
+        Wrapper class for :cpp:class:`cvc5pp::DatatypeConstructor`.
     """
     cdef c_DatatypeConstructor cdtcons
     cdef TermManager tm
@@ -718,7 +718,7 @@ cdef class DatatypeConstructorDecl:
         A cvc5 datatype constructor declaration. A datatype constructor
         declaration is a specification used for creating a datatype constructor.
 
-        Wrapper class for :cpp:class:`cvc5::DatatypeConstructorDecl`.
+        Wrapper class for :cpp:class:`cvc5pp::DatatypeConstructorDecl`.
     """
     cdef c_DatatypeConstructorDecl cdtconsdecl
     cdef TermManager tm
@@ -784,7 +784,7 @@ cdef class DatatypeDecl:
             - :py:meth:`Solver.mkDatatypeSort()`
             - :py:meth:`Solver.mkDatatypeSorts()`
 
-        Wrapper class for :cpp:class:`cvc5::DatatypeDecl`.
+        Wrapper class for :cpp:class:`cvc5pp::DatatypeDecl`.
     """
     cdef c_DatatypeDecl cdtdecl
     cdef TermManager tm
@@ -836,7 +836,7 @@ cdef class DatatypeSelector:
     """
         A cvc5 datatype selector.
 
-        Wrapper class for :cpp:class:`cvc5::DatatypeSelector`.
+        Wrapper class for :cpp:class:`cvc5pp::DatatypeSelector`.
     """
     cdef c_DatatypeSelector cdtsel
     cdef TermManager tm
@@ -905,7 +905,7 @@ cdef class Op:
         a term of kind
         :py:obj:`BITVECTOR_EXTRACT <Kind.BITVECTOR_EXTRACT>`.
 
-        Wrapper class for :cpp:class:`cvc5::Op`.
+        Wrapper class for :cpp:class:`cvc5pp::Op`.
     """
     cdef c_Op cop
     cdef TermManager tm
@@ -969,7 +969,7 @@ cdef class Grammar:
         of terms. Its interface coincides with the definition of grammars
         (``GrammarDef``) in the SyGuS IF 2.1 standard.
 
-        Wrapper class for :cpp:class:`cvc5::Grammar`.
+        Wrapper class for :cpp:class:`cvc5pp::Grammar`.
     """
     cdef c_Grammar  cgrammar
     cdef TermManager tm
@@ -1029,7 +1029,7 @@ cdef class Result:
     """
         Encapsulation of a three-valued solver result, with explanations.
 
-        Wrapper class for :cpp:class:`cvc5::Result`.
+        Wrapper class for :cpp:class:`cvc5pp::Result`.
     """
     cdef c_Result cr
     def __cinit__(self):
@@ -1150,7 +1150,7 @@ cdef class TermManager:
     """
         A cvc5 term manager.
 
-        Wrapper class for :cpp:class:`cvc5::TermManager`.
+        Wrapper class for :cpp:class:`cvc5pp::TermManager`.
     """
     cdef c_TermManager* ctm
 
@@ -1717,7 +1717,7 @@ cdef class TermManager:
 
             First converts the arguments to a temporary string, either
             ``"<numerator>"`` or ``"<numerator>/<denominator>"``. This temporary
-            string is forwarded to :cpp:func:`cvc5::Solver::mkReal()` and should
+            string is forwarded to :cpp:func:`cvc5pp::Solver::mkReal()` and should
             thus represent an integer, a decimal number or a fraction.
 
             :param numerator: The numerator.
@@ -2128,7 +2128,7 @@ cdef class Plugin:
     """
         A cvc5 plugin.
 
-        Wrapper class for :cpp:class:`cvc5::Plugin`.
+        Wrapper class for :cpp:class:`cvc5pp::Plugin`.
     """
     cdef c_PyPlugin* cplugin
     cdef TermManager tm
@@ -2192,7 +2192,7 @@ cdef class Solver:
     """
         A cvc5 solver.
 
-        Wrapper class for :cpp:class:`cvc5::Solver`.
+        Wrapper class for :cpp:class:`cvc5pp::Solver`.
     """
     cdef c_Solver* csolver
     cdef TermManager tm
@@ -2733,7 +2733,7 @@ cdef class Solver:
 
             First converts the arguments to a temporary string, either
             ``"<numerator>"`` or ``"<numerator>/<denominator>"``. This temporary
-            string is forwarded to :cpp:func:`cvc5::Solver::mkReal()` and should
+            string is forwarded to :cpp:func:`cvc5pp::Solver::mkReal()` and should
             thus represent an integer, a decimal number or a fraction.
 
             :param numerator: The numerator.
@@ -3716,7 +3716,7 @@ cdef class Solver:
         """
             Get some information about the given option.
             Returns the information provided by the C++
-            :cpp:class:`OptionInfo <cvc5::OptionInfo>` as a dictionary.
+            :cpp:class:`OptionInfo <cvc5pp::OptionInfo>` as a dictionary.
 
             :return: Information about the given option.
         """
@@ -4400,7 +4400,7 @@ cdef class Solver:
             :param conj: The conjecture term.
             :param grammar: A grammar for the abduct.
             :return: The abduct.
-                     See :cpp:func:`cvc5::Solver::getAbduct` for details.
+                     See :cpp:func:`cvc5pp::Solver::getAbduct` for details.
         """
         if grammar is None:
             return _term(self.tm, self.csolver.getAbduct(conj.cterm))
@@ -4514,7 +4514,7 @@ cdef class Sort:
     """
         The sort of a cvc5 term.
 
-        Wrapper class for :cpp:class:`cvc5::Sort`.
+        Wrapper class for :cpp:class:`cvc5pp::Sort`.
     """
     cdef c_Sort csort
     cdef TermManager tm
@@ -5079,7 +5079,7 @@ cdef class Statistics:
     """
         The cvc5 Statistics.
 
-        Wrapper class for :cpp:class:`cvc5::Statistics`.
+        Wrapper class for :cpp:class:`cvc5pp::Statistics`.
 
         Obtain a single statistic value using ``stats["name"]`` and a
         dictionary with, configurably all (including internal and unchanged)
@@ -5166,7 +5166,7 @@ cdef class Term:
     """
         A cvc5 Term.
 
-        Wrapper class for :cpp:class:`cvc5::Term`.
+        Wrapper class for :cpp:class:`cvc5pp::Term`.
     """
     cdef c_Term cterm
     cdef TermManager tm
@@ -5841,7 +5841,7 @@ cdef class Proof:
         root step of a proof.  The branches of the root step are the premises of
         the step.
 
-        Wrapper class for :cpp:class:`cvc5::Proof`.
+        Wrapper class for :cpp:class:`cvc5pp::Proof`.
     """
     cdef c_Proof cproof
     cdef TermManager tm

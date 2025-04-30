@@ -203,5 +203,5 @@ void intersect(const std::vector<uint32_t>& v1,
 
 }  // namespace bv
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 #endif

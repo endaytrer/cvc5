@@ -68,6 +68,6 @@ class Plugin
   NodeManager* d_nm;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /*CVC5__EXPR__PLUGIN_H*/

@@ -121,6 +121,6 @@ enum Token : uint32_t
 std::ostream& operator<<(std::ostream& o, Token t);
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__SMT2_H */

@@ -469,6 +469,6 @@ inline std::ostream& operator<<(std::ostream& os, const IntToBitVector& bv)
   return os << "[" << bv.d_size << "]";
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__BITVECTOR_H */

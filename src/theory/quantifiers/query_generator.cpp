@@ -100,4 +100,4 @@ bool QueryGeneratorBasic::addTerm(Node n, std::vector<Node>& queries)
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

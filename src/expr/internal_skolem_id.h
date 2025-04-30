@@ -96,6 +96,6 @@ inline SkolemFlags operator&(SkolemFlags lhs, SkolemFlags rhs)
       & static_cast<std::underlying_type_t<SkolemFlags>>(rhs));
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__INTERNAL_SKOLEM_ID_H */

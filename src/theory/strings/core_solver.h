@@ -609,6 +609,6 @@ class CoreSolver : public InferSideEffectProcess, protected EnvObj
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__STRINGS__CORE_SOLVER_H */

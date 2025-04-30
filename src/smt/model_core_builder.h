@@ -62,6 +62,6 @@ class ModelCoreBuilder : protected EnvObj
                     options::ModelCoresMode mode);
 }; /* class TheoryModelCoreBuilder */
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__MODEL_CORE_BUILDER_H */

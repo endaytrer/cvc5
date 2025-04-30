@@ -149,6 +149,6 @@ class ConflictProcessor : protected EnvObj
 };
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__ASSIGNER_H */

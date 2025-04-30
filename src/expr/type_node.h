@@ -787,7 +787,7 @@ inline std::ostream& operator<<(std::ostream& out, const TypeNode& n) {
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 
@@ -1018,6 +1018,6 @@ inline bool TypeNode::isPredicateLike() const {
   return isFunctionLike() && getRangeType().isBoolean();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__NODE_H */

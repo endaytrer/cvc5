@@ -1193,4 +1193,4 @@ const std::unordered_set<TypeNode>& LfscNodeConverter::getDeclaredTypes() const
 }
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

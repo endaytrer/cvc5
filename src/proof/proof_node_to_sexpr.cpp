@@ -341,4 +341,4 @@ ProofNodeToSExpr::ArgFormat ProofNodeToSExpr::getArgumentFormat(
   return ArgFormat::DEFAULT;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

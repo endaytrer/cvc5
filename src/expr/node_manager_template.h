@@ -69,8 +69,8 @@ class TypeChecker;
  */
 class NodeManager
 {
-  friend class cvc5::Solver;
-  friend class cvc5::TermManager;
+  friend class cvc5pp::Solver;
+  friend class cvc5pp::TermManager;
   friend class expr::NodeValue;
   friend class expr::TypeChecker;
   friend class SkolemManager;
@@ -145,7 +145,7 @@ class NodeManager
   /**
    * Get the (singleton) operator of an OPERATOR-kinded kind.  The
    * returned node n will have kind BUILTIN, and calling
-   * n.getConst<cvc5::internal::Kind>() will yield k.
+   * n.getConst<cvc5pp::internal::Kind>() will yield k.
    */
   TNode operatorOf(Kind k);
 
@@ -1064,7 +1064,7 @@ class NodeManager
    * ADD, are APPLYs of a ADD operator to arguments.  This array
    * holds the set of operators for these things.  A ADD operator is
    * a Node with kind "BUILTIN", and if you call
-   * plusOperator->getConst<cvc5::internal::Kind>(), you get Kind::ADD back.
+   * plusOperator->getConst<cvc5pp::internal::Kind>(), you get Kind::ADD back.
    */
   Node d_operators[static_cast<uint32_t>(Kind::LAST_KIND)];
 
@@ -1276,7 +1276,7 @@ inline TypeNode NodeManager::mkTypeNode(Kind kind,
 ${metakind_mkConstDelete}
 // clang-format off
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 }
 
 #endif /* CVC5__NODE_MANAGER_H */

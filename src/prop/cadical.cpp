@@ -1320,4 +1320,4 @@ std::shared_ptr<ProofNode> CadicalSolver::getProof()
 
 /* -------------------------------------------------------------------------- */
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

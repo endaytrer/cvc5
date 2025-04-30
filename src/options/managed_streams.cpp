@@ -151,4 +151,4 @@ bool ManagedOut::specialCases(const std::string& value)
   return false;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

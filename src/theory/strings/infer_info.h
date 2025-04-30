@@ -151,6 +151,6 @@ std::ostream& operator<<(std::ostream& out, const InferInfo& ii);
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__STRINGS__INFER_INFO_H */

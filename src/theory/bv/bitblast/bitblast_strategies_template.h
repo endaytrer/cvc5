@@ -890,6 +890,6 @@ void DefaultRotateLeftBB (TNode node, std::vector<T>& bits, TBitblaster<T>* bb) 
 
 }
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

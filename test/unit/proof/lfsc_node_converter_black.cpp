@@ -57,4 +57,4 @@ TEST_F(TestLfscNodeConverterBlack, ident_sanitize)
 
 }  // namespace test
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

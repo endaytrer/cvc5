@@ -103,6 +103,6 @@ class LambdaLift : protected EnvObj
 
 }  // namespace uf
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__UF__LAMBDA_LIFT_H */

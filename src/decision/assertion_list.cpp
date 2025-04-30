@@ -132,4 +132,4 @@ void AssertionList::notifyStatus(TNode n, DecisionStatus s)
 }
 
 }  // namespace decision
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

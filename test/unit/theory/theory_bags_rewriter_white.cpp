@@ -762,4 +762,4 @@ TEST_F(TestTheoryWhiteBagsRewriter, fold)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

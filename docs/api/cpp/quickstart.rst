@@ -1,7 +1,7 @@
 Quickstart Guide
 ================
 
-First, create a cvc5 :cpp:class:`TermManager <cvc5::TermManager>` instance:
+First, create a cvc5 :cpp:class:`TermManager <cvc5pp::TermManager>` instance:
 
 .. literalinclude:: ../../../examples/api/cpp/quickstart.cpp
    :language: cpp
@@ -9,7 +9,7 @@ First, create a cvc5 :cpp:class:`TermManager <cvc5::TermManager>` instance:
    :start-after: docs-cpp-quickstart-0 start
    :end-before: docs-cpp-quickstart-0 end
 
-Then, create a cvc5 :cpp:class:`Solver <cvc5::Solver>` instance:
+Then, create a cvc5 :cpp:class:`Solver <cvc5pp::Solver>` instance:
 
 .. literalinclude:: ../../../examples/api/cpp/quickstart.cpp
    :language: cpp
@@ -85,9 +85,9 @@ the constraints.
 The result we get from this satisfiability check is either ``sat``, ``unsat``
 or ``unknown``.
 It's status can be queried via
-:cpp:func:`cvc5::Result::isSat`,
-:cpp:func:`cvc5::Result::isUnsat` and
-:cpp:func:`cvc5::Result::isSatUnknown`.
+:cpp:func:`cvc5pp::Result::isSat`,
+:cpp:func:`cvc5pp::Result::isUnsat` and
+:cpp:func:`cvc5pp::Result::isSatUnknown`.
 Alternatively, it can also be printed.
 
 .. literalinclude:: ../../../examples/api/cpp/quickstart.cpp

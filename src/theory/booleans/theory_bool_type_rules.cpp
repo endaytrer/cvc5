@@ -96,4 +96,4 @@ TypeNode IteTypeRule::computeType(NodeManager* nodeManager,
 
 }  // namespace boolean
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

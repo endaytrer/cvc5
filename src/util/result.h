@@ -117,6 +117,6 @@ class Result
 
 std::ostream& operator<<(std::ostream& out, enum Result::Status s);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__RESULT_H */

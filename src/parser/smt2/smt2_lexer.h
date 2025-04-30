@@ -126,6 +126,6 @@ class Smt2Lexer : public Lexer
 };
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif /* CVC5__PARSER__SMT2__SMT2_LEXER_NEW_H */

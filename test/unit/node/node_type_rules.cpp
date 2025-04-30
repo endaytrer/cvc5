@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of type rules for cvc5::Node.
+ * Black box testing of type rules for cvc5pp::Node.
  */
 
 #include <cvc5/cvc5.h>
@@ -64,4 +64,4 @@ TEST_F(TestNodeTestRules, gradual_types)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

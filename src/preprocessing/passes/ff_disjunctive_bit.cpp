@@ -57,4 +57,4 @@ PreprocessingPassResult FfDisjunctiveBit::applyInternal(
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

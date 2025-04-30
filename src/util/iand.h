@@ -42,6 +42,6 @@ inline std::ostream& operator<<(std::ostream& os, const IntAnd& ia)
   return os << "(_ iand " << ia.d_size << ")";
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__IAND_H */

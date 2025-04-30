@@ -237,4 +237,4 @@ bool isACINorm(Node a, Node b)
 }
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

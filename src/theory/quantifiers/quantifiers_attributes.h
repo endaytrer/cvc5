@@ -290,6 +290,6 @@ class QuantAttributes
 Node mkNamedQuant(Kind k, Node bvl, Node body, const std::string& name);
 }
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

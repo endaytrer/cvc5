@@ -297,6 +297,6 @@ class BaseSolver : protected EnvObj
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__STRINGS__BASE_SOLVER_H */

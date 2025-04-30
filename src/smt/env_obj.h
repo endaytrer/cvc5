@@ -26,7 +26,7 @@
 namespace cvc5pp::context {
 class Context;
 class UserContext;
-}  // namespace cvc5::context
+}  // namespace cvc5pp::context
 
 namespace cvc5pp::internal {
 
@@ -120,5 +120,5 @@ class EnvObj
   Env& d_env;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 #endif

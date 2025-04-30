@@ -92,4 +92,4 @@ bool QRepBoundExt::getVariableOrder(Node owner, std::vector<size_t>& varOrder)
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

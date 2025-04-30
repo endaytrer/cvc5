@@ -108,6 +108,6 @@ void addMethodIds(NodeManager* nm,
                   MethodId ida,
                   MethodId idr);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__METHOD_ID_H */

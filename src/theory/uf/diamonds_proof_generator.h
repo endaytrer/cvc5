@@ -55,6 +55,6 @@ class DiamondsProofGenerator : protected EnvObj, public ProofGenerator
   std::string identify() const override;
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROOF__DIAMONDS_PROOF_GENERATOR_H */

@@ -43,6 +43,6 @@ class SetsProofRuleChecker : public ProofRuleChecker
 
 }  // namespace sets
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SETS__PROOF_CHECKER_H */

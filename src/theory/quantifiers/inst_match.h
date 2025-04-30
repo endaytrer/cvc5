@@ -105,6 +105,6 @@ inline std::ostream& operator<<(std::ostream& out, const InstMatch& m) {
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANTIFIERS__INST_MATCH_H */

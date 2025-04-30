@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::RealAlgebraicNumber.
+ * Black box testing of cvc5pp::RealAlgebraicNumber.
  */
 
 #include "test.h"
@@ -91,4 +91,4 @@ TEST_F(TestUtilBlackRealAlgebraicNumber, division)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

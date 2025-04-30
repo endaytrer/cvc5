@@ -460,6 +460,6 @@ class PropEngine : protected EnvObj
 };
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PROP_ENGINE_H */

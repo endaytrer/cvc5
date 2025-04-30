@@ -388,7 +388,7 @@ std::ostream& operator<<(std::ostream& os, const RealAlgebraicNumber& ran)
   return os << ran.toString();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 size_t hash<cvc5pp::internal::RealAlgebraicNumber>::operator()(

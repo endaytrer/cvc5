@@ -389,4 +389,4 @@ BitVector BitVector::mkMaxSigned(unsigned size)
   return ~BitVector::mkMinSigned(size);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

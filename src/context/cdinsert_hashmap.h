@@ -374,6 +374,6 @@ class CDInsertHashMap<internal::NodeTemplate<false>, Data, HashFcn>
 };
 
 }  // namespace context
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 #endif

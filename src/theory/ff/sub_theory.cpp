@@ -217,6 +217,6 @@ const std::unordered_map<Node, Node>& SubTheory::model() const
 
 }  // namespace ff
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5_USE_COCOA */

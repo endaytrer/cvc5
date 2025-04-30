@@ -120,6 +120,6 @@ static bool eagerMatch(B& in, const char* str) {
 
 //=================================================================================================
 }
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

@@ -710,4 +710,4 @@ std::vector<std::pair<Node, TypeNode>> SygusSolver::getSynthFunctions() const
 }
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

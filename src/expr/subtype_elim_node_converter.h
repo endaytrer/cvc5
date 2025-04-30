@@ -44,6 +44,6 @@ class SubtypeElimNodeConverter : public NodeConverter
   static bool isRealTypeStrict(TypeNode tn);
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

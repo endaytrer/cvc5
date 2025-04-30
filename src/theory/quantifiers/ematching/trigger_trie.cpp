@@ -75,4 +75,4 @@ void TriggerTrie::addTrigger(const std::vector<Node>& nodes, inst::Trigger* t)
 }  // namespace inst
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

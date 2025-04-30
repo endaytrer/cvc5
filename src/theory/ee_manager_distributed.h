@@ -69,6 +69,6 @@ class EqEngineManagerDistributed : public EqEngineManager
 };
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__EE_MANAGER_DISTRIBUTED__H */

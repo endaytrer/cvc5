@@ -420,4 +420,4 @@ void BVSolverBitblast::handleEagerAtom(TNode fact, bool assertFact)
 
 }  // namespace bv
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -700,7 +700,7 @@ endif()
 
 install(EXPORT cvc5-targets
   FILE cvc5Targets.cmake
-  NAMESPACE cvc5::
+  NAMESPACE cvc5pp::
   DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/cvc5)
 
 configure_package_config_file(

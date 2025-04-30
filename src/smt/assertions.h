@@ -149,6 +149,6 @@ class Assertions : protected EnvObj
 };
 
 }  // namespace smt
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

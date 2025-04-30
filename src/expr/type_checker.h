@@ -72,6 +72,6 @@ public:
 };/* class TypeChecker */
 
 }  // namespace expr
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__EXPR__TYPE_CHECKER_H */

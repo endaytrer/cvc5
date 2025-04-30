@@ -44,4 +44,4 @@ prop::SatLiteral DecisionEngineEmpty::getNextInternal(bool& stopSearch)
 }
 
 }  // namespace decision
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

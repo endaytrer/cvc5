@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * Black box testing of cvc5::Configuration.
+ * Black box testing of cvc5pp::Configuration.
  */
 
 #include "base/configuration.h"
@@ -92,4 +92,4 @@ TEST_F(TestUtilBlackConfiguration, about)
   Configuration::about();
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

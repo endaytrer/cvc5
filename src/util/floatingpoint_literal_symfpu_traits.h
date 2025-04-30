@@ -95,7 +95,7 @@ struct signedToLiteralType<false>
 };
 
 /**
- * This extends the interface for cvc5::internal::BitVector for compatibility with symFPU.
+ * This extends the interface for cvc5pp::internal::BitVector for compatibility with symFPU.
  * The template parameter distinguishes signed and unsigned bit-vectors, a
  * distinction symfpu uses.
  */
@@ -144,7 +144,7 @@ class wrappedBitVector : public BitVector
   /**
    * Inherited but ...
    * *sigh* if we use the inherited version then it will return a
-   * cvc5::internal::BitVector which can be converted back to a
+   * cvc5pp::internal::BitVector which can be converted back to a
    * wrappedBitVector<isSigned> but isn't done automatically when working
    * out types for templates instantiation.  ITE is a particular
    * problem as expressions and constants no longer derive the
@@ -254,6 +254,6 @@ class wrappedBitVector : public BitVector
                                      Cvc5BitWidth lower) const;
 };
 }  // namespace symfpuLiteral
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

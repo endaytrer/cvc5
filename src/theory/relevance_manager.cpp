@@ -586,4 +586,4 @@ void RelevanceManager::getDifficultyMap(std::map<Node, Node>& dmap,
 }
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

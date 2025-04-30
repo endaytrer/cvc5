@@ -243,4 +243,4 @@ RewriteResponse TheoryFiniteFieldsRewriter::preRewrite(TNode t)
 
 }  // namespace ff
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

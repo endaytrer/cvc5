@@ -325,4 +325,4 @@ TEST_F(TestCApiBlackGrammar, copy_release)
   // we cannot reliably check that querying on the (now freed) grammar fails
   // unless ASAN is enabled
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

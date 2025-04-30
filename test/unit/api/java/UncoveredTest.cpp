@@ -452,4 +452,4 @@ TEST_F(TestApiBlackUncovered, plugin_uncovered_default)
   ASSERT_TRUE(pl.hasSeenSatClause());
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

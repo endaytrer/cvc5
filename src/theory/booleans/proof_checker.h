@@ -43,6 +43,6 @@ class BoolProofRuleChecker : public ProofRuleChecker
 
 }  // namespace booleans
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BOOLEANS__PROOF_CHECKER_H */

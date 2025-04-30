@@ -201,4 +201,4 @@ TEST_F(TestCApiBlackStatistics, stats_to_string)
   (void)cvc5_stats_to_string(stats);
 }
 
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

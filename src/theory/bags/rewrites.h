@@ -106,6 +106,6 @@ std::ostream& operator<<(std::ostream& out, Rewrite r);
 
 }  // namespace bags
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__BAGS__REWRITES_H */

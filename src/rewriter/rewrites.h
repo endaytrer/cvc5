@@ -41,6 +41,6 @@ Node mkRewriteRuleNode(ProofRewriteRule rule);
 bool getRewriteRule(TNode n, ProofRewriteRule& rule);
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

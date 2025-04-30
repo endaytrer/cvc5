@@ -39,6 +39,6 @@ class SortInferencePass : public PreprocessingPass
 
 }  // namespace passes
 }  // namespace preprocessing
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__PREPROCESSING__PASSES__SORT_INFERENCE_PASS_H_ */

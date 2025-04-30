@@ -142,4 +142,4 @@ void TheoryPreregistrar::preRegisterToTheory(
 }
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

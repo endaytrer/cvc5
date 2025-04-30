@@ -48,12 +48,12 @@ namespace cvc5pp {
  *
  * \internal
  *
- * Note that the API type `cvc5::Kind` roughly corresponds to
- * `cvc5::internal::Kind`, but is a different type. It hides internal kinds
+ * Note that the API type `cvc5pp::Kind` roughly corresponds to
+ * `cvc5pp::internal::Kind`, but is a different type. It hides internal kinds
  * that should not be exported to the API, and maps all kinds that we want to
  * export to its corresponding internal kinds. The underlying type of
- * `cvc5::Kind` must be signed (to enable range checks for validity). The size
- * of this type depends on the size of `cvc5::internal::Kind`
+ * `cvc5pp::Kind` must be signed (to enable range checks for validity). The size
+ * of this type depends on the size of `cvc5pp::internal::Kind`
  * (`NodeValue::NBITS_KIND`, currently 10 bits, see expr/node_value.h).
  */
 enum ENUM(Kind)
@@ -5859,7 +5859,7 @@ kindToString(Kind kind);
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, Kind kind);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**
@@ -5917,12 +5917,12 @@ namespace cvc5pp {
  *
  * \internal
  *
- * Note that the API type `cvc5::SortKind` roughly corresponds to
- * `cvc5::internal::Kind`, but is a different type. It hides internal kinds
+ * Note that the API type `cvc5pp::SortKind` roughly corresponds to
+ * `cvc5pp::internal::Kind`, but is a different type. It hides internal kinds
  * that should not be exported to the API, and maps all kinds that we want to
  * export to its corresponding internal kinds. The underlying type of
- * `cvc5::Kind` must be signed (to enable range checks for validity). The size
- * of this type depends on the size of `cvc5::internal::Kind`
+ * `cvc5pp::Kind` must be signed (to enable range checks for validity). The size
+ * of this type depends on the size of `cvc5pp::internal::Kind`
  * (`NodeValue::NBITS_KIND`, currently 10 bits, see expr/node_value.h).
  */
 enum ENUM(SortKind)
@@ -6160,7 +6160,7 @@ sortKindToString(SortKind k);
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, SortKind k);
 
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**

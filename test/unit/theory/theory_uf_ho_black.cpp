@@ -45,4 +45,4 @@ TEST_F(TestTheoryBlackUfHo, proj_issue361)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

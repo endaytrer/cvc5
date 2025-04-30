@@ -135,4 +135,4 @@ TEST_F(TestTheoryWhiteArithPolyNorm, check_poly_norm_real)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

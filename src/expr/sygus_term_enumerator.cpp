@@ -76,4 +76,4 @@ Node SygusTermEnumerator::getCurrent()
   return theory::datatypes::utils::sygusToBuiltin(c);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

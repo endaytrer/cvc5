@@ -644,7 +644,7 @@ class DType
 
 std::ostream& operator<<(std::ostream& os, const DType& dt);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace std {
 /**

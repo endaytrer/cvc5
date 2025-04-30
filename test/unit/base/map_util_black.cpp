@@ -212,4 +212,4 @@ TEST_F(TestBaseBlackMap, const_CDInsertHashMap)
   ASSERT_EQ(FindOrDie(map, "other"), "entry");
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

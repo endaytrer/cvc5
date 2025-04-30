@@ -1063,4 +1063,4 @@ bool RegExpEntail::getConstantBoundCache(TNode n, bool isLower, Node& c)
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

@@ -105,4 +105,4 @@ size_t CombinedCardinalityConstraintHashFunction::operator()(
   return cc.getUpperBound().hash();
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

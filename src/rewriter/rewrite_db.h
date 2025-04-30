@@ -117,6 +117,6 @@ class RewriteDb
 };
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__REWRITE_DB__H */

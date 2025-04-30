@@ -10,7 +10,7 @@
  * directory for licensing information.
  * ****************************************************************************
  *
- * White box testing of cvc5::Integer.
+ * White box testing of cvc5pp::Integer.
  */
 
 #include <sstream>
@@ -52,4 +52,4 @@ TEST_F(TestUtilWhiteInteger, construction)
   ASSERT_EQ(Integer(u), Integer(u));
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

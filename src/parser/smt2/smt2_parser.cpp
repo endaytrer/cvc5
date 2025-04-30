@@ -56,4 +56,4 @@ Term Smt2Parser::parseNextTerm()
 }
 
 }  // namespace parser
-}  // namespace cvc5
+}  // namespace cvc5pp

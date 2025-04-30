@@ -372,7 +372,7 @@ void MinisatSatSolver::Statistics::deinit()
 }
 
 }  // namespace prop
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 namespace cvc5pp::internal {
 template <>
@@ -388,4 +388,4 @@ void toSatClause<cvc5pp::internal::Minisat::Solver>(
   prop::MinisatSatSolver::toSatClause(minisat_cl, sat_cl);
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

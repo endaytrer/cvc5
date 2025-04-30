@@ -50,6 +50,6 @@ struct RoundingModeHashFunction
 
 std::ostream& operator<<(std::ostream& os, RoundingMode s);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

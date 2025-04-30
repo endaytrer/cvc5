@@ -363,6 +363,6 @@ Node eliminateInt2Bv(TNode node);
 
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__ARITH__ARITH_UTILITIES_H */

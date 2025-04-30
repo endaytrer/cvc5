@@ -62,4 +62,4 @@ TEST_F(TestTheoryWhiteStringsUtils, collect_empty_eqs)
 }
 
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

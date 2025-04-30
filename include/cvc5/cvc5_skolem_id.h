@@ -853,7 +853,7 @@ CVC5_EXPORT size_t cvc5_skolem_id_hash(Cvc5SkolemId id);
  * @return The stream
  */
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, SkolemId id);
-}  // namespace cvc5
+}  // namespace cvc5pp
 
 namespace std {
 /**

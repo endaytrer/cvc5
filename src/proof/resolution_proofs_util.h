@@ -145,6 +145,6 @@ bool isSingletonClause(TNode res,
                        const std::vector<Node>& args);
 
 }  // namespace proof
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif

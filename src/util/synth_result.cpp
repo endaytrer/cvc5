@@ -81,4 +81,4 @@ ostream& operator<<(ostream& out, SynthResult::Status s)
   return out;
 }
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

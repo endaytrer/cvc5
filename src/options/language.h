@@ -63,6 +63,6 @@ inline bool isLangSygus(Language lang)
 Language toLanguage(const std::string& language) CVC5_EXPORT;
 
 }  // namespace language
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__LANGUAGE_H */

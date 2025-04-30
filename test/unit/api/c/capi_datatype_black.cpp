@@ -1049,4 +1049,4 @@ TEST_F(TestCApiBlackDatatype, datatype_specialized_cons)
   ASSERT_DEATH(cvc5_dt_cons_get_instantiated_term(nilc, d_int),
                "cannot get specialized constructor");
 }
-}  // namespace cvc5::internal::test
+}  // namespace cvc5pp::internal::test

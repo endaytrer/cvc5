@@ -167,6 +167,6 @@ bool getUnsatCoreFromSubsolver(SolverEngine& smt,
 void getUnsatCoreFromSubsolver(SolverEngine& smt, std::vector<Node>& uasserts);
 
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__SMT_ENGINE_SUBSOLVER_H */

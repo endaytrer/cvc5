@@ -218,6 +218,6 @@ class ArithInstantiator : public Instantiator
 
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANTIFIERS__CEG_ARITH_INSTANTIATOR_H */

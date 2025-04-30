@@ -3112,4 +3112,4 @@ TEST_F(TestPPWhiteBVGauss, get_min_bw5b)
   ASSERT_EQ(d_bv_gauss->getMinBwExpr(rr->rewrite(plus7)), 17);
 }
 }  // namespace test
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

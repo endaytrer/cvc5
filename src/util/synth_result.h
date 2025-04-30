@@ -84,6 +84,6 @@ class SynthResult
 std::ostream& operator<<(std::ostream& out, const SynthResult& r);
 std::ostream& operator<<(std::ostream& out, SynthResult::Status s);
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__RESULT_H */

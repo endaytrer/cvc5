@@ -65,6 +65,6 @@ class InstEvaluatorManager : public QuantifiersUtil
 }  // namespace ieval
 }  // namespace quantifiers
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__QUANTIFIERS__IEVAL__INST_EVALUATOR_MANAGER_H */

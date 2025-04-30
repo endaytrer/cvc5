@@ -287,4 +287,4 @@ SimplexDecisionProcedure::sgn_table::const_iterator SimplexDecisionProcedure::fi
 }
 }  // namespace arith
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

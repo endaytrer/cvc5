@@ -1451,4 +1451,4 @@ Node RewriteDbProofCons::rewriteConcrete(const Node& n)
 }
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal

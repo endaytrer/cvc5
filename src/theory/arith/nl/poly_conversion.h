@@ -51,12 +51,12 @@ struct VariableMapper
   cvc5pp::internal::Node operator()(const poly::Variable& n);
 };
 
-/** Convert a poly univariate polynomial to a cvc5::internal::Node. */
+/** Convert a poly univariate polynomial to a cvc5pp::internal::Node. */
 cvc5pp::internal::Node as_cvc_upolynomial(const poly::UPolynomial& p,
                               const cvc5pp::internal::Node& var);
 
 /**
- * Convert a cvc5::internal::Node to a poly univariate polynomial. Is robust to
+ * Convert a cvc5pp::internal::Node to a poly univariate polynomial. Is robust to
  * n being a `Kind::TO_REAL` wrapper node.
  */
 poly::UPolynomial as_poly_upolynomial(const cvc5pp::internal::Node& n,
@@ -187,7 +187,7 @@ class PolyConverter
                                          const Node& ran_variable);
 };
 
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif
 

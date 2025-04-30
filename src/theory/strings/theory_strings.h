@@ -315,6 +315,6 @@ class TheoryStrings : public Theory {
 
 }  // namespace strings
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__STRINGS__THEORY_STRINGS_H */

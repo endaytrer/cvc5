@@ -101,6 +101,6 @@ class ProofRewriteDbNodeConverter : protected EnvObj
 };
 
 }  // namespace rewriter
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif /* CVC5__THEORY__REWRITE_DB_TERM_PROCESS__H */

@@ -117,6 +117,6 @@ class InstStrategyAutoGenTriggers : public InstStrategy
 }; /* class InstStrategyAutoGenTriggers */
 }
 }  // namespace theory
-}  // namespace cvc5::internal
+}  // namespace cvc5pp::internal
 
 #endif
