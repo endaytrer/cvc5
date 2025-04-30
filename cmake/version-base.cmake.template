@@ -10,4 +10,4 @@ set(CVC5_FULL_VERSION "${CVC5_LAST_RELEASE}")
 set(CVC5_GIT_INFO "")
 
 # Shared library versioning. Increment SOVERSION for every new cvc5 release.
-set(CVC5_SOVERSION 99)
+set(CVC5_SOVERSION 1)

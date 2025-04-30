@@ -1471,7 +1471,7 @@ add_dependencies(cvc5-obj gen-expr gen-versioninfo gen-options gen-rewrites gen-
 
 add_library(cvc5 $<TARGET_OBJECTS:cvc5-obj> $<TARGET_OBJECTS:cvc5base> $<TARGET_OBJECTS:cvc5context>)
 
-set_target_properties(cvc5 PROPERTIES OUTPUT_NAME cvc5)
+set_target_properties(cvc5 PROPERTIES OUTPUT_NAME cvc5pp)
 
 # Link the shared library
 target_include_directories(cvc5
