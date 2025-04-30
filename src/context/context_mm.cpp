@@ -28,7 +28,7 @@
 #include "base/output.h"
 #include "context/context_mm.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 
 #ifndef CVC5_DEBUG_CONTEXT_MEMORY_MANAGER
 

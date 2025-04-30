@@ -24,7 +24,7 @@
 #include "theory/quantifiers/quantifiers_attributes.h"
 #include "theory/quantifiers/quantifiers_preprocess.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

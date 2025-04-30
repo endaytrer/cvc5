@@ -17,7 +17,7 @@
 
 #include "theory/theory_engine.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 SharedSolverDistributed::SharedSolverDistributed(Env& env, TheoryEngine& te)

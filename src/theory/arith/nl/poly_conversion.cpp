@@ -21,14 +21,14 @@
 #include "theory/arith/bound_inference.h"
 #include "util/poly_util.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 namespace nl {
 
-poly::Variable VariableMapper::operator()(const cvc5::internal::Node& n)
+poly::Variable VariableMapper::operator()(const cvc5pp::internal::Node& n)
 {
   auto it = mVarCVCpoly.find(n);
   if (it == mVarCVCpoly.end())
@@ -58,7 +58,7 @@ poly::Variable VariableMapper::operator()(const cvc5::internal::Node& n)
   return it->second;
 }
 
-cvc5::internal::Node VariableMapper::operator()(const poly::Variable& n)
+cvc5pp::internal::Node VariableMapper::operator()(const poly::Variable& n)
 {
   auto it = mVarpolyCVC.find(n);
   Assert(it != mVarpolyCVC.end())
@@ -66,7 +66,7 @@ cvc5::internal::Node VariableMapper::operator()(const poly::Variable& n)
   return it->second;
 }
 
-cvc5::internal::Node as_cvc_upolynomial(const poly::UPolynomial& p, const cvc5::internal::Node& var)
+cvc5pp::internal::Node as_cvc_upolynomial(const poly::UPolynomial& p, const cvc5pp::internal::Node& var)
 {
   Trace("poly::conversion")
       << "Converting " << p << " over " << var << std::endl;
@@ -91,9 +91,9 @@ cvc5::internal::Node as_cvc_upolynomial(const poly::UPolynomial& p, const cvc5::
   return res;
 }
 
-poly::UPolynomial as_poly_upolynomial_impl(cvc5::internal::Node n,
+poly::UPolynomial as_poly_upolynomial_impl(cvc5pp::internal::Node n,
                                            poly::Integer& denominator,
-                                           const cvc5::internal::Node& var)
+                                           const cvc5pp::internal::Node& var)
 {
   if (n.getKind() == Kind::TO_REAL) n = n[0];
   denominator = poly::Integer(1);
@@ -145,14 +145,14 @@ poly::UPolynomial as_poly_upolynomial_impl(cvc5::internal::Node n,
   return poly::UPolynomial();
 }
 
-poly::UPolynomial as_poly_upolynomial(const cvc5::internal::Node& n,
-                                      const cvc5::internal::Node& var)
+poly::UPolynomial as_poly_upolynomial(const cvc5pp::internal::Node& n,
+                                      const cvc5pp::internal::Node& var)
 {
   poly::Integer denom;
   return as_poly_upolynomial_impl(n, denom, var);
 }
 
-poly::Polynomial as_poly_polynomial_impl(cvc5::internal::Node n,
+poly::Polynomial as_poly_polynomial_impl(cvc5pp::internal::Node n,
                                          poly::Integer& denominator,
                                          VariableMapper& vm)
 {
@@ -201,12 +201,12 @@ poly::Polynomial as_poly_polynomial_impl(cvc5::internal::Node n,
   }
   return poly::Polynomial();
 }
-poly::Polynomial as_poly_polynomial(const cvc5::internal::Node& n, VariableMapper& vm)
+poly::Polynomial as_poly_polynomial(const cvc5pp::internal::Node& n, VariableMapper& vm)
 {
   poly::Integer denom;
   return as_poly_polynomial_impl(n, denom, vm);
 }
-poly::Polynomial as_poly_polynomial(const cvc5::internal::Node& n,
+poly::Polynomial as_poly_polynomial(const cvc5pp::internal::Node& n,
                                     VariableMapper& vm,
                                     poly::Rational& denominator)
 {
@@ -263,7 +263,7 @@ void collect_monomials(const lp_polynomial_context_t* ctx,
 }
 }  // namespace
 
-cvc5::internal::Node as_cvc_polynomial(const poly::Polynomial& p, VariableMapper& vm)
+cvc5pp::internal::Node as_cvc_polynomial(const poly::Polynomial& p, VariableMapper& vm)
 {
   CollectMonomialData cmd(vm);
   // Do the actual conversion
@@ -280,7 +280,7 @@ cvc5::internal::Node as_cvc_polynomial(const poly::Polynomial& p, VariableMapper
   return cmd.d_nm->mkNode(Kind::ADD, cmd.d_terms);
 }
 
-poly::SignCondition normalize_kind(cvc5::internal::Kind kind,
+poly::SignCondition normalize_kind(cvc5pp::internal::Kind kind,
                                    bool negated,
                                    poly::Polynomial& lhs)
 {

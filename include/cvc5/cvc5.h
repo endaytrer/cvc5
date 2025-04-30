@@ -35,7 +35,7 @@
 #include <variant>
 #include <vector>
 
-namespace cvc5 {
+namespace cvc5pp {
 
 namespace main {
 class CommandExecutor;
@@ -295,13 +295,13 @@ namespace std {
  * Hash function for results.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::Result>
+struct CVC5_EXPORT hash<cvc5pp::Result>
 {
-  size_t operator()(const cvc5::Result& result) const;
+  size_t operator()(const cvc5pp::Result& result) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* SynthResult                                                                */
@@ -400,13 +400,13 @@ namespace std {
  * Hash function for synthesis results.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::SynthResult>
+struct CVC5_EXPORT hash<cvc5pp::SynthResult>
 {
-  size_t operator()(const cvc5::SynthResult& result) const;
+  size_t operator()(const cvc5pp::SynthResult& result) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* Sort                                                                       */
@@ -1001,14 +1001,14 @@ namespace std {
  * Hash function for Sorts.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::Sort>
+struct CVC5_EXPORT hash<cvc5pp::Sort>
 {
-  size_t operator()(const cvc5::Sort& s) const;
+  size_t operator()(const cvc5pp::Sort& s) const;
 };
 
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* Op                                                                     */
@@ -1170,13 +1170,13 @@ namespace std {
  * Hash function for Ops.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::Op>
+struct CVC5_EXPORT hash<cvc5pp::Op>
 {
-  size_t operator()(const cvc5::Op& op) const;
+  size_t operator()(const cvc5pp::Op& op) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* Term                                                                       */
@@ -2051,13 +2051,13 @@ namespace std {
  * Hash function for Terms.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::Term>
+struct CVC5_EXPORT hash<cvc5pp::Term>
 {
-  size_t operator()(const cvc5::Term& t) const;
+  size_t operator()(const cvc5pp::Term& t) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* Datatypes                                                                  */
@@ -2170,13 +2170,13 @@ namespace std {
  * Hash function for datatype constructor declarations.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::DatatypeConstructorDecl>
+struct CVC5_EXPORT hash<cvc5pp::DatatypeConstructorDecl>
 {
-  size_t operator()(const cvc5::DatatypeConstructorDecl& decl) const;
+  size_t operator()(const cvc5pp::DatatypeConstructorDecl& decl) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 class Solver;
 
@@ -2314,13 +2314,13 @@ namespace std {
  * Hash function for datatype declarations.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::DatatypeDecl>
+struct CVC5_EXPORT hash<cvc5pp::DatatypeDecl>
 {
-  size_t operator()(const cvc5::DatatypeDecl& decl) const;
+  size_t operator()(const cvc5pp::DatatypeDecl& decl) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /**
  * A cvc5 datatype selector.
@@ -2430,13 +2430,13 @@ namespace std {
  * Hash function for datatype Selectors.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::DatatypeSelector>
+struct CVC5_EXPORT hash<cvc5pp::DatatypeSelector>
 {
-  size_t operator()(const cvc5::DatatypeSelector& sel) const;
+  size_t operator()(const cvc5pp::DatatypeSelector& sel) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /**
  * A cvc5 datatype constructor.
@@ -2734,13 +2734,13 @@ namespace std {
  * Hash function for datatype constructors.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::DatatypeConstructor>
+struct CVC5_EXPORT hash<cvc5pp::DatatypeConstructor>
 {
-  size_t operator()(const cvc5::DatatypeConstructor& cons) const;
+  size_t operator()(const cvc5pp::DatatypeConstructor& cons) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /**
  * A cvc5 datatype.
@@ -3087,13 +3087,13 @@ namespace std {
  * Hash function for datatypes.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::Datatype>
+struct CVC5_EXPORT hash<cvc5pp::Datatype>
 {
-  size_t operator()(const cvc5::Datatype& dt) const;
+  size_t operator()(const cvc5pp::Datatype& dt) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* Grammar                                                                    */
@@ -3215,13 +3215,13 @@ namespace std {
  * Hash function for grammar.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::Grammar>
+struct CVC5_EXPORT hash<cvc5pp::Grammar>
 {
-  size_t operator()(const cvc5::Grammar& grammar) const;
+  size_t operator()(const cvc5pp::Grammar& grammar) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* Options                                                                    */
@@ -3644,7 +3644,7 @@ class CVC5_EXPORT Plugin
 
  private:
   /** Converter to external */
-  std::shared_ptr<cvc5::PluginInternal> d_pExtToInt;
+  std::shared_ptr<cvc5pp::PluginInternal> d_pExtToInt;
 };
 
 /* -------------------------------------------------------------------------- */
@@ -3741,13 +3741,13 @@ namespace std {
  * Hash function for proofs.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::Proof>
+struct CVC5_EXPORT hash<cvc5pp::Proof>
 {
-  size_t operator()(const cvc5::Proof& p) const;
+  size_t operator()(const cvc5pp::Proof& p) const;
 };
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* TermManager                                                                */
@@ -6119,8 +6119,8 @@ class CVC5_EXPORT Solver
   std::string proofToString(
       Proof proof,
       modes::ProofFormat format = modes::ProofFormat::DEFAULT,
-      const std::map<cvc5::Term, std::string>& assertionNames =
-          std::map<cvc5::Term, std::string>()) const;
+      const std::map<cvc5pp::Term, std::string>& assertionNames =
+          std::map<cvc5pp::Term, std::string>()) const;
 
   /**
    * Get a list of learned literals that are entailed by the current set of

@@ -16,7 +16,7 @@
 
 #include "base/check.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 FloatingPointSize::FloatingPointSize(uint32_t exp_size, uint32_t sig_size)
     : d_exp_size(exp_size), d_sig_size(sig_size)

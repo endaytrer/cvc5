@@ -26,13 +26,13 @@
 
 #include "base/exception.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 class Solver;
 class Sort;
 class Term;
 }  // namespace cvc5
 
-namespace cvc5::internal::parser {
+namespace cvc5pp::internal::parser {
 
 class CVC5_EXPORT ScopeException : public internal::Exception
 {
@@ -71,7 +71,7 @@ class CVC5_EXPORT SymbolTable
    *
    * Returns false if the binding was invalid.
    */
-  bool bind(const std::string& name, cvc5::Term obj, bool doOverload = false);
+  bool bind(const std::string& name, cvc5pp::Term obj, bool doOverload = false);
 
   /**
    * This binds a "dummy" constant t to the given name for a user sort. This
@@ -84,7 +84,7 @@ class CVC5_EXPORT SymbolTable
    *
    * Returns false if the binding was invalid.
    */
-  bool bindDummySortTerm(const std::string& name, cvc5::Term t);
+  bool bindDummySortTerm(const std::string& name, cvc5pp::Term t);
 
   /**
    * Bind a type to a name in the current scope.  If <code>name</code>
@@ -97,7 +97,7 @@ class CVC5_EXPORT SymbolTable
    * @param t the type to bind to <code>name</code>
    * @returns true iff name is successfully bound to t.
    */
-  void bindType(const std::string& name, cvc5::Sort t);
+  void bindType(const std::string& name, cvc5pp::Sort t);
 
   /**
    * Bind a type to a name in the current scope.  If <code>name</code>
@@ -111,8 +111,8 @@ class CVC5_EXPORT SymbolTable
    * @param t the type to bind to <code>name</code>
    */
   void bindType(const std::string& name,
-                const std::vector<cvc5::Sort>& params,
-                cvc5::Sort t);
+                const std::vector<cvc5pp::Sort>& params,
+                cvc5pp::Sort t);
 
   /**
    * Check whether a name is bound to an expression with bind().
@@ -139,7 +139,7 @@ class CVC5_EXPORT SymbolTable
    * It returns the null expression if there is not a unique expression bound to
    * <code>name</code> in the current scope (i.e. if there is not exactly one).
    */
-  cvc5::Term lookup(const std::string& name) const;
+  cvc5pp::Term lookup(const std::string& name) const;
 
   /**
    * Lookup a bound type.
@@ -147,7 +147,7 @@ class CVC5_EXPORT SymbolTable
    * @param name the type identifier to lookup
    * @returns the type bound to <code>name</code> in the current scope.
    */
-  cvc5::Sort lookupType(const std::string& name) const;
+  cvc5pp::Sort lookupType(const std::string& name) const;
 
   /**
    * Lookup a bound parameterized type.
@@ -157,8 +157,8 @@ class CVC5_EXPORT SymbolTable
    * @returns the type bound to <code>name(<i>params</i>)</code> in
    * the current scope.
    */
-  cvc5::Sort lookupType(const std::string& name,
-                        const std::vector<cvc5::Sort>& params) const;
+  cvc5pp::Sort lookupType(const std::string& name,
+                        const std::vector<cvc5pp::Sort>& params) const;
 
   /**
    * Lookup the arity of a bound parameterized type.
@@ -186,14 +186,14 @@ class CVC5_EXPORT SymbolTable
 
   //------------------------ operator overloading
   /** is this function overloaded? */
-  bool isOverloadedFunction(cvc5::Term fun) const;
+  bool isOverloadedFunction(cvc5pp::Term fun) const;
 
   /** Get overloaded constant for type.
    * If possible, it returns the defined symbol with name
    * that has type t. Otherwise returns null expression.
    */
-  cvc5::Term getOverloadedConstantForType(const std::string& name,
-                                          cvc5::Sort t) const;
+  cvc5pp::Term getOverloadedConstantForType(const std::string& name,
+                                          cvc5pp::Sort t) const;
 
   /**
    * If possible, returns the unique defined function for a name
@@ -206,8 +206,8 @@ class CVC5_EXPORT SymbolTable
    * no functions with name and expected argTypes, or alternatively there is
    * more than one function with name and expected argTypes.
    */
-  cvc5::Term getOverloadedFunctionForTypes(
-      const std::string& name, const std::vector<cvc5::Sort>& argTypes) const;
+  cvc5pp::Term getOverloadedFunctionForTypes(
+      const std::string& name, const std::vector<cvc5pp::Sort>& argTypes) const;
   //------------------------ end operator overloading
 
  private:

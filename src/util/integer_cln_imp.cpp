@@ -33,7 +33,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 signed int Integer::s_fastSignedIntMin = -(1 << 29);
 signed int Integer::s_fastSignedIntMax = (1 << 29) - 1;

@@ -28,7 +28,7 @@
 #include "theory/quantifiers/inst_match_trie.h"
 #include "theory/quantifiers/single_inv_partition.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

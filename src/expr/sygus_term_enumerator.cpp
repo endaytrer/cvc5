@@ -19,7 +19,7 @@
 #include "theory/datatypes/sygus_datatype_utils.h"
 #include "theory/quantifiers/sygus/sygus_enumerator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 SygusTermEnumerator::SygusTermEnumerator(Env& env,
                                          const TypeNode& tn,

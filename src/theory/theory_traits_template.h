@@ -29,7 +29,7 @@
 ${theory_includes}
 // clang-format on
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 template <TheoryId theoryId>

@@ -17,7 +17,7 @@
 
 #include <iostream>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 std::ostream& operator<<(std::ostream& out, SmtMode m)
 {

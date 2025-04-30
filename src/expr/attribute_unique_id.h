@@ -22,7 +22,7 @@
 
 // ATTRIBUTE IDs ============================================================
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace expr {
 namespace attr {
 

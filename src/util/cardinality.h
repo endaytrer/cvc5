@@ -25,7 +25,7 @@
 
 #include "util/integer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * Representation for a Beth number, used only to construct

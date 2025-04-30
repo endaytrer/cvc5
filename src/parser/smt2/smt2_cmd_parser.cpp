@@ -19,7 +19,7 @@
 #include "base/output.h"
 #include "parser/commands.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 Smt2CmdParser::Smt2CmdParser(Smt2Lexer& lex,
@@ -925,7 +925,7 @@ std::unique_ptr<Cmd> Smt2CmdParser::parseNextCommand()
         range = d_tparser.parseSort();
       }
       d_state.pushScope();
-      std::vector<cvc5::Term> sygusVars = d_state.bindBoundVars(sortedVarNames);
+      std::vector<cvc5pp::Term> sygusVars = d_state.bindBoundVars(sortedVarNames);
       Grammar* g = d_tparser.parseGrammarOrNull(sygusVars, name);
 
       Trace("parser-sygus") << "Define synth fun : " << name << std::endl;

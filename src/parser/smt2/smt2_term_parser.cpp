@@ -20,7 +20,7 @@
 #include "base/check.h"
 #include "base/output.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 /**

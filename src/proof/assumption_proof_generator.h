@@ -20,7 +20,7 @@
 
 #include "proof/proof_generator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofNodeManager;
 

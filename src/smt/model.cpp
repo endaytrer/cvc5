@@ -19,7 +19,7 @@
 #include "options/io_utils.h"
 #include "printer/printer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 Model::Model(bool isKnownSat, const std::string& inputName)

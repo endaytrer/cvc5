@@ -15,9 +15,9 @@
 
 #include "expr/dtype_selector.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 DTypeSelector::DTypeSelector(std::string name, Node selector, Node updater)
     : d_name(name), d_selector(selector), d_updater(updater), d_resolved(false)
@@ -101,8 +101,8 @@ std::ostream& operator<<(std::ostream& os, const DTypeSelector& arg)
 }  // namespace cvc5::internal
 
 namespace std {
-size_t hash<cvc5::internal::DTypeSelector>::operator()(
-    const cvc5::internal::DTypeSelector& sel) const
+size_t hash<cvc5pp::internal::DTypeSelector>::operator()(
+    const cvc5pp::internal::DTypeSelector& sel) const
 {
   return std::hash<std::string>()(sel.getName());
 }

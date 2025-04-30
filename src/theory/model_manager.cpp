@@ -24,7 +24,7 @@
 #include "theory/quantifiers_engine.h"
 #include "theory/theory_engine.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 ModelManager::ModelManager(Env& env, TheoryEngine& te, EqEngineManager& eem)

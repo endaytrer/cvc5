@@ -18,7 +18,7 @@
 #include "base/check.h"
 #include "util/hash.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 BitVector::BitVector(const std::string& num, uint32_t base)
 {

@@ -33,7 +33,7 @@
 #include "theory/quantifiers/term_util.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 template <typename T>
 static Cvc5ostream& operator<<(Cvc5ostream& out, const std::vector<T>& v)

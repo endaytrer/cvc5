@@ -26,9 +26,9 @@
 #include "theory/strings/rewrites.h"
 #include "theory/strings/strategy.h"
 
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 /**

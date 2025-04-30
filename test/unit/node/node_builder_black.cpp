@@ -29,7 +29,7 @@
 #define K 30u
 #define LARGE_K UINT_MAX / 40
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace test {
 

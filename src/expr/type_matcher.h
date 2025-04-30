@@ -22,7 +22,7 @@
 
 #include "expr/type_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * This class is used for inferring the parameters of an instantiated

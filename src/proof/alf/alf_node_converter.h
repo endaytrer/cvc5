@@ -25,7 +25,7 @@
 #include "expr/skolem_manager.h"
 #include "expr/type_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 /**

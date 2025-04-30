@@ -28,7 +28,7 @@
 #include "proof/trust_id.h"
 #include "theory/builtin/proof_checker.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 DotPrinter::DotPrinter(Env& env)

@@ -22,7 +22,7 @@
 #include "theory/datatypes/infer_proof_cons.h"
 #include "theory/inference_manager_buffered.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class EagerProofGenerator;
 

@@ -22,7 +22,7 @@
 
 #include "printer/printer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class LetBinding;
 class DType;
@@ -37,11 +37,11 @@ enum class Variant
   alf_variant
 };
 
-class Smt2Printer : public cvc5::internal::Printer
+class Smt2Printer : public cvc5pp::internal::Printer
 {
  public:
   Smt2Printer(Variant variant = Variant::no_variant) : d_variant(variant) {}
-  using cvc5::internal::Printer::toStream;
+  using cvc5pp::internal::Printer::toStream;
   void toStream(std::ostream& out, TNode n) const override;
   void toStream(std::ostream& out, TNode n, int toDepth, size_t dag) const;
   void toStream(std::ostream& out,

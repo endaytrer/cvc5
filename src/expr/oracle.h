@@ -22,7 +22,7 @@
 
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * An oracle, which stores a function whose interface is from a vector of nodes

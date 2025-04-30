@@ -32,7 +32,7 @@
 #include "util/random.h"
 #include "util/resource_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace kind;
 using namespace context;

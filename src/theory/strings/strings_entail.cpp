@@ -24,9 +24,9 @@
 #include "util/rational.h"
 #include "util/string.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 
@@ -124,7 +124,7 @@ bool StringsEntail::stripSymbolicLength(std::vector<Node>& n1,
   Assert(dir == 1 || dir == -1);
   Assert(nr.empty());
   NodeManager* nm = NodeManager::currentNM();
-  Node zero = nm->mkConstInt(cvc5::internal::Rational(0));
+  Node zero = nm->mkConstInt(cvc5pp::internal::Rational(0));
   bool ret = false;
   bool success = true;
   unsigned sindex = 0;
@@ -147,7 +147,7 @@ bool StringsEntail::stripSymbolicLength(std::vector<Node>& n1,
           Assert(d_arithEntail.check(curr, true));
           Node s = n1[sindex_use];
           size_t slen = Word::getLength(s);
-          Node ncl = nm->mkConstInt(cvc5::internal::Rational(slen));
+          Node ncl = nm->mkConstInt(cvc5pp::internal::Rational(slen));
           Node next_s = nm->mkNode(Kind::SUB, lowerBound, ncl);
           next_s = d_arithEntail.rewriteArith(next_s);
           Assert(next_s.isConst());
@@ -599,7 +599,7 @@ bool StringsEntail::stripConstantEndpoints(std::vector<Node>& n1,
         if (n2[index1].isConst())
         {
           Assert(n2[index1].getType().isString());  // string-only
-          cvc5::internal::String t = n2[index1].getConst<String>();
+          cvc5pp::internal::String t = n2[index1].getConst<String>();
           if (n1.size() == 1)
           {
             // if n1.size()==1, then if n2[index1] is not a number, we can drop

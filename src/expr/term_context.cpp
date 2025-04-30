@@ -18,7 +18,7 @@
 #include "expr/node_algorithm.h"
 #include "theory/theory.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 uint32_t TermContext::computeValueOp(TNode t, uint32_t tval) const
 {

@@ -25,9 +25,9 @@
 #include "theory/rewriter.h"
 #include "util/rational.h"
 
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestTheoryWhiteEvaluator : public TestSmt

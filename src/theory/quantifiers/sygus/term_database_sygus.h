@@ -31,7 +31,7 @@
 #include "theory/quantifiers/sygus/type_info.h"
 #include "theory/quantifiers/term_database.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

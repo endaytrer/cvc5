@@ -23,7 +23,7 @@
 #include "expr/attribute.h"
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 // attribute for "contains instantiation constants from"

@@ -38,11 +38,11 @@
 #include "main/main.h"
 #include "util/safe_print.h"
 
-using cvc5::internal::Exception;
+using cvc5pp::internal::Exception;
 using namespace std;
 
-namespace cvc5::main {
-using namespace cvc5::internal;
+namespace cvc5pp::main {
+using namespace cvc5pp::internal;
 
 /**
  * If true, will not spin on segfault even when CVC5_DEBUG is on.

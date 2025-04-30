@@ -14,7 +14,7 @@
 
 #include "py_plugin.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 
 PyPlugin::PyPlugin(PyObject* obj, TermManager& tm)
     : Plugin(tm), m_obj(obj), tm(tm)

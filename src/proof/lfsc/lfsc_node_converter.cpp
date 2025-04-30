@@ -41,9 +41,9 @@
 #include "util/regexp.h"
 #include "util/string.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 LfscNodeConverter::LfscNodeConverter(NodeManager* nm) : NodeConverter(nm)

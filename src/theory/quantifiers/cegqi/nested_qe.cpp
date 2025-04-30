@@ -23,7 +23,7 @@
 #include "theory/smt_engine_subsolver.h"
 #include "smt/set_defaults.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

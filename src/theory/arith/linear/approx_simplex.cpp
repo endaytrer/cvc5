@@ -39,7 +39,7 @@ extern "C" {
 #include <glpk.h>
 } /* extern "C" */
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith::linear {
 
@@ -3138,7 +3138,7 @@ void ApproxGLPK::tryCut(int nid, CutInfo& cut)
 #endif /*#ifdef CVC5_USE_GLPK */
 
 /* Begin GPLK/NOGLPK Glue code. */
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith::linear {
 

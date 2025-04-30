@@ -28,7 +28,7 @@
 
 #include <iosfwd>
 #include <ostream>
-namespace cvc5 {
+namespace cvc5pp {
 #undef ENUM
 #define ENUM(name) class name
 #define EVALUE(name) name
@@ -4264,14 +4264,14 @@ namespace std {
  * Hash function for ProofRules.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::ProofRule>
+struct CVC5_EXPORT hash<cvc5pp::ProofRule>
 {
   /**
    * Hashes a ProofRule to a size_t.
    * @param rule The proof rule.
    * @return The hash value.
    */
-  size_t operator()(cvc5::ProofRule rule) const;
+  size_t operator()(cvc5pp::ProofRule rule) const;
 };
 
 /**
@@ -4280,20 +4280,20 @@ struct CVC5_EXPORT hash<cvc5::ProofRule>
  * @param rule The proof rule
  * @return The name of the proof rule
  */
-CVC5_EXPORT std::string to_string(cvc5::ProofRule rule);
+CVC5_EXPORT std::string to_string(cvc5pp::ProofRule rule);
 
 /**
  * Hash function for ProofRewriteRules.
  */
 template <>
-struct CVC5_EXPORT hash<cvc5::ProofRewriteRule>
+struct CVC5_EXPORT hash<cvc5pp::ProofRewriteRule>
 {
   /**
    * Hashes a ProofRewriteRule to a size_t.
    * @param rule The proof rewrite rule.
    * @return The hash value.
    */
-  size_t operator()(cvc5::ProofRewriteRule rule) const;
+  size_t operator()(cvc5pp::ProofRewriteRule rule) const;
 };
 
 /**
@@ -4302,7 +4302,7 @@ struct CVC5_EXPORT hash<cvc5::ProofRewriteRule>
  * @param rule The proof rewrite rule
  * @return The name of the proof rewrite rule
  */
-CVC5_EXPORT std::string to_string(cvc5::ProofRewriteRule rule);
+CVC5_EXPORT std::string to_string(cvc5pp::ProofRewriteRule rule);
 
 }  // namespace std
 

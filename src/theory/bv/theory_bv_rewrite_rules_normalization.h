@@ -28,7 +28,7 @@
 #include "theory/rewriter.h"
 #include "util/bitvector.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace bv {
 

@@ -25,7 +25,7 @@
 #include <memory>
 #include <string>
 
-namespace cvc5 {
+namespace cvc5pp {
 
 namespace internal::parser {
 class SymbolTable;
@@ -52,13 +52,13 @@ enum class NamingResult
  */
 class CVC5_EXPORT SymManager
 {
-  friend class cvc5::parser::Command;
+  friend class cvc5pp::parser::Command;
 
  public:
-  SymManager(cvc5::TermManager& tm);
+  SymManager(cvc5pp::TermManager& tm);
   ~SymManager();
   /** Get the underlying symbol table */
-  cvc5::internal::parser::SymbolTable* getSymbolTable();
+  cvc5pp::internal::parser::SymbolTable* getSymbolTable();
 
   /**
    * Bind an expression to a name in the current scope level in the underlying
@@ -81,7 +81,7 @@ class CVC5_EXPORT SymManager
    * @param doOverload set if the binding can overload the function name.
    * @return false if the binding was invalid.
    */
-  bool bind(const std::string& name, cvc5::Term obj, bool doOverload = false);
+  bool bind(const std::string& name, cvc5pp::Term obj, bool doOverload = false);
 
   /**
    * Bind a type to a name in the current scope.  If <code>name</code>
@@ -95,7 +95,7 @@ class CVC5_EXPORT SymManager
    * @param isUser does this correspond to a user sort?
    * @return false if the binding was invalid.
    */
-  bool bindType(const std::string& name, cvc5::Sort t, bool isUser);
+  bool bindType(const std::string& name, cvc5pp::Sort t, bool isUser);
 
   /**
    * Bind a type to a name in the current scope.  If <code>name</code>
@@ -111,8 +111,8 @@ class CVC5_EXPORT SymManager
    * @return false if the binding was invalid.
    */
   bool bindType(const std::string& name,
-                const std::vector<cvc5::Sort>& params,
-                cvc5::Sort t,
+                const std::vector<cvc5pp::Sort>& params,
+                cvc5pp::Sort t,
                 bool isUser);
   /**
    * Binds sorts of a list of mutually-recursive datatype declarations.
@@ -120,7 +120,7 @@ class CVC5_EXPORT SymManager
    * If bindTesters is true, we bind the testers of this datatype to
    * `is-C` where `C` is the name of the constructor for that tester.
    */
-  bool bindMutualDatatypeTypes(const std::vector<cvc5::Sort>& datatypes,
+  bool bindMutualDatatypeTypes(const std::vector<cvc5pp::Sort>& datatypes,
                                bool bindTesters = true);
 
   //---------------------------- named expressions
@@ -134,7 +134,7 @@ class CVC5_EXPORT SymManager
    * @return true if the name was set. This method may return false if t
    * already has a name.
    */
-  NamingResult setExpressionName(cvc5::Term t,
+  NamingResult setExpressionName(cvc5pp::Term t,
                                  const std::string& name,
                                  bool isAssertion = false);
   /** Get name for term t
@@ -145,7 +145,7 @@ class CVC5_EXPORT SymManager
    * @return true if t has a name. If so, name is updated to that name.
    * Otherwise, name is unchanged.
    */
-  bool getExpressionName(cvc5::Term t,
+  bool getExpressionName(cvc5pp::Term t,
                          std::string& name,
                          bool isAssertion = false) const;
   /**
@@ -162,7 +162,7 @@ class CVC5_EXPORT SymManager
    * @param names The name list
    * @param areAssertions Whether we only wish to include assertion names
    */
-  void getExpressionNames(const std::vector<cvc5::Term>& ts,
+  void getExpressionNames(const std::vector<cvc5pp::Term>& ts,
                           std::vector<std::string>& names,
                           bool areAssertions = false) const;
   /**
@@ -171,34 +171,34 @@ class CVC5_EXPORT SymManager
    * @param areAssertions Whether we only wish to include assertion names
    * @return the mapping containing all expression names.
    */
-  std::map<cvc5::Term, std::string> getExpressionNames(
+  std::map<cvc5pp::Term, std::string> getExpressionNames(
       bool areAssertions = false) const;
   /**
    * @return The sorts we have declared that should be printed in the model.
    */
-  std::vector<cvc5::Sort> getDeclaredSorts() const;
+  std::vector<cvc5pp::Sort> getDeclaredSorts() const;
   /**
    * @return The terms we have declared that should be printed in the model.
    */
-  std::vector<cvc5::Term> getDeclaredTerms() const;
+  std::vector<cvc5pp::Term> getDeclaredTerms() const;
   /**
    * @return The functions we have declared that should be printed in a response
    * to check-synth.
    */
-  std::vector<cvc5::Term> getFunctionsToSynthesize() const;
+  std::vector<cvc5pp::Term> getFunctionsToSynthesize() const;
   /**
    * Add declared sort to the list of model declarations.
    */
-  void addModelDeclarationSort(cvc5::Sort s);
+  void addModelDeclarationSort(cvc5pp::Sort s);
   /**
    * Add declared term to the list of model declarations.
    */
-  void addModelDeclarationTerm(cvc5::Term t);
+  void addModelDeclarationTerm(cvc5pp::Term t);
   /**
    * Add a function to synthesize. This ensures the solution for f is printed
    * in a successful response to check-synth.
    */
-  void addFunctionToSynthesize(cvc5::Term f);
+  void addFunctionToSynthesize(cvc5pp::Term f);
 
   //---------------------------- end named expressions
   /**
@@ -267,7 +267,7 @@ class CVC5_EXPORT SymManager
 
  private:
   /** The API Solver object. */
-  cvc5::TermManager& d_tm;
+  cvc5pp::TermManager& d_tm;
   /** The implementation of the symbol manager */
   class Implementation;
   std::unique_ptr<Implementation> d_implementation;

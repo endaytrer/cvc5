@@ -28,12 +28,12 @@
 #include "theory/theory_id.h"
 #include "util/statistics_registry.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 class Context;
 class UserContext;
 }  // namespace cvc5::context
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class NodeManager;
 class StatisticsRegistry;

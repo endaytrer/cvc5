@@ -17,7 +17,7 @@
 
 #include "base/check.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace symfpuLiteral {
 
 template <bool isSigned>

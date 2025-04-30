@@ -26,7 +26,7 @@
 #include "theory/theory_engine.h"
 #include "util/rational.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace theory;
 using namespace theory::arith;

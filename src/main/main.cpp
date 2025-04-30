@@ -22,21 +22,21 @@
 #include "main/command_executor.h"
 #include "options/option_exception.h"
 
-using namespace cvc5::internal;
-using namespace cvc5::main;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::main;
 
 /**
  * cvc5's main() routine is just an exception-safe wrapper around runCvc5.
  */
 int main(int argc, char* argv[])
 {
-  cvc5::TermManager tm;
-  std::unique_ptr<cvc5::Solver> solver = std::make_unique<cvc5::Solver>(tm);
+  cvc5pp::TermManager tm;
+  std::unique_ptr<cvc5pp::Solver> solver = std::make_unique<cvc5pp::Solver>(tm);
   try
   {
     return runCvc5(argc, argv, solver);
   }
-  catch (cvc5::CVC5ApiOptionException& e)
+  catch (cvc5pp::CVC5ApiOptionException& e)
   {
 #ifdef CVC5_COMPETITION_MODE
     solver->getDriverOptions().out() << "unknown" << std::endl;
@@ -56,7 +56,7 @@ int main(int argc, char* argv[])
               << "Please use --help to get help on command-line options."
               << std::endl;
   }
-  catch (cvc5::CVC5ApiException& e)
+  catch (cvc5pp::CVC5ApiException& e)
   {
 #ifdef CVC5_COMPETITION_MODE
     solver->getDriverOptions().out() << "unknown" << std::endl;

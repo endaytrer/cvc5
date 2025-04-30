@@ -17,9 +17,9 @@
 
 #include "expr/attribute.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 NodeConverter::NodeConverter(NodeManager* nm, bool forceIdem)
     : d_nm(nm), d_forceIdem(forceIdem)

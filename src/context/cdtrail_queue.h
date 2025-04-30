@@ -25,7 +25,7 @@
 #include "context/cdlist.h"
 #include "context/cdo.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 
 class Context;
 

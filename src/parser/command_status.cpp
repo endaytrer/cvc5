@@ -19,7 +19,7 @@
 
 using namespace std;
 
-namespace cvc5::parser {
+namespace cvc5pp::parser {
 
 const CommandSuccess* CommandSuccess::s_instance = new CommandSuccess();
 const CommandInterrupted* CommandInterrupted::s_instance =

@@ -36,7 +36,7 @@ struct hash<uint64_t> {
 
 }/* std namespace */
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace fnv1a {
 

@@ -25,7 +25,7 @@
 #include "util/resource_manager.h"
 #include "util/statistics_registry.h"
 
-namespace cvc5::internal {
+namespace cvcpp5::internal {
 namespace prop {
 
 using CMSatVar = unsigned;

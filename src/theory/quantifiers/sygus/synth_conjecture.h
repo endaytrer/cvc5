@@ -36,7 +36,7 @@
 #include "theory/quantifiers/sygus/synth_verify.h"
 #include "theory/quantifiers/sygus/template_infer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

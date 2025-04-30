@@ -17,7 +17,7 @@
 
 #include "util/didyoumean.h"
 
-namespace cvc5::internal::test {
+namespace cvc5pp::internal::test {
 
 class TestUtilDidYouMean : public TestInternal
 {

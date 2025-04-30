@@ -37,7 +37,7 @@
 
 /// \cond internals
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 
 template <class T, class CleanUp = DefaultCleanUp<T>, class Allocator = std::allocator<T> >
 class CDList;

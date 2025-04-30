@@ -18,7 +18,7 @@
 #include "proof/proof_node_algorithm.h"
 #include "proof/proof_node_to_sexpr.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 ProofNode::ProofNode(ProofRule id,
                      const std::vector<std::shared_ptr<ProofNode>>& children,
@@ -148,9 +148,9 @@ size_t ProofNodeHashFunction::operator()(const ProofNode* pfn) const
 }  // namespace cvc5::internal
 
 namespace std {
-size_t hash<cvc5::internal::ProofNode>::operator()(
-    const cvc5::internal::ProofNode& node) const
+size_t hash<cvc5pp::internal::ProofNode>::operator()(
+    const cvc5pp::internal::ProofNode& node) const
 {
-  return cvc5::internal::ProofNodeHashFunction{}(&node);
+  return cvc5pp::internal::ProofNodeHashFunction{}(&node);
 }
 }  // namespace std

@@ -27,7 +27,7 @@
 #include "theory/quantifiers/ieval/quant_info.h"
 #include "theory/quantifiers/ieval/term_evaluator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

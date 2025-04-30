@@ -20,7 +20,7 @@
 #include "expr/node_manager.h"
 #include "util/finite_field_value.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace ff {
 

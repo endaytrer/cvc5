@@ -18,9 +18,9 @@
 #include "test_node.h"
 #include "util/rational.h"
 
-using namespace cvc5;
+using namespace cvc5pp;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestTheoryWhiteSetsTypeRuleApi : public TestApi
@@ -37,18 +37,18 @@ TEST_F(TestTheoryWhiteSetsTypeRuleApi, singleton_term)
   Term emptyReal = d_tm.mkEmptySet(d_tm.mkSetSort(realSort));
   Term integerOne = d_tm.mkInteger(1);
   Term realOne = d_tm.mkReal(1);
-  Term singletonInt = d_tm.mkTerm(cvc5::Kind::SET_SINGLETON, {integerOne});
-  Term singletonReal = d_tm.mkTerm(cvc5::Kind::SET_SINGLETON, {realOne});
+  Term singletonInt = d_tm.mkTerm(cvc5pp::Kind::SET_SINGLETON, {integerOne});
+  Term singletonReal = d_tm.mkTerm(cvc5pp::Kind::SET_SINGLETON, {realOne});
   // (union
   //    (singleton (singleton_op Int) 1)
   //    (as emptyset (Set Real)))
-  ASSERT_THROW(d_tm.mkTerm(cvc5::Kind::SET_UNION, {singletonInt, emptyReal}),
+  ASSERT_THROW(d_tm.mkTerm(cvc5pp::Kind::SET_UNION, {singletonInt, emptyReal}),
                CVC5ApiException);
   // (union
   //    (singleton (singleton_op Real) 1)
   //    (as emptyset (Set Real)))
   ASSERT_NO_THROW(
-      d_tm.mkTerm(cvc5::Kind::SET_UNION, {singletonReal, emptyReal}));
+      d_tm.mkTerm(cvc5pp::Kind::SET_UNION, {singletonReal, emptyReal}));
 }
 
 TEST_F(TestTheoryWhiteSetsTypeRuleInternal, singleton_node)

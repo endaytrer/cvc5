@@ -24,10 +24,10 @@
 #include "theory/quantifiers/quantifiers_state.h"
 #include "util/random.h"
 
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory::quantifiers::inst;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory::quantifiers::inst;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

@@ -32,7 +32,7 @@
 #include "context/context_mm.h"
 #include "context/default_clean_up.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 
 /**
  * Generic context-dependent dynamic array.  Note that for efficiency, this

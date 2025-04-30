@@ -21,7 +21,7 @@
 #include "base/output.h"
 #include "test_api.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace test {
 
@@ -654,7 +654,7 @@ TEST_F(TestApiBlackSolver, getOptionInfo)
     ASSERT_THROW(d_solver->getOptionInfo("asdf-invalid"), CVC5ApiException);
   }
   {
-    cvc5::OptionInfo info = d_solver->getOptionInfo("verbose");
+    cvc5pp::OptionInfo info = d_solver->getOptionInfo("verbose");
     ASSERT_EQ("verbose", info.name);
     ASSERT_EQ(std::vector<std::string>{}, info.aliases);
     ASSERT_FALSE(info.isRegular);
@@ -667,7 +667,7 @@ TEST_F(TestApiBlackSolver, getOptionInfo)
   }
   {
     // bool type with default
-    cvc5::OptionInfo info = d_solver->getOptionInfo("print-success");
+    cvc5pp::OptionInfo info = d_solver->getOptionInfo("print-success");
     ASSERT_EQ("print-success", info.name);
     ASSERT_EQ(std::vector<std::string>{}, info.aliases);
     ASSERT_FALSE(info.isRegular);
@@ -686,7 +686,7 @@ TEST_F(TestApiBlackSolver, getOptionInfo)
   }
   {
     // int64 type with default
-    cvc5::OptionInfo info = d_solver->getOptionInfo("verbosity");
+    cvc5pp::OptionInfo info = d_solver->getOptionInfo("verbosity");
     ASSERT_EQ("verbosity", info.name);
     ASSERT_EQ(std::vector<std::string>{}, info.aliases);
     ASSERT_FALSE(info.isRegular);
@@ -707,7 +707,7 @@ TEST_F(TestApiBlackSolver, getOptionInfo)
   }
   {
     // uint64 type with default
-    cvc5::OptionInfo info = d_solver->getOptionInfo("rlimit");
+    cvc5pp::OptionInfo info = d_solver->getOptionInfo("rlimit");
     ASSERT_EQ("rlimit", info.name);
     ASSERT_EQ(std::vector<std::string>{}, info.aliases);
     ASSERT_FALSE(info.isRegular);
@@ -732,9 +732,9 @@ TEST_F(TestApiBlackSolver, getOptionInfo)
     ASSERT_FALSE(info.isRegular);
     ASSERT_TRUE(info.isExpert);
     ASSERT_FALSE(info.setByUser);
-    ASSERT_TRUE(std::holds_alternative<cvc5::OptionInfo::NumberInfo<double>>(
+    ASSERT_TRUE(std::holds_alternative<cvc5pp::OptionInfo::NumberInfo<double>>(
         info.valueInfo));
-    auto ni = std::get<cvc5::OptionInfo::NumberInfo<double>>(info.valueInfo);
+    auto ni = std::get<cvc5pp::OptionInfo::NumberInfo<double>>(info.valueInfo);
     ASSERT_EQ(ni.currentValue, 0.0);
     ASSERT_EQ(ni.defaultValue, 0.0);
     ASSERT_TRUE(ni.minimum && ni.maximum);
@@ -749,7 +749,7 @@ TEST_F(TestApiBlackSolver, getOptionInfo)
   }
   {
     // string type with default
-    cvc5::OptionInfo info = d_solver->getOptionInfo("force-logic");
+    cvc5pp::OptionInfo info = d_solver->getOptionInfo("force-logic");
     ASSERT_EQ("force-logic", info.name);
     ASSERT_EQ(std::vector<std::string>{}, info.aliases);
     ASSERT_FALSE(info.isRegular);
@@ -768,7 +768,7 @@ TEST_F(TestApiBlackSolver, getOptionInfo)
   }
   {
     // mode option
-    cvc5::OptionInfo info = d_solver->getOptionInfo("simplification");
+    cvc5pp::OptionInfo info = d_solver->getOptionInfo("simplification");
     ASSERT_EQ("simplification", info.name);
     ASSERT_EQ(std::vector<std::string>{"simplification-mode"}, info.aliases);
     ASSERT_TRUE(info.isRegular);
@@ -872,7 +872,7 @@ TEST_F(TestApiBlackSolver, getUnsatCoreAndProof)
   {
     d_solver->assertFormula(t);
   }
-  cvc5::Result res = d_solver->checkSat();
+  cvc5pp::Result res = d_solver->checkSat();
   ASSERT_TRUE(res.isUnsat());
   ASSERT_NO_THROW(d_solver->getProof());
 }
@@ -1129,7 +1129,7 @@ TEST_F(TestApiBlackSolver, getDriverOptions)
 
 TEST_F(TestApiBlackSolver, getStatistics)
 {
-  ASSERT_NO_THROW(cvc5::Stat());
+  ASSERT_NO_THROW(cvc5pp::Stat());
   // do some array reasoning to make sure we have statistics
   {
     Sort s2 = d_tm.mkArraySort(d_int, d_int);
@@ -1139,7 +1139,7 @@ TEST_F(TestApiBlackSolver, getStatistics)
     d_solver->assertFormula(t3.eqTerm(t1));
     d_solver->checkSat();
   }
-  cvc5::Statistics stats = d_solver->getStatistics();
+  cvc5pp::Statistics stats = d_solver->getStatistics();
   std::stringstream ss;
   ss << stats;
   {
@@ -1262,7 +1262,7 @@ TEST_F(TestApiBlackSolver, proofToStringAssertionNames)
   Term x_eq_y = d_tm.mkTerm(Kind::EQUAL, {x, y});
   Term not_x_eq_y = d_tm.mkTerm(Kind::NOT, {x_eq_y});
 
-  std::map<cvc5::Term, std::string> assertionNames;
+  std::map<cvc5pp::Term, std::string> assertionNames;
   assertionNames.emplace(x_eq_y, "as1");
   assertionNames.emplace(not_x_eq_y, "as2");
 
@@ -1358,7 +1358,7 @@ TEST_F(TestApiBlackSolver, getTimeoutCore)
                    d_tm.mkInteger("501240912901901249014210220059591")});
   d_solver->assertFormula(tt);
   d_solver->assertFormula(hard);
-  std::pair<cvc5::Result, std::vector<Term>> res = d_solver->getTimeoutCore();
+  std::pair<cvc5pp::Result, std::vector<Term>> res = d_solver->getTimeoutCore();
   ASSERT_TRUE(res.first.isUnknown());
   ASSERT_TRUE(res.second.size() == 1);
   ASSERT_EQ(res.second[0], hard);
@@ -1372,7 +1372,7 @@ TEST_F(TestApiBlackSolver, getTimeoutCoreUnsat)
   d_solver->assertFormula(tt);
   d_solver->assertFormula(ff);
   d_solver->assertFormula(tt);
-  std::pair<cvc5::Result, std::vector<Term>> res = d_solver->getTimeoutCore();
+  std::pair<cvc5pp::Result, std::vector<Term>> res = d_solver->getTimeoutCore();
   ASSERT_TRUE(res.first.isUnsat());
   ASSERT_TRUE(res.second.size() == 1);
   ASSERT_EQ(res.second[0], ff);
@@ -1384,7 +1384,7 @@ TEST_F(TestApiBlackSolver, getTimeoutCoreAssuming)
   Term ff = d_tm.mkBoolean(false);
   Term tt = d_tm.mkBoolean(true);
   d_solver->assertFormula(tt);
-  std::pair<cvc5::Result, std::vector<Term>> res =
+  std::pair<cvc5pp::Result, std::vector<Term>> res =
       d_solver->getTimeoutCoreAssuming({ff, tt});
   ASSERT_TRUE(res.first.isUnsat());
   ASSERT_TRUE(res.second.size() == 1);
@@ -1655,7 +1655,7 @@ void checkSimpleSeparationConstraints(Solver* solver)
   solver->declareSepHeap(integer, integer);
   Term x = tm.mkConst(integer, "x");
   Term p = tm.mkConst(integer, "p");
-  Term heap = tm.mkTerm(cvc5::Kind::SEP_PTO, {p, x});
+  Term heap = tm.mkTerm(cvc5pp::Kind::SEP_PTO, {p, x});
   solver->assertFormula(heap);
   Term nil = tm.mkSepNil(integer);
   solver->assertFormula(nil.eqTerm(tm.mkInteger(5)));
@@ -2192,7 +2192,7 @@ TEST_F(TestApiBlackSolver, getSynthSolution)
 
   ASSERT_THROW(d_solver->getSynthSolution(f), CVC5ApiException);
 
-  cvc5::SynthResult sr = d_solver->checkSynth();
+  cvc5pp::SynthResult sr = d_solver->checkSynth();
   ASSERT_TRUE(sr.hasSolution());
 
   ASSERT_NO_THROW(d_solver->getSynthSolution(f));
@@ -2234,7 +2234,7 @@ TEST_F(TestApiBlackSolver, checkSynthNext)
   d_solver->setOption("incremental", "true");
   Term f = d_solver->synthFun("f", {}, d_bool);
 
-  cvc5::SynthResult sr = d_solver->checkSynth();
+  cvc5pp::SynthResult sr = d_solver->checkSynth();
   ASSERT_TRUE(sr.hasSolution());
   ASSERT_NO_THROW(d_solver->getSynthSolutions({f}));
   sr = d_solver->checkSynthNext();
@@ -2273,7 +2273,7 @@ TEST_F(TestApiBlackSolver, findSynth)
   (void)d_solver->synthFun("f", {}, d_bool, g);
 
   // should enumerate based on the grammar of the function to synthesize above
-  cvc5::Term t = d_solver->findSynth(modes::FindSynthTarget::ENUM);
+  cvc5pp::Term t = d_solver->findSynth(modes::FindSynthTarget::ENUM);
   ASSERT_TRUE(!t.isNull() && t.getSort().isBoolean());
 }
 
@@ -2289,7 +2289,7 @@ TEST_F(TestApiBlackSolver, findSynth2)
   g.addRule(start, falsen);
 
   // should enumerate true/false
-  cvc5::Term t = d_solver->findSynth(modes::FindSynthTarget::ENUM, g);
+  cvc5pp::Term t = d_solver->findSynth(modes::FindSynthTarget::ENUM, g);
   ASSERT_TRUE(!t.isNull() && t.getSort().isBoolean());
   t = d_solver->findSynthNext();
   ASSERT_TRUE(!t.isNull() && t.getSort().isBoolean());
@@ -2569,7 +2569,7 @@ TEST_F(TestApiBlackSolver, pluginListen)
 
 TEST_F(TestApiBlackSolver, pluginListenCadical)
 {
-  cvc5::Solver solver(d_tm);
+  cvc5pp::Solver solver(d_tm);
   solver.setOption("sat-solver", "cadical");
   solver.setOption("plugin-notify-sat-clause-in-solve", "true");
   PluginListen pl(d_tm);

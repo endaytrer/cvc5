@@ -24,7 +24,7 @@
 #include "expr/node.h"
 #include "expr/node_trie.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

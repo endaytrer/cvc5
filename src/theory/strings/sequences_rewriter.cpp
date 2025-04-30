@@ -31,9 +31,9 @@
 #include "util/string.h"
 
 using namespace std;
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 
@@ -1149,7 +1149,7 @@ Node SequencesRewriter::rewriteAndOrRegExp(TNode node)
     {
       Assert(c.getKind() == Kind::STRING_TO_REGEXP
              && c[0].getKind() == Kind::CONST_STRING);
-      cvc5::internal::String s = c[0].getConst<String>();
+      cvc5pp::internal::String s = c[0].getConst<String>();
       for (const Node& r : otherRe)
       {
         Trace("strings-rewrite-debug")
@@ -2197,7 +2197,7 @@ Node SequencesRewriter::rewriteSubstr(Node node)
     if (node[1].isConst() && node[2].isConst())
     {
       Node s = node[0];
-      cvc5::internal::Rational rMaxInt(String::maxSize());
+      cvc5pp::internal::Rational rMaxInt(String::maxSize());
       uint32_t start;
       if (node[1].getConst<Rational>() > rMaxInt)
       {
@@ -2254,7 +2254,7 @@ Node SequencesRewriter::rewriteSubstr(Node node)
       }
     }
   }
-  Node zero = nm->mkConstInt(cvc5::internal::Rational(0));
+  Node zero = nm->mkConstInt(cvc5pp::internal::Rational(0));
 
   // if entailed non-positive length or negative start point
   if (d_arithEntail.check(zero, node[1], true))
@@ -2403,7 +2403,7 @@ Node SequencesRewriter::rewriteUpdate(Node node)
     // rewriting for constant arguments
     if (node[1].isConst())
     {
-      cvc5::internal::Rational rMaxInt(String::maxSize());
+      cvc5pp::internal::Rational rMaxInt(String::maxSize());
       if (node[1].getConst<Rational>() > rMaxInt)
       {
         // start beyond the maximum size of strings
@@ -2861,7 +2861,7 @@ Node SequencesRewriter::rewriteIndexof(Node node)
   utils::getConcat(node[0], children0);
   if (children0[0].isConst() && node[1].isConst() && node[2].isConst())
   {
-    cvc5::internal::Rational rMaxInt(cvc5::internal::String::maxSize());
+    cvc5pp::internal::Rational rMaxInt(cvc5pp::internal::String::maxSize());
     if (node[2].getConst<Rational>() > rMaxInt)
     {
       if (node[0].isConst())
@@ -3090,7 +3090,7 @@ Node SequencesRewriter::rewriteIndexofRe(Node node)
     if (s.isConst() && n.isConst())
     {
       Rational nrat = n.getConst<Rational>();
-      cvc5::internal::Rational rMaxInt(cvc5::internal::String::maxSize());
+      cvc5pp::internal::Rational rMaxInt(cvc5pp::internal::String::maxSize());
       if (nrat > rMaxInt)
       {
         // We know that, due to limitations on the size of string constants
@@ -3828,7 +3828,7 @@ Node SequencesRewriter::rewritePrefixSuffix(Node n)
   Node val;
   if (isPrefix)
   {
-    val = nodeManager()->mkConstInt(cvc5::internal::Rational(0));
+    val = nodeManager()->mkConstInt(cvc5pp::internal::Rational(0));
   }
   else
   {

@@ -25,9 +25,9 @@
 #include "proof/proof_node_algorithm.h"
 #include "rewriter/rewrites.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 std::ostream& operator<<(std::ostream& out, TConvPolicy tcpol)
 {

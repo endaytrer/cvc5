@@ -20,7 +20,7 @@
 #ifndef CVC5__UTIL__RANDOM_H
 #define CVC5__UTIL__RANDOM_H
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Random
 {

@@ -21,7 +21,7 @@
 #include "options/io_utils.h"
 #include "printer/printer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 UnsatCore::UnsatCore(const std::vector<Node>& core)
     : d_useNames(false), d_core(core), d_names()

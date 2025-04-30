@@ -18,7 +18,7 @@
 #include "test.h"
 #include "theory/logic_info.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace theory;
 

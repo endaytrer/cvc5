@@ -20,7 +20,7 @@
 
 #include "expr/attribute.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace expr {
 
 // Definition of an attribute for the variable name.

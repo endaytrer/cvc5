@@ -18,7 +18,7 @@
 
 #include "gtest/gtest.h"
 
-namespace cvc5::internal::test {
+namespace cvc5pp::internal::test {
 
 class TestCApiBlackUncovered : public ::testing::Test
 {
@@ -38,9 +38,9 @@ class TestCApiBlackUncovered : public ::testing::Test
 TEST_F(TestCApiBlackUncovered, deprecated)
 {
   std::stringstream ss;
-  ss << cvc5::Kind::EQUAL << cvc5::kindToString(cvc5::Kind::EQUAL);
-  ss << cvc5::SortKind::ARRAY_SORT
-     << cvc5::sortKindToString(cvc5::SortKind::ARRAY_SORT);
+  ss << cvc5pp::Kind::EQUAL << cvc5pp::kindToString(cvc5pp::Kind::EQUAL);
+  ss << cvc5pp::SortKind::ARRAY_SORT
+     << cvc5pp::sortKindToString(cvc5pp::SortKind::ARRAY_SORT);
 
   Solver slv;
   (void)slv.getBooleanSort();
@@ -152,35 +152,35 @@ TEST_F(TestCApiBlackUncovered, deprecated)
 
   (void)slv.mkVar(slv.getIntegerSort());
   (void)slv.mkDatatypeDecl("paramlist", {slv.mkParamSort("T")});
-  (void)cvc5::parser::SymbolManager(&slv);
+  (void)cvc5pp::parser::SymbolManager(&slv);
 }
 
 TEST_F(TestCApiBlackUncovered, stream_operators)
 {
   std::stringstream ss;
-  ss << cvc5::Kind::EQUAL << std::to_string(cvc5::Kind::EQUAL);
-  ss << cvc5::SortKind::ARRAY_SORT
-     << std::to_string(cvc5::SortKind::ARRAY_SORT);
-  ss << cvc5::RoundingMode::ROUND_TOWARD_NEGATIVE
-     << std::to_string(cvc5::RoundingMode::ROUND_TOWARD_NEGATIVE);
-  ss << cvc5::UnknownExplanation::UNKNOWN_REASON
-     << std::to_string(cvc5::UnknownExplanation::UNKNOWN_REASON);
-  ss << cvc5::modes::BlockModelsMode::LITERALS
-     << std::to_string(cvc5::modes::BlockModelsMode::LITERALS);
-  ss << cvc5::modes::LearnedLitType::PREPROCESS
-     << std::to_string(cvc5::modes::LearnedLitType::PREPROCESS);
-  ss << cvc5::modes::ProofComponent::FULL
-     << std::to_string(cvc5::modes::ProofComponent::FULL);
-  ss << cvc5::modes::FindSynthTarget::ENUM
-     << std::to_string(cvc5::modes::FindSynthTarget::ENUM);
-  ss << cvc5::modes::InputLanguage::SMT_LIB_2_6
-     << std::to_string(cvc5::modes::InputLanguage::SMT_LIB_2_6);
-  ss << cvc5::modes::ProofFormat::LFSC
-     << std::to_string(cvc5::modes::ProofFormat::LFSC);
-  ss << cvc5::ProofRule::ASSUME << std::to_string(cvc5::ProofRule::ASSUME);
-  ss << cvc5::ProofRewriteRule::NONE
-     << std::to_string(cvc5::ProofRewriteRule::NONE);
-  ss << cvc5::SkolemId::PURIFY << std::to_string(cvc5::SkolemId::PURIFY);
+  ss << cvc5pp::Kind::EQUAL << std::to_string(cvc5pp::Kind::EQUAL);
+  ss << cvc5pp::SortKind::ARRAY_SORT
+     << std::to_string(cvc5pp::SortKind::ARRAY_SORT);
+  ss << cvc5pp::RoundingMode::ROUND_TOWARD_NEGATIVE
+     << std::to_string(cvc5pp::RoundingMode::ROUND_TOWARD_NEGATIVE);
+  ss << cvc5pp::UnknownExplanation::UNKNOWN_REASON
+     << std::to_string(cvc5pp::UnknownExplanation::UNKNOWN_REASON);
+  ss << cvc5pp::modes::BlockModelsMode::LITERALS
+     << std::to_string(cvc5pp::modes::BlockModelsMode::LITERALS);
+  ss << cvc5pp::modes::LearnedLitType::PREPROCESS
+     << std::to_string(cvc5pp::modes::LearnedLitType::PREPROCESS);
+  ss << cvc5pp::modes::ProofComponent::FULL
+     << std::to_string(cvc5pp::modes::ProofComponent::FULL);
+  ss << cvc5pp::modes::FindSynthTarget::ENUM
+     << std::to_string(cvc5pp::modes::FindSynthTarget::ENUM);
+  ss << cvc5pp::modes::InputLanguage::SMT_LIB_2_6
+     << std::to_string(cvc5pp::modes::InputLanguage::SMT_LIB_2_6);
+  ss << cvc5pp::modes::ProofFormat::LFSC
+     << std::to_string(cvc5pp::modes::ProofFormat::LFSC);
+  ss << cvc5pp::ProofRule::ASSUME << std::to_string(cvc5pp::ProofRule::ASSUME);
+  ss << cvc5pp::ProofRewriteRule::NONE
+     << std::to_string(cvc5pp::ProofRewriteRule::NONE);
+  ss << cvc5pp::SkolemId::PURIFY << std::to_string(cvc5pp::SkolemId::PURIFY);
   ss << d_tm.mkOp(Kind::BITVECTOR_EXTRACT, {4, 0});
   ss << d_tm.mkDatatypeConstructorDecl("cons");
 
@@ -214,25 +214,25 @@ TEST_F(TestCApiBlackUncovered, stream_operators)
 
 TEST_F(TestCApiBlackUncovered, default_constructors)
 {
-  (void)cvc5::Op();
-  (void)cvc5::Datatype();
-  (void)cvc5::DatatypeDecl();
-  (void)cvc5::DatatypeConstructorDecl();
-  (void)cvc5::DatatypeConstructor();
-  (void)cvc5::DatatypeSelector();
-  (void)cvc5::SynthResult();
-  (void)cvc5::Grammar();
-  (void)cvc5::Result();
-  (void)cvc5::Proof();
-  (void)cvc5::parser::Command();
+  (void)cvc5pp::Op();
+  (void)cvc5pp::Datatype();
+  (void)cvc5pp::DatatypeDecl();
+  (void)cvc5pp::DatatypeConstructorDecl();
+  (void)cvc5pp::DatatypeConstructor();
+  (void)cvc5pp::DatatypeSelector();
+  (void)cvc5pp::SynthResult();
+  (void)cvc5pp::Grammar();
+  (void)cvc5pp::Result();
+  (void)cvc5pp::Proof();
+  (void)cvc5pp::parser::Command();
 }
 
 TEST_F(TestCApiBlackUncovered, comparison_operators)
 {
-  cvc5::Sort sort;
+  cvc5pp::Sort sort;
   ASSERT_TRUE(sort <= sort);
   ASSERT_TRUE(sort >= sort);
-  cvc5::Term term;
+  cvc5pp::Term term;
   ASSERT_TRUE(term <= term);
   ASSERT_TRUE(term >= term);
 }
@@ -323,7 +323,7 @@ TEST_F(TestCApiBlackUncovered, check_sat_assuming)
 
 TEST_F(TestCApiBlackUncovered, option_info)
 {
-  cvc5::OptionInfo info = d_solver->getOptionInfo("print-success");
+  cvc5pp::OptionInfo info = d_solver->getOptionInfo("print-success");
   (void)info.boolValue();
   info = d_solver->getOptionInfo("verbosity");
   (void)info.intValue();

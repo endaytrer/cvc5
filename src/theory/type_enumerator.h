@@ -24,7 +24,7 @@
 #include "expr/type_node.h"
 #include "util/integer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 class NoMoreValuesException : public Exception {

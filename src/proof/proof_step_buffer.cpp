@@ -18,9 +18,9 @@
 #include "proof/proof.h"
 #include "proof/proof_checker.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 ProofStep::ProofStep() : d_rule(ProofRule::UNKNOWN) {}
 ProofStep::ProofStep(ProofRule r,

@@ -18,7 +18,7 @@
 #include "theory/arith/inference_manager.h"
 #include "theory/skolem_lemma.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 

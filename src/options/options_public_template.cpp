@@ -37,7 +37,7 @@ namespace {
   // clang-format on
 }
 
-namespace cvc5::internal::options
+namespace cvc5pp::internal::options
 {
   // Contains the default option handlers (i.e. parsers)
   namespace handlers {

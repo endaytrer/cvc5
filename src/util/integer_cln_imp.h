@@ -31,13 +31,13 @@ namespace cln
   struct cl_read_flags;
 }
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Rational;
 
 class Integer
 {
-  friend class cvc5::internal::Rational;
+  friend class cvc5pp::internal::Rational;
 
  public:
   /**
@@ -386,7 +386,7 @@ class Integer
 
 struct IntegerHashFunction
 {
-  size_t operator()(const cvc5::internal::Integer& i) const { return i.hash(); }
+  size_t operator()(const cvc5pp::internal::Integer& i) const { return i.hash(); }
 }; /* struct IntegerHashFunction */
 
 std::ostream& operator<<(std::ostream& os, const Integer& n);

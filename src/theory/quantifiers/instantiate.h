@@ -28,7 +28,7 @@
 #include "theory/quantifiers/quant_util.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class LazyCDProof;
 

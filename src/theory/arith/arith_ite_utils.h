@@ -31,7 +31,7 @@
 #include "smt/env_obj.h"
 #include "util/integer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace util {
 class ContainsTermITEVisitor;

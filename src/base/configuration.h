@@ -28,7 +28,7 @@
 #include <string>
 #include <vector>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace configuration {
   static constexpr bool isStatisticsBuild()

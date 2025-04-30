@@ -30,7 +30,7 @@
 #include "theory/valuation.h"
 #include "util/resource_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 /* -------------------------------------------------------------------------- */

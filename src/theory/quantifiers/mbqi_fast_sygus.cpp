@@ -26,7 +26,7 @@
 #include "util/random.h"
 #include "smt/set_defaults.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

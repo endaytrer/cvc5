@@ -24,7 +24,7 @@
 #include "smt/env_obj.h"
 #include "theory/shared_terms_database.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class TheoryEngine;
 

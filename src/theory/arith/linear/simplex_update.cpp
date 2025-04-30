@@ -19,7 +19,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith::linear {
 
@@ -37,7 +37,7 @@ namespace arith::linear {
  */
 std::ostream& operator<<(std::ostream& out, const std::optional<int>& m)
 {
-  return cvc5::internal::operator<<(out, m);
+  return cvc5pp::internal::operator<<(out, m);
 }
 
 UpdateInfo::UpdateInfo():

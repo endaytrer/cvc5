@@ -19,7 +19,7 @@
 #include "test.h"
 #include "util/bin_heap.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestUtilBlackBinaryHeap : public TestInternal

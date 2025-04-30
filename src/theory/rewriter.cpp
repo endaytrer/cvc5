@@ -26,7 +26,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 // Note that this function is a simplified version of Theory::theoryOf for

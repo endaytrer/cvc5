@@ -19,7 +19,7 @@
 #include "test_with_smt_parser.h"
 #include "theory/ff/parse.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace theory::ff;
 

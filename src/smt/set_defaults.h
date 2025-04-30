@@ -20,7 +20,7 @@
 #include "smt/env_obj.h"
 #include "theory/logic_info.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 /**

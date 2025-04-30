@@ -15,7 +15,7 @@
 
 #include "decision/justify_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace decision {
 
 JustifyStatistics::JustifyStatistics(StatisticsRegistry& sr)

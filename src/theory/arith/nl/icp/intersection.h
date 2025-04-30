@@ -26,7 +26,7 @@ namespace poly {
   class Interval;
 }
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 namespace nl {

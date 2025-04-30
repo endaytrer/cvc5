@@ -20,7 +20,7 @@
 #include "base/output.h"
 #include "gtest/gtest.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace test {
 
@@ -36,30 +36,30 @@ TEST_F(TestApiTypes, printEnum)
       "smt_lib_2_6 lfsc";
   {
     std::stringstream ss;
-    ss << cvc5::Kind::LT << " ";
-    ss << cvc5::SortKind::ARRAY_SORT << " ";
-    ss << cvc5::RoundingMode::ROUND_TOWARD_ZERO << " ";
-    ss << cvc5::UnknownExplanation::UNKNOWN_REASON << " ";
-    ss << cvc5::modes::BlockModelsMode::LITERALS << " ";
-    ss << cvc5::modes::LearnedLitType::PREPROCESS << " ";
-    ss << cvc5::modes::ProofComponent::FULL << " ";
-    ss << cvc5::modes::FindSynthTarget::ENUM << " ";
-    ss << cvc5::modes::InputLanguage::SMT_LIB_2_6 << " ";
-    ss << cvc5::modes::ProofFormat::LFSC;
+    ss << cvc5pp::Kind::LT << " ";
+    ss << cvc5pp::SortKind::ARRAY_SORT << " ";
+    ss << cvc5pp::RoundingMode::ROUND_TOWARD_ZERO << " ";
+    ss << cvc5pp::UnknownExplanation::UNKNOWN_REASON << " ";
+    ss << cvc5pp::modes::BlockModelsMode::LITERALS << " ";
+    ss << cvc5pp::modes::LearnedLitType::PREPROCESS << " ";
+    ss << cvc5pp::modes::ProofComponent::FULL << " ";
+    ss << cvc5pp::modes::FindSynthTarget::ENUM << " ";
+    ss << cvc5pp::modes::InputLanguage::SMT_LIB_2_6 << " ";
+    ss << cvc5pp::modes::ProofFormat::LFSC;
     ASSERT_EQ(ss.str(), expected);
   }
   {
     std::stringstream ss;
-    ss << std::to_string(cvc5::Kind::LT) << " ";
-    ss << std::to_string(cvc5::SortKind::ARRAY_SORT) << " ";
-    ss << std::to_string(cvc5::RoundingMode::ROUND_TOWARD_ZERO) << " ";
-    ss << std::to_string(cvc5::UnknownExplanation::UNKNOWN_REASON) << " ";
-    ss << std::to_string(cvc5::modes::BlockModelsMode::LITERALS) << " ";
-    ss << std::to_string(cvc5::modes::LearnedLitType::PREPROCESS) << " ";
-    ss << std::to_string(cvc5::modes::ProofComponent::FULL) << " ";
-    ss << std::to_string(cvc5::modes::FindSynthTarget::ENUM) << " ";
-    ss << std::to_string(cvc5::modes::InputLanguage::SMT_LIB_2_6) << " ";
-    ss << std::to_string(cvc5::modes::ProofFormat::LFSC);
+    ss << std::to_string(cvc5pp::Kind::LT) << " ";
+    ss << std::to_string(cvc5pp::SortKind::ARRAY_SORT) << " ";
+    ss << std::to_string(cvc5pp::RoundingMode::ROUND_TOWARD_ZERO) << " ";
+    ss << std::to_string(cvc5pp::UnknownExplanation::UNKNOWN_REASON) << " ";
+    ss << std::to_string(cvc5pp::modes::BlockModelsMode::LITERALS) << " ";
+    ss << std::to_string(cvc5pp::modes::LearnedLitType::PREPROCESS) << " ";
+    ss << std::to_string(cvc5pp::modes::ProofComponent::FULL) << " ";
+    ss << std::to_string(cvc5pp::modes::FindSynthTarget::ENUM) << " ";
+    ss << std::to_string(cvc5pp::modes::InputLanguage::SMT_LIB_2_6) << " ";
+    ss << std::to_string(cvc5pp::modes::ProofFormat::LFSC);
     ASSERT_EQ(ss.str(), expected);
   }
 }

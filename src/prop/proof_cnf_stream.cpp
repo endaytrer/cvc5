@@ -20,7 +20,7 @@
 #include "theory/builtin/proof_checker.h"
 #include "util/rational.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 ProofCnfStream::ProofCnfStream(Env& env,

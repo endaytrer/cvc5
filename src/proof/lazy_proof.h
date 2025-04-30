@@ -22,7 +22,7 @@
 #include "proof/proof.h"
 #include "proof/trust_id.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofGenerator;
 class ProofNodeManager;

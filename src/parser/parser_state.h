@@ -31,7 +31,7 @@
 #include "parser/sym_manager.h"
 #include "parser/symbol_table.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 class Command;

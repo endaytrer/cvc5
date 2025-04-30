@@ -31,10 +31,10 @@
 #include "util/rational.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 class Context;
 }
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith::linear {
 

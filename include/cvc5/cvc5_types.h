@@ -23,7 +23,7 @@
 #define ENUM(name) Cvc5##name
 #else
 #include <iosfwd>
-namespace cvc5 {
+namespace cvc5pp {
 #define ENUM(name) class name
 #undef EVALUE
 #define EVALUE(name) name
@@ -97,10 +97,10 @@ CVC5_EXPORT std::ostream& operator<<(std::ostream& out, UnknownExplanation e);
 }  // namespace cvc5
 
 namespace std {
-CVC5_EXPORT std::string to_string(cvc5::UnknownExplanation exp);
+CVC5_EXPORT std::string to_string(cvc5pp::UnknownExplanation exp);
 }
 
-namespace cvc5 {
+namespace cvc5pp {
 #endif
 
 /* -------------------------------------------------------------------------- */
@@ -194,12 +194,12 @@ CVC5_EXPORT const char* cvc5_rm_to_string(Cvc5RoundingMode rm);
 CVC5_EXPORT std::ostream& operator<<(std::ostream& out, RoundingMode rm);
 }  // namespace cvc5
 namespace std {
-CVC5_EXPORT std::string to_string(cvc5::RoundingMode rm);
+CVC5_EXPORT std::string to_string(cvc5pp::RoundingMode rm);
 }
 #endif
 
 #ifndef CVC5_API_USE_C_ENUMS
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 #endif
 
 /* -------------------------------------------------------------------------- */
@@ -254,10 +254,10 @@ CVC5_EXPORT std::ostream& operator<<(std::ostream& out, BlockModelsMode mode);
 }
 
 namespace std {
-CVC5_EXPORT std::string to_string(cvc5::modes::BlockModelsMode mode);
+CVC5_EXPORT std::string to_string(cvc5pp::modes::BlockModelsMode mode);
 }
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 #endif
 
 /* -------------------------------------------------------------------------- */
@@ -354,10 +354,10 @@ CVC5_EXPORT std::ostream& operator<<(std::ostream& out, LearnedLitType type);
 }
 
 namespace std {
-CVC5_EXPORT std::string to_string(cvc5::modes::LearnedLitType type);
+CVC5_EXPORT std::string to_string(cvc5pp::modes::LearnedLitType type);
 }
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 #endif
 
 /* -------------------------------------------------------------------------- */
@@ -455,10 +455,10 @@ CVC5_EXPORT std::ostream& operator<<(std::ostream& out, ProofComponent pc);
 }
 
 namespace std {
-CVC5_EXPORT std::string to_string(cvc5::modes::ProofComponent pc);
+CVC5_EXPORT std::string to_string(cvc5pp::modes::ProofComponent pc);
 }
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 #endif
 
 /* -------------------------------------------------------------------------- */
@@ -517,10 +517,10 @@ CVC5_EXPORT std::ostream& operator<<(std::ostream& out, ProofFormat format);
 }
 
 namespace std {
-CVC5_EXPORT std::string to_string(cvc5::modes::ProofFormat format);
+CVC5_EXPORT std::string to_string(cvc5pp::modes::ProofFormat format);
 }
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 #endif
 
 /* -------------------------------------------------------------------------- */
@@ -612,10 +612,10 @@ CVC5_EXPORT std::ostream& operator<<(std::ostream& out, FindSynthTarget target);
 }
 
 namespace std {
-CVC5_EXPORT std::string to_string(cvc5::modes::FindSynthTarget target);
+CVC5_EXPORT std::string to_string(cvc5pp::modes::FindSynthTarget target);
 }
 
-namespace cvc5::modes {
+namespace cvc5pp::modes {
 #endif
 
 /* -------------------------------------------------------------------------- */
@@ -669,7 +669,7 @@ CVC5_EXPORT std::ostream& operator<<(std::ostream& out, InputLanguage lang);
 }  // namespace cvc5::modes
 
 namespace std {
-CVC5_EXPORT std::string to_string(cvc5::modes::InputLanguage lang);
+CVC5_EXPORT std::string to_string(cvc5pp::modes::InputLanguage lang);
 }
 #endif
 

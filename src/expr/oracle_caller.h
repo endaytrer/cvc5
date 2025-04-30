@@ -21,7 +21,7 @@
 #include "expr/node.h"
 #include "expr/oracle.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * This class manages the calls to an (externally implemented) oracle for a

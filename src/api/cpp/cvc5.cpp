@@ -91,7 +91,7 @@
 #include "util/uninterpreted_sort_value.h"
 #include "util/utility.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* APIStatistics                                                              */
@@ -937,31 +937,31 @@ const static std::unordered_map<Kind, internal::Kind> s_op_kinds{
 /* Rounding Mode for Floating Points                                          */
 /* -------------------------------------------------------------------------- */
 
-const static std::unordered_map<RoundingMode, cvc5::internal::RoundingMode>
+const static std::unordered_map<RoundingMode, cvc5pp::internal::RoundingMode>
     s_rmodes{
         {RoundingMode::ROUND_NEAREST_TIES_TO_EVEN,
-         cvc5::internal::RoundingMode::ROUND_NEAREST_TIES_TO_EVEN},
+         cvc5pp::internal::RoundingMode::ROUND_NEAREST_TIES_TO_EVEN},
         {RoundingMode::ROUND_TOWARD_POSITIVE,
-         cvc5::internal::RoundingMode::ROUND_TOWARD_POSITIVE},
+         cvc5pp::internal::RoundingMode::ROUND_TOWARD_POSITIVE},
         {RoundingMode::ROUND_TOWARD_NEGATIVE,
-         cvc5::internal::RoundingMode::ROUND_TOWARD_NEGATIVE},
+         cvc5pp::internal::RoundingMode::ROUND_TOWARD_NEGATIVE},
         {RoundingMode::ROUND_TOWARD_ZERO,
-         cvc5::internal::RoundingMode::ROUND_TOWARD_ZERO},
+         cvc5pp::internal::RoundingMode::ROUND_TOWARD_ZERO},
         {RoundingMode::ROUND_NEAREST_TIES_TO_AWAY,
-         cvc5::internal::RoundingMode::ROUND_NEAREST_TIES_TO_AWAY},
+         cvc5pp::internal::RoundingMode::ROUND_NEAREST_TIES_TO_AWAY},
     };
 
-const static std::unordered_map<cvc5::internal::RoundingMode, RoundingMode>
+const static std::unordered_map<cvc5pp::internal::RoundingMode, RoundingMode>
     s_rmodes_internal{
-        {cvc5::internal::RoundingMode::ROUND_NEAREST_TIES_TO_EVEN,
+        {cvc5pp::internal::RoundingMode::ROUND_NEAREST_TIES_TO_EVEN,
          RoundingMode::ROUND_NEAREST_TIES_TO_EVEN},
-        {cvc5::internal::RoundingMode::ROUND_TOWARD_POSITIVE,
+        {cvc5pp::internal::RoundingMode::ROUND_TOWARD_POSITIVE,
          RoundingMode::ROUND_TOWARD_POSITIVE},
-        {cvc5::internal::RoundingMode::ROUND_TOWARD_NEGATIVE,
+        {cvc5pp::internal::RoundingMode::ROUND_TOWARD_NEGATIVE,
          RoundingMode::ROUND_TOWARD_NEGATIVE},
-        {cvc5::internal::RoundingMode::ROUND_TOWARD_ZERO,
+        {cvc5pp::internal::RoundingMode::ROUND_TOWARD_ZERO,
          RoundingMode::ROUND_TOWARD_ZERO},
-        {cvc5::internal::RoundingMode::ROUND_NEAREST_TIES_TO_AWAY,
+        {cvc5pp::internal::RoundingMode::ROUND_NEAREST_TIES_TO_AWAY,
          RoundingMode::ROUND_NEAREST_TIES_TO_AWAY},
     };
 
@@ -973,7 +973,7 @@ namespace {
 
 /** Convert a internal::Kind (internal) to a cvc5::Kind (external).
  */
-cvc5::Kind intToExtKind(internal::Kind k)
+cvc5pp::Kind intToExtKind(internal::Kind k)
 {
   auto it = s_kinds_internal.find(k);
   if (it == s_kinds_internal.end())
@@ -996,7 +996,7 @@ SortKind intToExtSortKind(internal::Kind k)
 
 /** Convert a cvc5::Kind (external) to a internal::Kind (internal).
  */
-internal::Kind extToIntKind(cvc5::Kind k)
+internal::Kind extToIntKind(cvc5pp::Kind k)
 {
   auto it = s_kinds.find(k);
   if (it == s_kinds.end())
@@ -1091,8 +1091,8 @@ class PluginInternal : public internal::Plugin
 {
  public:
   PluginInternal(internal::NodeManager* nm,
-                 cvc5::TermManager& tm,
-                 cvc5::Plugin& e)
+                 cvc5pp::TermManager& tm,
+                 cvc5pp::Plugin& e)
       : internal::Plugin(nm), d_tm(tm), d_external(e)
   {
   }
@@ -1119,9 +1119,9 @@ class PluginInternal : public internal::Plugin
 
  private:
   /** Reference to the term manager */
-  cvc5::TermManager& d_tm;
+  cvc5pp::TermManager& d_tm;
   /** Reference to the external (user-provided) plugin */
-  cvc5::Plugin& d_external;
+  cvc5pp::Plugin& d_external;
 };
 
 std::string kindToString(Kind k)
@@ -1209,13 +1209,13 @@ std::ostream& operator<<(std::ostream& out, const Result& r)
 
 namespace std {
 
-size_t hash<cvc5::Result>::operator()(const cvc5::Result& result) const
+size_t hash<cvc5pp::Result>::operator()(const cvc5pp::Result& result) const
 {
   return std::hash<std::string>{}(result.toString());
 }
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* SynthResult */
@@ -1270,14 +1270,14 @@ std::ostream& operator<<(std::ostream& out, const SynthResult& sr)
 
 namespace std {
 
-size_t hash<cvc5::SynthResult>::operator()(
-    const cvc5::SynthResult& result) const
+size_t hash<cvc5pp::SynthResult>::operator()(
+    const cvc5pp::SynthResult& result) const
 {
   return std::hash<std::string>{}(result.toString());
 }
 }  // namespace std
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 /* Sort                                                                       */
@@ -3403,7 +3403,7 @@ RoundingMode Term::getRoundingModeValue() const
       << "Term to be a floating-point rounding mode value when calling "
          "getRoundingModeValue()";
   //////// all checks before this line
-  return s_rmodes_internal.at(d_node->getConst<cvc5::internal::RoundingMode>());
+  return s_rmodes_internal.at(d_node->getConst<cvc5pp::internal::RoundingMode>());
   ////////
   CVC5_API_TRY_CATCH_END;
 }
@@ -5805,7 +5805,7 @@ Sort TermManager::mkFunctionSort(const std::vector<Sort>& sorts,
 Term TermManager::mkSkolem(SkolemId id, const std::vector<Term>& indices)
 {
   CVC5_API_TRY_CATCH_BEGIN;
-  cvc5::internal::SkolemManager* sm = d_nm->getSkolemManager();
+  cvc5pp::internal::SkolemManager* sm = d_nm->getSkolemManager();
   CVC5_API_CHECK(indices.size() == sm->getNumIndicesForSkolemId(id))
       << "invalid number of indices, expected "
       << sm->getNumIndicesForSkolemId(id) << " got " << indices.size();
@@ -7980,7 +7980,7 @@ std::vector<Proof> Solver::getProof(modes::ProofComponent c) const
 std::string Solver::proofToString(
     Proof proof,
     modes::ProofFormat format,
-    const std::map<cvc5::Term, std::string>& assertionNames) const
+    const std::map<cvc5pp::Term, std::string>& assertionNames) const
 {
   CVC5_API_TRY_CATCH_BEGIN;
   //////// all checks before this line
@@ -8934,123 +8934,123 @@ TermManager& Solver::getTermManager() const { return d_tm; }
 
 namespace std {
 
-size_t hash<cvc5::Kind>::operator()(cvc5::Kind k) const
+size_t hash<cvc5pp::Kind>::operator()(cvc5pp::Kind k) const
 {
   return static_cast<size_t>(k);
 }
 
-std::string to_string(cvc5::Kind k)
+std::string to_string(cvc5pp::Kind k)
 {
-  auto it = cvc5::s_kinds.find(k);
-  if (it == cvc5::s_kinds.end())
+  auto it = cvc5pp::s_kinds.find(k);
+  if (it == cvc5pp::s_kinds.end())
   {
     return "UNDEFINED_KIND";
   }
   return it->second.second;
 }
 
-size_t hash<cvc5::SortKind>::operator()(cvc5::SortKind k) const
+size_t hash<cvc5pp::SortKind>::operator()(cvc5pp::SortKind k) const
 {
   return static_cast<size_t>(k);
 }
 
-std::string to_string(cvc5::SortKind k)
+std::string to_string(cvc5pp::SortKind k)
 {
-  auto it = cvc5::s_sort_kinds.find(k);
-  if (it == cvc5::s_sort_kinds.end())
+  auto it = cvc5pp::s_sort_kinds.find(k);
+  if (it == cvc5pp::s_sort_kinds.end())
   {
     return "UNDEFINED_SORT_KIND";
   }
   return it->second.second;
 }
 
-size_t hash<cvc5::Op>::operator()(const cvc5::Op& t) const
+size_t hash<cvc5pp::Op>::operator()(const cvc5pp::Op& t) const
 {
   if (t.isIndexedHelper())
   {
-    return std::hash<cvc5::internal::Node>()(*t.d_node);
+    return std::hash<cvc5pp::internal::Node>()(*t.d_node);
   }
   else
   {
-    return std::hash<cvc5::Kind>()(t.d_kind);
+    return std::hash<cvc5pp::Kind>()(t.d_kind);
   }
 }
 
-size_t std::hash<cvc5::Sort>::operator()(const cvc5::Sort& s) const
+size_t std::hash<cvc5pp::Sort>::operator()(const cvc5pp::Sort& s) const
 {
-  return std::hash<cvc5::internal::TypeNode>()(*s.d_type);
+  return std::hash<cvc5pp::internal::TypeNode>()(*s.d_type);
 }
 
-size_t std::hash<cvc5::Term>::operator()(const cvc5::Term& t) const
+size_t std::hash<cvc5pp::Term>::operator()(const cvc5pp::Term& t) const
 {
-  return std::hash<cvc5::internal::Node>()(*t.d_node);
+  return std::hash<cvc5pp::internal::Node>()(*t.d_node);
 }
 
-size_t std::hash<cvc5::DatatypeConstructorDecl>::operator()(
-    const cvc5::DatatypeConstructorDecl& decl) const
+size_t std::hash<cvc5pp::DatatypeConstructorDecl>::operator()(
+    const cvc5pp::DatatypeConstructorDecl& decl) const
 {
   if (decl.isNull())
   {
     return 0;
   }
-  return std::hash<cvc5::internal::DTypeConstructor>()(*decl.d_ctor);
+  return std::hash<cvc5pp::internal::DTypeConstructor>()(*decl.d_ctor);
 }
 
-size_t std::hash<cvc5::DatatypeDecl>::operator()(
-    const cvc5::DatatypeDecl& decl) const
+size_t std::hash<cvc5pp::DatatypeDecl>::operator()(
+    const cvc5pp::DatatypeDecl& decl) const
 {
   if (decl.isNull())
   {
     return 0;
   }
-  return std::hash<cvc5::internal::DType>()(*decl.d_dtype);
+  return std::hash<cvc5pp::internal::DType>()(*decl.d_dtype);
 }
 
-size_t std::hash<cvc5::DatatypeSelector>::operator()(
-    const cvc5::DatatypeSelector& sel) const
+size_t std::hash<cvc5pp::DatatypeSelector>::operator()(
+    const cvc5pp::DatatypeSelector& sel) const
 {
   if (sel.isNull())
   {
     return 0;
   }
-  return std::hash<cvc5::internal::DTypeSelector>()(*sel.d_stor);
+  return std::hash<cvc5pp::internal::DTypeSelector>()(*sel.d_stor);
 }
 
-size_t std::hash<cvc5::DatatypeConstructor>::operator()(
-    const cvc5::DatatypeConstructor& cons) const
+size_t std::hash<cvc5pp::DatatypeConstructor>::operator()(
+    const cvc5pp::DatatypeConstructor& cons) const
 {
   if (cons.isNull())
   {
     return 0;
   }
-  return std::hash<cvc5::internal::DTypeConstructor>()(*cons.d_ctor);
+  return std::hash<cvc5pp::internal::DTypeConstructor>()(*cons.d_ctor);
 }
 
-size_t hash<cvc5::Datatype>::operator()(const cvc5::Datatype& dt) const
+size_t hash<cvc5pp::Datatype>::operator()(const cvc5pp::Datatype& dt) const
 {
   if (dt.isNull())
   {
     return 0;
   }
-  return std::hash<cvc5::internal::DType>()(*dt.d_dtype);
+  return std::hash<cvc5pp::internal::DType>()(*dt.d_dtype);
 }
 
-size_t hash<cvc5::Proof>::operator()(const cvc5::Proof& proof) const
+size_t hash<cvc5pp::Proof>::operator()(const cvc5pp::Proof& proof) const
 {
   if (proof.isNull())
   {
     return 0;
   }
-  return std::hash<cvc5::internal::ProofNode>{}(*proof.d_proofNode);
+  return std::hash<cvc5pp::internal::ProofNode>{}(*proof.d_proofNode);
 }
 
-size_t hash<cvc5::Grammar>::operator()(const cvc5::Grammar& grammar) const
+size_t hash<cvc5pp::Grammar>::operator()(const cvc5pp::Grammar& grammar) const
 {
   if (grammar.isNull())
   {
     return 0;
   }
-  return std::hash<cvc5::internal::SygusGrammar>{}(*grammar.d_grammar);
+  return std::hash<cvc5pp::internal::SygusGrammar>{}(*grammar.d_grammar);
 }
 
 }  // namespace std

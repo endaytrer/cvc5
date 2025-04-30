@@ -22,7 +22,7 @@
 
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * This struct is used to sort terms by the "size" of their type

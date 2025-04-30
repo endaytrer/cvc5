@@ -25,7 +25,7 @@
 #include "theory/inference_id.h"
 #include "theory/theory_inference.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 class InferenceManagerBuffered;

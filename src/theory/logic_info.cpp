@@ -25,9 +25,9 @@
 #include "expr/kind.h"
 
 using namespace std;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 LogicInfo::LogicInfo()
     : d_logicString(""),
@@ -371,7 +371,7 @@ void throwTwoArithmeticTheoriesError(const char* th1, const char* th2)
   stringstream err;
   err << "a logic name can only contain one arithmetic theory but found two: "
       << th1 << " and " << th2;
-  throw cvc5::internal::Exception(err.str().c_str());
+  throw cvc5pp::internal::Exception(err.str().c_str());
 }
 
 void checkMultipleArithmeticTheories(const char* prevTheory,
@@ -389,7 +389,7 @@ void LogicInfo::checkDuplicateTheory(TheoryId theory, const char* id)
   {
     stringstream err;
     err << "duplicate theory: " << id;
-    throw cvc5::internal::Exception(err.str().c_str());
+    throw cvc5pp::internal::Exception(err.str().c_str());
   }
 }
 
@@ -484,7 +484,7 @@ void LogicInfo::setLogicString(std::string logicString)
         {
           if (d_cardinalityConstraints)
           {
-            throw cvc5::internal::Exception("duplicate theory: C");
+            throw cvc5pp::internal::Exception("duplicate theory: C");
           }
           enableCardinalityConstraints();
           p += 1;
@@ -646,7 +646,7 @@ void LogicInfo::setLogicString(std::string logicString)
     // The strings logicString and p are user-provided and
     // may include format specifiers (e.g. "QF_LIA%s").
     // Do not use unsafe macros/functions such as IllegalArgument.
-    throw cvc5::internal::Exception(err.str().c_str());
+    throw cvc5pp::internal::Exception(err.str().c_str());
   }
 
   // ensure a getLogic() returns the same thing as was set

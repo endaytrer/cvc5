@@ -24,9 +24,9 @@
 #include "options/options.h"
 #include "test_parser.h"
 
-using namespace cvc5::parser;
+using namespace cvc5pp::parser;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestApiBlackCommand : public TestParser

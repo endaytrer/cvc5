@@ -25,7 +25,7 @@
 #include "theory/ee_manager.h"
 #include "theory/valuation.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class TheoryEngine;
 class Env;

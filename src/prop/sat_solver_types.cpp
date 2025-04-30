@@ -18,7 +18,7 @@
 
 #include <algorithm>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 bool SatClauseLessThan::operator()(const SatClause& l, const SatClause& r) const
 {

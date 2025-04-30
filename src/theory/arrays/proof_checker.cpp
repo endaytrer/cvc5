@@ -20,7 +20,7 @@
 #include "theory/arrays/theory_arrays_rewriter.h"
 #include "theory/rewriter.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arrays {
 

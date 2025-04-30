@@ -32,7 +32,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 TypeNode TypeNode::s_null( &expr::NodeValue::null() );
 
@@ -773,7 +773,7 @@ TypeNode TypeNode::getRangeType() const
 
 namespace std {
 
-size_t hash<cvc5::internal::TypeNode>::operator()(const cvc5::internal::TypeNode& tn) const
+size_t hash<cvc5pp::internal::TypeNode>::operator()(const cvc5pp::internal::TypeNode& tn) const
 {
   return tn.getId();
 }

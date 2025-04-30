@@ -22,17 +22,17 @@
 
 #include "printer/printer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class LetBinding;
 
 namespace printer {
 namespace ast {
 
-class AstPrinter : public cvc5::internal::Printer
+class AstPrinter : public cvc5pp::internal::Printer
 {
  public:
-  using cvc5::internal::Printer::toStream;
+  using cvc5pp::internal::Printer::toStream;
   void toStream(std::ostream& out, TNode n) const override;
   void toStream(std::ostream& out, Kind k) const override;
   void toStream(std::ostream& out, const smt::Model& m) const override;

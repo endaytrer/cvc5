@@ -17,7 +17,7 @@
 
 #include "test_api.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace test {
 
@@ -28,9 +28,9 @@ class TestApiBlackUncovered : public TestApi
 TEST_F(TestApiBlackUncovered, deprecated)
 {
   std::stringstream ss;
-  ss << cvc5::Kind::EQUAL << cvc5::kindToString(cvc5::Kind::EQUAL);
-  ss << cvc5::SortKind::ARRAY_SORT
-     << cvc5::sortKindToString(cvc5::SortKind::ARRAY_SORT);
+  ss << cvc5pp::Kind::EQUAL << cvc5pp::kindToString(cvc5pp::Kind::EQUAL);
+  ss << cvc5pp::SortKind::ARRAY_SORT
+     << cvc5pp::sortKindToString(cvc5pp::SortKind::ARRAY_SORT);
 
   Solver slv;
   (void)slv.getBooleanSort();
@@ -224,39 +224,39 @@ TEST_F(TestApiBlackUncovered, equalHash)
   ASSERT_EQ(std::hash<Datatype>{}(dt1), std::hash<Datatype>{}(dt1));
   ASSERT_EQ(std::hash<Datatype>{}(dt1), std::hash<Datatype>{}(dt2));
 
-  (void)std::hash<cvc5::Result>{}(cvc5::Result());
+  (void)std::hash<cvc5pp::Result>{}(cvc5pp::Result());
 }
 
 TEST_F(TestApiBlackUncovered, streaming_operators_to_string)
 {
   std::stringstream ss;
-  ss << cvc5::Kind::EQUAL << std::to_string(cvc5::Kind::EQUAL);
-  ss << cvc5::SortKind::ARRAY_SORT
-     << std::to_string(cvc5::SortKind::ARRAY_SORT);
-  ss << cvc5::RoundingMode::ROUND_TOWARD_NEGATIVE
-     << std::to_string(cvc5::RoundingMode::ROUND_TOWARD_NEGATIVE);
-  ss << cvc5::UnknownExplanation::UNKNOWN_REASON
-     << std::to_string(cvc5::UnknownExplanation::UNKNOWN_REASON);
-  ss << cvc5::modes::BlockModelsMode::LITERALS
-     << std::to_string(cvc5::modes::BlockModelsMode::LITERALS);
-  ss << cvc5::modes::LearnedLitType::PREPROCESS
-     << std::to_string(cvc5::modes::LearnedLitType::PREPROCESS);
-  ss << cvc5::modes::ProofComponent::FULL
-     << std::to_string(cvc5::modes::ProofComponent::FULL);
-  ss << cvc5::modes::FindSynthTarget::ENUM
-     << std::to_string(cvc5::modes::FindSynthTarget::ENUM);
-  ss << cvc5::modes::InputLanguage::SMT_LIB_2_6
-     << std::to_string(cvc5::modes::InputLanguage::SMT_LIB_2_6);
-  ss << cvc5::modes::ProofFormat::LFSC
-     << std::to_string(cvc5::modes::ProofFormat::LFSC);
-  ss << cvc5::ProofRule::ASSUME << std::to_string(cvc5::ProofRule::ASSUME);
-  ss << cvc5::ProofRewriteRule::NONE
-     << std::to_string(cvc5::ProofRewriteRule::NONE);
-  ss << cvc5::SkolemId::PURIFY << std::to_string(cvc5::SkolemId::PURIFY);
-  ss << cvc5::Result();
-  ss << cvc5::Op();
-  ss << cvc5::SynthResult();
-  ss << cvc5::Grammar();
+  ss << cvc5pp::Kind::EQUAL << std::to_string(cvc5pp::Kind::EQUAL);
+  ss << cvc5pp::SortKind::ARRAY_SORT
+     << std::to_string(cvc5pp::SortKind::ARRAY_SORT);
+  ss << cvc5pp::RoundingMode::ROUND_TOWARD_NEGATIVE
+     << std::to_string(cvc5pp::RoundingMode::ROUND_TOWARD_NEGATIVE);
+  ss << cvc5pp::UnknownExplanation::UNKNOWN_REASON
+     << std::to_string(cvc5pp::UnknownExplanation::UNKNOWN_REASON);
+  ss << cvc5pp::modes::BlockModelsMode::LITERALS
+     << std::to_string(cvc5pp::modes::BlockModelsMode::LITERALS);
+  ss << cvc5pp::modes::LearnedLitType::PREPROCESS
+     << std::to_string(cvc5pp::modes::LearnedLitType::PREPROCESS);
+  ss << cvc5pp::modes::ProofComponent::FULL
+     << std::to_string(cvc5pp::modes::ProofComponent::FULL);
+  ss << cvc5pp::modes::FindSynthTarget::ENUM
+     << std::to_string(cvc5pp::modes::FindSynthTarget::ENUM);
+  ss << cvc5pp::modes::InputLanguage::SMT_LIB_2_6
+     << std::to_string(cvc5pp::modes::InputLanguage::SMT_LIB_2_6);
+  ss << cvc5pp::modes::ProofFormat::LFSC
+     << std::to_string(cvc5pp::modes::ProofFormat::LFSC);
+  ss << cvc5pp::ProofRule::ASSUME << std::to_string(cvc5pp::ProofRule::ASSUME);
+  ss << cvc5pp::ProofRewriteRule::NONE
+     << std::to_string(cvc5pp::ProofRewriteRule::NONE);
+  ss << cvc5pp::SkolemId::PURIFY << std::to_string(cvc5pp::SkolemId::PURIFY);
+  ss << cvc5pp::Result();
+  ss << cvc5pp::Op();
+  ss << cvc5pp::SynthResult();
+  ss << cvc5pp::Grammar();
 
   Sort intsort = d_tm.getIntegerSort();
   Term x = d_tm.mkConst(intsort, "x");
@@ -458,11 +458,11 @@ TEST_F(TestApiBlackUncovered, SynthResult)
   Term tfalse = d_tm.mkFalse();
   Term ttrue = d_tm.mkTrue();
   d_solver->addSygusConstraint(ttrue);
-  cvc5::SynthResult res1 = d_solver->checkSynth();
+  cvc5pp::SynthResult res1 = d_solver->checkSynth();
   d_solver->addSygusConstraint(tfalse);
-  cvc5::SynthResult res2 = d_solver->checkSynth();
-  ASSERT_EQ(std::hash<cvc5::SynthResult>{}(res1),
-            std::hash<cvc5::SynthResult>{}(res1));
+  cvc5pp::SynthResult res2 = d_solver->checkSynth();
+  ASSERT_EQ(std::hash<cvc5pp::SynthResult>{}(res1),
+            std::hash<cvc5pp::SynthResult>{}(res1));
 }
 
 // Copied from api/cpp/solver_black.cpp
@@ -498,13 +498,13 @@ TEST_F(TestApiBlackUncovered, Proof)
 
 TEST_F(TestApiBlackUncovered, ProofRewriteRule)
 {
-  ASSERT_EQ(std::hash<cvc5::ProofRewriteRule>()(ProofRewriteRule::NONE),
+  ASSERT_EQ(std::hash<cvc5pp::ProofRewriteRule>()(ProofRewriteRule::NONE),
             static_cast<size_t>(ProofRewriteRule::NONE));
 }
 
 TEST_F(TestApiBlackUncovered, SkolemId)
 {
-  ASSERT_EQ(std::hash<cvc5::SkolemId>()(SkolemId::PURIFY),
+  ASSERT_EQ(std::hash<cvc5pp::SkolemId>()(SkolemId::PURIFY),
             static_cast<size_t>(SkolemId::PURIFY));
 }
 

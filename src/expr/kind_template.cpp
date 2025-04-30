@@ -21,12 +21,12 @@
 #include "expr/kind.h"
 #include "printer/printer.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace kind {
 
-const char* toString(cvc5::internal::Kind k)
+const char* toString(cvc5pp::internal::Kind k)
 {
-  using namespace cvc5::internal::kind;
+  using namespace cvc5pp::internal::kind;
 
   switch (k)
   {
@@ -42,7 +42,7 @@ const char* toString(cvc5::internal::Kind k)
   }
 }
 
-std::ostream& operator<<(std::ostream& out, cvc5::internal::Kind k)
+std::ostream& operator<<(std::ostream& out, cvc5pp::internal::Kind k)
 {
   Printer::getPrinter(out)->toStream(out, k);
   return out;
@@ -52,7 +52,7 @@ std::ostream& operator<<(std::ostream& out, cvc5::internal::Kind k)
  * decide whether it's safe to modify big expressions by changing the grouping of
  * the arguments. */
 /* TODO: This could be generated. */
-bool isAssociative(cvc5::internal::Kind k)
+bool isAssociative(cvc5pp::internal::Kind k)
 {
   switch(k) {
     case Kind::AND:
@@ -65,7 +65,7 @@ bool isAssociative(cvc5::internal::Kind k)
 }
 
 /** Return true if k is a closure kind. */
-bool isClosureKind(cvc5::internal::Kind k)
+bool isClosureKind(cvc5pp::internal::Kind k)
 {
   switch (k)
   {
@@ -80,7 +80,7 @@ bool isClosureKind(cvc5::internal::Kind k)
   }
 }
 
-std::string kindToString(cvc5::internal::Kind k) { return toString(k); }
+std::string kindToString(cvc5pp::internal::Kind k) { return toString(k); }
 
 }  // namespace kind
 
@@ -101,7 +101,7 @@ std::ostream& operator<<(std::ostream& out, TypeConstant typeConstant)
 
 namespace theory {
 
-TheoryId kindToTheoryId(cvc5::internal::Kind k)
+TheoryId kindToTheoryId(cvc5pp::internal::Kind k)
 {
   switch (k)
   {
@@ -116,7 +116,7 @@ ${kind_to_theory_id}
   throw IllegalArgumentException("", "k", __PRETTY_FUNCTION__, "bad kind");
 }
 
-TheoryId typeConstantToTheoryId(cvc5::internal::TypeConstant typeConstant)
+TheoryId typeConstantToTheoryId(cvc5pp::internal::TypeConstant typeConstant)
 {
   switch (typeConstant)
   {

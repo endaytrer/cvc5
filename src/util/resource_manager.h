@@ -29,7 +29,7 @@
 
 #include "theory/inference_id.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Listener;
 class Options;

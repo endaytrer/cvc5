@@ -26,7 +26,7 @@
 #include "expr/type_node.h"
 #include "util/cardinality_class.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * The Node-level representation of a constructor for a datatype, which
@@ -360,9 +360,9 @@ namespace std {
  * A hash function for DTypeConstructors.
  */
 template <>
-struct hash<cvc5::internal::DTypeConstructor>
+struct hash<cvc5pp::internal::DTypeConstructor>
 {
-  size_t operator()(const cvc5::internal::DTypeConstructor& cons) const;
+  size_t operator()(const cvc5pp::internal::DTypeConstructor& cons) const;
 };
 }  // namespace std
 #endif

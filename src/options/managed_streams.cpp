@@ -27,7 +27,7 @@
 
 #include "options/option_exception.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 std::string cvc5_errno_failreason()
 {

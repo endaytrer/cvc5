@@ -24,7 +24,7 @@
 #include "proof/alethe/alethe_proof_rule.h"
 #include "util/smt2_quote_string.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace proof {
 

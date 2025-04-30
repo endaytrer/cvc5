@@ -19,7 +19,7 @@
 
 #include "expr/type_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 AscriptionType::AscriptionType(TypeNode t) : d_type(new TypeNode(t)) {}
 

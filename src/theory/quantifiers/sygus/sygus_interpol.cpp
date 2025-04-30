@@ -31,7 +31,7 @@
 #include "theory/quantifiers/sygus/sygus_utils.h"
 #include "theory/smt_engine_subsolver.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

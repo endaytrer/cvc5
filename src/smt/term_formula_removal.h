@@ -30,7 +30,7 @@
 #include "theory/skolem_lemma.h"
 #include "util/hash.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class LazyCDProof;
 class ProofNodeManager;

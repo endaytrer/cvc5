@@ -21,7 +21,7 @@
 #include "proof/proof_node_manager.h"
 #include "smt/env.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 SubtypeElimConverterCallback::SubtypeElimConverterCallback(Env& env)
     : EnvObj(env), d_nconv(nodeManager())

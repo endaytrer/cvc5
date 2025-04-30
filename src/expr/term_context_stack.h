@@ -20,7 +20,7 @@
 
 #include "expr/term_context_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * A stack for term-context-sensitive terms. Its main advantage is that

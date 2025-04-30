@@ -29,7 +29,7 @@
 #include "base/check.h"
 #include "base/exception.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * BinaryHeap that orders its elements greatest-first (i.e., in the opposite

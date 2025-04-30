@@ -28,7 +28,7 @@
 #include "theory/sets/skolem_cache.h"
 #include "theory/sets/solver_state.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace sets {
 

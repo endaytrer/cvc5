@@ -21,7 +21,7 @@
 #include <map>
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /** NodeTemplate trie class
  *

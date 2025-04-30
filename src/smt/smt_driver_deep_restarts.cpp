@@ -22,7 +22,7 @@
 #include "smt/env.h"
 #include "smt/smt_solver.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 SmtDriverDeepRestarts::SmtDriverDeepRestarts(Env& env,

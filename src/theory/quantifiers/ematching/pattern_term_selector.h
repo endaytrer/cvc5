@@ -24,7 +24,7 @@
 #include "options/quantifiers_options.h"
 #include "theory/quantifiers/ematching/trigger_term_info.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 namespace inst {

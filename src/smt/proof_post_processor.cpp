@@ -33,10 +33,10 @@
 #include "theory/theory.h"
 #include "util/rational.h"
 
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 ProofPostprocessCallback::ProofPostprocessCallback(Env& env,

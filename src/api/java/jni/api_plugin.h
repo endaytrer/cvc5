@@ -22,30 +22,30 @@
 #include <string>
 #include <vector>
 
-class ApiPlugin : public cvc5::Plugin
+class ApiPlugin : public cvc5pp::Plugin
 {
  public:
-  ApiPlugin(cvc5::TermManager& tm, JNIEnv* env, jobject plugin);
+  ApiPlugin(cvc5pp::TermManager& tm, JNIEnv* env, jobject plugin);
   /**
    * Call to check, return vector of lemmas to add to the SAT solver.
    * This method is called periodically, roughly at every SAT decision.
    *
    * @return The vector of lemmas to add to the SAT solver.
    */
-  std::vector<cvc5::Term> check() override;
+  std::vector<cvc5pp::Term> check() override;
   /**
    * Notify SAT clause, called when cl is a clause learned by the SAT solver.
    *
    * @param cl The learned clause.
    */
-  void notifySatClause(const cvc5::Term& cl) override;
+  void notifySatClause(const cvc5pp::Term& cl) override;
   /**
    * Notify theory lemma, called when lem is a theory lemma sent by a theory
    * solver.
    *
    * @param lem The theory lemma.
    */
-  void notifyTheoryLemma(const cvc5::Term& lem) override;
+  void notifyTheoryLemma(const cvc5pp::Term& lem) override;
   /**
    * Get the name of the plugin (for debugging).
    *
@@ -55,12 +55,12 @@ class ApiPlugin : public cvc5::Plugin
 
  private:
   /** call a void function that receives a term in class AbstractPlugin  */
-  void notifyHelper(const char* functionName, const cvc5::Term& cl);
+  void notifyHelper(const char* functionName, const cvc5pp::Term& cl);
 
   /** Reference to java environment */
   JNIEnv* d_env;
   /** Reference to the term manager */
-  cvc5::TermManager& d_tm;
+  cvc5pp::TermManager& d_tm;
   /** Reference to java plugin object */
   jobject d_plugin;
 };

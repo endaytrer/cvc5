@@ -27,7 +27,7 @@
 #include "parser/sym_manager.h"
 #include "theory/logic_info.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 /**
@@ -37,7 +37,7 @@ namespace parser {
 #define CVC5_PARSER_API_CHECK(cond) \
   CVC5_PREDICT_TRUE(cond)           \
   ? (void)0                         \
-  : cvc5::internal::OstreamVoider() & CVC5ParserApiExceptionStream().ostream()
+  : cvc5pp::internal::OstreamVoider() & CVC5ParserApiExceptionStream().ostream()
 
 class CVC5ParserApiExceptionStream
 {
@@ -63,11 +63,11 @@ class CVC5ParserApiExceptionStream
 /* SymbolManager                                                              */
 /* -------------------------------------------------------------------------- */
 
-SymbolManager::SymbolManager(cvc5::TermManager& tm)
+SymbolManager::SymbolManager(cvc5pp::TermManager& tm)
 {
   d_sm.reset(new SymManager(tm));
 }
-SymbolManager::SymbolManager(cvc5::Solver* slv)
+SymbolManager::SymbolManager(cvc5pp::Solver* slv)
 {
   d_sm.reset(new SymManager(slv->getTermManager()));
 }
@@ -139,7 +139,7 @@ bool Command::isNull() const
   CVC5_API_TRY_CATCH_END;
 }
 
-void Command::invoke(cvc5::Solver* solver,
+void Command::invoke(cvc5pp::Solver* solver,
                      parser::SymbolManager* sm,
                      std::ostream& out)
 {

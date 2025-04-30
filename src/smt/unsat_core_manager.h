@@ -26,7 +26,7 @@
 #include "smt/smt_solver.h"
 #include "theory/quantifiers/instantiation_list.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace smt {
 

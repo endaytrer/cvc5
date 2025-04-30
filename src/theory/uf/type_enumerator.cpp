@@ -18,7 +18,7 @@
 #include "expr/function_array_const.h"
 #include "theory/uf/function_const.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace uf {
 

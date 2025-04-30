@@ -44,9 +44,9 @@ ${metakind_includes}
 // clang-format off
 
 using namespace std;
-using namespace cvc5::internal::expr;
+using namespace cvc5pp::internal::expr;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace {
 

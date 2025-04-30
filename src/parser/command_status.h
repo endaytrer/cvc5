@@ -25,7 +25,7 @@
 
 #include <cvc5/cvc5_export.h>
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 class Command;

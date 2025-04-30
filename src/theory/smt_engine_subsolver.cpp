@@ -19,7 +19,7 @@
 #include "proof/unsat_core.h"
 #include "smt/env.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 SubsolverSetupInfo::SubsolverSetupInfo(const Options& opts,

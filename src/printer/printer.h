@@ -28,7 +28,7 @@
 #include "options/language.h"
 #include "util/result.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 template <bool ref_count>
 class NodeTemplate;

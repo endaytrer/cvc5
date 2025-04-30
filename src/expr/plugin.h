@@ -24,7 +24,7 @@
 
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * A plugin. This is the internal interface for a user-provided plugin. The

@@ -19,7 +19,7 @@
 
 #include <CoCoA/GlobalManager.H>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 CoCoA::GlobalManager* s_cocoaGlobalManager = nullptr;
 

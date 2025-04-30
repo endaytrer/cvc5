@@ -35,12 +35,12 @@ struct cvc5_cmd_t
    * @param parser The associated parser instance.
    * @param cmd    The wrapped C++ command.
    */
-  cvc5_cmd_t(Cvc5InputParser* parser, const cvc5::parser::Command& cmd)
+  cvc5_cmd_t(Cvc5InputParser* parser, const cvc5pp::parser::Command& cmd)
       : d_cmd(cmd), d_parser(parser)
   {
   }
   /** The associated command instance. */
-  cvc5::parser::Command d_cmd;
+  cvc5pp::parser::Command d_cmd;
   /** The associated parserinstance. */
   Cvc5InputParser* d_parser = nullptr;
 };
@@ -53,12 +53,12 @@ struct Cvc5SymbolManager
    * @param tm The associated term manager.
    */
   Cvc5SymbolManager(Cvc5TermManager* tm)
-      : d_sm_wrapped(new cvc5::parser::SymbolManager(tm->d_tm)),
+      : d_sm_wrapped(new cvc5pp::parser::SymbolManager(tm->d_tm)),
         d_sm(*d_sm_wrapped),
         d_tm(tm)
   {
   }
-  Cvc5SymbolManager(cvc5::parser::SymbolManager& sm, Cvc5TermManager* tm)
+  Cvc5SymbolManager(cvc5pp::parser::SymbolManager& sm, Cvc5TermManager* tm)
       : d_sm(sm), d_tm(tm)
   {
   }
@@ -70,9 +70,9 @@ struct Cvc5SymbolManager
    * cvc5_parser_new() while passing NULL as a symbol manager, this will be
    * NULL and `d_sm` will point to the symbol manager created by the parser.
    */
-  std::unique_ptr<cvc5::parser::SymbolManager> d_sm_wrapped;
+  std::unique_ptr<cvc5pp::parser::SymbolManager> d_sm_wrapped;
   /** The associated symbol manager instance. */
-  cvc5::parser::SymbolManager& d_sm;
+  cvc5pp::parser::SymbolManager& d_sm;
   /** The associated term manager. */
   Cvc5TermManager* d_tm = nullptr;
 };
@@ -104,10 +104,10 @@ struct Cvc5InputParser
    * Export C++ command to C API.
    * @param cmd The command to export.
    */
-  Cvc5Command export_cmd(const cvc5::parser::Command& cmd);
+  Cvc5Command export_cmd(const cvc5pp::parser::Command& cmd);
 
   /** The associated input parser instance. */
-  cvc5::parser::InputParser d_parser;
+  cvc5pp::parser::InputParser d_parser;
   /** The associated solver instance. */
   Cvc5* d_cvc5 = nullptr;
   /** The associated symbol manager instance. */
@@ -123,7 +123,7 @@ struct Cvc5InputParser
 
 /* -------------------------------------------------------------------------- */
 
-Cvc5Command Cvc5InputParser::export_cmd(const cvc5::parser::Command& cmd)
+Cvc5Command Cvc5InputParser::export_cmd(const cvc5pp::parser::Command& cmd)
 {
   Assert(!cmd.isNull());
   d_alloc_cmds.emplace_back(this, cmd);
@@ -331,7 +331,7 @@ void cvc5_parser_set_file_input(Cvc5InputParser* parser,
   CVC5_CAPI_CHECK_NOT_NULL(parser);
   CVC5_CAPI_CHECK_INPUT_LANGUAGE(lang);
   CVC5_CAPI_CHECK_NOT_NULL(filename);
-  parser->d_parser.setFileInput(static_cast<cvc5::modes::InputLanguage>(lang),
+  parser->d_parser.setFileInput(static_cast<cvc5pp::modes::InputLanguage>(lang),
                                 filename);
   CVC5_CAPI_TRY_CATCH_END;
 }
@@ -347,7 +347,7 @@ void cvc5_parser_set_str_input(Cvc5InputParser* parser,
   CVC5_CAPI_CHECK_NOT_NULL(input);
   CVC5_CAPI_CHECK_NOT_NULL(name);
   parser->d_parser.setStringInput(
-      static_cast<cvc5::modes::InputLanguage>(lang), input, name);
+      static_cast<cvc5pp::modes::InputLanguage>(lang), input, name);
   CVC5_CAPI_TRY_CATCH_END;
 }
 
@@ -360,7 +360,7 @@ void cvc5_parser_set_inc_str_input(Cvc5InputParser* parser,
   CVC5_CAPI_CHECK_INPUT_LANGUAGE(lang);
   CVC5_CAPI_CHECK_NOT_NULL(name);
   parser->d_parser.setIncrementalStringInput(
-      static_cast<cvc5::modes::InputLanguage>(lang), name);
+      static_cast<cvc5pp::modes::InputLanguage>(lang), name);
   CVC5_CAPI_TRY_CATCH_END;
 }
 
@@ -385,12 +385,12 @@ Cvc5Command cvc5_parser_next_command(Cvc5InputParser* parser,
   CVC5_CAPI_CHECK_NOT_NULL(error_msg);
   try
   {
-    cvc5::parser::Command cres = parser->d_parser.nextCommand();
+    cvc5pp::parser::Command cres = parser->d_parser.nextCommand();
     res = cres.isNull() ? nullptr : parser->export_cmd(cres);
     error = "";
     *error_msg = nullptr;
   }
-  catch (cvc5::parser::ParserException& e)
+  catch (cvc5pp::parser::ParserException& e)
   {
     error = e.getMessage();
     *error_msg = error.c_str();
@@ -408,12 +408,12 @@ Cvc5Term cvc5_parser_next_term(Cvc5InputParser* parser, const char** error_msg)
   CVC5_CAPI_CHECK_NOT_NULL(error_msg);
   try
   {
-    cvc5::Term cres = parser->d_parser.nextTerm();
+    cvc5pp::Term cres = parser->d_parser.nextTerm();
     res = cres.isNull() ? nullptr : parser->d_cvc5->d_tm->export_term(cres);
     error = "";
     *error_msg = nullptr;
   }
-  catch (cvc5::parser::ParserException& e)
+  catch (cvc5pp::parser::ParserException& e)
   {
     error = e.getMessage();
     *error_msg = error.c_str();

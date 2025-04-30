@@ -24,11 +24,11 @@
 #include "theory/rewriter.h"
 #include "theory/strings/arith_entail.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
 ForeignTheoryRewriter::ForeignTheoryRewriter(Env& env)
     : EnvObj(env), d_cache(userContext())

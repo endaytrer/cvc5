@@ -50,9 +50,9 @@
 #include "theory/logic_info.h"
 
 using namespace std;
-using namespace cvc5::parser;
+using namespace cvc5pp::parser;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace language;
 
@@ -92,7 +92,7 @@ InteractiveShell::InteractiveShell(main::CommandExecutor* cexec,
 {
   /* Create parser with bogus input. */
   d_parser.reset(
-      new cvc5::parser::InputParser(d_solver, cexec->getSymbolManager()));
+      new cvc5pp::parser::InputParser(d_solver, cexec->getSymbolManager()));
   std::string langs = d_solver->getOption("input-language");
   if (langs == "LANG_SMTLIB_V2_6")
   {

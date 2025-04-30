@@ -20,9 +20,9 @@
 #include "proof/proof_node.h"
 #include "smt/env.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 TheoryEngineProofGenerator::TheoryEngineProofGenerator(Env& env,
                                                        context::Context* c)

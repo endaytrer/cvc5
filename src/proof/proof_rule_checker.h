@@ -23,7 +23,7 @@
 #include "expr/node.h"
 #include "cvc5/cvc5_proof_rule.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofChecker;
 class ProofNode;

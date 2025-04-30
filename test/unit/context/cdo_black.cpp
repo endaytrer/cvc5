@@ -21,7 +21,7 @@
 #include "context/cdo.h"
 #include "test_context.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace context;
 

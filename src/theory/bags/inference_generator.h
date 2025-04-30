@@ -21,7 +21,7 @@
 #include "expr/node.h"
 #include "infer_info.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace bags {
 

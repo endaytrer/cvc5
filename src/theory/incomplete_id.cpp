@@ -19,7 +19,7 @@
 
 #include "base/check.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 const char* toString(IncompleteId i)

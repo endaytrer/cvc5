@@ -18,7 +18,7 @@
 
 #include <cstdint>
 
-namespace cvc5::main {
+namespace cvc5pp::main {
 
 /**
  * This class makes sure that the main thread signals back to the time

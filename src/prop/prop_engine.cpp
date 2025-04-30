@@ -43,7 +43,7 @@
 #include "util/resource_manager.h"
 #include "util/result.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 /** Keeps a boolean flag scoped */

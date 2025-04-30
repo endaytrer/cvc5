@@ -26,7 +26,7 @@
 #include "smt/env_obj.h"
 #include "theory/skolem_lemma.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace uf {
 

@@ -21,7 +21,7 @@
 #include "expr/node.h"
 #include "theory/strings/sequences_rewriter.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 

@@ -24,7 +24,7 @@
 ${headers_module}$
 // clang-format on
 
-namespace cvc5::internal
+namespace cvc5pp::internal
 {
   Options::Options()
       :

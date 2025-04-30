@@ -31,7 +31,7 @@
 #include "expr/attribute_internals.h"
 #undef CVC5_ATTRIBUTE_H__INCLUDING__ATTRIBUTE_INTERNALS_H
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace expr {
 namespace attr {
 

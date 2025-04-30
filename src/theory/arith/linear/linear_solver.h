@@ -20,7 +20,7 @@
 #include "theory/arith/linear/theory_arith_private.h"
 #include "theory/theory.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 class TheoryModel;

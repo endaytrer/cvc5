@@ -18,7 +18,7 @@
 #include "proof/proof_ensure_closed.h"
 #include "proof/proof_generator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 const char* toString(TrustNodeKind tnk)
 {

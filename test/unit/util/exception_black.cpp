@@ -19,7 +19,7 @@
 #include "base/exception.h"
 #include "test.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestUtilBlackException : public TestInternal

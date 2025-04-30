@@ -24,7 +24,7 @@
 #include "theory/quantifiers/ematching/inst_match_generator.h"
 #include "theory/quantifiers/inst_match_trie.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 namespace inst {

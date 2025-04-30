@@ -28,7 +28,7 @@
 #include "prop/cnf_stream.h"
 #include "smt/env_obj.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 class PropPfManager;

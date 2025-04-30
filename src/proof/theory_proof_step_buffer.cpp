@@ -18,9 +18,9 @@
 #include "proof/proof.h"
 #include "proof/proof_node_algorithm.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 TheoryProofStepBuffer::TheoryProofStepBuffer(ProofChecker* pc,
                                              bool ensureUnique,

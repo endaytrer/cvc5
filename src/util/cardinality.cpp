@@ -23,7 +23,7 @@
 #include "base/check.h"
 #include "base/exception.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 const Integer Cardinality::s_unknownCard(0);
 const Integer Cardinality::s_intCard(-1);

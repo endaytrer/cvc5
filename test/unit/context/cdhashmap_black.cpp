@@ -20,11 +20,11 @@
 #include "context/cdlist.h"
 #include "test_context.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
-using cvc5::context::CDHashMap;
-using cvc5::context::Context;
+using cvc5pp::context::CDHashMap;
+using cvc5pp::context::Context;
 
 class TestContextBlackCDHashMap : public TestContext
 {

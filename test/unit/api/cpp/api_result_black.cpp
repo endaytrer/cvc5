@@ -15,7 +15,7 @@
 
 #include "test_api.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace test {
 
@@ -25,7 +25,7 @@ class TestApiBlackResult : public TestApi
 
 TEST_F(TestApiBlackResult, isNull)
 {
-  cvc5::Result res_null;
+  cvc5pp::Result res_null;
   ASSERT_TRUE(res_null.isNull());
   ASSERT_FALSE(res_null.isSat());
   ASSERT_FALSE(res_null.isUnsat());
@@ -33,7 +33,7 @@ TEST_F(TestApiBlackResult, isNull)
   Sort u_sort = d_tm.mkUninterpretedSort("u");
   Term x = d_tm.mkConst(u_sort, "x");
   d_solver->assertFormula(x.eqTerm(x));
-  cvc5::Result res = d_solver->checkSat();
+  cvc5pp::Result res = d_solver->checkSat();
   ASSERT_FALSE(res.isNull());
 }
 
@@ -42,9 +42,9 @@ TEST_F(TestApiBlackResult, equalHash)
   Sort u_sort = d_tm.mkUninterpretedSort("u");
   Term x = d_tm.mkConst(u_sort, "x");
   d_solver->assertFormula(x.eqTerm(x));
-  cvc5::Result res;
-  cvc5::Result res2 = d_solver->checkSat();
-  cvc5::Result res3 = d_solver->checkSat();
+  cvc5pp::Result res;
+  cvc5pp::Result res2 = d_solver->checkSat();
+  cvc5pp::Result res3 = d_solver->checkSat();
   ASSERT_NE(res, res2);
   res = res2;
   ASSERT_EQ(res, res2);
@@ -55,10 +55,10 @@ TEST_F(TestApiBlackResult, equalHash)
     ASSERT_EQ(res.toString(), "sat");
     ASSERT_EQ(res.toString(), ss.str());
   }
-  ASSERT_EQ(std::hash<cvc5::Result>{}(res), std::hash<cvc5::Result>{}(res2));
-  ASSERT_NE(std::hash<cvc5::Result>{}(cvc5::Result()),
-            std::hash<cvc5::Result>{}(res2));
-  (void)std::hash<cvc5::Result>{}(cvc5::Result());
+  ASSERT_EQ(std::hash<cvc5pp::Result>{}(res), std::hash<cvc5pp::Result>{}(res2));
+  ASSERT_NE(std::hash<cvc5pp::Result>{}(cvc5pp::Result()),
+            std::hash<cvc5pp::Result>{}(res2));
+  (void)std::hash<cvc5pp::Result>{}(cvc5pp::Result());
 }
 
 TEST_F(TestApiBlackResult, isSat)
@@ -66,7 +66,7 @@ TEST_F(TestApiBlackResult, isSat)
   Sort u_sort = d_tm.mkUninterpretedSort("u");
   Term x = d_tm.mkConst(u_sort, "x");
   d_solver->assertFormula(x.eqTerm(x));
-  cvc5::Result res = d_solver->checkSat();
+  cvc5pp::Result res = d_solver->checkSat();
   ASSERT_TRUE(res.isSat());
   ASSERT_FALSE(res.isUnsat());
   ASSERT_FALSE(res.isUnknown());
@@ -77,7 +77,7 @@ TEST_F(TestApiBlackResult, isUnsat)
   Sort u_sort = d_tm.mkUninterpretedSort("u");
   Term x = d_tm.mkConst(u_sort, "x");
   d_solver->assertFormula(x.eqTerm(x).notTerm());
-  cvc5::Result res = d_solver->checkSat();
+  cvc5pp::Result res = d_solver->checkSat();
   ASSERT_FALSE(res.isSat());
   ASSERT_TRUE(res.isUnsat());
   ASSERT_FALSE(res.isUnknown());
@@ -92,12 +92,12 @@ TEST_F(TestApiBlackResult, isUnknown)
   Term x = d_tm.mkConst(real_sort, "x");
   d_solver->assertFormula(d_tm.mkTerm(Kind::LT, {d_tm.mkReal("0.0"), x}));
   d_solver->assertFormula(d_tm.mkTerm(Kind::LT, {x, d_tm.mkReal("1.0")}));
-  cvc5::Result res = d_solver->checkSat();
+  cvc5pp::Result res = d_solver->checkSat();
   ASSERT_FALSE(res.isSat());
   ASSERT_FALSE(res.isUnsat());
   ASSERT_TRUE(res.isUnknown());
-  cvc5::UnknownExplanation ue = res.getUnknownExplanation();
-  ASSERT_EQ(ue, cvc5::UnknownExplanation::INCOMPLETE);
+  cvc5pp::UnknownExplanation ue = res.getUnknownExplanation();
+  ASSERT_EQ(ue, cvc5pp::UnknownExplanation::INCOMPLETE);
   {
     std::stringstream ss;
     ss << ue;

@@ -40,7 +40,7 @@
 
 #include "base/check.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 // Returns true if the `map` contains the `key`.
 //

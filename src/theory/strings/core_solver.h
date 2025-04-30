@@ -30,7 +30,7 @@
 #include "theory/strings/solver_state.h"
 #include "theory/strings/term_registry.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 

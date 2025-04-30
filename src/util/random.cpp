@@ -20,7 +20,7 @@
 #include <cfloat>
 #include "base/check.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 Random::Random(uint64_t seed) { setSeed(seed); }
 

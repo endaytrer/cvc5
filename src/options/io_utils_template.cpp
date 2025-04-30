@@ -18,7 +18,7 @@
 
 #include "options/io_utils.h"
 
-namespace cvc5::internal::options::ioutils {
+namespace cvc5pp::internal::options::ioutils {
 namespace {
 
 // There is no good way to figure out whether the value behind iword() was

@@ -24,7 +24,7 @@
 
 #include "util/rational.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace strings {
 struct StringHashFunction;
@@ -273,7 +273,7 @@ namespace strings {
 
 struct StringHashFunction
 {
-  size_t operator()(const cvc5::internal::String& s) const;
+  size_t operator()(const cvc5pp::internal::String& s) const;
 }; /* struct StringHashFunction */
 
 }  // namespace strings

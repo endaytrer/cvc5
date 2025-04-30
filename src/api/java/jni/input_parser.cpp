@@ -19,8 +19,8 @@
 #include "api_utilities.h"
 #include "io_github_cvc5_InputParser.h"
 
-using namespace cvc5;
-using namespace cvc5::parser;
+using namespace cvc5pp;
+using namespace cvc5pp::parser;
 
 /*
  * Class:     io_github_cvc5_InputParser

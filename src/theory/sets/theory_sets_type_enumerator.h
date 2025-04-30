@@ -27,7 +27,7 @@
 #include "theory/sets/normal_form.h"
 #include "theory/type_enumerator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace sets {
 

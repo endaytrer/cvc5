@@ -22,11 +22,11 @@
 #include "theory/sets/normal_form.h"
 #include "theory/sets/set_reduction.h"
 
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory::datatypes;
-using namespace cvc5::internal::theory::sets;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory::datatypes;
+using namespace cvc5pp::internal::theory::sets;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace sets {
 

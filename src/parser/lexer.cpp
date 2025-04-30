@@ -22,7 +22,7 @@
 #include "base/output.h"
 #include <cvc5/cvc5_parser.h>
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 std::ostream& operator<<(std::ostream& o, const Location& l)

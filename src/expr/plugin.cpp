@@ -15,7 +15,7 @@
 
 #include "expr/plugin.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 Plugin::Plugin(NodeManager* nm) : d_nm(nm) {}
 

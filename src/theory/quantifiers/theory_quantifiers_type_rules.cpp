@@ -17,7 +17,7 @@
 
 #include "theory/quantifiers/inst_strategy_pool.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

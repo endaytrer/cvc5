@@ -27,7 +27,7 @@
 #include "theory/strings/term_registry.h"
 #include "theory/valuation.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 

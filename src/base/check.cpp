@@ -18,7 +18,7 @@
 #include <cstdlib>
 #include <iostream>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 FatalStream::FatalStream(const char* function, const char* file, int line)
 {

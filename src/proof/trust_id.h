@@ -20,7 +20,7 @@
 
 #include "expr/node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * Identifiers for trusted steps in proofs.

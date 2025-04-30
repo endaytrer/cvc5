@@ -34,7 +34,7 @@
 #include "smt/env_obj.h"
 #include "smt/proof_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace proof {
 

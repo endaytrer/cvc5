@@ -24,7 +24,7 @@
 #include "theory/quantifiers/cegqi/ceg_bv_instantiator_utils.h"
 #include "theory/quantifiers/cegqi/instantiator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

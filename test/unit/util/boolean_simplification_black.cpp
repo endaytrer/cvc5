@@ -24,9 +24,9 @@
 #include "preprocessing/util/boolean_simplification.h"
 #include "test_node.h"
 
-using namespace cvc5::internal::preprocessing;
+using namespace cvc5pp::internal::preprocessing;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestUtilBlackBooleanSimplification : public TestNode

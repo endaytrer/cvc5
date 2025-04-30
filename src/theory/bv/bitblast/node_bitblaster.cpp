@@ -18,7 +18,7 @@
 #include "theory/theory_model.h"
 #include "theory/theory_state.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace bv {
 

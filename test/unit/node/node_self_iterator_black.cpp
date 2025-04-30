@@ -18,7 +18,7 @@
 #include "expr/node_self_iterator.h"
 #include "test_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace kind;
 using namespace expr;

@@ -21,7 +21,7 @@
 #include <iosfwd>
 #include <memory>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 template <bool ref_count>
 class NodeTemplate;

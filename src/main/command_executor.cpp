@@ -32,9 +32,9 @@
 #include "parser/commands.h"
 #include "smt/solver_engine.h"
 
-using namespace cvc5::parser;
+using namespace cvc5pp::parser;
 
-namespace cvc5::main {
+namespace cvc5pp::main {
 
 // Function to cancel any (externally-imposed) limit on CPU time.
 // This is used for competitions while a solution (proof or model)
@@ -52,7 +52,7 @@ void setNoLimitCPU() {
 #endif /* ! __WIN32__ */
 }
 
-CommandExecutor::CommandExecutor(std::unique_ptr<cvc5::Solver>& solver)
+CommandExecutor::CommandExecutor(std::unique_ptr<cvc5pp::Solver>& solver)
     : d_solver(solver),
       d_symman(new SymbolManager(d_solver->getTermManager())),
       d_result(),
@@ -134,7 +134,7 @@ bool CommandExecutor::doCommandSingleton(Cmd* cmd)
                              cmd,
                              d_solver->getDriverOptions().out());
 
-  cvc5::Result res;
+  cvc5pp::Result res;
   bool hasResult = false;
   const CheckSatCommand* cs = dynamic_cast<const CheckSatCommand*>(cmd);
   if (cs != nullptr)
@@ -165,7 +165,7 @@ bool CommandExecutor::doCommandSingleton(Cmd* cmd)
         && (isResultSat
             || (res.isUnknown()
                 && res.getUnknownExplanation()
-                       == cvc5::UnknownExplanation::INCOMPLETE)))
+                       == cvc5pp::UnknownExplanation::INCOMPLETE)))
     {
       getterCommands.emplace_back(new GetModelCommand());
     }
@@ -217,7 +217,7 @@ bool CommandExecutor::doCommandSingleton(Cmd* cmd)
   return status;
 }
 
-bool CommandExecutor::solverInvoke(cvc5::Solver* solver,
+bool CommandExecutor::solverInvoke(cvc5pp::Solver* solver,
                                    SymManager* sm,
                                    Cmd* cmd,
                                    std::ostream& out)

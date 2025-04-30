@@ -25,7 +25,7 @@
 #include "base/check.h"
 #include "main/command_executor.h"
 
-namespace cvc5::main {
+namespace cvc5pp::main {
 
 /**
  * Holds the command executor and provides a few convenience methods for parsing
@@ -58,10 +58,10 @@ class ExecutionContext
    * Execute the given commands.
    * Returns true if the commands have been executed without being interrupted.
    */
-  bool solveCommands(std::vector<cvc5::parser::Command>& cmds);
+  bool solveCommands(std::vector<cvc5pp::parser::Command>& cmds);
 
   /** Parse the remaining input from d_parser into a vector of commands */
-  std::vector<cvc5::parser::Command> parseCommands(parser::InputParser* parser);
+  std::vector<cvc5pp::parser::Command> parseCommands(parser::InputParser* parser);
 };
 
 /**

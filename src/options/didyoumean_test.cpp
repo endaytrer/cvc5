@@ -24,7 +24,7 @@
 #include <iostream>
 
 using namespace std;
-using namespace cvc5::internal;
+using namespace cvc5pp::internal;
 
 set<string> getDebugTags();
 set<string> getOptionStrings();

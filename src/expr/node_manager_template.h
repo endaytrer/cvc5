@@ -33,7 +33,7 @@
 #include "expr/node_value.h"
 #include "util/floatingpoint_size.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 
 class Solver;
 class TermManager;

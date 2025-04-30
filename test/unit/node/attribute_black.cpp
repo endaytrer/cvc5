@@ -22,7 +22,7 @@
 #include "expr/node_value.h"
 #include "test_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace kind;
 using namespace smt;

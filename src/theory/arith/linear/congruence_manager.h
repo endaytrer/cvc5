@@ -33,7 +33,7 @@
 #include "util/dense_map.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofNodeManager;
 class EagerProofGenerator;

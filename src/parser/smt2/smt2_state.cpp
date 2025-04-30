@@ -21,7 +21,7 @@
 #include "parser/commands.h"
 #include "util/floatingpoint_size.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 Smt2State::Smt2State(ParserStateCallback* psc,
@@ -135,10 +135,10 @@ void Smt2State::addBitvectorOperators()
 
 void Smt2State::addFiniteFieldOperators()
 {
-  addOperator(cvc5::Kind::FINITE_FIELD_ADD, "ff.add");
-  addOperator(cvc5::Kind::FINITE_FIELD_MULT, "ff.mul");
-  addOperator(cvc5::Kind::FINITE_FIELD_NEG, "ff.neg");
-  addOperator(cvc5::Kind::FINITE_FIELD_BITSUM, "ff.bitsum");
+  addOperator(cvc5pp::Kind::FINITE_FIELD_ADD, "ff.add");
+  addOperator(cvc5pp::Kind::FINITE_FIELD_MULT, "ff.mul");
+  addOperator(cvc5pp::Kind::FINITE_FIELD_NEG, "ff.neg");
+  addOperator(cvc5pp::Kind::FINITE_FIELD_BITSUM, "ff.bitsum");
 }
 
 void Smt2State::addDatatypesOperators()

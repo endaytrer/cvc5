@@ -31,7 +31,7 @@
 #include "parser/parser.h"
 #include "theory/logic_info.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 /*

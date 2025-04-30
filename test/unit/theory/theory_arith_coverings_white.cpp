@@ -38,7 +38,7 @@
 #include "theory/theory_engine.h"
 #include "util/poly_util.h"
 
-namespace cvc5::internal::test {
+namespace cvc5pp::internal::test {
 
 using namespace cvc5::internal;
 using namespace cvc5::internal::theory;

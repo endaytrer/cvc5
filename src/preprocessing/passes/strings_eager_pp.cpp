@@ -19,9 +19,9 @@
 #include "theory/rewriter.h"
 #include "theory/strings/theory_strings_preprocess.h"
 
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 

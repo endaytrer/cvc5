@@ -25,10 +25,10 @@
 #include "util/rational.h"
 
 using namespace std;
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory::datatypes;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory::datatypes;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace sets {
 

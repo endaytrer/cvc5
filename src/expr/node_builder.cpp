@@ -17,7 +17,7 @@
 
 #include <memory>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 NodeBuilder::NodeBuilder(NodeManager* nm)
     : d_nv(&d_inlineNv), d_nm(nm), d_nvMaxChildren(default_nchild_thresh)

@@ -23,7 +23,7 @@
 #include <string>
 #include <vector>
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /** A parsed operator
  *
@@ -56,13 +56,13 @@ namespace cvc5 {
  */
 struct ParseOp
 {
-  ParseOp(cvc5::Kind k = cvc5::Kind::NULL_TERM) : d_kind(k) {}
+  ParseOp(cvc5pp::Kind k = cvc5pp::Kind::NULL_TERM) : d_kind(k) {}
   /** The kind associated with the parsed operator, if it exists */
-  cvc5::Kind d_kind;
+  cvc5pp::Kind d_kind;
   /** The name associated with the parsed operator, if it exists */
   std::string d_name;
   /** The expression associated with the parsed operator, if it exists */
-  cvc5::Term d_expr;
+  cvc5pp::Term d_expr;
   /**
    * The indices if the operator is indexed, but cvc5::Op is the null operator.
    * This is the case for operator symbols that cannot be resolved to a kind

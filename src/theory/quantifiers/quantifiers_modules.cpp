@@ -20,7 +20,7 @@
 #include "theory/quantifiers/relevant_domain.h"
 #include "theory/quantifiers/term_registry.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

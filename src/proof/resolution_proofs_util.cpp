@@ -19,7 +19,7 @@
 #include "proof/proof_checker.h"
 #include "proof/proof_node_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 /** The information relevant for converting MACRO_RESOLUTION steps into

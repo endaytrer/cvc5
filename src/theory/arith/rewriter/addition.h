@@ -25,7 +25,7 @@
 #include "theory/arith/rewriter/ordering.h"
 #include "util/real_algebraic_number.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 namespace rewriter {

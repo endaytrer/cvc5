@@ -16,7 +16,7 @@
 #include "test.h"
 #include "util/floatingpoint.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestUtilBlackFloatingPoint : public TestInternal

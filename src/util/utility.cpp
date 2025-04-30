@@ -21,7 +21,7 @@
 
 #include "base/check.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 std::unique_ptr<std::fstream> openTmpFile(std::string* pattern)
 {

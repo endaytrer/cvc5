@@ -36,11 +36,11 @@
 #include "theory/theory_state.h"
 #include "util/rational.h"
 
-using namespace cvc5::internal;
-using namespace cvc5::internal::kind;
-using namespace cvc5::context;
-using namespace cvc5::internal::theory;
-using namespace cvc5::internal::theory::datatypes;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::context;
+using namespace cvc5pp::internal::theory;
+using namespace cvc5pp::internal::theory::datatypes;
 
 SygusExtension::SygusExtension(Env& env,
                                TheoryState& s,

@@ -19,7 +19,7 @@
 
 #include "proof/proof_node_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 TConvSeqProofGenerator::TConvSeqProofGenerator(
     ProofNodeManager* pnm,

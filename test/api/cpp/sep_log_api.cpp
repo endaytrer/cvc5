@@ -22,7 +22,7 @@
 
 #include <cvc5/cvc5.h>
 
-using namespace cvc5;
+using namespace cvc5pp;
 using namespace std;
 
 /**

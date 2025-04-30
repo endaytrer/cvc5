@@ -23,13 +23,13 @@
 #include <iosfwd>
 #include <string>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class Rational;
 
 class Integer
 {
-  friend class cvc5::internal::Rational;
+  friend class cvc5pp::internal::Rational;
 
  public:
   /**
@@ -334,7 +334,7 @@ class Integer
 
 struct IntegerHashFunction
 {
-  inline size_t operator()(const cvc5::internal::Integer& i) const { return i.hash(); }
+  inline size_t operator()(const cvc5pp::internal::Integer& i) const { return i.hash(); }
 }; /* struct IntegerHashFunction */
 
 inline std::ostream& operator<<(std::ostream& os, const Integer& n)

@@ -15,7 +15,7 @@
 
 #include "parser/parse_op.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 
 std::ostream& operator<<(std::ostream& os, const ParseOp& p)
 {
@@ -25,7 +25,7 @@ std::ostream& operator<<(std::ostream& os, const ParseOp& p)
   {
     out << " :expr " << p.d_expr;
   }
-  if (p.d_kind != cvc5::Kind::NULL_TERM)
+  if (p.d_kind != cvc5pp::Kind::NULL_TERM)
   {
     out << " :kind " << p.d_kind;
   }

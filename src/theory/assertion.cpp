@@ -15,7 +15,7 @@
 
 #include "theory/assertion.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 std::ostream& operator<<(std::ostream& out, const Assertion& a) {

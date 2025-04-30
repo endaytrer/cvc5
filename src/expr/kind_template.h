@@ -23,7 +23,7 @@
 #include "base/exception.h"
 #include "theory/theory_id.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace kind {
 
 enum class Kind_t
@@ -40,7 +40,7 @@ enum class Kind_t
 
 // import Kind into the "cvc5" namespace but keep the individual kind
 // constants under kind::
-typedef cvc5::internal::kind::Kind_t Kind;
+typedef cvc5pp::internal::kind::Kind_t Kind;
 
 namespace kind {
 
@@ -53,7 +53,7 @@ namespace kind {
  * @param k The kind
  * @return The name of the kind
  */
-const char* toString(cvc5::internal::Kind k);
+const char* toString(cvc5pp::internal::Kind k);
 
 /**
  * Writes a kind name to a stream.
@@ -62,21 +62,21 @@ const char* toString(cvc5::internal::Kind k);
  * @param k The kind to write to the stream
  * @return The stream
  */
-std::ostream& operator<<(std::ostream&, cvc5::internal::Kind);
+std::ostream& operator<<(std::ostream&, cvc5pp::internal::Kind);
 
 /** Returns true if the given kind is associative. This is used by ExprManager to
  * decide whether it's safe to modify big expressions by changing the grouping of
  * the arguments. */
 /* TODO: This could be generated. */
-bool isAssociative(cvc5::internal::Kind k);
-std::string kindToString(cvc5::internal::Kind k);
+bool isAssociative(cvc5pp::internal::Kind k);
+std::string kindToString(cvc5pp::internal::Kind k);
 
 /** Return true if k is a closure kind. */
-bool isClosureKind(cvc5::internal::Kind k);
+bool isClosureKind(cvc5pp::internal::Kind k);
 
 struct KindHashFunction
 {
-  inline size_t operator()(cvc5::internal::Kind k) const
+  inline size_t operator()(cvc5pp::internal::Kind k) const
   {
     return static_cast<size_t>(k);
   }
@@ -107,9 +107,9 @@ std::ostream& operator<<(std::ostream& out, TypeConstant typeConstant);
 
 namespace theory {
 
-cvc5::internal::theory::TheoryId kindToTheoryId(cvc5::internal::Kind k);
-cvc5::internal::theory::TheoryId typeConstantToTheoryId(
-    cvc5::internal::TypeConstant typeConstant);
+cvc5pp::internal::theory::TheoryId kindToTheoryId(cvc5pp::internal::Kind k);
+cvc5pp::internal::theory::TheoryId typeConstantToTheoryId(
+    cvc5pp::internal::TypeConstant typeConstant);
 
 }  // namespace theory
 }  // namespace cvc5::internal

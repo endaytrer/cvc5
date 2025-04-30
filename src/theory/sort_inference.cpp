@@ -33,11 +33,11 @@
 #include "theory/quantifiers/quant_util.h"
 #include "theory/rewriter.h"
 
-using namespace cvc5::internal;
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal;
+using namespace cvc5pp::internal::kind;
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 void SortInference::UnionFind::print(const char * c){

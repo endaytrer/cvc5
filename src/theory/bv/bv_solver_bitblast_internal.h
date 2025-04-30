@@ -24,7 +24,7 @@
 #include "theory/bv/bitblast/proof_bitblaster.h"
 #include "theory/bv/bv_solver.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace bv {
 

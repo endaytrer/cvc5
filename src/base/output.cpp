@@ -17,7 +17,7 @@
 
 #include <iostream>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /* Definitions of the declared globals from output.h... */
 

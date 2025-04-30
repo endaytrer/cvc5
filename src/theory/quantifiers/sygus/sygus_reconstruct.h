@@ -26,7 +26,7 @@
 #include "theory/quantifiers/sygus/rcons_obligation.h"
 #include "theory/quantifiers/sygus/rcons_type_info.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

@@ -18,7 +18,7 @@
 #include "proof/proof.h"
 #include "theory/builtin/proof_checker.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 ProofPostprocessCallback::ProofPostprocessCallback(

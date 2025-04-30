@@ -32,7 +32,7 @@
 #include "theory/uf/proof_equality_engine.h"
 #include "util/statistics_stats.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class TheoryEngine;
 

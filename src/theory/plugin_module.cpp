@@ -19,7 +19,7 @@
 #include "smt/env.h"
 #include "theory/trust_substitutions.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 PluginModule::PluginModule(Env& env, TheoryEngine* theoryEngine, Plugin* p)

@@ -21,7 +21,7 @@
 #include "expr/node_trie_algorithm.h"
 #include "theory/theory.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 /**

@@ -21,7 +21,7 @@
 #include "util/rational.h"
 #include "util/statistics_value.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 void toSExpr(std::ostream& out, const std::string& s)
 {

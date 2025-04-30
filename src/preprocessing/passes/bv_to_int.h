@@ -23,7 +23,7 @@
 #include "preprocessing/preprocessing_pass_context.h"
 #include "theory/bv/int_blaster.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 

@@ -24,7 +24,7 @@
 #include "smt/env_obj.h"
 #include "theory/quantifiers/ieval/inst_evaluator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

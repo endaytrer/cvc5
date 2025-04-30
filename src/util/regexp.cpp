@@ -17,7 +17,7 @@
 
 #include <ostream>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 RegExpRepeat::RegExpRepeat(uint32_t repeatAmount) : d_repeatAmount(repeatAmount)
 {

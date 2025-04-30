@@ -31,7 +31,7 @@
 
 using namespace std;
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 ParserState::ParserState(ParserStateCallback* psc,

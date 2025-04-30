@@ -25,9 +25,9 @@
 #include "theory/strings/word.h"
 #include "util/regexp.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace strings {
 
@@ -267,7 +267,7 @@ int RegExpOpr::delta( Node r, Node &exp ) {
 }
 
 // 0-unknown, 1-yes, 2-no
-int RegExpOpr::derivativeS(Node r, cvc5::internal::String c, Node& retNode)
+int RegExpOpr::derivativeS(Node r, cvc5pp::internal::String c, Node& retNode)
 {
   Assert(c.size() < 2);
   Trace("regexp-derive") << "RegExp-derive starts with /" << mkString( r ) << "/, c=" << c << std::endl;
@@ -306,8 +306,8 @@ int RegExpOpr::derivativeS(Node r, cvc5::internal::String c, Node& retNode)
       }
       case Kind::REGEXP_RANGE:
       {
-        cvc5::internal::String a = r[0].getConst<String>();
-        cvc5::internal::String b = r[1].getConst<String>();
+        cvc5pp::internal::String a = r[0].getConst<String>();
+        cvc5pp::internal::String b = r[1].getConst<String>();
         retNode = (a <= c && c <= b) ? d_emptySingleton : d_emptyRegexp;
         break;
       }
@@ -557,7 +557,7 @@ int RegExpOpr::derivativeS(Node r, cvc5::internal::String c, Node& retNode)
   return ret;
 }
 
-Node RegExpOpr::derivativeSingle(Node r, cvc5::internal::String c)
+Node RegExpOpr::derivativeSingle(Node r, cvc5pp::internal::String c)
 {
   Assert(c.size() < 2);
   Trace("regexp-derive") << "RegExp-derive starts with /" << mkString( r ) << "/, c=" << c << std::endl;
@@ -594,8 +594,8 @@ Node RegExpOpr::derivativeSingle(Node r, cvc5::internal::String c)
       }
       case Kind::REGEXP_RANGE:
       {
-        cvc5::internal::String a = r[0].getConst<String>();
-        cvc5::internal::String b = r[1].getConst<String>();
+        cvc5pp::internal::String a = r[0].getConst<String>();
+        cvc5pp::internal::String b = r[1].getConst<String>();
         retNode = (a <= c && c <= b) ? d_emptySingleton : d_emptyRegexp;
         break;
       }

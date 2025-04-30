@@ -25,7 +25,7 @@
 #include "theory/rep_set_iterator.h"
 #include "theory/theory_model.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

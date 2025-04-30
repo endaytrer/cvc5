@@ -29,10 +29,10 @@
 #include "theory/rewriter.h"
 #include "util/rational.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

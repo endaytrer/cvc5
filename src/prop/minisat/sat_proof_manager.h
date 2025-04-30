@@ -34,7 +34,7 @@ namespace Minisat {
 class Solver;
 }
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 class CnfStream;

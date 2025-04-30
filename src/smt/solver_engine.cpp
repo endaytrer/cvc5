@@ -93,13 +93,13 @@
 #include "base/configuration_private.h"
 
 using namespace std;
-using namespace cvc5::internal::smt;
-using namespace cvc5::internal::preprocessing;
-using namespace cvc5::internal::prop;
-using namespace cvc5::context;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::smt;
+using namespace cvc5pp::internal::preprocessing;
+using namespace cvc5pp::internal::prop;
+using namespace cvc5pp::context;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 SolverEngine::SolverEngine(const Options* optr)
     : d_env(new Env(NodeManager::currentNM(), optr)),

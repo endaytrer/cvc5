@@ -31,7 +31,7 @@
 #include "theory/quantifiers/skolemize.h"
 #include "theory/smt_engine_subsolver.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 UnsatCoreManager::UnsatCoreManager(Env& env, SmtSolver& slv, PfManager& pfm)

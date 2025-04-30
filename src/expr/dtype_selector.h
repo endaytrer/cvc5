@@ -22,7 +22,7 @@
 #include "expr/node.h"
 #include "expr/type_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class DatatypeConstructorArg;
 class DType;
@@ -105,9 +105,9 @@ namespace std {
  * A hash function for DTypeSelectors.
  */
 template <>
-struct hash<cvc5::internal::DTypeSelector>
+struct hash<cvc5pp::internal::DTypeSelector>
 {
-  size_t operator()(const cvc5::internal::DTypeSelector& cons) const;
+  size_t operator()(const cvc5pp::internal::DTypeSelector& cons) const;
 };
 }  // namespace std
 #endif

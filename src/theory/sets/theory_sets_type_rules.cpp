@@ -25,11 +25,11 @@
 #include "theory/sets/normal_form.h"
 #include "util/cardinality.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace sets {
 
-using namespace cvc5::internal::theory::datatypes;
+using namespace cvc5pp::internal::theory::datatypes;
 
 bool isMaybeRelation(const TypeNode& tn)
 {

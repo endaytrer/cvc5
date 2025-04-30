@@ -24,7 +24,7 @@
 #include "theory/theory_model.h"
 #include "theory/uf/theory_uf_model.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 
 class TheoryModel;

@@ -20,7 +20,7 @@
 
 #include "context/context.h"
 
-namespace cvc5::context {
+namespace cvc5pp::context {
 
 /**
  * Most basic template for context-dependent objects.  Simply makes a copy

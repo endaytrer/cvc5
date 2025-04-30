@@ -17,7 +17,7 @@
 
 #include <iostream>
 
-namespace cvc5 {
+namespace cvc5pp {
 
 const char* toString(ProofRule rule)
 {
@@ -215,7 +215,7 @@ std::ostream& operator<<(std::ostream& out, ProofRule rule)
   return out;
 }
 
-const char* toString(cvc5::ProofRewriteRule rule)
+const char* toString(cvc5pp::ProofRewriteRule rule)
 {
   switch (rule)
   {
@@ -336,22 +336,22 @@ std::ostream& operator<<(std::ostream& out, ProofRewriteRule rule)
 
 namespace std {
 
-size_t hash<cvc5::ProofRule>::operator()(cvc5::ProofRule rule) const
+size_t hash<cvc5pp::ProofRule>::operator()(cvc5pp::ProofRule rule) const
 {
   return static_cast<size_t>(rule);
 }
 
-std::string to_string(cvc5::ProofRule rule) { return cvc5::toString(rule); }
+std::string to_string(cvc5pp::ProofRule rule) { return cvc5pp::toString(rule); }
 
-size_t hash<cvc5::ProofRewriteRule>::operator()(
-    cvc5::ProofRewriteRule rule) const
+size_t hash<cvc5pp::ProofRewriteRule>::operator()(
+    cvc5pp::ProofRewriteRule rule) const
 {
   return static_cast<size_t>(rule);
 }
 
-std::string to_string(cvc5::ProofRewriteRule rule)
+std::string to_string(cvc5pp::ProofRewriteRule rule)
 {
-  return cvc5::toString(rule);
+  return cvc5pp::toString(rule);
 }
 
 }  // namespace std

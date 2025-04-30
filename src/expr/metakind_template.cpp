@@ -26,7 +26,7 @@
 ${metakind_includes}
 // clang-format off
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace expr {
 
 // clang-format off
@@ -102,7 +102,7 @@ struct NodeValueConstCompare
   }
 };
 
-size_t NodeValueCompare::constHash(const cvc5::internal::expr::NodeValue* nv)
+size_t NodeValueCompare::constHash(const cvc5pp::internal::expr::NodeValue* nv)
 {
   Assert(nv->getMetaKind() == kind::metakind::CONSTANT);
 
@@ -141,8 +141,8 @@ default:
   }
 
   cvc5::internal::expr::NodeValue::const_nv_iterator i = nv1->nv_begin();
-  cvc5::internal::expr::NodeValue::const_nv_iterator j = nv2->nv_begin();
-  cvc5::internal::expr::NodeValue::const_nv_iterator i_end = nv1->nv_end();
+  cvc5pp::internal::expr::NodeValue::const_nv_iterator j = nv2->nv_begin();
+  cvc5pp::internal::expr::NodeValue::const_nv_iterator i_end = nv1->nv_end();
 
   while(i != i_end) {
     if((*i) != (*j)) {
@@ -163,7 +163,7 @@ template bool NodeValueCompare::compare<false>(
     const cvc5::internal::expr::NodeValue* nv2);
 
 void nodeValueConstantToStream(std::ostream& out,
-                               const cvc5::internal::expr::NodeValue* nv)
+                               const cvc5pp::internal::expr::NodeValue* nv)
 {
   Assert(nv->getMetaKind() == kind::metakind::CONSTANT);
 
@@ -194,7 +194,7 @@ default:
  * This doesn't support "non-inlined" NodeValues, which shouldn't need this
  * kind of cleanup.
  */
-void deleteNodeValueConstant(cvc5::internal::expr::NodeValue* nv)
+void deleteNodeValueConstant(cvc5pp::internal::expr::NodeValue* nv)
 {
   Assert(nv->getMetaKind() == kind::metakind::CONSTANT);
 
@@ -211,7 +211,7 @@ default:
 // re-enable the strict-aliasing warning
 # pragma GCC diagnostic warning "-Wstrict-aliasing"
 
-uint32_t getMinArityForKind(cvc5::internal::Kind k)
+uint32_t getMinArityForKind(cvc5pp::internal::Kind k)
 {
   static const uint32_t lbs[] = {
       0, /* NULL_EXPR */
@@ -225,7 +225,7 @@ ${metakind_lbchildren}
   return lbs[static_cast<uint32_t>(k)];
 }
 
-uint32_t getMaxArityForKind(cvc5::internal::Kind k)
+uint32_t getMaxArityForKind(cvc5pp::internal::Kind k)
 {
   static const uint32_t ubs[] = {
       0, /* NULL_EXPR */

@@ -23,7 +23,7 @@
 #include "theory/arith/arith_utilities.h"
 #include "theory/arith/nl/ext/monomial_check.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 namespace nl {

@@ -18,7 +18,7 @@
 #include "expr/attribute.h"
 #include "theory/arith/arith_rewriter.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith::linear {
 

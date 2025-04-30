@@ -26,7 +26,7 @@
 #include "parser/input.h"
 #include "parser/parser_state.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 class Cmd;

@@ -18,7 +18,7 @@
 
 #include "gtest/gtest.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestInternal : public ::testing::Test

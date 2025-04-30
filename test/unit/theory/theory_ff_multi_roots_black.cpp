@@ -29,7 +29,7 @@
 #include "theory/ff/multi_roots.h"
 #include "util/cocoa_globals.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace context;
 using namespace theory;

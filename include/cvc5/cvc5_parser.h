@@ -23,7 +23,7 @@
 
 #include <memory>
 
-namespace cvc5 {
+namespace cvc5pp {
 
 namespace internal {
 class InteractiveShell;
@@ -67,7 +67,7 @@ class CVC5_EXPORT SymbolManager
    * Constructor.
    * @param tm The associated term manager instance.
    */
-  SymbolManager(cvc5::TermManager& tm);
+  SymbolManager(cvc5pp::TermManager& tm);
   /**
    * Constructor.
    * @param slv The solver instance.
@@ -76,7 +76,7 @@ class CVC5_EXPORT SymbolManager
    *          in a future release.
    */
   [[deprecated("Use SymbolManager::SymbolManager(TermManager&) instead")]]
-  SymbolManager(cvc5::Solver* slv);
+  SymbolManager(cvc5pp::Solver* slv);
 
   /**
    * Destructor.
@@ -152,7 +152,7 @@ class CVC5_EXPORT Command
    * @param sm The symbol manager to invoke the command on.
    * @param out The output stream to write the result of the command on.
    */
-  void invoke(cvc5::Solver* solver,
+  void invoke(cvc5pp::Solver* solver,
               parser::SymbolManager* sm,
               std::ostream& out);
 

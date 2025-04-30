@@ -30,7 +30,7 @@
 #include "util/statistics_stats.h"
 #include "theory/theory_id.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace smt {
 
 /** Final callback class, for stats and pedantic checking */

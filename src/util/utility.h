@@ -24,7 +24,7 @@
 #include <optional>
 #include <string>
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /**
  * Using std::find_if(), finds the first iterator in [first,last)

@@ -23,7 +23,7 @@
 #include "proof/conv_proof_generator.h"
 #include "proof/trust_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 

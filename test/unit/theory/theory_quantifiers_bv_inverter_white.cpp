@@ -19,7 +19,7 @@
 #include "theory/quantifiers/bv_inverter_utils.h"
 #include "util/result.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 using namespace theory;
 using namespace theory::quantifiers;

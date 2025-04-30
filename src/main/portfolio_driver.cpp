@@ -33,9 +33,9 @@
 #include "parser/commands.h"
 #include "parser/command_status.h"
 
-using namespace cvc5::parser;
+using namespace cvc5pp::parser;
 
-namespace cvc5::main {
+namespace cvc5pp::main {
 
 enum SolveStatus : int
 {

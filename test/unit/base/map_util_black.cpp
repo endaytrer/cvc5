@@ -26,11 +26,11 @@
 #include "context/context.h"
 #include "test.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
-using cvc5::context::CDHashMap;
-using cvc5::context::CDInsertHashMap;
-using cvc5::context::Context;
+using cvc5pp::context::CDHashMap;
+using cvc5pp::context::CDInsertHashMap;
+using cvc5pp::context::Context;
 
 namespace test {
 

@@ -20,7 +20,7 @@
 #include "theory/arith/linear/tableau_sizes.h"
 #include "theory/arith/linear/tableau.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith::linear {
 

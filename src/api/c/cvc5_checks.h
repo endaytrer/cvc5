@@ -29,7 +29,7 @@
 #include "api/cpp/cvc5_checks.h"
 #include "base/check.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 
 /* -------------------------------------------------------------------------- */
 
@@ -57,15 +57,15 @@ class Cvc5CApiAbortStream
 };
 
 #define CVC5_CAPI_ABORT           \
-  cvc5::internal::OstreamVoider() \
-      & cvc5::Cvc5CApiAbortStream("cvc5: error:").stream()
+  cvc5pp::internal::OstreamVoider() \
+      & cvc5pp::Cvc5CApiAbortStream("cvc5: error:").stream()
 
 #define CVC5_CAPI_TRY_CATCH_BEGIN \
   try                             \
   {
 #define CVC5_CAPI_TRY_CATCH_END \
   }                             \
-  catch (cvc5::CVC5ApiException & e) { CVC5_CAPI_ABORT << e.getMessage(); }
+  catch (cvc5pp::CVC5ApiException & e) { CVC5_CAPI_ABORT << e.getMessage(); }
 
 #endif
 

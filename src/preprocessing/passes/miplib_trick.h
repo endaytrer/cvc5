@@ -21,7 +21,7 @@
 #include "expr/node.h"
 #include "preprocessing/preprocessing_pass.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 

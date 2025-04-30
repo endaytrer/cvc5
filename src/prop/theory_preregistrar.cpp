@@ -21,7 +21,7 @@
 #include "prop/sat_solver.h"
 #include "theory/theory_engine.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 /* -------------------------------------------------------------------------- */

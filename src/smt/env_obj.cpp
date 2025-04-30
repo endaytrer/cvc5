@@ -20,7 +20,7 @@
 #include "smt/env.h"
 #include "theory/rewriter.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 EnvObj::EnvObj(Env& env) : d_env(env) {}
 

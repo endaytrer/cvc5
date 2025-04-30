@@ -22,7 +22,7 @@
 
 #include "base/configuration.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 #ifdef CVC5_DEBUG
 #  define IS_DEBUG_BUILD true

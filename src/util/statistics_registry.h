@@ -75,7 +75,7 @@
 #include "util/statistics_stats.h"
 #include "util/statistics_value.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 struct StatisticBaseValue;
 

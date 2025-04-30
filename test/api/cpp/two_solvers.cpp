@@ -17,7 +17,7 @@
 
 #include <sstream>
 
-using namespace cvc5;
+using namespace cvc5pp;
 using namespace std;
 
 int main()

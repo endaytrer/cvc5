@@ -19,7 +19,7 @@
 
 #include "expr/skolem_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 LetBinding::LetBinding(const std::string& prefix,
                        uint32_t thresh,

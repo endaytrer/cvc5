@@ -25,7 +25,7 @@
 #include "expr/node.h"
 #include "test.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 /**
@@ -39,7 +39,7 @@ class TestWithSmtParser : public TestInternal
 
   void SetUp() override
   {
-    d_solver.reset(new cvc5::Solver(d_tm));
+    d_solver.reset(new cvc5pp::Solver(d_tm));
     d_solver->setLogic("ALL");
     d_symman.reset(new parser::SymbolManager(d_tm));
     d_ip.reset(new parser::InputParser(d_solver.get(), d_symman.get()));
@@ -51,10 +51,10 @@ class TestWithSmtParser : public TestInternal
     d_ip.reset(nullptr);
   }
 
-  cvc5::TermManager d_tm;
-  std::unique_ptr<cvc5::Solver> d_solver;
+  cvc5pp::TermManager d_tm;
+  std::unique_ptr<cvc5pp::Solver> d_solver;
   std::unique_ptr<parser::SymbolManager> d_symman;
-  std::unique_ptr<cvc5::parser::InputParser> d_ip;
+  std::unique_ptr<cvc5pp::parser::InputParser> d_ip;
 
  public:
 

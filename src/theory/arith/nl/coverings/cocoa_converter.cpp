@@ -19,7 +19,7 @@
 #ifdef CVC5_POLY_IMP
 #ifdef CVC5_USE_COCOA
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 namespace nl {

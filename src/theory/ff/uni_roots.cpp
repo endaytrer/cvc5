@@ -42,7 +42,7 @@
 #include "smt/assertions.h"
 #include "base/output.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace ff {
 

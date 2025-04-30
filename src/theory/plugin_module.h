@@ -23,7 +23,7 @@
 #include "expr/plugin.h"
 #include "theory/theory_engine_module.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 namespace theory {
 

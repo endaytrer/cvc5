@@ -24,7 +24,7 @@
 #include <string>
 #include <vector>
 
-namespace cvc5 {
+namespace cvc5pp {
 
 class Solver;
 
@@ -63,15 +63,15 @@ class InteractiveShell
   /**
    * Return the internal parser being used.
    */
-  cvc5::parser::InputParser* getParser() { return d_parser.get(); }
+  cvc5pp::parser::InputParser* getParser() { return d_parser.get(); }
 
  private:
   main::CommandExecutor* d_cexec;
   Solver* d_solver;
-  cvc5::parser::SymManager* d_symman;
+  cvc5pp::parser::SymManager* d_symman;
   std::istream& d_in;
   std::ostream& d_out;
-  std::unique_ptr<cvc5::parser::InputParser> d_parser;
+  std::unique_ptr<cvc5pp::parser::InputParser> d_parser;
   /** Only true if we are actually asking the user for input */
   bool d_isInteractive;
   bool d_quit;

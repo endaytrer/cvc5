@@ -20,10 +20,10 @@
 #include "expr/type_matcher.h"
 #include "options/datatypes_options.h"
 
-using namespace cvc5::internal::kind;
-using namespace cvc5::internal::theory;
+using namespace cvc5pp::internal::kind;
+using namespace cvc5pp::internal::theory;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /** Attribute true for variables that represent any constant */
 struct SygusAnyConstAttributeId
@@ -733,8 +733,8 @@ std::ostream& operator<<(std::ostream& os, const DTypeConstructor& ctor)
 }  // namespace cvc5::internal
 
 namespace std {
-size_t hash<cvc5::internal::DTypeConstructor>::operator()(
-    const cvc5::internal::DTypeConstructor& cons) const
+size_t hash<cvc5pp::internal::DTypeConstructor>::operator()(
+    const cvc5pp::internal::DTypeConstructor& cons) const
 {
   return std::hash<std::string>()(cons.getName());
 }

@@ -18,7 +18,7 @@
 #include "theory/bags/inference_manager.h"
 #include "theory/inference_manager_buffered.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace bags {
 

@@ -24,7 +24,7 @@
 #include "theory/arith/nl/coverings/cdcac.h"
 #include "theory/arith/nl/equality_substitution.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofNodeManager;
 

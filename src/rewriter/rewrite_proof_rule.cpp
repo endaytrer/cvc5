@@ -22,9 +22,9 @@
 #include "expr/node_algorithm.h"
 #include "proof/proof_checker.h"
 
-using namespace cvc5::internal::kind;
+using namespace cvc5pp::internal::kind;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace rewriter {
 
 RewriteProofRule::RewriteProofRule() : d_id(ProofRewriteRule::NONE) {}

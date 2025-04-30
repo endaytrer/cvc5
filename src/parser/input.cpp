@@ -19,7 +19,7 @@
 
 #include <cvc5/cvc5_parser.h>
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 /** File input class */

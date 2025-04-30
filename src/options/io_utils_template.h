@@ -37,7 +37,7 @@
  * streams), `apply*()` will set the given values on the given object while
  * `get*()` retrieves the specified option.
  */
-namespace cvc5::internal::options::ioutils {
+namespace cvc5pp::internal::options::ioutils {
 
 // clang-format off
 ${iodecls}$

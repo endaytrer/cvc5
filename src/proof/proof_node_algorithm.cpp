@@ -19,7 +19,7 @@
 #include "proof/proof_rule_checker.h"
 #include "theory/builtin/generic_op.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace expr {
 
 void getFreeAssumptions(ProofNode* pn, std::vector<Node>& assump)

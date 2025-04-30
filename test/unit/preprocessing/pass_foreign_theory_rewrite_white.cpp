@@ -19,9 +19,9 @@
 #include "test_smt.h"
 #include "util/rational.h"
 
-using namespace cvc5::internal::preprocessing::passes;
+using namespace cvc5pp::internal::preprocessing::passes;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestPPWhiteForeignTheoryRewrite : public TestSmt

@@ -24,7 +24,7 @@
 
 using namespace std;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 Sequence::Sequence(const TypeNode& t, const std::vector<Node>& s)
     : d_type(new TypeNode(t)), d_seq(s)

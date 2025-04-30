@@ -15,7 +15,7 @@
 
 #include "prop/skolem_def_manager.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace prop {
 
 SkolemDefManager::SkolemDefManager(context::Context* context,

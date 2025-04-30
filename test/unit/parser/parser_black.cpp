@@ -25,9 +25,9 @@
 #include <cvc5/cvc5_parser.h>
 #include "test.h"
 
-using namespace cvc5::parser;
+using namespace cvc5pp::parser;
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace test {
 
 class TestParserBlack : public TestInternal
@@ -41,7 +41,7 @@ class TestParserBlack : public TestInternal
   {
     TestInternal::SetUp();
     d_symman.reset(nullptr);
-    d_solver.reset(new cvc5::Solver(d_tm));
+    d_solver.reset(new cvc5pp::Solver(d_tm));
     d_solver->setOption("parse-only", "true");
   }
 
@@ -85,7 +85,7 @@ class TestParserBlack : public TestInternal
 
   void tryGoodInput(const std::string goodInput)
   {
-    d_solver.reset(new cvc5::Solver(d_tm));
+    d_solver.reset(new cvc5pp::Solver(d_tm));
     d_symman.reset(new SymbolManager(d_tm));
     InputParser parser(d_solver.get(), d_symman.get());
     std::stringstream ss;
@@ -111,7 +111,7 @@ class TestParserBlack : public TestInternal
 
   void tryBadInput(const std::string badInput, bool strictMode = false)
   {
-    d_solver.reset(new cvc5::Solver(d_tm));
+    d_solver.reset(new cvc5pp::Solver(d_tm));
     d_solver->setOption("strict-parsing", strictMode ? "true" : "false");
     d_symman.reset(new SymbolManager(d_tm));
     InputParser parser(d_solver.get(), d_symman.get());
@@ -139,7 +139,7 @@ class TestParserBlack : public TestInternal
 
   void tryGoodExpr(const std::string goodExpr)
   {
-    d_solver.reset(new cvc5::Solver(d_tm));
+    d_solver.reset(new cvc5pp::Solver(d_tm));
     d_symman.reset(new SymbolManager(d_tm));
     InputParser parser(d_solver.get(), d_symman.get());
     setupContext(parser);
@@ -149,7 +149,7 @@ class TestParserBlack : public TestInternal
     parser.setStreamInput(d_lang, ss, "parser_black");
 
     ASSERT_FALSE(parser.done());
-    cvc5::Term e = parser.nextTerm();
+    cvc5pp::Term e = parser.nextTerm();
     ASSERT_FALSE(e.isNull());
     e = parser.nextTerm();
     ASSERT_TRUE(parser.done());
@@ -167,7 +167,7 @@ class TestParserBlack : public TestInternal
    */
   void tryBadExpr(const std::string badExpr, bool strictMode = false)
   {
-    d_solver.reset(new cvc5::Solver(d_tm));
+    d_solver.reset(new cvc5pp::Solver(d_tm));
     d_solver->setOption("strict-parsing", strictMode ? "true" : "false");
     d_symman.reset(new SymbolManager(d_tm));
     InputParser parser(d_solver.get(), d_symman.get());
@@ -176,7 +176,7 @@ class TestParserBlack : public TestInternal
     ss << badExpr;
     parser.setStreamInput(d_lang, ss, "parser_black");
     ASSERT_FALSE(parser.done());
-    ASSERT_THROW(cvc5::Term e = parser.nextTerm();
+    ASSERT_THROW(cvc5pp::Term e = parser.nextTerm();
                  std::cout << std::endl
                            << "Bad expr succeeded." << std::endl
                            << "Input: <<" << badExpr << ">>" << std::endl
@@ -185,8 +185,8 @@ class TestParserBlack : public TestInternal
   }
 
   modes::InputLanguage d_lang;
-  cvc5::TermManager d_tm;
-  std::unique_ptr<cvc5::Solver> d_solver;
+  cvc5pp::TermManager d_tm;
+  std::unique_ptr<cvc5pp::Solver> d_solver;
   std::unique_ptr<SymbolManager> d_symman;
 };
 

@@ -27,7 +27,7 @@
 #include "parser/input.h"
 #include "parser/tokens.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 /** A location for tracking parse errors */

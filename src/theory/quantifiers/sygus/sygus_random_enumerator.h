@@ -24,7 +24,7 @@
 #include "expr/type_node.h"
 #include "theory/quantifiers/sygus/enum_val_generator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class DTypeConstructor;
 

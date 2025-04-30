@@ -25,7 +25,7 @@
 #include "theory/quantifiers/sygus/sygus_stats.h"
 #include "theory/quantifiers/sygus/synth_conjecture.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace quantifiers {
 

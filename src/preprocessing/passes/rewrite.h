@@ -23,7 +23,7 @@
 #include "preprocessing/preprocessing_pass.h"
 #include "proof/rewrite_proof_generator.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace preprocessing {
 namespace passes {
 

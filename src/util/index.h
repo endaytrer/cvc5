@@ -18,7 +18,7 @@
 #ifndef CVC5__INDEX_H
 #define CVC5__INDEX_H
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 /** Index is a standardized unsigned integer used for efficient indexing. */
 using Index = uint32_t;

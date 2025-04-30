@@ -24,7 +24,7 @@
 #include "expr/node.h"
 #include "proof/proof_node.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace proof {
 
 /**

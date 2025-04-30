@@ -18,7 +18,7 @@
 #include "base/output.h"
 #include "parser/commands.h"
 
-namespace cvc5 {
+namespace cvc5pp {
 namespace parser {
 
 Smt2Parser::Smt2Parser(Solver* solver,

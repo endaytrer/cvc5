@@ -15,7 +15,7 @@
 
 #include "expr/variadic_trie.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 bool VariadicTrie::add(Node n, const std::vector<Node>& i)
 {

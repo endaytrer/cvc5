@@ -24,7 +24,7 @@
 #include "expr/node.h"
 #include "proof/trust_id.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 
 class ProofChecker;
 

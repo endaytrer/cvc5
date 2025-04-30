@@ -24,7 +24,7 @@
 ${typechecker_includes}
 // clang-format on
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace expr {
 
 TypeNode TypeChecker::preComputeType(NodeManager* nodeManager, TNode n)

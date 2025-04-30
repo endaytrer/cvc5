@@ -17,7 +17,7 @@
 
 #include "theory/arith/arith_utilities.h"
 
-namespace cvc5::internal {
+namespace cvc5pp::internal {
 namespace theory {
 namespace arith {
 
