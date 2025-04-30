@@ -12,7 +12,7 @@
  *
  * Test for project issue #431.
  */
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 #include <cassert>
 

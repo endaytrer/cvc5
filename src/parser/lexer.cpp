@@ -20,7 +20,7 @@
 #include <sstream>
 
 #include "base/output.h"
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5_parser.h>
 
 namespace cvc5pp {
 namespace parser {

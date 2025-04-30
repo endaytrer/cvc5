@@ -14,7 +14,7 @@
  * the language bindings are generated automatically.
  */
 
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5_export.h>
 
 #if (!defined(CVC5_API_USE_C_ENUMS) && !defined(CVC5__API__CVC5_CPP_TYPES_H)) \
     || (defined(CVC5_API_USE_C_ENUMS) && !defined(CVC5__API__CVC5_C_TYPES_H))

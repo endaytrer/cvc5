@@ -20,7 +20,7 @@
 
 #include <vector>
 
-#include "cvc5/cvc5_proof_rule.h"
+#include "cvc5pp/cvc5_proof_rule.h"
 #include "expr/node.h"
 #include "expr/term_context.h"
 #include "proof/conv_proof_generator.h"

@@ -19,7 +19,7 @@
 #  include <sys/resource.h>
 #endif /* ! __WIN32__ */
 
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include <iomanip>
 #include <iostream>

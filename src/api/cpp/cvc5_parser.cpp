@@ -13,7 +13,7 @@
  * The interface for parsing an input with a parser.
  */
 
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include <iostream>
 

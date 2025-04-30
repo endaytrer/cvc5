@@ -18,7 +18,7 @@
 #ifndef CVC5__EXCEPTION_H
 #define CVC5__EXCEPTION_H
 
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5_export.h>
 
 #include <exception>
 #include <iosfwd>

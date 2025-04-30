@@ -13,8 +13,8 @@
  * Testing functions that are not exposed by the C API for code coverage.
  */
 
-#include <cvc5/cvc5.h>
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include "gtest/gtest.h"
 

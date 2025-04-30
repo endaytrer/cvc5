@@ -18,7 +18,7 @@
 #ifndef CVC5__THEORY__QUANTIFIERS__SYNTH_FINDER_H
 #define CVC5__THEORY__QUANTIFIERS__SYNTH_FINDER_H
 
-#include <cvc5/cvc5_types.h>
+#include <cvc5pp/cvc5_types.h>
 
 #include "smt/env_obj.h"
 

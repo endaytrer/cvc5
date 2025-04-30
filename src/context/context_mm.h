@@ -23,7 +23,7 @@
 #ifndef CVC5_DEBUG_CONTEXT_MEMORY_MANAGER
 #include <deque>
 #endif
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5_export.h>
 
 #include <vector>
 

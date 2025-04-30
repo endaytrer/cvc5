@@ -41,12 +41,12 @@ add_custom_command(
   COMMAND
     "${Python_EXECUTABLE}"
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
-    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_kind.h"
+    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_kind.h"
     --enums-file-prefix "${CMAKE_CURRENT_BINARY_DIR}/cvc5kinds"
   DEPENDS
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
     "${PROJECT_SOURCE_DIR}/src/api/parseenums.py"
-    "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_kind.h"
+    "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_kind.h"
 )
 add_custom_target(cvc5kinds DEPENDS ${GENERATED_KINDS_FILES})
 
@@ -61,12 +61,12 @@ add_custom_command(
   COMMAND
     "${Python_EXECUTABLE}"
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
-    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_proof_rule.h"
+    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_proof_rule.h"
     --enums-file-prefix "${CMAKE_CURRENT_BINARY_DIR}/cvc5proofrules"
   DEPENDS
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
     "${PROJECT_SOURCE_DIR}/src/api/parseenums.py"
-    "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_proof_rule.h"
+    "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_proof_rule.h"
 )
 add_custom_target(cvc5proofrules DEPENDS ${GENERATED_PROOF_RULES_FILES})
 
@@ -81,12 +81,12 @@ add_custom_command(
   COMMAND
     "${Python_EXECUTABLE}"
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
-    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_skolem_id.h"
+    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_skolem_id.h"
     --enums-file-prefix "${CMAKE_CURRENT_BINARY_DIR}/cvc5skolemids"
   DEPENDS
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
     "${PROJECT_SOURCE_DIR}/src/api/parseenums.py"
-    "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_skolem_id.h"
+    "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_skolem_id.h"
 )
 add_custom_target(cvc5skolemids DEPENDS ${GENERATED_SKOLEM_ID_FILES})
 
@@ -100,12 +100,12 @@ add_custom_command(
   COMMAND
     "${Python_EXECUTABLE}"
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
-    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_types.h"
+    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_types.h"
     --enums-file-prefix "${CMAKE_CURRENT_BINARY_DIR}/cvc5types"
   DEPENDS
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
     "${PROJECT_SOURCE_DIR}/src/api/parseenums.py"
-    "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_types.h"
+    "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_types.h"
 )
 add_custom_target(cvc5types DEPENDS ${GENERATED_TYPES_FILES})
 

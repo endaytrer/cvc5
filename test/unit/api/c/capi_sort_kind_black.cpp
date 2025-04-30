@@ -13,7 +13,7 @@
  * Black box testing of the Cvc5SortKind enum of the  C API.
  */
 
-#include <cvc5/c/cvc5.h>
+#include <cvc5pp/c/cvc5.h>
 
 #include "gtest/gtest.h"
 

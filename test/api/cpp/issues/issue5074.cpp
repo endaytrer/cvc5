@@ -13,7 +13,7 @@
  * Test for issue #5074
  */
 
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 using namespace cvc5pp;
 

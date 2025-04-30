@@ -6,7 +6,7 @@ DIR=${CVC5_HOME}
 
 echo "[install-rare-rewrites] Generate cvc5 API include files..." 
 make gen-rewrites
-cp include/cvc5/cvc5_proof_rule.h $DIR/include/cvc5/cvc5_proof_rule.h
+cp include/cvc5pp/cvc5_proof_rule.h $DIR/include/cvc5pp/cvc5_proof_rule.h
 
 echo "[install-rare-rewrites] Generate CPC Eunoia signature..."
 

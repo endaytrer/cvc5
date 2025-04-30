@@ -23,7 +23,7 @@
 #include <string>
 #include <vector>
 
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5_export.h>
 
 namespace cvc5pp {
 namespace parser {

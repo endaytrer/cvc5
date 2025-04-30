@@ -13,7 +13,7 @@
  * Implementation of skolem id.
  */
 
-#include <cvc5/cvc5_skolem_id.h>
+#include <cvc5pp/cvc5_skolem_id.h>
 
 #include <iostream>
 

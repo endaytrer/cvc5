@@ -13,8 +13,8 @@
  * The cvc5 Java API.
  */
 
-#include <cvc5/cvc5.h>
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include "api_utilities.h"
 #include "io_github_cvc5_InputParser.h"

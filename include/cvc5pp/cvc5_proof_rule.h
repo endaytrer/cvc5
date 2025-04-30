@@ -24,7 +24,7 @@
 #undef ENUM
 #define ENUM(name) Cvc5##name
 #else
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5_export.h>
 
 #include <iosfwd>
 #include <ostream>

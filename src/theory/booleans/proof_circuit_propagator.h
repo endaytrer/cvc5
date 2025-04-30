@@ -21,7 +21,7 @@
 #include <memory>
 
 #include "expr/node.h"
-#include "cvc5/cvc5_proof_rule.h"
+#include "cvc5pp/cvc5_proof_rule.h"
 
 namespace cvc5pp::internal {
 

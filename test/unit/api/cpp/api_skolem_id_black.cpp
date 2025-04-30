@@ -13,7 +13,7 @@
  * Black box testing of the SkolemId enum of the C++ API.
  */
 
-#include <cvc5/cvc5_skolem_id.h>
+#include <cvc5pp/cvc5_skolem_id.h>
 
 #include <algorithm>
 

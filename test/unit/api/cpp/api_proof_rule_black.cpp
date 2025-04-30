@@ -13,7 +13,7 @@
  * Black box testing of the ProofRule enum of the C++ API.
  */
 
-#include <cvc5/cvc5_proof_rule.h>
+#include <cvc5pp/cvc5_proof_rule.h>
 
 #include <algorithm>
 

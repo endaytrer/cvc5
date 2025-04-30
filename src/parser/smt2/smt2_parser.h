@@ -18,7 +18,7 @@
 #ifndef CVC5__PARSER__SMT2__SMT2_PARSER_H
 #define CVC5__PARSER__SMT2__SMT2_PARSER_H
 
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 #include "parser/parser.h"
 #include "parser/smt2/smt2_state.h"

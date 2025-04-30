@@ -16,7 +16,7 @@
 #ifndef CVC5__INTERACTIVE_SHELL_H
 #define CVC5__INTERACTIVE_SHELL_H
 
-#include <cvc5/cvc5_types.h>
+#include <cvc5pp/cvc5_types.h>
 
 #include <iosfwd>
 #include <memory>

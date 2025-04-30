@@ -62,7 +62,7 @@ add_executable(cvc5-bin driver_unified.cpp main.cpp $<TARGET_OBJECTS:main>)
 target_compile_definitions(cvc5-bin PRIVATE -D__BUILDING_CVC5DRIVER -Dcvc5_obj_EXPORTS)
 set_target_properties(cvc5-bin
   PROPERTIES
-    OUTPUT_NAME cvc5
+    OUTPUT_NAME cvc5pp
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 if(PROGRAM_PREFIX)
   install(PROGRAMS

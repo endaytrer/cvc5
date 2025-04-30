@@ -18,7 +18,7 @@
 #ifndef CVC5__NODE_H
 #define CVC5__NODE_H
 
-#include <cvc5/cvc5_skolem_id.h>
+#include <cvc5pp/cvc5_skolem_id.h>
 
 #include <iostream>
 #include <map>

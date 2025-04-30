@@ -12,8 +12,8 @@
  *
  * Test for issue #11069.
  */
-#include <cvc5/cvc5.h>
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include <cassert>
 #include <iostream>

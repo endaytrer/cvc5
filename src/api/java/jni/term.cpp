@@ -15,7 +15,7 @@
 
 #include <cstdint>
 
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 #include "api_utilities.h"
 #include "io_github_cvc5_Term.h"

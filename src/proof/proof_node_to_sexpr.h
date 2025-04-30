@@ -20,7 +20,7 @@
 
 #include <map>
 
-#include "cvc5/cvc5_proof_rule.h"
+#include "cvc5pp/cvc5_proof_rule.h"
 #include "expr/kind.h"
 #include "expr/node.h"
 #include "proof/method_id.h"

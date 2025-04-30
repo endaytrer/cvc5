@@ -29,7 +29,7 @@
 #include "context/cdlist.h"
 #include "context/cdqueue.h"
 #include "context/context.h"
-#include "cvc5/cvc5_proof_rule.h"
+#include "cvc5pp/cvc5_proof_rule.h"
 #include "expr/kind.h"
 #include "expr/metakind.h"
 #include "expr/node.h"

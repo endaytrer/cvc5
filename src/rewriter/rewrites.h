@@ -18,7 +18,7 @@
 #ifndef CVC5__REWRITER__REWRITES__H
 #define CVC5__REWRITER__REWRITES__H
 
-#include "cvc5/cvc5_proof_rule.h"
+#include "cvc5pp/cvc5_proof_rule.h"
 #include "expr/node.h"
 
 namespace cvc5pp::internal {

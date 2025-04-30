@@ -15,8 +15,8 @@
 #ifndef CVC5__TEST__UNIT__TEST_PARSER_H
 #define CVC5__TEST__UNIT__TEST_PARSER_H
 
-#include <cvc5/cvc5.h>
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include "test_api.h"
 

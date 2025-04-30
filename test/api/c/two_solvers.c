@@ -13,7 +13,7 @@
  * A simple test of multiple SmtEngines.
  */
 
-#include <cvc5/c/cvc5.h>
+#include <cvc5pp/c/cvc5.h>
 
 int main()
 {

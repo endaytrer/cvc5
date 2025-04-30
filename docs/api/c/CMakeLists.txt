@@ -16,7 +16,7 @@ find_package(Doxygen REQUIRED)
 
 # basic parameters
 set(DOXYGEN_PROJECT_NAME "cvc5_c")
-set(DOXYGEN_INPUT_DIR ${PROJECT_SOURCE_DIR}/include/cvc5/c)
+set(DOXYGEN_INPUT_DIR ${PROJECT_SOURCE_DIR}/include/cvc5pp/c)
 set(DOXYGEN_OUTPUT_DIR ${CMAKE_CURRENT_BINARY_DIR}/doxygen)
 set(DOXYGEN_INPUT "\
 ${DOXYGEN_INPUT_DIR}/cvc5.h \

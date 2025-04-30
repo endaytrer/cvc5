@@ -1495,12 +1495,12 @@ endif()
 include(GenerateExportHeader)
 generate_export_header(cvc5-obj
   BASE_NAME cvc5
-  EXPORT_FILE_NAME ${CMAKE_BINARY_DIR}/include/cvc5/cvc5_export.h
+  EXPORT_FILE_NAME ${CMAKE_BINARY_DIR}/include/cvc5pp/cvc5_export.h
 )
 install(FILES
-  ${CMAKE_BINARY_DIR}/include/cvc5/cvc5_export.h
+  ${CMAKE_BINARY_DIR}/include/cvc5pp/cvc5_export.h
   DESTINATION
-    ${CMAKE_INSTALL_INCLUDEDIR}/cvc5/
+    ${CMAKE_INSTALL_INCLUDEDIR}/cvc5pp/
 )
 
 # Add library/include dependencies

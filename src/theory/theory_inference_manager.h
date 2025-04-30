@@ -22,7 +22,7 @@
 
 #include "context/cdhashset.h"
 #include "expr/node.h"
-#include "cvc5/cvc5_proof_rule.h"
+#include "cvc5pp/cvc5_proof_rule.h"
 #include "proof/trust_node.h"
 #include "smt/env_obj.h"
 #include "theory/inference_id.h"

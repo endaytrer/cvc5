@@ -80,7 +80,7 @@ if(BUILD_SHARED_LIBS)
   set_target_properties(cvc5parser PROPERTIES SOVERSION ${CVC5_SOVERSION})
 endif()
 
-set_target_properties(cvc5parser PROPERTIES OUTPUT_NAME cvc5parser)
+set_target_properties(cvc5parser PROPERTIES OUTPUT_NAME cvc5ppparser)
 target_link_libraries(cvc5parser PRIVATE cvc5)
 
 # On Windows, CMake's default install action places

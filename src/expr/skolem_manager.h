@@ -18,7 +18,7 @@
 #ifndef CVC5__EXPR__SKOLEM_MANAGER_H
 #define CVC5__EXPR__SKOLEM_MANAGER_H
 
-#include <cvc5/cvc5_skolem_id.h>
+#include <cvc5pp/cvc5_skolem_id.h>
 
 #include <string>
 

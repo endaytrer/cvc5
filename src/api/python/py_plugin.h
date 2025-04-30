@@ -16,7 +16,7 @@
 #ifndef CVC5__PY_PLUGIN_H
 #define CVC5__PY_PLUGIN_H
 
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 // Created by Cython when providing 'public api' keywords
 #include "cvc5_python_base_api.h"

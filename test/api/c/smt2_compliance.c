@@ -14,8 +14,8 @@
  */
 
 #include <assert.h>
-#include <cvc5/c/cvc5.h>
-#include <cvc5/c/cvc5_parser.h>
+#include <cvc5pp/c/cvc5.h>
+#include <cvc5pp/c/cvc5_parser.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

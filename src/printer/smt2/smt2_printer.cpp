@@ -15,7 +15,7 @@
 
 #include "printer/smt2/smt2_printer.h"
 
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 #include <iostream>
 #include <list>

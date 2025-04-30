@@ -16,8 +16,8 @@
 #ifndef CVC5__C_API__CVC5_PARSER_H
 #define CVC5__C_API__CVC5_PARSER_H
 
-#include <cvc5/c/cvc5.h>
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/c/cvc5.h>
+#include <cvc5pp/cvc5_export.h>
 
 #if __cplusplus
 extern "C" {

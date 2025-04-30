@@ -13,7 +13,7 @@
  * Test for issue #6111
  *
  */
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 #include <iostream>
 #include <vector>

@@ -18,7 +18,7 @@
 #ifndef CVC5__UTIL__SMT2_QUOTE_STRING_H
 #define CVC5__UTIL__SMT2_QUOTE_STRING_H
 
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5_export.h>
 
 #include <string>
 

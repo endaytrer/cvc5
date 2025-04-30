@@ -30,12 +30,12 @@ add_custom_command(
   COMMAND
     "${Python_EXECUTABLE}"
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
-    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_kind.h"
+    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_kind.h"
     --java-api-path "${CMAKE_CURRENT_BINARY_DIR}/io/github/"
   DEPENDS
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
     "${PROJECT_SOURCE_DIR}/src/api/parseenums.py"
-    "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_kind.h"
+    "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_kind.h"
 )
 add_custom_target(generate-java-kinds DEPENDS ${JAVA_KIND_FILE})
 
@@ -49,12 +49,12 @@ add_custom_command(
   COMMAND
     "${Python_EXECUTABLE}"
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
-    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_proof_rule.h"
+    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_proof_rule.h"
     --java-api-path "${CMAKE_CURRENT_BINARY_DIR}/io/github/"
   DEPENDS
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
     "${PROJECT_SOURCE_DIR}/src/api/parseenums.py"
-    "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_proof_rule.h"
+    "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_proof_rule.h"
 )
 add_custom_target(generate-java-proofrules DEPENDS ${JAVA_PROOF_RULE_FILE})
 
@@ -68,12 +68,12 @@ add_custom_command(
   COMMAND
     "${Python_EXECUTABLE}"
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
-    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_skolem_id.h"
+    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_skolem_id.h"
     --java-api-path "${CMAKE_CURRENT_BINARY_DIR}/io/github/"
   DEPENDS
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
     "${PROJECT_SOURCE_DIR}/src/api/parseenums.py"
-    "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_skolem_id.h"
+    "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_skolem_id.h"
 )
 add_custom_target(generate-java-skolemfunids DEPENDS ${JAVA_SKOLEM_FUN_ID_FILE})
 
@@ -92,12 +92,12 @@ add_custom_command(
   COMMAND
     "${Python_EXECUTABLE}"
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
-    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_types.h"
+    --enums-header "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_types.h"
     --java-api-path "${CMAKE_CURRENT_BINARY_DIR}/io/github/"
   DEPENDS
     "${CMAKE_CURRENT_BINARY_DIR}/genenums.py"
     "${PROJECT_SOURCE_DIR}/src/api/parseenums.py"
-    "${PROJECT_SOURCE_DIR}/include/cvc5/cvc5_types.h"
+    "${PROJECT_SOURCE_DIR}/include/cvc5pp/cvc5_types.h"
 )
 add_custom_target(generate-java-types DEPENDS ${JAVA_TYPES_FILES})
 

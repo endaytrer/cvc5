@@ -22,7 +22,7 @@
 #ifndef CVC5__PARSER__COMMANDS_H
 #define CVC5__PARSER__COMMANDS_H
 
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 #include <iosfwd>
 #include <sstream>

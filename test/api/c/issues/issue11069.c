@@ -13,8 +13,8 @@
  * Test for issue #11069.
  */
 
-#include <cvc5/c/cvc5.h>
-#include <cvc5/c/cvc5_parser.h>
+#include <cvc5pp/c/cvc5.h>
+#include <cvc5pp/c/cvc5_parser.h>
 
 #include <stdio.h>
 #include <assert.h>

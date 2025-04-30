@@ -18,8 +18,8 @@
 #ifndef CVC5__PARSER__SYM_MANAGER_H
 #define CVC5__PARSER__SYM_MANAGER_H
 
-#include <cvc5/cvc5.h>
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5.h>
+#include <cvc5pp/cvc5_export.h>
 
 #include <map>
 #include <memory>

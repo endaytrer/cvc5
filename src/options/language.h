@@ -18,7 +18,7 @@
 #ifndef CVC5__LANGUAGE_H
 #define CVC5__LANGUAGE_H
 
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5_export.h>
 
 #include <ostream>
 #include <string>

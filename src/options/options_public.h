@@ -22,7 +22,7 @@
 #ifndef CVC5__OPTIONS__OPTIONS_PUBLIC_H
 #define CVC5__OPTIONS__OPTIONS_PUBLIC_H
 
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5_export.h>
 
 #include <iosfwd>
 #include <optional>

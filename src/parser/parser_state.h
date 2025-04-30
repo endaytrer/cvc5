@@ -18,15 +18,15 @@
 #ifndef CVC5__PARSER__PARSER_STATE_H
 #define CVC5__PARSER__PARSER_STATE_H
 
-#include <cvc5/cvc5.h>
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5.h>
+#include <cvc5pp/cvc5_export.h>
 
 #include <list>
 #include <memory>
 #include <string>
 
 #include "parser/parse_op.h"
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5_parser.h>
 #include "parser/parser_utils.h"
 #include "parser/sym_manager.h"
 #include "parser/symbol_table.h"

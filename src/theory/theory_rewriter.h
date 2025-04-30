@@ -20,7 +20,7 @@
 #ifndef CVC5__THEORY__THEORY_REWRITER_H
 #define CVC5__THEORY__THEORY_REWRITER_H
 
-#include <cvc5/cvc5_proof_rule.h>
+#include <cvc5pp/cvc5_proof_rule.h>
 
 #include "expr/node.h"
 #include "proof/trust_node.h"

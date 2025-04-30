@@ -16,8 +16,8 @@
 #ifndef CVC5__MAIN__COMMAND_EXECUTOR_H
 #define CVC5__MAIN__COMMAND_EXECUTOR_H
 
-#include <cvc5/cvc5.h>
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include <iosfwd>
 #include <string>

@@ -25,7 +25,7 @@
 #ifndef CVC5__PRINTER__ENUM_TO_STRING_H
 #define CVC5__PRINTER__ENUM_TO_STRING_H
 
-#include <cvc5/cvc5_skolem_id.h>
+#include <cvc5pp/cvc5_skolem_id.h>
 
 namespace cvc5pp::internal {
 

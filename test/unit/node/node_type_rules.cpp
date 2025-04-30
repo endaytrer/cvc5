@@ -13,7 +13,7 @@
  * Black box testing of type rules for cvc5pp::Node.
  */
 
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 #include <algorithm>
 #include <sstream>

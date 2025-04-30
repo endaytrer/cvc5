@@ -20,7 +20,7 @@
 #ifndef CVC5__CAPI__CHECKS_H
 #define CVC5__CAPI__CHECKS_H
 
-#include <cvc5/cvc5.h>
+#include <cvc5pp/cvc5.h>
 
 #include <cstdlib>
 #include <iostream>

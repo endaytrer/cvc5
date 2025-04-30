@@ -344,9 +344,9 @@ def gen_rewrite_db(args):
         }}
     '''
     rewriter_dir = os.path.join(args.src_dir, 'src', 'rewriter')
-    src_include_dir = os.path.join(args.src_dir, 'include', 'cvc5')
+    src_include_dir = os.path.join(args.src_dir, 'include', 'cvc5pp')
     src_api_dir = os.path.join(args.src_dir, 'src', 'api', 'cpp')
-    bin_include_dir = os.path.join(args.bin_dir, 'include', 'cvc5')
+    bin_include_dir = os.path.join(args.bin_dir, 'include', 'cvc5pp')
     bin_api_dir = os.path.join(args.bin_dir, 'src', 'api', 'cpp')
     decls = []
     rewrites = []

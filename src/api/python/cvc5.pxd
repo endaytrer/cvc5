@@ -60,7 +60,7 @@ cdef extern from "<tuple>" namespace "std":
     uint32_t get1 "std::get<1>"(tuple[uint32_t,uint32_t,Term]) except +
     Term get2 "std::get<2>"(tuple[uint32_t,uint32_t,Term]) except +
 
-cdef extern from "<cvc5/cvc5.h>" namespace "cvc5":
+cdef extern from "<cvc5pp/cvc5.h>" namespace "cvc5":
     cdef cppclass Options:
         pass
 
@@ -77,7 +77,7 @@ cdef extern from "py_plugin.h" namespace "cvc5":
         string getName() except +
 
 
-cdef extern from "<cvc5/cvc5.h>" namespace "cvc5":
+cdef extern from "<cvc5pp/cvc5.h>" namespace "cvc5":
     cdef cppclass Datatype:
         Datatype() except +
         DatatypeConstructor operator[](size_t idx) except +
@@ -207,7 +207,7 @@ cdef extern from "<variant>" namespace "std":
     bint holds "std::holds_alternative"[T](OptionInfo.OptionInfoVariant v) except +
     T getVariant "std::get"[T](OptionInfo.OptionInfoVariant v) except +
 
-cdef extern from "<cvc5/cvc5.h>" namespace "cvc5":
+cdef extern from "<cvc5pp/cvc5.h>" namespace "cvc5":
     cdef cppclass Result:
         Result() except+
         bint isNull() except +
@@ -711,7 +711,7 @@ cdef extern from "<cvc5/cvc5.h>" namespace "cvc5":
         size_t operator()(const Proof&) except +
 
 
-cdef extern from "<cvc5/cvc5_parser.h>" namespace "cvc5pp::parser":
+cdef extern from "<cvc5pp/cvc5_parser.h>" namespace "cvc5pp::parser":
     cdef cppclass SymbolManager:
         SymbolManager(TermManager& tm) except +
         bint isLogicSet() except +

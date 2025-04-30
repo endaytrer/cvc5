@@ -13,15 +13,15 @@
  * The cvc5 C++ API.
  */
 
-#include <cvc5/cvc5_export.h>
+#include <cvc5pp/cvc5_export.h>
 
 #ifndef CVC5__API__CVC5_H
 #define CVC5__API__CVC5_H
 
-#include <cvc5/cvc5_kind.h>
-#include <cvc5/cvc5_proof_rule.h>
-#include <cvc5/cvc5_skolem_id.h>
-#include <cvc5/cvc5_types.h>
+#include <cvc5pp/cvc5_kind.h>
+#include <cvc5pp/cvc5_proof_rule.h>
+#include <cvc5pp/cvc5_skolem_id.h>
+#include <cvc5pp/cvc5_types.h>
 
 #include <functional>
 #include <map>

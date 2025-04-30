@@ -39,8 +39,8 @@
 #  endif /* HAVE_EXT_STDIO_FILEBUF_H */
 #endif   /* HAVE_LIBEDITLINE */
 
-#include <cvc5/cvc5.h>
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include "base/check.h"
 #include "base/output.h"

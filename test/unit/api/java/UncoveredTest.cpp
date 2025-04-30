@@ -13,7 +13,7 @@
  * Testing functions that are not exposed by the Java API for code coverage.
  */
 
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include "test_api.h"
 

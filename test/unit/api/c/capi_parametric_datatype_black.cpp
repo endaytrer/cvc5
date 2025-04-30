@@ -14,7 +14,7 @@
  */
 
 extern "C" {
-#include <cvc5/c/cvc5.h>
+#include <cvc5pp/c/cvc5.h>
 }
 
 #include "base/output.h"

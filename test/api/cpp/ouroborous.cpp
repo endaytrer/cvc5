@@ -25,8 +25,8 @@
  * below, in SMT-LIBv2 form (but they're good for all languages).
  */
 
-#include <cvc5/cvc5.h>
-#include <cvc5/cvc5_parser.h>
+#include <cvc5pp/cvc5.h>
+#include <cvc5pp/cvc5_parser.h>
 
 #include <cassert>
 #include <iostream>
